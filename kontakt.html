@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kontakt und Gespräch vereinbaren | Claudia Conen</title>
 <meta name="description" content="Gespräch mit Claudia Conen vereinbaren: Keynote, Workshop oder Entwicklungsprogramm für dein Unternehmen anfragen, Executive-Sparring oder Claudia für Moderation, Unternehmensrede und Voice-over buchen.">
@@ -105,6 +105,18 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
 .einw,.pflicht,.hinweis-vorschau{font-size:16px}
 #begruessung{padding-block:16px 56px}
 .stimme.eine{margin-top:40px;max-width:720px}
+/* Nacht 11.10.: Rhythmus, Audio über dem Formular, ein dunkler Abschnitt mit Glas */
+.anfrage{background:var(--weiss);border-block:1px solid var(--linie);padding-block:72px}
+.audio-karte{background:var(--ivory);border:1.5px solid rgba(201,169,97,.55);border-radius:20px;margin:0 0 28px;max-width:none}
+.audio-karte .platz{grid-column:1/-1}
+.player.audio-karte#begruessung{padding:20px 24px}
+#ablauf.dunkel{border:0}
+.dunkel .glas.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 18px 40px -24px rgba(0,0,0,.5);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:28px 30px;margin-top:28px}
+.dunkel .glas-dunkel .schritte{margin-top:0}
+.dunkel .schritte li{border-top-color:var(--sand)}
+.dunkel .schritte li::before{color:var(--sand)}
+.dunkel .stimme{color:var(--ink)}
+@media(max-width:600px){.dunkel .glas.glas-dunkel{padding:22px 18px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -222,7 +234,7 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -231,9 +243,10 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -255,7 +268,7 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
    <div class="eyebrow">Kontakt · Claudia Conen – Die Umsatzstimme</div>
    <h1 id="h1">Lass uns reden.</h1>
    <p class="sub">Erst kennenlernen und dann entscheiden, ob wir miteinander arbeiten. Das ist für uns beide der bessere Weg.</p>
-   <p class="sub">Für Unternehmen, Veranstalter und Unternehmerpersönlichkeiten, die Führung, Kommunikation und Veränderung im KI-Zeitalter wirksam machen wollen.<span class="vor">Vorschlag</span></p>
+   <p class="sub">Für Unternehmer, Führungskräfte und Experten, die Führung, Kommunikation und Veränderung im KI-Zeitalter wirksam machen wollen.<span class="vor">Vorschlag</span></p>
    <div class="wege">
     <a class="knopf" href="#anfrage">Gespräch vereinbaren</a>
     <a class="leise" href="#direkt">Lieber direkt anrufen</a>
@@ -313,6 +326,21 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
    <div class="kicker">Anfrage</div>
    <h2 id="anfrage-titel">Schreib mir eine Nachricht</h2>
    <p class="persoenlich">„Kontaktiere mich auf einen Kaffee. Ich freue mich auf die Begegnung.“ <span>Claudia Conen</span></p>
+   <!-- Audio „Persönliche Begrüßung“ (Masterplan 8.4): oberhalb des Formulars, Karte statt Glas -->
+   <div class="player audio-karte" id="begruessung" role="group" aria-label="Audio: Persönliche Begrüßung von Claudia">
+    <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
+    <div>
+     <b>Persönliche Begrüßung</b>
+     <span class="meta">Claudia Conen · 0:20 bis 0:30 · startet nur auf Klick</span>
+     <div class="balken" aria-hidden="true"><span></span></div>
+    </div>
+    <details>
+     <summary>Transkript lesen</summary>
+     <p>Entwurf von Vinci, nach §30.5 (Begrüßung, wofür du offen bist, Einladung zum Gespräch):<span class="vor">Vorschlag</span></p>
+     <p>„Schön, dass du hier bist. Du planst eine Keynote, einen Workshop oder ein Entwicklungsprogramm – oder du weißt noch nicht, was passt? Dann lass uns sprechen. Im ersten Gespräch geht es um deine Lage, nicht um ein Angebot. Schreib mir ein paar Sätze. Ich melde mich persönlich.“</p>
+    </details>
+    <p class="platz">Audio von dir: Persönliche Begrüßung, 20–30 s</p>
+   </div>
    <form class="formular" id="formular" novalidate>
     <div class="ffeld breit">
      <label for="f-anliegen">Gewünschtes Format</label>
@@ -323,6 +351,7 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
        <option value="workshop">Workshop</option>
        <option value="programm">Entwicklungsprogramm</option>
        <option value="unternehmen">Unternehmensformat, noch offen welches</option>
+       <option value="team-sprint">Challenge als Unternehmensedition</option>
       </optgroup>
       <optgroup label="Für Unternehmer &amp; Experten">
        <option value="sparring">Executive-Sparring</option>
@@ -333,6 +362,13 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
        <option value="buchen-moderation">Business- und Eventmoderation</option>
        <option value="buchen-rede">Rede für einen Unternehmensmoment</option>
        <option value="buchen-voiceover">Voice-over und Markenstimme</option>
+      </optgroup>
+      <optgroup label="Rund ums Reden">
+       <option value="rede-privat">Rednerin buchen: Trauung, Trauerrede, Fest</option>
+       <option value="freie-redner-ausbildung">Ausbildung freie Rednerin / Hochzeitsrednerin</option>
+       <option value="trauerredner-ausbildung">Ausbildung Trauerrednerin</option>
+       <option value="speaker-ausbildung">Speaker-Ausbildung</option>
+       <option value="rund-ums-reden">Rund ums Reden, noch offen welches</option>
       </optgroup>
       <option value="presse">Presse und Kooperation</option>
      </select>
@@ -399,34 +435,19 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
  </div>
 </section>
 
-<!-- 5 Persönliche Audio-Begrüßung (§22.5, §30.5) – Glas 2 von 3 -->
-<section id="begruessung" aria-label="Persönliche Einladung">
- <div class="huelle">
-  <div class="player glas" role="group" aria-label="Audio: Eine persönliche Einladung von Claudia">
-   <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
-   <div>
-    <b>Eine persönliche Einladung</b>
-    <span class="meta">Claudia Conen · höchstens 0:30 · startet nur auf Klick</span>
-    <div class="balken" aria-hidden="true"><span></span></div>
-   </div>
-   <details>
-    <summary>Transkript lesen</summary>
-    <p class="platz">Text und Aufnahme fehlen noch (§30.5: kurze Begrüßung, für welche Anfragen du offen bist, Einladung zum unverbindlichen Gespräch): bitte von dir.</p>
-   </details>
-  </div>
- </div>
-</section>
-
 <!-- 6 Ablauf nach dem Absenden (§22.6) + Stimme -->
-<section class="hell-weiss" id="ablauf">
+<!-- Der eine dunkle Abschnitt der Seite; Glaskachel nur um die drei Schritte (nicht um Formular oder Stimme) -->
+<section class="dunkel" id="ablauf">
  <div class="huelle">
   <div class="kicker">Ablauf</div>
   <h2>So geht es nach deiner Anfrage weiter<span class="vor">Vorschlag</span></h2>
+  <div class="glas glas-dunkel">
   <ol class="schritte">
    <li><b>Du schreibst</b>Dein Anliegen, ein paar Sätze zur Ausgangslage, gern mit Wunschzeitraum.</li>
-   <li><b>Wir sprechen</b>Wo stehst du, was soll bei deinem Gegenüber ankommen, was steht im Weg?</li>
+   <li><b>Wir sprechen</b>Wo stehst du, was soll bei deinem Gegenüber ankommen, was steht im Weg: Botschaft, Stimme, Präsenz oder der Umgang mit KI?</li>
    <li><b>Du entscheidest</b>Du weißt, welches Format passt: Keynote, Workshop, Entwicklungsprogramm oder Sparring.</li>
   </ol>
+  </div>
   <p class="platz" style="margin-top:28px">Dauer und Form des Gesprächs (Telefon, Video, vor Ort) und Antwortzeit: bitte von dir.</p>
   <figure class="stimme eine">
    <div class="kopfzeile"><img src="p/ergebnisse/andresen.webp" alt="" width="350" height="640" loading="lazy"><div><b>Dr.-Ing. Ann-Kathrin Andresen</b><small>Verfahrenstechnikerin, Mentorin und Beraterin · Ing.-up</small></div></div>
@@ -455,7 +476,7 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>
@@ -476,7 +497,9 @@ form.formular{background:var(--weiss);border:1px solid var(--linie);border-radiu
   gruppen.forEach(x=>x.classList.toggle('gewaehlt',x===g));
   links.forEach(x=>x.classList.toggle('gewaehlt',x===l));
  }
- setze(location.hash.slice(1));
+ const q=new URLSearchParams(location.search).get('anliegen');
+ if(q){setze(q);if(!location.hash)setTimeout(()=>document.getElementById('formular').scrollIntoView({block:'start'}),200)}
+ else setze(location.hash.slice(1));
  addEventListener('hashchange',()=>setze(location.hash.slice(1)));
  links.forEach(l=>l.addEventListener('click',()=>{setze(l.dataset.anliegen);setTimeout(()=>wahl.focus({preventScroll:true}),350)}));
  wahl.addEventListener('change',()=>setze(wahl.value));

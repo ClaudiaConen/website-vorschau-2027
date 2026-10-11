@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Speaker-Ausbildung für Experten – Keynote Speaker werden | Rund ums Reden | Claudia Conen</title>
+<meta name="description" content="Speaker-Ausbildung für Experten, Unternehmer und Führungskräfte: vom Fachgebiet zum Thema, von der Keynote zum Auftritt. Mit Stimmarbeit und Keynote auf Video. Live in Köln, Witten oder online in Echtzeit, mit Preisen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Ausbildungsseiten Rund ums Reden – eigenes CSS, style.css bleibt unberührt */
+main [id]{scroll-margin-top:96px}
+main .leise{display:inline-flex;align-items:center;min-height:44px}
+main .knopf{max-width:100%}
+@media(max-width:600px){main .knopf{white-space:normal;text-align:center;line-height:1.3;padding-block:12px}}
+.pfad{padding-block:16px 0;font-size:16px;background:var(--ivory)}
+.pfad ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.pfad li+li::before{content:"/";margin-right:10px}
+.pfad a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+/* Kopf */
+.uk{padding-block:36px 72px;background:linear-gradient(180deg,var(--ivory),var(--champ) 170%)}
+.uk .huelle{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px;align-items:center}
+.uk h1{font:600 clamp(38px,4.4vw,60px)/1.06 'Cormorant Garamond',Georgia,serif;letter-spacing:-.005em}
+.uk .frage{font:500 italic clamp(22px,2.1vw,28px)/1.3 'Cormorant Garamond',Georgia,serif;margin-top:18px;max-width:34ch}
+.uk .sub{font-size:19px;line-height:1.55;margin-top:14px;max-width:56ch}
+.chips{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{border:1px solid var(--linie);background:var(--weiss);border-radius:999px;padding:7px 14px;font-size:14.5px;font-weight:600}
+.uk .wege{display:flex;flex-wrap:wrap;gap:14px 22px;margin-top:28px;align-items:center}
+.uk .huerde{font-size:15px;margin-top:10px}
+.uk figure{margin:0}
+.uk figure img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+@media(max-width:860px){.uk{padding-block:20px 56px}.uk .huelle{grid-template-columns:1fr;gap:26px}.uk figure{order:-1}.uk figure img{aspect-ratio:4/3;max-height:420px}}
+/* Rhythmus */
+.hellweiss{background:var(--weiss);border-block:1px solid var(--linie)}
+.einleitung{max-width:64ch;font-size:18px;margin-top:16px}
+.zwei{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+@media(max-width:860px){.zwei{grid-template-columns:1fr;gap:32px}}
+.text{display:grid;gap:16px;max-width:64ch;align-content:start}
+.karte-w{background:var(--ivory);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:8px;padding:26px 26px 28px;display:grid;gap:12px;align-content:start}
+section:not(.hellweiss) .karte-w{background:var(--weiss)}
+.karte-w h3{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.raute{font-size:17px}
+.nicht li::before{background:transparent!important;border:1.5px solid var(--rot)}
+/* Lehrplan */
+.module{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;counter-reset:m}
+@media(max-width:760px){.module{grid-template-columns:1fr}}
+.module li{counter-increment:m;display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 14px;padding:18px 20px;background:var(--ivory);border:1px solid var(--linie);border-radius:8px}
+.module li::before{content:counter(m,decimal-leading-zero);font:600 34px/1 'Cormorant Garamond',Georgia,serif;grid-row:span 2}
+.module b{font-size:17px;line-height:1.35}
+.module p{font-size:16px;line-height:1.5}
+.module li.praxis{border-top:3px solid var(--gold)}
+/* Ablauf, dunkel */
+.schritte{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:20px;counter-reset:s;max-width:880px}
+.schritte li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;counter-increment:s}
+.schritte li::before{content:"0" counter(s);font:600 38px/1 'Cormorant Garamond',Georgia,serif}
+.schritte b{display:block;font-size:17px;margin-bottom:4px}
+.dunkel .schritte li::before{color:var(--sand)}
+.dunkel .platz{background:transparent;color:var(--sand);border-color:var(--sand)}
+.dunkel a.leise{color:var(--sand)}
+.orte{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px}
+@media(max-width:900px){.orte{grid-template-columns:1fr}}
+.orte div{border:1px solid rgba(255,255,255,.22);border-radius:8px;padding:20px 22px;display:grid;gap:8px;align-content:start}
+.orte h3{font:600 24px/1.15 'Cormorant Garamond',Georgia,serif}
+.orte p{font-size:16px}
+.glas.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:none;border-radius:16px;padding:22px 26px;margin-top:34px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;max-width:880px}
+.glas.glas-dunkel p{font:500 italic 24px/1.3 'Cormorant Garamond',Georgia,serif;max-width:40ch;color:var(--ivory)}
+/* Preise */
+.preise{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:34px;align-items:stretch}
+.preise.vier{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:980px){.preise{grid-template-columns:1fr;max-width:620px}.preise.vier{grid-template-columns:1fr}}
+.preis{background:var(--ivory);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:8px;padding:26px 26px 24px;display:flex;flex-direction:column;gap:12px}
+.preis.empfohlen{border:1.5px solid var(--gold);border-top-width:3px}
+.preis .art{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.preis h3{font:600 28px/1.12 'Cormorant Garamond',Georgia,serif}
+.preis .betrag{font:600 34px/1.1 'Cormorant Garamond',Georgia,serif;margin-top:4px}
+.preis .betrag small{font:600 15px/1.3 'Inter',sans-serif}
+.preis .brutto{font-size:15.5px;font-weight:600;margin-top:-6px}
+.preis .raute{font-size:16px;border-top:1px solid var(--linie);padding-top:14px}
+.preis .platz{margin-top:auto}
+.preis-fuss{margin-top:22px;max-width:72ch;font-size:16px}
+/* Zertifikat */
+.urkunde{background:var(--weiss);border:1.5px solid var(--gold);border-radius:8px;padding:30px 30px 28px;display:grid;gap:12px;align-content:start}
+.urkunde .titel{font:600 italic 28px/1.2 'Cormorant Garamond',Georgia,serif}
+/* Claudia, Buch */
+.zitat-satz{margin:0;font:500 italic 26px/1.3 'Cormorant Garamond',Georgia,serif;border-left:2px solid var(--gold);padding-left:18px;max-width:40ch}
+.zitat-satz figcaption{font:600 14px/1.4 'Inter',sans-serif;font-style:normal;margin-top:8px}
+.buch{border:1px solid var(--linie);border-left:3px solid var(--gold);border-radius:8px;padding:18px 20px;background:var(--weiss);display:grid;gap:6px}
+.buch b{font:600 22px/1.2 'Cormorant Garamond',Georgia,serif}
+/* FAQ */
+.fragen{display:grid;gap:12px;max-width:840px;margin-top:30px}
+.fragen details{background:var(--ivory);border:1px solid var(--linie);border-radius:8px;padding:16px 22px}
+section:not(.hellweiss) .fragen details{background:var(--weiss)}
+.fragen summary{cursor:pointer;font-weight:600;font-size:17px;min-height:28px}
+.fragen details p{margin-top:12px}
+.weiter{display:flex;flex-wrap:wrap;gap:4px 24px;margin-top:8px}
+.schluss .huerde{font-size:15px}
+/* Rund-ums-Reden: eigener Header (Markenwelt), gleich auf allen fünf Seiten */
+.menue.rur .marke span span{display:block}
+.menue.rur .punkte>li>a.punkt-link{font-weight:600}
+.menue.rur .rur-kontakt .knopf{min-height:44px;padding:0 22px;margin-left:10px}
+.menue.rur .rur-tafel ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.menue.rur .rur-tafel a{display:block;padding:12px 14px;border:1px solid var(--linie);border-radius:12px;text-decoration:none;transition:border-color .2s,background .2s}
+.menue.rur .rur-tafel a:hover{border-color:var(--gold);background:var(--ivory)}
+.menue.rur .rur-tafel a b{display:block;font-size:15.5px}
+.menue.rur .rur-tafel a span{display:block;font-size:14px;margin-top:2px}
+.menue.rur .rur-tafel .alle{border-style:dashed}
+@media(min-width:1001px){
+ .menue.rur .punkte{display:flex;flex-direction:row;align-items:center;position:static;max-height:none;overflow:visible;background:none;border:0;padding:0}
+ .menue.rur .burger{display:none}
+ .menue.rur .tafel.rur-tafel{position:absolute;left:auto;right:24px;top:100%;transform:none;width:min(560px,calc(100vw - 48px));margin-top:8px;border:1px solid var(--linie);border-radius:18px;box-shadow:0 30px 60px -28px rgba(19,35,63,.45);padding:22px}
+ .menue.rur .punkte>li.offen>.tafel.rur-tafel{display:grid;grid-template-columns:1fr;gap:0}
+ .menue.rur .schliessen{display:none}
+}
+@media(max-width:1000px){
+ .menue.rur .punkte{display:none}
+ .menue.rur.mobil .punkte{display:flex}
+ .menue.rur .burger{display:block}
+ .menue.rur .rur-kontakt{margin-top:18px}
+ .menue.rur .rur-kontakt .knopf{margin-left:0;width:100%}
+ .menue.rur .punkte>li.offen>.tafel.rur-tafel{gap:14px}
+}
+/* Rund-ums-Reden: eigener Footer */
+footer.rur-fuss .huelle{grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr))}
+footer.rur-fuss .marke-fuss span{display:block;font:500 italic 18px/1.35 'Cormorant Garamond',Georgia,serif;color:var(--sand);margin-top:6px}
+footer.rur-fuss .zurueck{margin-top:18px}
+footer.rur-fuss .zurueck a{color:var(--sand);text-decoration:underline;text-underline-offset:4px}
+footer.rur-fuss li a{display:inline-block;padding-block:3px}
+@media(max-width:860px){footer.rur-fuss .huelle{grid-template-columns:1fr 1fr}footer.rur-fuss .huelle>div:first-child{grid-column:1/-1}}
+@media(max-width:480px){footer.rur-fuss .huelle{grid-template-columns:1fr}}
+</style>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="hinweis"><b>Private Vorschau, nicht online.</b> Seite Speaker-Ausbildung, jetzt in der Welt Rund ums Reden (bleibt über „Für Experten“ verlinkt). Rot gestrichelt = Vorschlag von Vinci oder fehlende Angabe von dir.</div>
+
+<!-- Kopf und Fuß wörtlich aus rur_header_footer.html (Rund-ums-Reden-Welt) -->
+<header class="menue rur" id="menue">
+ <div class="huelle">
+  <a class="marke" href="index.html" aria-label="Claudia Conen – zur Hauptseite"><img src="i/logo.webp" alt="" width="48" height="48"><span><b>Claudia Conen</b><span>Rund ums Reden</span></span></a>
+  <ul class="punkte" id="punkte" aria-label="Menü Rund ums Reden">
+   <li><a class="punkt-link" href="freie-rede-anlaesse.html">Rednerin buchen</a></li>
+   <li>
+    <button type="button" aria-expanded="false" aria-controls="tafel-werden">Redner werden</button>
+    <div class="tafel rur-tafel" id="tafel-werden">
+     <ul>
+      <li><a href="freie-redner-ausbildung.html"><b>Freie Rednerin &amp; Hochzeitsrednerin</b><span>Ausbildung mit Schwerpunkt freie Trauung</span></a></li>
+      <li><a href="trauerredner-ausbildung.html"><b>Trauerrednerin</b><span>Abschiede in Worte fassen</span></a></li>
+      <li><a href="speaker-ausbildung.html"><b>Speakerin</b><span>Mit deinem Thema auf die Bühne</span></a></li>
+      <li><a class="alle" href="rund-ums-reden.html#redner-werden"><b>Alle Ausbildungen im Überblick</b><span>Mit Preisen und Kombi-Ausbildung</span></a></li>
+     </ul>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><a class="punkt-link" href="rund-ums-reden.html#wissen">Wissen</a></li>
+   <li class="rur-kontakt"><a class="knopf" href="kontakt.html?anliegen=rund-ums-reden">Kontakt</a></li>
+  </ul>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="punkte">Menü</button>
+ </div>
+</header>
+
+<main id="main">
+<nav class="pfad" aria-label="Brotkrumen"><div class="huelle"><ol><li><a href="rund-ums-reden.html">Rund ums Reden</a></li><li><a href="rund-ums-reden.html#redner-werden">Redner werden</a></li><li aria-current="page">Speaker-Ausbildung</li></ol></div></nav>
+
+<!-- 1 Kopf -->
+<section class="uk" aria-labelledby="h1">
+ <div class="huelle">
+  <div>
+   <div class="eyebrow">Ausbildung · Speaker · Keynote</div>
+   <h1 id="h1">Speaker-Ausbildung für Experten</h1>
+   <p class="frage">Es kommt nicht darauf an, wie viel du sagst. Sondern was davon bleibt.</p>
+   <p class="sub">Ein guter Auftritt beginnt nicht auf der Bühne. Er beginnt mit der Klarheit über das, was du anderen mitgeben möchtest. Aus deinem Fachgebiet wird ein Thema, aus dem Thema eine Keynote, aus der Keynote ein Auftritt – auf Video.</p>
+   <ul class="chips" aria-label="Auf einen Blick">
+    <li>Live in Köln oder Witten</li>
+    <li>Live online in Echtzeit</li>
+    <li>Höchstens sechs Teilnehmende</li>
+    <li>Keynote auf Video</li>
+   </ul>
+   <div class="wege"><a class="knopf" href="kontakt.html?anliegen=speaker-ausbildung">Kostenloses Vorgespräch, 30 Minuten</a><a class="leise" href="#lehrplan">Zum Lehrplan</a></div>
+   <p class="huerde">Bring dein Thema mit, auch wenn es noch drei sind.<span class="vor">Vorschlag</span></p>
+  </div>
+  <figure>
+   <img src="p/speaker-ausbildung/hero.webp" alt="Claudia Conen spricht mit Mikrofon vor Publikum und erklärt mit offener Hand" width="683" height="1376" fetchpriority="high" style="object-position:50% 22%">
+   <!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC06806, Farbe leicht neutralisiert, Ausschnitt ohne Person im Hintergrund) -->
+  </figure>
+ </div>
+</section>
+
+<!-- 2 Für wen / Ausgangslage -->
+<section class="hellweiss" id="fuer-wen" aria-labelledby="fuerwen-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Für wen</div>
+   <h2 id="fuerwen-titel">Für Experten, Unternehmer und Führungskräfte mit einem Fachgebiet</h2>
+   <p>Du hast ein Fachgebiet. Was fehlt, ist das Thema, mit dem ein Veranstalter dich ankündigt – und eine Stimme, die einen Saal hält.</p>
+   <ul class="raute">
+    <li>Du willst mit deinem Wissen auf Bühnen, bei Kongressen, Tagungen und Kundenveranstaltungen sprechen.</li>
+    <li>Du hältst schon Vorträge, wirst aber selten wieder gebucht.</li>
+    <li>Du brauchst eine Keynote und ein Video, mit dem du dich bewerben kannst.</li>
+   </ul>
+   <p class="klein16">Die Speaker-Ausbildung gehört zur Welt Rund ums Reden und bleibt über <a class="leise" href="unternehmer-experten.html">Für Experten</a> erreichbar.<span class="vor">Vorschlag</span></p>
+  </div>
+  <div class="text">
+   <div class="kicker">Warum Fachleute selten gebucht werden</div>
+   <p>Weil sie erklären statt zu erzählen. Ein Vortrag, der wie ein Fachartikel gebaut ist, ist nach zwanzig Minuten anstrengend. Ein Vortrag, der wie eine Geschichte gebaut ist, ist nach zwanzig Minuten am spannendsten Punkt.</p>
+   <p>Weil sie kein Thema haben, sondern ein Fachgebiet. Ein Fachgebiet beantwortet die Frage, was du kannst. Ein Thema beantwortet die Frage, warum ein Veranstalter gerade dich anruft.</p>
+   <p>Und weil die Stimme nicht mitgeht. Der Inhalt entscheidet, ob man zustimmt. Die Stimme entscheidet, ob man zuhört.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 3 Ergebnisbild -->
+<section id="danach" aria-labelledby="danach-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Was du danach kannst</div>
+   <h2 id="danach-titel">Eine Keynote, die du gesprochen hast und die auf Video ist.</h2>
+   <p>Ohne Video eines echten Auftritts ist eine Anfrage sehr viel schwerer zu bekommen. Deshalb steht die Aufnahme am Ende, nicht als Zugabe.</p>
+   <figure class="zitat-satz"><blockquote>„Perfektion ist klickbar. Persönlichkeit weckt Vertrauen.“</blockquote><figcaption>Claudia Conen</figcaption></figure>
+  </div>
+  <div class="karte-w">
+   <h3>Danach hast du</h3>
+   <ul class="raute">
+    <li>ein Thema statt eines Fachgebiets: den Satz, mit dem ein Veranstalter dich ankündigt</li>
+    <li>eine Keynote mit Bogen, Wendepunkt und dem Satz, der bleibt</li>
+    <li>eine Stimme, die den Saal trägt: Tempo, Pausen, Mikrofon</li>
+    <li>Ruhe bei Fragen aus dem Publikum, auch bei den unangenehmen</li>
+    <li>eine Aufnahme vor Publikum – dein erstes echtes Anfrage-Material</li>
+    <li>ein Speakerprofil und eine klare Vorstellung von deinem Honorar</li>
+   </ul>
+   <p class="klein16">Ergebnisse aus deinem Lehrplan abgeleitet, ohne Buchungsversprechen.<span class="vor">Vorschlag</span></p>
+  </div>
+ </div>
+</section>
+
+<!-- 4 Lehrplan -->
+<section class="hellweiss" id="lehrplan" aria-labelledby="lehrplan-titel">
+ <div class="huelle">
+  <div class="kicker">Lehrplan</div>
+  <h2 id="lehrplan-titel">Zwölf Module, vom Fachgebiet bis auf die Bühne<span class="vor">Vorschlag</span></h2>
+  <p class="einleitung">Die Ausbildung über drei Monate und das 1:1-Mentoring umfassen alle zwölf Module. Das Intensiv an zwei Tagen greift die Module 1, 3, 5, 6 und 12 auf.</p>
+  <ol class="module">
+   <li><b>Vom Fachgebiet zum Thema</b><p>Der Satz, mit dem ein Veranstalter dich ankündigt. Die meisten kommen mit drei Themen und gehen mit einem.</p></li>
+   <li><b>Botschaft und Publikum</b><p>Wer im Saal sitzt, was diese Menschen mitnehmen sollen, und warum ausgerechnet du es ihnen sagst.</p></li>
+   <li><b>Der Aufbau einer Keynote</b><p>Einstieg, Bogen, Wendepunkt, Schluss und der Satz, den das Publikum weitererzählt.</p></li>
+   <li><b>Deine Geschichten</b><p>Erzählen statt erklären: Geschichten aus deiner Arbeit finden und so bauen, dass ein Saal sie behält.</p></li>
+   <li><b>Die Stimme</b><p>Tragfähigkeit, Tempo, Pausen, der Umgang mit Mikrofon und Saal. Sprechbar schreiben statt schön schreiben.</p></li>
+   <li><b>Der Körper</b><p>Stand, Blick, Gehen auf der Bühne, Umgang mit den eigenen Händen. Und Lampenfieber: Vorbereitung und Atemtechnik statt Mut.</p></li>
+   <li><b>Das Publikum</b><p>Interaktion, Fragen aus dem Publikum, auch die unangenehmen, und Störungen, die den Plan durchkreuzen.</p></li>
+   <li><b>Mit und ohne Folien</b><p>Wann Folien helfen und wann sie stören. Technik auf der Bühne: Headset, Handmikrofon, Klicker, Licht.</p></li>
+   <li><b>Kamera und Online-Bühne</b><p>Vor der Kamera so wirken wie im Saal: Online-Keynote, kurze Videos, Mitschnitt.</p></li>
+   <li><b>KI als Werkzeug</b><p>KI für Recherche, Struktur und Varianten – ohne dass deine Keynote klingt wie jede andere.</p></li>
+   <li><b>Dein Angebot</b><p>Speakerprofil, Honorar, Anfragen von Veranstaltern und Agenturen, Absprachen und Vertrag.</p></li>
+   <li class="praxis"><b>Praxisteil</b><p>Du hältst deine Keynote vor Publikum, mit Aufnahme. Danach bekommst du Rückmeldung – und ein Video, mit dem du anfragen kannst.</p></li>
+  </ol>
+ </div>
+</section>
+
+<!-- 5 Ablauf und Format: der eine dunkle Abschnitt, mit der einen Glaskachel -->
+<section class="dunkel" id="ablauf" aria-labelledby="ablauf-titel">
+ <div class="huelle">
+  <div class="kicker">Ablauf und Format</div>
+  <h2 id="ablauf-titel">Erst das Thema. Dann die Keynote. Dann der Auftritt.</h2>
+  <ol class="schritte">
+   <li><div><b>Vorgespräch, 30 Minuten</b><p>Du erzählst, worüber du sprechen willst. Claudia sagt dir, ob daraus ein Thema wird oder ob ihr erst noch suchen müsst. Kostenlos und ohne Verpflichtung.</p></div></li>
+   <li><div><b>Das Thema finden</b><p>Der unbequemste Teil und der wichtigste. Erst danach lohnt sich jede weitere Stunde Arbeit.</p></div></li>
+   <li><div><b>Die Keynote bauen</b><p>Aufbau, Geschichten, Übergänge, der Schluss. Wir schreiben nicht schön, wir schreiben sprechbar.</p></div></li>
+   <li><div><b>Stimme und Auftritt</b><p>Mehrfach, vor Publikum, mit Aufnahme. Hier wird geübt, nicht erklärt.</p></div></li>
+   <li><div><b>Aufnahme</b><p>Deine Keynote vor Publikum, auf Video. Ohne Video eines echten Auftritts ist eine Anfrage sehr viel schwerer zu bekommen.</p></div></li>
+  </ol>
+  <div class="orte">
+   <div><h3>Live vor Ort</h3><p>In Köln oder in Witten, in kleiner Runde. Jede und jeder steht mehrfach auf; die anderen sind dein erstes Publikum.</p></div>
+   <div><h3>Live online</h3><p>In Echtzeit, mit Kamera und Ton, zu festen Terminen. Kein Videokurs zum Abrufen.</p></div>
+   <div><h3>1:1</h3><p>Du und Claudia, in Witten oder live online. Alles dreht sich um dein Thema, deine Keynote, deinen Auftritt.</p></div>
+  </div>
+  <p class="platz" style="margin-top:20px">Höchstens sechs Teilnehmende als Vorschlag (deine heutigen Seiten nennen einmal „6:1“, einmal „maximal 12“). Termine: bitte von dir.</p>
+  <div class="glas glas-dunkel">
+   <p>Die Methode dahinter: Persönlichkeit, Botschaft, Wirkung, Verstärkung.<span class="vor">Vorschlag</span></p>
+   <a class="knopf zweit" href="#preise">Zu den Preisen</a>
+  </div>
+ </div>
+</section>
+
+<!-- 6 Preise -->
+<section class="hellweiss" id="preise" aria-labelledby="preise-titel">
+ <div class="huelle">
+  <div class="kicker">Preise</div>
+  <h2 id="preise-titel">Drei Wege auf die Bühne<span class="vor">Vorschlag</span></h2>
+  <p class="einleitung">Alle Preise verstehen sich zuzüglich 19 % Mehrwertsteuer. Den Preis bekommst du vor dem ersten Termin schriftlich, mit allem, was enthalten ist.</p>
+  <div class="preise">
+   <div class="preis">
+    <span class="art">Einstieg</span>
+    <h3>Keynote-Intensiv, zwei Tage</h3>
+    <p class="betrag">1.490 € <small>zzgl. MwSt.</small></p>
+    <p class="brutto">1.773,10 € inkl. 19 % MwSt.</p>
+    <ul class="raute">
+     <li>Zwei Tage live in Köln oder Witten</li>
+     <li>Höchstens sechs Teilnehmende</li>
+     <li>Dein Thema und ein eigener Zehn-Minuten-Talk</li>
+     <li>Aufnahme und Rückmeldung</li>
+    </ul>
+    <p class="platz">Preise als Vorschlag von Vinci, Freigabe durch Claudia offen.</p>
+   </div>
+   <div class="preis empfohlen">
+    <span class="art">Der ganze Weg</span>
+    <h3>Speaker-Ausbildung, drei Monate</h3>
+    <p class="betrag">4.900 € <small>zzgl. MwSt.</small></p>
+    <p class="brutto">5.831 € inkl. 19 % MwSt.</p>
+    <ul class="raute">
+     <li>Alle zwölf Module, in kleiner Gruppe</li>
+     <li>Vier Tage live vor Ort und sechs Termine live online</li>
+     <li>Eine fertige Keynote von circa 20 Minuten</li>
+     <li>Aufnahme vor Publikum als Video</li>
+     <li>Abschlusszertifikat von Claudia Conen</li>
+    </ul>
+    <p class="platz">Preise als Vorschlag von Vinci, Freigabe durch Claudia offen.</p>
+   </div>
+   <div class="preis">
+    <span class="art">Einzeln</span>
+    <h3>Mentoring 1:1, sechs Monate</h3>
+    <p class="betrag">9.800 € <small>zzgl. MwSt.</small></p>
+    <p class="brutto">11.662 € inkl. 19 % MwSt.</p>
+    <ul class="raute">
+     <li>Alle zwölf Module, auf dich zugeschnitten</li>
+     <li>Keynote-Entwicklung und Stimmarbeit 1:1</li>
+     <li>Termine nach Absprache, in Witten oder live online</li>
+     <li>Begleitung zu deinem ersten Auftritt</li>
+     <li>Abschlusszertifikat von Claudia Conen</li>
+    </ul>
+    <p class="platz">Preise als Vorschlag von Vinci, Freigabe durch Claudia offen.</p>
+   </div>
+  </div>
+  <p class="preis-fuss">Du brauchst keine ganze Ausbildung, sondern Hilfe vor einem einzelnen Auftritt? Dafür gibt es das <a class="leise" href="executive-sparring.html">Experten-Sparring</a>.</p>
+ </div>
+</section>
+
+<!-- 7 Zertifikat -->
+<section id="zertifikat" aria-labelledby="zert-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Zertifikat</div>
+   <h2 id="zert-titel">Was du am Ende in der Hand hast<span class="vor">Vorschlag</span></h2>
+   <p>Nach dem Praxisteil bekommst du ein Abschlusszertifikat von Claudia Conen. Darauf steht, was du durchlaufen hast: die Module, das Format und deine Keynote vor Publikum.</p>
+   <p>Der Beruf ist nicht geschützt, und kein Veranstalter fragt nach einem Zertifikat. Er fragt nach deinem Thema und nach einem Video. Beides nimmst du hier mit.</p>
+  </div>
+  <div class="urkunde">
+   <p class="titel">Abschlusszertifikat von Claudia Conen</p>
+   <ul class="raute">
+    <li>nach dem Praxisteil, nicht nach Anwesenheit</li>
+    <li>mit Modulen und Format</li>
+    <li>dazu das Video deiner Keynote</li>
+   </ul>
+   <p class="platz">Gestaltung des Zertifikats und genaue Angaben (Stunden, Datum): bitte von dir.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 8 Wann es nicht passt + Wer ausbildet -->
+<section class="hellweiss" id="passung" aria-labelledby="passung-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Ehrlich vorab</div>
+   <h2 id="passung-titel">Wann es nicht passt</h2>
+   <ul class="raute nicht">
+    <li>Du erwartest einen fertigen Vortrag zum Mitnehmen. Du bringst deinen eigenen mit und arbeitest daran.</li>
+    <li>Du möchtest zuhören statt sprechen. Hier steht jede und jeder mehrfach vorn.</li>
+    <li>Du willst nicht aufgenommen werden. Die Aufnahme ist der Teil, an dem die meisten am meisten lernen.</li>
+    <li>Du willst schnell viel verdienen. Bis zum ersten bezahlten Vortrag dauert es, und niemand kann dir Buchungen versprechen.</li>
+    <li>Du suchst einen Videokurs zum Abrufen. Hier wird live gearbeitet, vor Ort oder online in Echtzeit.</li>
+   </ul>
+  </div>
+  <div class="text">
+   <div class="kicker">Wer ausbildet</div>
+   <h2>Claudia Conen</h2>
+   <figure style="margin:0"><img src="p/speaker-ausbildung/saal.webp" width="900" height="599" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:8px" alt="Claudia Conen von hinten mit Mikrofon in einem Seminarsaal, vor ihr unscharf die Tische"></figure>
+   <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter und steht selbst als Keynote Speakerin auf Bühnen. Als Coach und Trainerin arbeitet sie seit 37 Jahren an Stimme, Rhetorik und Auftritt.</p>
+   <p class="platz">Stimmen von Teilnehmenden der Speaker-Ausbildung, mit Name und Freigabe: bitte von dir. Die beiden anonymen Stimmen von der alten Seite sind bewusst nicht übernommen.</p>
+   <div class="weiter"><a class="leise" href="keynotes.html">Claudia als Keynote Speakerin</a><a class="leise" href="freie-redner-ausbildung.html">Freie Rednerin werden</a></div>
+  </div>
+ </div>
+</section>
+
+<!-- 9 FAQ -->
+<section id="fragen" aria-labelledby="faq-titel">
+ <div class="huelle">
+  <div class="kicker">Häufige Fragen</div>
+  <h2 id="faq-titel">Was du vorher wissen willst</h2>
+  <p class="klein16" style="margin-top:12px">Antworten 1, 3, 4 und 5 aus deinen heutigen Seiten (Sie zu du), 2 mit Quelle und „circa“ angepasst, 6, 7 und 8 neu.<span class="vor">Vorschlag</span></p>
+  <div class="fragen">
+   <details><summary>Braucht man eine Ausbildung, um Keynote Speaker zu sein?</summary>
+    <p>Nein. Der Beruf ist nicht geschützt, es gibt keine gesetzliche Voraussetzung und keinen Titel, den jemand vergeben müsste. Genau deshalb entscheidet ausschließlich, was im Saal passiert – und das ist der Teil, den man üben kann.</p></details>
+   <details><summary>Was verdient man mit einem Vortrag?</summary>
+    <p>Laut Honorar-Guide 2026 von SpeakingStage liegen Einsteiger und lokale Anlässe bei circa 500 bis 2.000 Euro je Vortrag, etablierte Fachspeaker mit eigenem Thema bei circa 3.000 bis 8.000 Euro. Was du erreichst, hängt von deinem Thema und deiner Sichtbarkeit ab. Eine Zahl für dich persönlich zu nennen, wäre ein Versprechen ohne Deckung.</p></details>
+   <details><summary>Ich habe Angst vor großen Sälen.</summary>
+    <p>Die haben fast alle, auch Menschen, die du regelmäßig auf Bühnen siehst. Lampenfieber verschwindet nicht durch Mut, sondern durch Vorbereitung und Atemtechnik. Beides ist Teil der Arbeit, kein Hindernis davor.</p></details>
+   <details><summary>Ich bin schon gebucht worden, aber selten wieder.</summary>
+    <p>Das ist ein präzises Signal und meistens kein Inhaltsproblem. Wiederbuchungen hängen daran, ob hinterher jemand über den Vortrag gesprochen hat. Dafür braucht es einen Satz, den man weitererzählen kann. Bring eine Aufnahme mit, dann finden wir die Stelle.</p></details>
+   <details><summary>Wie unterscheidet sich das von einem Rhetorikkurs?</summary>
+    <p>Ein Rhetorikkurs macht dich sicherer im Sprechen. Hier geht es darum, ein Thema zu bauen, das jemand einkauft. Das eine ist Können, das andere ist ein Produkt. Beides gehört zusammen, aber nur eines davon bringt Anfragen.</p></details>
+   <details><summary>Ist das ein Videokurs?</summary>
+    <p>Nein. Alles läuft live: vor Ort in Köln oder Witten oder live online in Echtzeit. Es gibt keinen Videokurs zum Abrufen. Am Ende entsteht ein Video, aber von dir, vor Publikum.</p></details>
+   <details><summary>Bekomme ich ein Zertifikat?</summary>
+    <p>Ja, ein Abschlusszertifikat von Claudia Conen, nach dem Praxisteil. Wichtiger für Veranstalter ist das Video deiner Keynote. Beides bekommst du in der Ausbildung über drei Monate und im Mentoring.</p></details>
+   <details><summary>Gibt es eine Garantie auf Aufträge?</summary>
+    <p>Nein. Wie oft du gebucht wirst, hängt von deinem Thema, deiner Sichtbarkeit und deinem Markt ab. Eine Garantie wäre ein Versprechen ohne Deckung. Was du mitnimmst: ein Thema, eine Keynote und ein Video, mit dem du anfragen kannst.</p></details>
+  </div>
+ </div>
+</section>
+
+<!-- 10 Ein CTA -->
+<section class="schluss">
+ <div class="huelle">
+  <div class="karte auf">
+   <div class="kicker">Vorgespräch</div>
+   <h2>Erzähl mir dein Thema.</h2>
+   <p>Dreißig Minuten, kostenlos und ohne Verpflichtung. Wenn ich danach den Eindruck habe, dass du mich nicht brauchst, sage ich dir das.</p>
+   <a class="knopf" href="kontakt.html?anliegen=speaker-ausbildung">Kostenloses Vorgespräch, 30 Minuten</a>
+   <p class="huerde">Telefonisch oder per Video. Den Preis deines Formats bekommst du danach schriftlich.<span class="vor">Vorschlag</span></p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="rur-fuss">
+ <div class="huelle">
+  <div>
+   <p class="marke-fuss">Claudia Conen · Rund ums Reden<span>Die Stimme fürs Herz. Das Leben in gelebten Worten.</span></p>
+   <p style="margin-top:12px">Witten · Ruhrgebiet und Köln, weiter nach Absprache</p>
+   <p class="zurueck"><a href="index.html">Zur Hauptseite für Unternehmen</a></p>
+  </div>
+  <div><b>Rednerin buchen</b><ul><li><a href="freie-rede-anlaesse.html#trauung">Freie Trauung</a></li><li><a href="freie-rede-anlaesse.html#trauerfeier">Trauerrede</a></li><li><a href="freie-rede-anlaesse.html#lebensmomente">Lebensmomente</a></li><li><a href="freie-rede-anlaesse.html#pakete">Pakete und Preise</a></li></ul></div>
+  <div><b>Redner werden</b><ul><li><a href="freie-redner-ausbildung.html">Freie Rednerin &amp; Hochzeitsrednerin</a></li><li><a href="trauerredner-ausbildung.html">Trauerrednerin</a></li><li><a href="speaker-ausbildung.html">Speakerin</a></li><li><a href="rund-ums-reden.html#redner-werden">Alle Ausbildungen</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="rund-ums-reden.html#wissen">Wissen</a></li><li><a href="voice-over.html">Voice-over für Unternehmen</a></li><li><a href="kontakt.html?anliegen=rund-ums-reden">Kontakt</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+ </div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Course",
+   "name": "Speaker-Ausbildung für Experten",
+   "description": "Speaker-Ausbildung: Thema, Keynote-Aufbau, Storytelling, Stimme, Bühnenpräsenz, Publikum, Kamera, KI als Werkzeug, Angebot und Praxisteil mit Keynote auf Video. Live vor Ort in Köln oder Witten oder live online in Echtzeit.",
+   "inLanguage": "de",
+   "provider": {
+    "@type": "Person",
+    "name": "Claudia Conen",
+    "url": "https://claudiaconen.com"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Rund ums Reden",
+     "item": "https://claudiaconen.com/rund-ums-reden"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Redner werden",
+     "item": "https://claudiaconen.com/rund-ums-reden#redner-werden"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Speaker-Ausbildung"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Braucht man eine Ausbildung, um Keynote Speaker zu sein?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Der Beruf ist nicht geschützt, es gibt keine gesetzliche Voraussetzung und keinen Titel, den jemand vergeben müsste. Genau deshalb entscheidet ausschließlich, was im Saal passiert – und das ist der Teil, den man üben kann."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was verdient man mit einem Vortrag?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Laut Honorar-Guide 2026 von SpeakingStage liegen Einsteiger und lokale Anlässe bei circa 500 bis 2.000 Euro je Vortrag, etablierte Fachspeaker mit eigenem Thema bei circa 3.000 bis 8.000 Euro. Was du erreichst, hängt von deinem Thema und deiner Sichtbarkeit ab. Eine Zahl für dich persönlich zu nennen, wäre ein Versprechen ohne Deckung."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ich habe Angst vor großen Sälen.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die haben fast alle, auch Menschen, die du regelmäßig auf Bühnen siehst. Lampenfieber verschwindet nicht durch Mut, sondern durch Vorbereitung und Atemtechnik. Beides ist Teil der Arbeit, kein Hindernis davor."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ich bin schon gebucht worden, aber selten wieder.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Das ist ein präzises Signal und meistens kein Inhaltsproblem. Wiederbuchungen hängen daran, ob hinterher jemand über den Vortrag gesprochen hat. Dafür braucht es einen Satz, den man weitererzählen kann. Bring eine Aufnahme mit, dann finden wir die Stelle."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie unterscheidet sich das von einem Rhetorikkurs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ein Rhetorikkurs macht dich sicherer im Sprechen. Hier geht es darum, ein Thema zu bauen, das jemand einkauft. Das eine ist Können, das andere ist ein Produkt. Beides gehört zusammen, aber nur eines davon bringt Anfragen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ist das ein Videokurs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Alles läuft live: vor Ort in Köln oder Witten oder live online in Echtzeit. Es gibt keinen Videokurs zum Abrufen. Am Ende entsteht ein Video, aber von dir, vor Publikum."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bekomme ich ein Zertifikat?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, ein Abschlusszertifikat von Claudia Conen, nach dem Praxisteil. Wichtiger für Veranstalter ist das Video deiner Keynote. Beides bekommst du in der Ausbildung über drei Monate und im Mentoring."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Gibt es eine Garantie auf Aufträge?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Wie oft du gebucht wirst, hängt von deinem Thema, deiner Sichtbarkeit und deinem Markt ab. Eine Garantie wäre ein Versprechen ohne Deckung. Was du mitnimmst: ein Thema, eine Keynote und ein Video, mit dem du anfragen kannst."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script src="site.js"></script>

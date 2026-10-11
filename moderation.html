@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Business- und Eventmoderation | Claudia Conen – Die Umsatzstimme</title>
-<meta name="description" content="Claudia Conen – Die Umsatzstimme: Business- und Eventmoderation für Firmenjubiläum, Weihnachtsfeier, Ehrung, Gala, Eröffnung, Tag der offenen Tür, Kick-off und Konferenz. Moderation verbindet und führt.">
+<meta name="description" content="Claudia Conen – Die Umsatzstimme: Business- und Eventmoderation für Firmenjubiläum, Weihnachtsfeier, Ehrung, Gala, Eröffnung, Kick-off, Konferenz und Mitarbeiterversammlung. Moderation verbindet und führt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -128,6 +128,14 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 .lage .bild figcaption{font-size:15px;margin-top:8px}
 .skopf figure{max-width:520px}.skopf figure img{aspect-ratio:3/2}
 @media(max-width:900px){.skopf{padding-block:20px 48px}.skopf figure img{max-height:300px}}
+/* Nachtauftrag 11./12.10.: Glaskachel auf Dunkel, Belege zusammengeführt */
+.nutzen .glaskachel{margin-top:40px;max-width:640px;padding:24px 28px;display:grid;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-radius:20px;box-shadow:none;color:var(--ivory)}
+.nutzen .glaskachel b{font:600 26px/1.2 'Cormorant Garamond',Georgia,serif;color:var(--sand)}
+.nutzen .glaskachel .leise{color:var(--ivory);justify-self:start}
+.zitat-ref{margin:6px 0 0;padding:18px 20px;border-left:3px solid var(--gold);background:var(--ivory);border-radius:0 8px 8px 0}
+.zitat-ref blockquote{margin:0;font:500 italic 23px/1.3 'Cormorant Garamond',Georgia,serif}
+.zitat-ref figcaption{font-size:14.5px;margin-top:10px}
+.umfang .kasten .raute{margin:0}
 </style>
 <script type="application/ld+json">
 {
@@ -318,7 +326,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -327,9 +335,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -344,22 +353,22 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 </header>
 
 <main id="main">
-<!-- 1 Hero -->
+<!-- 1 Hero: Problem und Zweck -->
 <section class="skopf" aria-labelledby="h1">
  <div class="huelle">
   <div>
    <div class="eyebrow">Claudia buchen · Business- und Eventmoderation</div>
    <h1 id="h1">Business- und Eventmoderation, die verbindet und führt</h1>
    <p class="sub">Eine Firmenveranstaltung besteht zur Hälfte aus dem, was geplant ist, und zur Hälfte aus dem, was dazwischen passiert: Der Redner überzieht, die Technik streikt, eine Frage aus dem Publikum trifft einen wunden Punkt. Moderation ist die Arbeit an dieser zweiten Hälfte.</p>
-   <p class="dach">Moderation verbindet und führt: Programmpunkte, Menschen und Botschaften werden zu einem Tag, dem dein Publikum folgt.<span class="vor">Vorschlag</span></p>
+   <p class="dach">Moderation verbindet und führt.</p>
    <div class="handlung">
-    <a class="knopf" href="kontakt.html#buchen">Gespräch vereinbaren</a>
+    <a class="knopf" href="kontakt.html#moderation">Gespräch vereinbaren</a>
     <a class="leise" href="#anlaesse">Anlässe ansehen</a>
    </div>
   </div>
   <figure>
-   <img src="p/moderation/hero.webp" alt="Claudia Conen führt mit Handmikrofon ein Interview, sie und ihr Gast lachen" width="1600" height="1067" fetchpriority="high" style="object-position:58% 40%">
-   <!-- Bildnachweis prüfen: Foto Monika Gharbi (DSC01441) -->
+   <img src="p/moderation/buehne-publikum.webp" alt="Claudia Conen steht lächelnd mit Handmikrofon auf einer Bühne mit Holzwand, im Vordergrund das Publikum von hinten" width="1500" height="1000" fetchpriority="high" style="object-position:22% 30%">
+   <!-- Bildnachweis prüfen: Foto Monika Gharbi (Fotos von Monika2, DSC00701), Ausschnitt ohne Leinwandtext, Goldton leicht neutralisiert -->
   </figure>
  </div>
 </section>
@@ -377,17 +386,13 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </nav>
 
-<!-- 2+3 Situation -->
-<section class="lage" id="situation" aria-labelledby="lage-titel">
+<!-- 2 Problem: die Situation -->
+<section class="lage hell-weiss" id="situation" aria-labelledby="lage-titel">
  <div class="huelle">
   <div>
    <div class="kicker">Die Situation</div>
    <h2 id="lage-titel">Wer hält den Tag zusammen, wenn das Programm kippt?</h2>
    <p class="gross">Viele Veranstaltungen werden angesagt, nicht moderiert.</p>
-   <figure class="bild">
-    <img src="p/moderation/gaeste.webp" alt="Claudia Conen moderiert mit Mikrofon auf einer Bühne mit Holzwand, rechts zwei Gäste, die auf ihren Auftritt warten" width="900" height="600" loading="lazy">
-    <!-- Bildnachweis prüfen: Foto Monika Gharbi (DSC00691) -->
-   </figure>
   </div>
   <div class="lese">
    <p>Jemand nennt den nächsten Programmpunkt und dankt für den Applaus. Das funktioniert, solange nichts dazwischenkommt.</p>
@@ -397,43 +402,45 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </section>
 
-<!-- 4 Nutzen (der eine dunkle Abschnitt) -->
+<!-- 3 Ergebnis und Perspektive (der eine dunkle Abschnitt, mit der einen Glaskachel) -->
 <section class="dunkel nutzen" id="nutzen" aria-labelledby="nutzen-titel">
  <div class="huelle">
-  <div class="kicker">Dein Nutzen</div>
-  <h2 id="nutzen-titel">Moderation verbindet und führt</h2>
-  <p class="einleitung">Sie verbindet Programmpunkte, Menschen und Botschaften. Und sie führt dein Publikum durch den Tag, auch dort, wo der Plan nicht hält. Im KI-Zeitalter werden Inhalte schneller und austauschbarer – was einen Tag zusammenhält, bleibt ein Mensch, der den Raum liest und Vertrauen herstellt.<span class="vor">Vorschlag</span></p>
+  <div class="kicker">Was dein Publikum erlebt</div>
+  <h2 id="nutzen-titel">Ein Tag, dem die Menschen folgen</h2>
+  <p class="einleitung">KI macht Programme, Folien und Ansagen schneller. Was einen Tag zusammenhält, bleibt ein Mensch, der den Raum liest und Vertrauen herstellt.<span class="vor">Vorschlag</span></p>
   <div class="felder4">
    <div><h3>Ein roter Faden</h3><p>Übergänge, die etwas verbinden, statt nur den nächsten Namen zu nennen.</p></div>
    <div><h3>Ein Raum, der gehalten wird</h3><p>Wenn etwas dazwischenkommt, benennt jemand die Lage und nimmt den Faden wieder auf.</p></div>
    <div><h3>Ein Zeitplan, der hält</h3><p>Abgesprochene Zeichen mit den Vortragenden, damit der Nachmittag nicht kippt.</p></div>
    <div><h3>Alle kommen zu Wort</h3><p>Podiumsgespräche, bei denen auch die Stillen zu Wort kommen.</p></div>
   </div>
+  <div class="glaskachel glas">
+   <b>Keynote und Moderation aus einer Hand</b>
+   <p>Eine Person, ein roter Faden: Die Keynote liegt früh, danach führt Claudia als Moderatorin durch den Rest des Tages.</p>
+   <a class="leise" href="keynotes.html">Keynotes ansehen</a>
+  </div>
  </div>
 </section>
 
-<!-- 6 Formate und Anlässe (gebündelt) -->
+<!-- 4 Angebot: Anlässe (gebündelt) -->
 <section id="anlaesse" aria-labelledby="anlass-titel">
  <div class="huelle">
-  <div class="kicker">Anlässe und Formate</div>
+  <div class="kicker">Anlässe</div>
   <h2 id="anlass-titel">Für Unternehmensmomente, die einen roten Faden brauchen</h2>
-  <p class="einleitung">Was ist der Anlass, und was soll danach anders sein? Diese zweite Frage wird selten gestellt und entscheidet den ganzen Tag. Deshalb steht bei jedem Anlass der Zweck vorn.<span class="vor">Kartentexte: Vorschlag</span></p>
+  <p class="einleitung">Was ist der Anlass, und was soll danach anders sein? Diese zweite Frage entscheidet den ganzen Tag. Deshalb steht bei jedem Anlass der Zweck vorn.<span class="vor">Kartentexte: Vorschlag</span></p>
   <div class="anlaesse">
-   <div><h3>Firmenjubiläum</h3><p>Die Geschichte des Unternehmens wird erzählbar, und die Menschen, die sie geschrieben haben, stehen im Mittelpunkt.</p></div>
-   <div><h3>Weihnachtsfeier</h3><p>Ein Abend, der das Jahr würdigt: Reden, Dank und Programm werden zu einem Abend verbunden, statt nacheinander abzulaufen.</p></div>
+   <div><h3>Jubiläum, Gala, Weihnachtsfeier</h3><p>Reden, Dank und Programm werden zu einem Abend verbunden. Die Menschen, die das Jahr oder die Geschichte getragen haben, stehen im Mittelpunkt.</p></div>
    <div><h3>Ehrung und Preisverleihung</h3><p>Jede Ehrung bekommt ihren eigenen Moment. Namen richtig aussprechen ist die halbe Miete.</p></div>
-   <div><h3>Gala</h3><p>Ein festlicher Rahmen, der trägt: Übergänge, die Bühne, Programm und Gäste miteinander verbinden.</p></div>
-   <div><h3>Eröffnung</h3><p>Ein neuer Standort, ein neues Gebäude, ein neuer Anfang: Die Moderation gibt dem Moment Gewicht und führt durch Ablauf und Stimmen.</p></div>
-   <div><h3>Tag der offenen Tür</h3><p>Viele Gäste, viele Stationen: Die Moderation verbindet Bühne, Programm und Gespräche zu einem Tag.</p></div>
+   <div><h3>Eröffnung und Tag der offenen Tür</h3><p>Ein neuer Standort, viele Gäste, viele Stationen: Die Moderation gibt dem Anfang Gewicht und verbindet Bühne und Gespräche.</p></div>
    <div><h3>Kick-off und Jahresauftakt</h3><p>Der Ton für das ganze Jahr wird an diesem Tag gesetzt. Danach ist er schwer zu korrigieren.</p></div>
-   <div><h3>Konferenz und Podium</h3><p>Fragen, die das Publikum wirklich hat, und ein Gespräch, in dem nicht nur die Lautesten sprechen.</p></div>
+   <div><h3>Konferenz und Podium</h3><p>Fragen, die das Publikum wirklich hat, und ein Gespräch, in dem nicht nur die Schnellsten sprechen.</p></div>
    <div><h3>Mitarbeiterversammlung</h3><p>Wenn etwas Unbequemes zu sagen ist, braucht der Tag jemanden, der die Lage benennt, statt sie zu überspielen.</p></div>
   </div>
-  <p style="margin-top:24px">Der Anlass braucht eine Rede statt einer Moderation? <a class="leise" href="unternehmensreden.html">Reden für besondere Unternehmensmomente ansehen</a></p>
+  <p style="margin-top:24px">Der Anlass braucht eine Rede statt einer Moderation? <a class="leise" href="unternehmensreden.html">Reden für Unternehmensmomente ansehen</a></p>
  </div>
 </section>
 
-<!-- 6 Leistungsumfang -->
+<!-- 5 Leistungsumfang + Passung -->
 <section class="umfang hell-weiss" id="leistung" aria-labelledby="leistung-titel">
  <div class="huelle">
   <div class="kicker">Leistungsumfang</div>
@@ -441,34 +448,26 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
   <div class="zwei-sp">
    <ul class="raute">
     <li>Vorbereitung mit dir: worum es wirklich geht – auch das, was nicht ins Programm geschrieben wird.</li>
+    <li>Gespräche mit den Vortragenden vorab: wer vor ihr auf der Bühne steht und was er vorhat.</li>
     <li>Führung durch den Tag, einschließlich der Stellen, an denen der Plan nicht hält.</li>
-    <li>Übergänge, die etwas verbinden, statt nur den nächsten Namen zu nennen.</li>
-    <li>Podiumsgespräche, bei denen auch die Stillen zu Wort kommen.</li>
+    <li>Podiumsgespräche und Interviews auf der Bühne.</li>
     <li>Impulse und Kick-off-Beiträge, wenn der Tag einen Anfang braucht.</li>
-    <li>Gespräche mit den Vortragenden vorab: Claudia will wissen, wer vor ihr auf der Bühne steht und was er vorhat.</li>
    </ul>
    <div class="kasten">
-    <h3>Keynote und Moderation aus einer Hand</h3>
-    <p>Wer beides von derselben Person will, spart eine Person und gewinnt einen roten Faden. Sinnvoll ist es, wenn die Keynote früh liegt – danach ist Claudia für den Rest des Tages die Moderatorin.</p>
-    <p><a class="leise" href="keynotes.html">Keynotes ansehen</a></p>
-    <details class="klapp">
-     <summary>Wann Claudia nicht die Richtige ist</summary>
-     <div class="inhalt">
-      <ul class="raute">
-       <li>Du brauchst jemanden, der nur Namen ansagt. Das kann jemand aus dem Haus.</li>
-       <li>Das Programm steht und soll nicht mehr besprochen werden. Ohne Vorbereitung moderiert Claudia nicht.</li>
-       <li>Es soll lustig werden. Humor entsteht im Raum oder gar nicht; angekündigter Humor ist keiner.</li>
-       <li>Die unangenehme Nachricht soll nicht vorkommen. Wenn alle sie kennen und niemand sie ausspricht, wirkt der ganze Tag unecht.</li>
-      </ul>
-     </div>
-    </details>
+    <h3>Wann Claudia nicht die Richtige ist</h3>
+    <ul class="raute">
+     <li>Du brauchst jemanden, der nur Namen ansagt. Das kann jemand aus dem Haus.</li>
+     <li>Das Programm steht und soll nicht mehr besprochen werden. Ohne Vorbereitung moderiert Claudia nicht.</li>
+     <li>Es soll lustig werden. Humor entsteht im Raum oder gar nicht.</li>
+     <li>Die unangenehme Nachricht soll nicht vorkommen. Wenn alle sie kennen und niemand sie ausspricht, wirkt der ganze Tag unecht.</li>
+    </ul>
    </div>
   </div>
   <p class="platz" style="margin-top:28px">Umfang je Format (halber Tag, ganzer Tag, Abendprogramm) und Honorarrahmen: bitte von dir.</p>
  </div>
 </section>
 
-<!-- 5 Ablauf der Zusammenarbeit -->
+<!-- 6 Ablauf der Zusammenarbeit -->
 <section id="ablauf" aria-labelledby="ablauf-titel">
  <div class="huelle">
   <div class="kicker">Ablauf</div>
@@ -478,15 +477,15 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <li><b>Vorbereitung</b>Ablauf durchgehen, Namen lernen, mit den Vortragenden sprechen.</li>
    <li><b>Am Tag selbst</b>Vor Ort, bevor die ersten Gäste kommen. Technik prüfen, Raum ansehen, die Stellen suchen, an denen es eng wird.</li>
    <li><b>Während der Veranstaltung</b>Führen, Übergänge setzen, Zeit halten. Und eingreifen, wenn es nötig ist.</li>
-   <li><b>Danach</b>Kurze Rückmeldung: Was hat getragen, was nicht. Für das nächste Mal ist das mehr wert als ein Dankesschreiben.</li>
+   <li><b>Danach</b>Kurze Rückmeldung: Was hat getragen, was nicht.</li>
   </ol>
  </div>
 </section>
 
-<!-- 7 Medienbeispiel -->
+<!-- 7 Belege: Medienbeispiel und Stimme zusammengeführt -->
 <section class="medien hell-weiss" id="medien" aria-labelledby="medien-titel">
  <div class="huelle">
-  <div class="kicker">Medienbeispiel</div>
+  <div class="kicker">Belege</div>
   <h2 id="medien-titel">Claudia mit dem Mikrofon vor Ort<span class="vor">Vorschlag</span></h2>
   <div class="reihe">
    <figure class="vfigur">
@@ -497,63 +496,34 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <figcaption>Kurzer Ausschnitt, 7 Sekunden, ohne Ton. Startet nur auf Klick.</figcaption>
    </figure>
    <div class="text">
-    <p>Mitten im Publikumsstrom, mit Mikrofon und Programmheft: Moderation beginnt nicht erst auf der Bühne.<span class="vor">Vorschlag</span></p>
-    <p class="platz">Anlass, Ort und Datum dieses Ausschnitts bitte bestätigen (die Datei heißt „moderation“, mehr weiß ich nicht).</p>
-    <p class="platz">Ein längerer Mitschnitt einer Bühnenmoderation mit Ton (Podium, Ehrung, Übergang) mit Freigabe: bitte von dir. Deine Mitschnitte liegen bei Vimeo, hier noch nicht als Datei.</p>
+    <p>Mitten im Publikumsstrom, mit Mikrofon und Programmheft: Moderation beginnt nicht erst auf der Bühne.</p>
+    <figure class="zitat-ref">
+     <blockquote>„… sie ist einfach da, sie beobachtet und zum richtigen Moment greift sie dann ein …“</blockquote>
+     <figcaption><b>Sabina Kocherhans</b>, Veranstalterin Business Community Day, Worms · Videostimme nach Claudias KI-Keynote, wörtliche Abschrift, gekürzt. Bezieht sich auf eine Keynote, nicht auf eine Moderation.</figcaption>
+    </figure>
+    <p class="platz">Bitte von dir: Anlass, Ort und Datum dieses Ausschnitts; ein längerer Mitschnitt einer Bühnenmoderation mit Ton (liegt bei Vimeo); eine Stimme eines Auftraggebers zu einer Moderation und die Liste der Veranstaltungen, die genannt werden dürfen.</p>
+    <p><a class="leise" href="ergebnisse.html">Alle Stimmen ansehen</a></p>
    </div>
   </div>
  </div>
 </section>
 
-<!-- 7 Referenzen -->
-<section id="referenzen" aria-labelledby="ref-titel">
- <div class="huelle">
-  <div class="kicker">Referenzen</div>
-  <h2 id="ref-titel">Was Veranstalter über Claudia sagen<span class="vor">Vorschlag</span></h2>
-  <div class="kartenfeld">
-   <article class="kst">
-    <div class="medium">
-     <img src="p/ergebnisse/sabina.webp" alt="Sabina Kocherhans im Video" width="360" height="640" loading="lazy" style="object-position:50% 30%">
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Sabina Kocherhans</b><small>Veranstalterin Business Community Day, Worms</small></div>
-     <blockquote>„… sie ist einfach da, sie beobachtet und zum richtigen Moment greift sie dann ein …“</blockquote>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme nach Claudias KI-Keynote, wörtliche Abschrift, gekürzt</span><span>Bezieht sich auf eine Keynote, nicht auf eine Moderation.</span></div>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="innen">
-     <div class="wer"><b>Referenz Moderation</b><small>Auftraggeber, Anlass, Jahr</small></div>
-     <p class="platz">Bitte von dir: eine Stimme eines Auftraggebers zu einer Moderation (Jubiläum, Gala, Konferenz), wörtlich und mit Freigabe für Namen und Logo.</p>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="innen">
-     <div class="wer"><b>Referenz Moderation</b><small>Auftraggeber, Anlass, Jahr</small></div>
-     <p class="platz">Bitte von dir: Liste der moderierten Veranstaltungen, die genannt werden dürfen.</p>
-    </div>
-   </article>
-  </div>
-  <p style="margin-top:20px"><a class="leise" href="ergebnisse.html">Alle Stimmen ansehen</a></p>
- </div>
-</section>
-
 <!-- 8 Claudia-Bezug -->
-<section class="bezug hell-weiss" aria-labelledby="bezug-titel">
+<section class="bezug" aria-labelledby="bezug-titel">
  <div class="huelle">
-  <img src="p/moderation/interview.webp" alt="Claudia Conen hält einer Gesprächspartnerin das Mikrofon hin und hört ihr zu" width="600" height="900" loading="lazy" style="object-position:60% 30%">
-  <!-- Bildnachweis prüfen: Foto Monika Gharbi (DSC01433) -->
+  <img src="p/moderation/portraet.webp" alt="Claudia Conen sitzt lächelnd vor einer Steinmauer, heller Blazer, Blick zur Seite" width="900" height="1200" loading="lazy" style="object-position:50% 15%">
+  <!-- Bildnachweis prüfen: Foto Monika Gharbi (DSC03864) -->
   <div class="text">
    <div class="kicker">Warum Claudia</div>
-   <h2 id="bezug-titel">„Meine Stimme trägt – auch bei großen Veranstaltungen ohne Technik.“</h2>
-   <p>Claudia Conen – Die Umsatzstimme ist Expertin für menschliche Wirkungskraft im KI-Zeitalter. Seit 37 Jahren arbeitet sie als Coach und Trainerin mit Menschen, die vor anderen sprechen. In die Moderation bringt sie mit, was ein Tag braucht: eine Stimme, die den Raum hält, und den Blick für den Moment, in dem es kippt.<span class="vor">Vorschlag</span></p>
+   <h2 id="bezug-titel">„In kleineren Räumen geht es ohne Technik – meine Stimme trägt.“</h2>
+   <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter. Seit 37 Jahren arbeitet sie als Coach und Trainerin mit Menschen, die vor anderen sprechen. In die Moderation bringt sie mit, was ein Tag braucht: eine Stimme, die den Raum hält, und den Blick für den Moment, in dem es kippt.<span class="vor">Vorschlag</span></p>
    <p><a class="leise" href="ueber-claudia.html">Mehr über Claudia</a></p>
   </div>
  </div>
 </section>
 
 <!-- 9 FAQ -->
-<section id="fragen" aria-labelledby="fragen-titel">
+<section class="hell-weiss" id="fragen" aria-labelledby="fragen-titel">
  <div class="huelle">
   <div class="kicker">Häufige Fragen</div>
   <h2 id="fragen-titel">Was Auftraggeber vorher wissen wollen</h2>
@@ -575,7 +545,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <div class="kicker" style="margin:0">Nächster Schritt</div>
    <h2 id="schluss-titel">Erzähl Claudia von deinem Anlass.<span class="vor">Vorschlag</span></h2>
    <p>Datum, Anlass und die Zahl der Gäste. Claudia meldet sich mit einer ehrlichen Einschätzung, ob sie die Richtige ist – und wenn nicht, nennt sie dir jemanden.</p>
-   <a class="knopf" href="kontakt.html#buchen">Gespräch vereinbaren</a>
+   <a class="knopf" href="kontakt.html#moderation">Gespräch vereinbaren</a>
   </div>
  </div>
 </section>
@@ -586,7 +556,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>

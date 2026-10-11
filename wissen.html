@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wissen | Claudia Conen – Die Umsatzstimme</title>
-<meta name="description" content="Wissen von Claudia Conen – Die Umsatzstimme: Artikel zu Keynote, Elevator Pitch, Storytelling, Stimme und Auftritt. Für Entscheider, Führungskräfte, Unternehmer und Experten.">
+<meta name="description" content="Wissen von Claudia Conen – Die Umsatzstimme: Artikel zu Vertrauen im KI-Zeitalter, Kommunikation in Veränderung und der geschäftlichen Wirkung von Persönlichkeit, Stimme und Präsenz. Für Unternehmer, Führungskräfte und Experten.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -67,6 +67,24 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 .randnotiz p{display:flex;flex-wrap:wrap;gap:0 10px;align-items:center}
 .weitere{margin-top:20px;max-width:980px}
 .weitere summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+/* Nachtauftrag 11./12.10.2026: Rhythmus, dunkler Methodenabschnitt mit Glas */
+.schluss{border-top:1px solid var(--linie)}
+.gruppe .weitere{margin-top:18px}
+.gruppe .weitere .karten{margin-top:8px}
+.ressourcen b{font-weight:600;font-size:17px}
+.ressourcen span.vor{font-size:10.5px}
+.wi-methode .huelle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.wi-methode h2{color:var(--ivory)}
+.wi-methode p{max-width:56ch;font-size:18px}
+.wi-glas{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 20px 50px rgba(0,0,0,.18);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:28px 30px;display:grid;gap:18px;color:var(--ivory)}
+.wi-glas ol{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:14px}
+.wi-glas li{counter-increment:s;display:grid;grid-template-columns:40px minmax(0,1fr);gap:2px 12px}
+.wi-glas li::before{content:counter(s);grid-row:1/3;font:600 34px/1 'Cormorant Garamond',Georgia,serif;color:var(--sand)}
+.wi-glas li b{font:700 13px/1.4 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.wi-glas li span{font-size:16px}
+.wi-glas a{color:var(--ivory);justify-self:start}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.wi-glas{background:var(--ink2)}}
+@media(max-width:860px){.wi-methode .huelle{grid-template-columns:1fr;gap:32px}}
 </style>
 
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -174,7 +192,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -183,9 +201,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -200,141 +219,154 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 </header>
 
 <main id="main">
-<!-- 1 Hero (§10.1) -->
+<!-- 1 Hero: Problem und Ergebnis (Masterplan 7.3) -->
 <section class="uk" aria-labelledby="h1">
  <div class="huelle">
   <div>
    <div class="eyebrow">Wissen</div>
-   <h1 id="h1">Wissen: Wie menschliche Wirkung im KI-Zeitalter entsteht<span class="vor">Vorschlag</span></h1>
-   <p class="sub">Kurze Antworten von Claudia Conen auf Fragen, die vor Keynote, Präsentation, Veränderungsgespräch und Kundengespräch wirklich gestellt werden. Für Entscheider, Führungskräfte, Unternehmer und Experten.</p>
+   <h1 id="h1">Wie menschliche Wirkung im KI-Zeitalter entsteht<span class="vor">Vorschlag</span></h1>
+   <p class="sub">Kurze Antworten auf Fragen, die vor Keynote, Präsentation, Veränderungsgespräch und Kundengespräch gestellt werden. Für Unternehmer, Führungskräfte und Experten.</p>
    <div class="wege">
     <a class="knopf zweit" href="#artikel">Zu den Artikeln</a>
-    <a class="leise" href="#ressourcen">Ressourcen ansehen</a>
    </div>
   </div>
-  <div class="bild"><img src="p/wissen/hero.webp" alt="Claudia Conen lacht herzlich am Schreibtisch, eine Brille in der Hand" width="1067" height="1600" fetchpriority="high" style="object-position:50% 25%"><!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC09490), Fotografin und Nachweis vor Veröffentlichung bestätigen --></div>
+  <div class="bild"><img src="p/wissen/hero-laptop.webp" alt="Claudia Conen sitzt mit Brille und hellblauem Blazer am Tisch, lächelt in die Kamera und hält ihr Smartphone, vor ihr ein Laptop" width="682" height="853" fetchpriority="high" style="object-position:50% 40%"><!-- Bildnachweis prüfen: Quelle ablage/eingang-2026-09-22/10_wir-reden-am-telefon_1280x853.jpeg, Fotograf unbekannt --></div>
  </div>
 </section>
 
-<!-- 2 Relevanz (§10.2) -->
+<!-- 2 Perspektive -->
 <section class="warum">
  <div class="huelle">
   <div>
    <div class="kicker">Warum es zählt</div>
-   <p class="gross-zitat">Worte vermitteln Wissen. <strong>Persönlichkeit schafft Vertrauen.</strong></p>
+   <p class="gross-zitat">KI kann Inhalte erzeugen. <strong>Wirkung entsteht durch den Menschen.</strong></p>
   </div>
   <div class="saetze">
    <p>Überall dort, wo jemand das Wort ergreift, beginnt Wirkung.</p>
-   <p>Jeder Artikel beantwortet genau eine Frage. Kurz genug, um ihn vor dem nächsten Termin zu lesen, und konkret genug, um es danach auszuprobieren.<span class="vor">Vorschlag</span></p>
-    <p>Dahinter stehen drei Leitfragen: Wie entsteht Vertrauen, wenn KI immer mehr Kommunikation übernimmt? Wie kommunizieren Führungskräfte so, dass Menschen Veränderung mittragen? Und wie werden Persönlichkeit, Stimme und Präsenz geschäftlich wirksam?</p>
+   <p>Jeder Artikel beantwortet genau eine Frage. Kurz genug für die Zeit vor dem nächsten Termin, konkret genug, um es danach auszuprobieren.<span class="vor">Vorschlag</span></p>
   </div>
  </div>
 </section>
 
-<!-- 3–5 Artikel nach Lage (Ausgangslage) und Methode (Wirkungskraft-Felder) -->
+<!-- 3 Angebot: Artikel nach den drei Leitfragen -->
 <section id="artikel" aria-labelledby="artikel-titel">
  <div class="huelle">
   <div class="kicker">Artikel</div>
-  <h2 id="artikel-titel">Welche Frage hast du gerade?<span class="vor">Vorschlag</span></h2>
-  <p class="einleitung">Die Artikel behalten ihre heutigen Adressen auf claudiaconen.com. Geordnet nach deiner Lage und nach den Feldern der Wirkungskraft-Methode.</p>
-  <p class="platz" style="margin-top:16px">Weitere Artikel aus der Wissensbibliothek (heute /wissensbibliothek, Tabelle knowledge_articles) und die drei Blogtexte (/blog-ki, /blog-wirkung, /blog-neuro) werden im neuen System hier eingeordnet: Auswahl bitte von dir.</p>
+  <h2 id="artikel-titel">Drei Fragen, um die sich alles dreht</h2>
+  <p class="platz" style="margin-top:8px">Die Artikel behalten ihre heutigen Adressen auf claudiaconen.com. Weitere Artikel aus der Wissensbibliothek und die drei Blogtexte (/blog-ki, /blog-wirkung, /blog-neuro) ordnest du im neuen System hier ein: Auswahl bitte von dir.</p>
 
   <div class="gruppe">
    <div class="gruppe-kopf">
-    <span class="feldbezug">Für Entscheider</span>
-    <h3>Du planst ein Event oder stärkst die Kommunikation im Team</h3>
+    <span class="feldbezug">Leitfrage 1 · Vertrauen</span>
+    <h3>Wie entsteht Vertrauen, wenn KI immer mehr Kommunikation übernimmt?</h3>
    </div>
    <div class="karten">
-    <article><a href="https://claudiaconen.com/wissen/was-kostet-ein-keynote-speaker"><small>Keynote &amp; Bühne</small><b>Was kostet ein Keynote Speaker?</b><span>Was den Preis bestimmt, was enthalten ist und wann ein kleineres Format die bessere Wahl ist.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article><a href="https://claudiaconen.com/wissen/keynote-speaker-finden"><small>Keynote &amp; Bühne</small><b>Wie finde ich den richtigen Keynote Speaker für mein Unternehmen?</b><span>Drei Fragen, die vor der Suche zu klären sind, woran ihr im Vorgespräch erkennt, ob es passt, und zwei Fehler, die teuer werden.</span><span class="lesen">Artikel lesen</span></a></article>
+    <article id="storytelling"><a href="https://claudiaconen.com/wissen/storytelling"><small>Auftritt &amp; Gespräch</small><b>Was ist Storytelling?</b><span>Storytelling einfach erklärt: was eine Geschichte von einem Bericht unterscheidet, warum sie hängen bleibt, ein Vorher-Nachher-Beispiel, die drei häufigsten Fehler und wo die Grenze zur Manipulation liegt.</span><span class="lesen">Artikel lesen</span></a></article>
+    <article><a href="https://claudiaconen.com/wissen/charisma-lernen"><small>Wirkung &amp; Persönlichkeit</small><b>Kann man Charisma lernen?</b><span>Was die Forschung sagt: keine Eigenschaft, sondern Zuschreibung. Was lernbar ist, was nicht — und drei Dinge, die morgen wirken.</span><span class="lesen">Artikel lesen</span></a></article>
     <article><a href="https://claudiaconen.com/wissen/vier-ohren-modell"><small>Kommunikation</small><b>Was ist das Vier-Ohren-Modell?</b><span>Das Vier-Ohren-Modell von Schulz von Thun (1981): Sachinhalt, Selbstoffenbarung, Beziehung, Appell — mit dem Ampel-Beispiel, Anwendung im Beruf und Quizfragen.</span><span class="lesen">Artikel lesen</span></a></article>
    </div>
   </div>
 
   <div class="gruppe">
    <div class="gruppe-kopf">
-    <span class="feldbezug">Botschaft &amp; Pitch · Methode, Schritt 2: Botschaft klären</span>
-    <h3>Was soll bei deinem Gegenüber ankommen?</h3>
+    <span class="feldbezug">Leitfrage 2 · Führung und Veränderung</span>
+    <h3>Wie müssen Führungskräfte kommunizieren, damit Menschen Veränderung mittragen?</h3>
    </div>
    <div class="karten">
     <article id="keynote-aufbauen"><a href="https://claudiaconen.com/wissen/keynote-aufbauen"><small>Bühne &amp; Vortrag</small><b>Wie baue ich eine Keynote auf?</b><span>Eine Keynote aufbauen: Einstieg als Szene, Bruch, höchstens drei Gedanken, ein Schlusssatz zum Weitererzählen. Mit den Fragen, die Einsteiger wirklich stellen.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article id="elevator-pitch"><a href="https://claudiaconen.com/wissen/elevator-pitch"><small>Auftritt &amp; Gespräch</small><b>Was ist ein Elevator Pitch?</b><span>Elevator Pitch einfach erklärt: Definition, Aufbau in drei Teilen, Länge, Beispiele im Vorher-Nachher, Einsatz im Bewerbungsgespräch und was KI dabei kann.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article id="storytelling"><a href="https://claudiaconen.com/wissen/storytelling"><small>Auftritt &amp; Gespräch</small><b>Was ist Storytelling?</b><span>Storytelling einfach erklärt: was eine Geschichte von einem Bericht unterscheidet, warum sie hängen bleibt, ein Vorher-Nachher-Beispiel, die drei häufigsten Fehler und wo die Grenze zur Manipulation liegt.</span><span class="lesen">Artikel lesen</span></a></article>
     <article><a href="https://claudiaconen.com/wissen/gute-rede-halten"><small>Bühne &amp; Vortrag</small><b>Wie halte ich eine gute Rede?</b><span>Eine gute Rede halten: der eine Gedanke, ein Anfang ohne Vorrede, Begebenheiten statt Aufzählungen, ein klarer Schluss, die richtige Länge und wie man laut übt.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article><a href="https://claudiaconen.com/wissen/keynote-speaker-werden"><small>Bühne &amp; Vortrag</small><b>Wie wird man Keynote Speaker?</b><span>Keine Ausbildung ist vorgeschrieben. Der Weg: ein glaubwürdiges Thema, ein Vortrag, der trägt, Bühnenzeit in kleinen Sälen und eine gute Aufnahme.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article><a href="https://claudiaconen.com/wissen/thema-finden-speaker"><small>Bühne &amp; Vortrag</small><b>Wie finde ich mein Thema als Speaker?</b><span>Rückwärts suchen statt nachdenken, vier Fragen, zwei Tests — und warum ein Fachgebiet kein Thema ist.</span><span class="lesen">Artikel lesen</span></a></article>
+    <article><a href="https://claudiaconen.com/wissen/sprechpausen"><small>Stimme &amp; Wirkung</small><b>Warum sind Sprechpausen so wichtig?</b><span>Warum Sprechpausen wirken: was in der Pause passiert, warum sie sich falsch anfühlt, vier Stellen für eine Pause und wie man sie übt.</span><span class="lesen">Artikel lesen</span></a></article>
    </div>
   </div>
 
   <div class="gruppe">
    <div class="gruppe-kopf">
-    <span class="feldbezug">Stimme &amp; Auftritt · Methode, Schritt 3: Wirkung verkörpern</span>
-    <h3>Wie werden Persönlichkeit und Botschaft hörbar und sichtbar?</h3>
+    <span class="feldbezug">Leitfrage 3 · Persönlichkeit, Stimme, Präsenz</span>
+    <h3>Wie werden Persönlichkeit, Stimme und Präsenz geschäftlich wirksam?</h3>
    </div>
    <div class="karten">
+    <article id="elevator-pitch"><a href="https://claudiaconen.com/wissen/elevator-pitch"><small>Auftritt &amp; Gespräch</small><b>Was ist ein Elevator Pitch?</b><span>Elevator Pitch einfach erklärt: Definition, Aufbau in drei Teilen, Länge, Beispiele im Vorher-Nachher, Einsatz im Bewerbungsgespräch und was KI dabei kann.</span><span class="lesen">Artikel lesen</span></a></article>
     <article><a href="https://claudiaconen.com/wissen/stimme-trainieren"><small>Stimme &amp; Wirkung</small><b>Wie kann ich meine Stimme trainieren?</b><span>Wie du deine Stimme trainierst: drei Übungen für täglich fünf Minuten, warum die eigene Aufnahme der wichtigste Teil ist, was nicht funktioniert und wann Begleitung sich lohnt.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article><a href="https://claudiaconen.com/wissen/tiefere-stimme"><small>Stimme &amp; Wirkung</small><b>Wie bekomme ich eine tiefere Stimme?</b><span>Tiefere Stimme bekommen: warum Tieferdrücken nicht funktioniert … und was eine Stimme wirklich sicher klingen lässt.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article><a href="https://claudiaconen.com/wissen/sprechpausen"><small>Stimme &amp; Wirkung</small><b>Warum sind Sprechpausen so wichtig?</b><span>Warum Sprechpausen wirken: was in der Pause passiert, warum sie sich falsch anfühlt, vier Stellen für eine Pause und wie man sie übt.</span><span class="lesen">Artikel lesen</span></a></article>
     <article><a href="https://claudiaconen.com/wissen/lampenfieber"><small>Bühne &amp; Vortrag</small><b>Was hilft gegen Lampenfieber?</b><span>Was gegen Lampenfieber hilft: Atmung, die ersten zwei Sätze auswendig, laut üben statt im Kopf. Und wo Nervosität aufhört und Redeangst anfängt.</span><span class="lesen">Artikel lesen</span></a></article>
-    <article><a href="https://claudiaconen.com/wissen/charisma-lernen"><small>Wirkung &amp; Persönlichkeit</small><b>Kann man Charisma lernen?</b><span>Was die Forschung sagt: keine Eigenschaft, sondern Zuschreibung. Was lernbar ist, was nicht — und drei Dinge, die morgen wirken.</span><span class="lesen">Artikel lesen</span></a></article>
    </div>
+   <details class="weitere">
+    <summary>Noch ein Artikel zur Stimme</summary>
+    <div class="karten">
+     <article><a href="https://claudiaconen.com/wissen/tiefere-stimme"><small>Stimme &amp; Wirkung</small><b>Wie bekomme ich eine tiefere Stimme?</b><span>Tiefere Stimme bekommen: warum Tieferdrücken nicht funktioniert … und was eine Stimme wirklich sicher klingen lässt.</span><span class="lesen">Artikel lesen</span></a></article>
+    </div>
+   </details>
+  </div>
+
+  <div class="gruppe dezent">
+   <div class="gruppe-kopf">
+    <span class="feldbezug">Für Entscheider</span>
+    <h3>Du planst ein Event mit Keynote</h3>
+   </div>
+   <div class="karten">
+    <article><a href="https://claudiaconen.com/wissen/was-kostet-ein-keynote-speaker"><small>Keynote &amp; Bühne</small><b>Was kostet ein Keynote Speaker?</b><span>Was den Preis bestimmt, was enthalten ist und wann ein kleineres Format die bessere Wahl ist.</span><span class="lesen">Artikel lesen</span></a></article>
+    <article><a href="https://claudiaconen.com/wissen/keynote-speaker-finden"><small>Keynote &amp; Bühne</small><b>Wie finde ich den richtigen Keynote Speaker für mein Unternehmen?</b><span>Drei Fragen, die vor der Suche zu klären sind, woran ihr im Vorgespräch erkennt, ob es passt, und zwei Fehler, die teuer werden.</span><span class="lesen">Artikel lesen</span></a></article>
+   </div>
+   <details class="weitere">
+    <summary>Für Experten auf dem Weg zur eigenen Bühne</summary>
+    <div class="karten">
+     <article><a href="https://claudiaconen.com/wissen/keynote-speaker-werden"><small>Bühne &amp; Vortrag</small><b>Wie wird man Keynote Speaker?</b><span>Keine Ausbildung ist vorgeschrieben. Der Weg: ein glaubwürdiges Thema, ein Vortrag, der trägt, Bühnenzeit in kleinen Sälen und eine gute Aufnahme.</span><span class="lesen">Artikel lesen</span></a></article>
+     <article><a href="https://claudiaconen.com/wissen/thema-finden-speaker"><small>Bühne &amp; Vortrag</small><b>Wie finde ich mein Thema als Speaker?</b><span>Rückwärts suchen statt nachdenken, vier Fragen, zwei Tests — und warum ein Fachgebiet kein Thema ist.</span><span class="lesen">Artikel lesen</span></a></article>
+    </div>
+   </details>
   </div>
 
   <div class="randnotiz" id="rund-ums-reden-artikel">
-   <p><b>Akademie für freie Redner:</b> Artikel zu privaten Anlässen stehen im getrennten Bereich „Rund ums Reden“: <a class="leise" href="https://claudiaconen.com/wissen/trauerrede-schreiben">Wie schreibe ich eine Trauerrede?</a> · <a class="leise" href="https://claudiaconen.com/wissen/freie-trauung-ablauf">Wie läuft eine freie Trauung ab?</a> · <a class="leise" href="rund-ums-reden.html">Zu Rund ums Reden</a></p>
+   <p><b>Private Anlässe:</b> Artikel zu Trauerrede und freier Trauung stehen im getrennten Bereich: <a class="leise" href="https://claudiaconen.com/wissen/trauerrede-schreiben">Wie schreibe ich eine Trauerrede?</a> · <a class="leise" href="https://claudiaconen.com/wissen/freie-trauung-ablauf">Wie läuft eine freie Trauung ab?</a> · <a class="leise" href="rund-ums-reden.html">Zu Rund ums Reden</a></p>
   </div>
  </div>
 </section>
 
-<!-- 6 Format: weitere Wissensformate (§9 Wissen) -->
+<!-- 4 Methode – einziger dunkler Abschnitt, Glas 2 von 3 -->
+<section class="dunkel wi-methode" id="methode" aria-labelledby="methode-titel">
+ <div class="huelle">
+  <div>
+   <div class="kicker">Der rote Faden</div>
+   <h2 id="methode-titel">Erst der Mensch, dann die Technik</h2>
+   <p>Hinter jedem Artikel steht dieselbe Reihenfolge der Wirkungskraft-Methode: erst den persönlichen Kern klären, dann die Botschaft formen, dann verkörpern. KI verstärkt am Ende, sie ersetzt nichts davon.<span class="vor">Vorschlag</span></p>
+  </div>
+  <div class="glas wi-glas">
+   <ol>
+    <li><b>Persönlichkeit</b><span>Wofür stehst du und was soll von dir erkennbar werden?</span></li>
+    <li><b>Botschaft</b><span>Was soll dein Gegenüber verstehen, fühlen und tun?</span></li>
+    <li><b>Präsenz</b><span>Wie verkörperst du deine Aussage mit Stimme, Haltung und Verhalten?</span></li>
+    <li><b>Verstärkung</b><span>Wie nutzt du KI, ohne deine Sprache und Glaubwürdigkeit zu verlieren?</span></li>
+   </ol>
+   <a class="leise" href="wirkungskraft.html#methode">Methode kennenlernen</a>
+  </div>
+ </div>
+</section>
+
+<!-- 5 Umfang: hören, sehen, mitnehmen (zusammengeführt) -->
 <section class="hellweiss" id="hoeren-sehen" aria-labelledby="medien-titel">
  <div class="huelle">
-  <div class="kicker">Hören und sehen</div>
-  <h2 id="medien-titel">Audioimpulse, Videos, Interviews</h2>
-  <div class="medien">
-   <div class="medium">
-    <h3>Audioimpulse</h3>
-    <p>Kurze Gedanken von Claudia zum Hören, zum Beispiel auf dem Weg zum nächsten Termin.<span class="vor">Vorschlag</span></p>
-    <p class="platz">Aufnahmen folgen. Die Telegram-Audioimpulse (heute /wissen-telegram) und die Seite /hoeren sollen laut Inventur hier aufgehen: Auswahl und Freigabe bitte von dir.</p>
-   </div>
-   <div class="medium">
-    <h3>Videos</h3>
-    <p>Ausschnitte von Bühne, Training und Kamera, in denen du siehst, wie Wirkung entsteht.<span class="vor">Vorschlag</span></p>
-    <p class="platz">Videoauswahl mit Untertiteln und Nutzungsfreigabe: bitte von dir.</p>
-   </div>
-   <div class="medium">
-    <h3>Interviews und Podcast</h3>
-    <p>Gespräche, in denen Claudia über Stimme, Persönlichkeit und Wirkung im KI-Zeitalter spricht.<span class="vor">Vorschlag</span></p>
-    <p class="platz">Liste der Interviews und Podcastfolgen mit Links: bitte von dir.</p>
-   </div>
-  </div>
- </div>
-</section>
-
-<!-- Ressourcen (Bestandsschutz „Nimm mit“) -->
-<section id="ressourcen" aria-labelledby="res-titel">
- <div class="huelle">
-  <div class="kicker">Ressourcen</div>
-  <h2 id="res-titel">Zum Mitnehmen</h2>
-  <p class="einleitung">Was heute unter „Nimm mit“ steht, bleibt erreichbar.</p>
-  <ul class="ressourcen">
+  <div class="kicker">Hören, sehen, mitnehmen</div>
+  <h2 id="medien-titel">Weitere Formate</h2>
+  <ul class="ressourcen" id="ressourcen">
    <li><a href="https://claudiaconen.com/wissensbibliothek">Wissensbibliothek A–Z</a><span>Die komplette Wissensbibliothek zu Kommunikation &amp; Wirkung.</span></li>
    <li><a href="https://claudiaconen.com/newsletter">Newsletter</a><span>Impulse ins Postfach</span></li>
+   <li><b>Audioimpulse</b><span>Kurze Gedanken von Claudia zum Hören.<span class="vor">Vorschlag</span></span></li>
+   <li><b>Videos, Interviews und Podcast</b><span>Ausschnitte von Bühne und Training, Gespräche über Wirkung im KI-Zeitalter.<span class="vor">Vorschlag</span></span></li>
   </ul>
+  <p class="platz" style="margin-top:20px;max-width:980px">Bitte von dir: Auswahl der Audioimpulse (heute /wissen-telegram und /hoeren), Videos mit Untertiteln und Freigabe, Liste der Interviews und Podcastfolgen mit Links.</p>
   <details class="weitere">
    <summary>Weitere Materialien: Challenge, Werkzeuge, Adventskalender</summary>
    <ul class="ressourcen">
-    <li><a href="https://claudiaconen.com/challenge">7 Tage für deine Wirkungskraft</a><span>Die Video-Challenge</span></li>
+    <li><a href="challenge.html">7 Tage für deine Wirkungskraft im Business</a><span>Der Einstieg für Experten und Unternehmer</span></li>
     <li><a href="https://claudiaconen.com/generatoren">Wirkungskraft-Werkzeuge</a><span>Workbook, Karussell und Quiz Generator</span></li>
     <li><a href="https://claudiaconen.com/adventskalender">Adventskalender 2026</a><span>24 Türchen, ab 1. Dezember</span></li>
    </ul>
+   <p class="platz" style="margin-top:16px">Die Inventur schlägt vor, die Werkzeuge später zu archivieren (wenig B2B-Bezug). Bis du entscheidest, bleiben sie hier verlinkt. Vorher klären: Haben Nutzer gespeicherte Pläne im Jahres-Contentplan?</p>
   </details>
-  <p class="platz" style="margin-top:20px;max-width:980px">Die Inventur schlägt vor, die Werkzeuge später zu archivieren (wenig B2B-Bezug). Bis du entscheidest, bleiben sie hier verlinkt. Vorher klären: Haben Nutzer gespeicherte Pläne im Jahres-Contentplan?</p>
  </div>
 </section>
 
-<!-- 7 Proof + 8 Claudia-Bezug -->
-<section class="hellweiss" aria-labelledby="bezug-titel">
+<!-- 6 Belege und Claudia-Bezug -->
+<section aria-labelledby="bezug-titel">
  <div class="huelle bezug">
   <div>
    <div class="kicker">Wer hier schreibt</div>
@@ -342,44 +374,44 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <p class="gross-zitat" style="font-size:clamp(26px,2.6vw,34px)">Persönlichkeit vor Perfektion.</p>
   </div>
   <div class="text">
-   <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter – bekannt als „Die Umsatzstimme“.</p>
-   <p>Sie stärkt die menschliche Wirkungskraft in Unternehmen – damit Führung, Kommunikation und Veränderung im KI-Zeitalter Vertrauen schaffen und Menschen bewegen. Die Artikel kommen aus ihrer Arbeit seit 37 Jahren als Coach und Trainerin.</p>
+   <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter. Sie stärkt die menschliche Wirkungskraft in Unternehmen, damit Führung, Kommunikation und Veränderung im KI-Zeitalter Vertrauen schaffen und Menschen bewegen.</p>
+   <p>Die Artikel kommen aus ihrer Arbeit seit 37 Jahren als Coach und Trainerin.</p>
    <p class="platz">Beleg für die Artikel (z. B. eine Leserstimme oder wo ein Artikel zitiert wurde): bitte von dir, falls vorhanden.</p>
    <p><a class="leise" href="ueber-claudia.html">Mehr über Claudia</a></p>
   </div>
  </div>
 </section>
 
-<!-- 9 FAQ -->
-<section aria-labelledby="faq-titel">
+<!-- 7 Passung und häufige Fragen -->
+<section class="hellweiss" aria-labelledby="faq-titel">
  <div class="huelle">
   <div class="kicker">Häufige Fragen</div>
   <h2 id="faq-titel">Fragen zum Wissensbereich</h2>
   <div class="fragen">
+   <details>
+    <summary>Für wen sind die Artikel gedacht?</summary>
+    <p>Für Unternehmer, Führungskräfte und Experten, die vor einem Auftritt, einem Gespräch oder einer Veränderung stehen. Wer eine Rede für einen privaten Anlass sucht, findet sie unter Rund ums Reden.<span class="vor">Vorschlag</span></p>
+   </details>
    <details>
     <summary>Wer schreibt die Artikel?</summary>
     <p>Claudia Conen. Das Material stammt aus ihren Workbooks und aus ihrer Arbeit auf Bühnen, in Trainings und vor der Kamera.<span class="vor">Vorschlag</span></p>
    </details>
    <details>
     <summary>Ich will an einem dieser Themen mit meinem Team arbeiten. Wie geht das?</summary>
-    <p>Als Keynote, als Workshop oder im Executive-Sparring. Im Kennenlerngespräch klärt ihr, welches Format passt.<span class="vor">Vorschlag</span></p>
-   </details>
-   <details>
-    <summary>Wo finde ich Artikel zu Trauerrede und freier Trauung?</summary>
-    <p>Im getrennten Bereich <a class="leise" href="rund-ums-reden.html">Rund ums Reden</a>, der Akademie für freie Redner. Der Hinweis am Ende der Artikelliste führt dorthin.<span class="vor">Vorschlag</span></p>
+    <p>Als Keynote, als Workshop oder im Entwicklungsprogramm. Im Gespräch klärt ihr, welches Format passt.<span class="vor">Vorschlag</span></p>
    </details>
   </div>
  </div>
 </section>
 
-<!-- 10 ein primärer CTA -->
+<!-- 8 ein nächster Schritt -->
 <section class="schluss" id="kontakt">
  <div class="huelle">
   <div class="karte">
    <div class="kicker" style="margin:0">Nächster Schritt</div>
-   <h2>Lass uns klären, wie du wirken willst.<span class="vor">Vorschlag</span></h2>
-   <p>Im Kennenlerngespräch klären wir, wo du stehst und welches Format passt: für dein Unternehmen oder für dein eigenes Business.<span class="vor">Vorschlag</span></p>
-   <a class="knopf" href="kontakt.html">Gespräch vereinbaren</a>
+   <h2>Aus Wissen wird Wirkung, wenn ihr es übt.<span class="vor">Vorschlag</span></h2>
+   <p>Im Gespräch klärt ihr, wo dein Team steht und welches Format passt: Keynote, Workshop oder Entwicklungsprogramm.<span class="vor">Vorschlag</span></p>
+   <a class="knopf" href="kontakt.html#unternehmen">Gespräch vereinbaren</a>
   </div>
  </div>
 </section>
@@ -389,34 +421,34 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"CollectionPage","name":"Wissen","description":"Artikel zu Keynote, Elevator Pitch, Storytelling, Stimme und Auftritt von Claudia Conen – Die Umsatzstimme.","author":{"@type":"Person","name":"Claudia Conen","alternateName":"Die Umsatzstimme","url":"https://claudiaconen.com"},
+ {"@type":"CollectionPage","name":"Wissen","description":"Artikel von Claudia Conen – Die Umsatzstimme zu drei Fragen: Vertrauen im KI-Zeitalter, Kommunikation in Veränderung, geschäftliche Wirkung von Persönlichkeit, Stimme und Präsenz.","author":{"@type":"Person","name":"Claudia Conen","alternateName":"Die Umsatzstimme","url":"https://claudiaconen.com"},
   "hasPart":[
-   {"@type":"Article","headline":"Was kostet ein Keynote Speaker?","url":"https://claudiaconen.com/wissen/was-kostet-ein-keynote-speaker"},
-   {"@type":"Article","headline":"Wie finde ich den richtigen Keynote Speaker für mein Unternehmen?","url":"https://claudiaconen.com/wissen/keynote-speaker-finden"},
+   {"@type":"Article","headline":"Was ist Storytelling?","url":"https://claudiaconen.com/wissen/storytelling"},
+   {"@type":"Article","headline":"Kann man Charisma lernen?","url":"https://claudiaconen.com/wissen/charisma-lernen"},
    {"@type":"Article","headline":"Was ist das Vier-Ohren-Modell?","url":"https://claudiaconen.com/wissen/vier-ohren-modell"},
    {"@type":"Article","headline":"Wie baue ich eine Keynote auf?","url":"https://claudiaconen.com/wissen/keynote-aufbauen"},
-   {"@type":"Article","headline":"Was ist ein Elevator Pitch?","url":"https://claudiaconen.com/wissen/elevator-pitch"},
-   {"@type":"Article","headline":"Was ist Storytelling?","url":"https://claudiaconen.com/wissen/storytelling"},
    {"@type":"Article","headline":"Wie halte ich eine gute Rede?","url":"https://claudiaconen.com/wissen/gute-rede-halten"},
-   {"@type":"Article","headline":"Wie kann ich meine Stimme trainieren?","url":"https://claudiaconen.com/wissen/stimme-trainieren"},
-   {"@type":"Article","headline":"Wie bekomme ich eine tiefere Stimme?","url":"https://claudiaconen.com/wissen/tiefere-stimme"},
    {"@type":"Article","headline":"Warum sind Sprechpausen so wichtig?","url":"https://claudiaconen.com/wissen/sprechpausen"},
+   {"@type":"Article","headline":"Was ist ein Elevator Pitch?","url":"https://claudiaconen.com/wissen/elevator-pitch"},
+   {"@type":"Article","headline":"Wie kann ich meine Stimme trainieren?","url":"https://claudiaconen.com/wissen/stimme-trainieren"},
    {"@type":"Article","headline":"Was hilft gegen Lampenfieber?","url":"https://claudiaconen.com/wissen/lampenfieber"},
-   {"@type":"Article","headline":"Kann man Charisma lernen?","url":"https://claudiaconen.com/wissen/charisma-lernen"},
+   {"@type":"Article","headline":"Wie bekomme ich eine tiefere Stimme?","url":"https://claudiaconen.com/wissen/tiefere-stimme"},
+   {"@type":"Article","headline":"Was kostet ein Keynote Speaker?","url":"https://claudiaconen.com/wissen/was-kostet-ein-keynote-speaker"},
+   {"@type":"Article","headline":"Wie finde ich den richtigen Keynote Speaker für mein Unternehmen?","url":"https://claudiaconen.com/wissen/keynote-speaker-finden"},
    {"@type":"Article","headline":"Wie wird man Keynote Speaker?","url":"https://claudiaconen.com/wissen/keynote-speaker-werden"},
    {"@type":"Article","headline":"Wie finde ich mein Thema als Speaker?","url":"https://claudiaconen.com/wissen/thema-finden-speaker"}
   ]},
  {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Für wen sind die Artikel gedacht?","acceptedAnswer":{"@type":"Answer","text":"Für Unternehmer, Führungskräfte und Experten, die vor einem Auftritt, einem Gespräch oder einer Veränderung stehen. Wer eine Rede für einen privaten Anlass sucht, findet sie unter Rund ums Reden."}},
   {"@type":"Question","name":"Wer schreibt die Artikel?","acceptedAnswer":{"@type":"Answer","text":"Claudia Conen. Das Material stammt aus ihren Workbooks und aus ihrer Arbeit auf Bühnen, in Trainings und vor der Kamera."}},
-  {"@type":"Question","name":"Ich will an einem dieser Themen mit meinem Team arbeiten. Wie geht das?","acceptedAnswer":{"@type":"Answer","text":"Als Keynote, als Workshop oder im Executive-Sparring. Im Kennenlerngespräch klärt ihr, welches Format passt."}},
-  {"@type":"Question","name":"Wo finde ich Artikel zu Trauerrede und freier Trauung?","acceptedAnswer":{"@type":"Answer","text":"Im getrennten Bereich Rund ums Reden, der Akademie für freie Redner."}}
+  {"@type":"Question","name":"Ich will an einem dieser Themen mit meinem Team arbeiten. Wie geht das?","acceptedAnswer":{"@type":"Answer","text":"Als Keynote, als Workshop oder im Entwicklungsprogramm. Im Gespräch klärt ihr, welches Format passt."}}
  ]}
 ]}
 </script>

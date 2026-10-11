@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Voice-over und Markenstimme | Claudia Conen – Die Umsatzstimme</title>
-<meta name="description" content="Voice-over und Markenstimme von Claudia Conen – Die Umsatzstimme: Telefonansage, Imagefilm, Erklärvideo, Werbung, Podcast-Intro und E-Learning. Eigenes Studio, mehrere Fassungen, Nutzungsrecht für deinen Zweck.">
+<meta name="description" content="Voice-over und Markenstimme von Claudia Conen – Die Umsatzstimme: Telefonansage, Imagefilm, Werbung, Podcast-Intro, E-Learning und Hörbuch. Eigenes Studio, mehrere Fassungen, Nutzungsrecht für deinen Zweck.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -138,6 +138,32 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 .probe-bild{width:100%;max-width:240px;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:8px;margin-top:6px}
 @media(max-width:1100px){.hoerproben{grid-template-columns:1fr}}
 @media(max-width:900px){.skopf{padding-block:20px 48px}.skopf figure img{max-height:300px}}
+/* Nacht 11./12.10.2026: Glaskachel auf Dunkel, Ergebniskopf, Videotext, Rhythmus */
+.nutzen-kopf{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.95fr);gap:44px;align-items:end}
+.nutzen-kopf h2{margin-bottom:0}
+@media(max-width:900px){.nutzen-kopf{grid-template-columns:minmax(0,1fr);gap:26px}}
+.dunkel .glas.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);box-shadow:0 1px 0 rgba(255,255,255,.14) inset,0 20px 44px rgba(9,18,34,.35);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:var(--ivory)}
+.dunkel .glas.glas-dunkel::after{background:linear-gradient(90deg,transparent 42%,rgba(255,255,255,.22) 50%,transparent 58%)}
+.merksatz{margin:0;padding:26px 28px;display:grid;gap:12px}
+.merksatz blockquote{margin:0;font:600 italic clamp(25px,2.4vw,31px)/1.25 'Cormorant Garamond',Georgia,serif;color:var(--sand)}
+.merksatz figcaption{font-size:16px;line-height:1.5}
+.dunkel .player{max-width:none}
+.dunkel .player .spiel{background:var(--ivory);color:var(--ink)}
+.dunkel .player .balken{background:rgba(253,251,247,.22)}
+.dunkel .player summary{min-height:44px;display:flex;align-items:center}
+.nutzen .felder3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:860px){.nutzen .felder3{grid-template-columns:minmax(0,1fr)}}
+.vtext{font-size:16px}
+.vtext summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.vtext p{margin-top:8px}
+.fuer{margin-top:14px;font-size:16px;font-weight:600}
+.stimmen2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:6px}
+@media(max-width:700px){.stimmen2{grid-template-columns:minmax(0,1fr)}}
+.wer.mit-bild{display:flex;gap:12px;align-items:center}
+.wer.mit-bild img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 22%;flex:none;border:1px solid var(--linie)}
+.umfang .kasten .klapp{background:var(--weiss)}
+.medien .text .kst blockquote{font-size:21px}
+.skopf h1{hyphens:manual}
 </style>
 <script type="application/ld+json">
 {
@@ -328,7 +354,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -337,9 +363,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -354,17 +381,18 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 </header>
 
 <main id="main">
-<!-- 1 Hero -->
+<!-- 1 Hero: Problem + Zweck in einem Satz (Markenarchitektur „Claudia buchen“, 14:37 UTC) -->
 <section class="skopf" aria-labelledby="h1">
  <div class="huelle">
   <div>
    <div class="eyebrow">Claudia buchen · Voice-over und Markenstimme</div>
-   <h1 id="h1">Voice-over und Markenstimme, die deine Botschaft hörbar macht</h1>
+   <h1 id="h1">Voice-over und Marken&shy;stimme: die Stimme für deine Botschaft</h1>
+   <p class="dach">Voice-over macht Markenbotschaften hörbar.</p>
    <p class="sub">Ein guter Text, falsch gesprochen, klingt wie Werbung. Derselbe Text, richtig gesprochen, klingt wie jemand, der weiß, wovon er redet. Der Unterschied liegt nicht in der Stimme, sondern darin, ob jemand verstanden hat, was der Satz tun soll.</p>
-   <p class="dach">Voice-over macht Markenbotschaften hörbar – mit einer menschlichen Stimme, die Vertrauen schafft, wo vieles nach Maschine klingt.<span class="vor">Vorschlag</span></p>
+   <p class="fuer">Für Unternehmer, Führungskräfte und Experten, deren Marke nach einem Menschen klingen soll, nicht nach Maschine.<span class="vor">Vorschlag</span></p>
    <div class="handlung">
     <a class="knopf" href="kontakt.html#buchen">Gespräch vereinbaren</a>
-    <a class="leise" href="#medien">Hörproben ansehen</a>
+    <a class="leise" href="#hoerprobe">Claudia hören</a>
    </div>
   </div>
   <figure>
@@ -386,16 +414,13 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </nav>
 
-<!-- 2+3 Situation -->
-<section class="lage" id="situation" aria-labelledby="lage-titel">
+<!-- 2 Problem (weiß mit Linie: trennt vom hellen Familienstreifen) -->
+<section class="lage hell-weiss" id="situation" aria-labelledby="lage-titel">
  <div class="huelle">
   <div>
    <div class="kicker">Die Situation</div>
    <h2 id="lage-titel">Du hast den Text. Wer spricht ihn?</h2>
    <p class="gross">Man denkt nur: klingt nach Werbung. Und schaltet weg.</p>
-   <figure class="bild bild-hoch">
-    <img src="p/voice-over/nah.webp" alt="Claudia Conen mit Studiomikrofon, ruhiger Blick in die Kamera" width="600" height="900" loading="lazy" style="object-position:50% 30%">
-   </figure>
   </div>
   <div class="lese">
    <p>Eine schwache Aufnahme klingt gleichmäßig. Jeder Satz hat dieselbe Betonung, dieselbe Geschwindigkeit, dasselbe Lächeln. Das ist der Klang von jemandem, der den Text vorliest, statt ihn zu meinen.</p>
@@ -405,22 +430,38 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </section>
 
-<!-- 4 Nutzen (der eine dunkle Abschnitt) -->
+<!-- 3 Ergebnis + Perspektive (der eine dunkle Abschnitt) mit der Hörprobe als Glaskachel -->
 <section class="dunkel nutzen" id="nutzen" aria-labelledby="nutzen-titel">
  <div class="huelle">
-  <div class="kicker">Dein Nutzen</div>
-  <h2 id="nutzen-titel">Voice-over macht Markenbotschaften hörbar</h2>
-  <p class="einleitung">Deine Marke bekommt eine Stimme, die man wiedererkennt: am Telefon, im Film, im Kurs. Wenn KI-Stimmen überall gleich klingen, wird eine echte Stimme zum Unterschied, den deine Kunden hören.<span class="vor">Vorschlag</span></p>
-  <div class="felder4">
+  <div class="kicker">Dein Ergebnis</div>
+  <div class="nutzen-kopf">
+   <div>
+    <h2 id="nutzen-titel">Eine Stimme, die deine Kunden wiedererkennen<span class="vor">Vorschlag</span></h2>
+    <p class="einleitung">Am Telefon, im Film, im Kurs. Wenn KI-Stimmen überall gleich klingen, wird eine echte Stimme zum Unterschied, den deine Kunden hören.<span class="vor">Vorschlag</span></p>
+   </div>
+   <!-- Glaskachel (einziges Glas im Inhalt) = das eine primäre Audio der Seite -->
+   <div class="player glas glas-dunkel" id="hoerprobe" role="group" aria-label="Audio: Hörprobe Voice-over">
+    <button class="spiel" type="button" disabled aria-label="Hörprobe abspielen – Aufnahme folgt">▶</button>
+    <div>
+     <b>Hörprobe: Telefonansage, Imagefilm, Werbung</b>
+     <span class="meta">Länge folgt · startet nur auf Klick</span>
+     <div class="balken" aria-hidden="true"><span></span></div>
+    </div>
+    <details>
+     <summary>Transkript lesen</summary>
+     <p class="platz">Audio von dir: Hörprobe Voice-over (je ein kurzer Ausschnitt Telefonansage, Imagefilm, Werbung), 30–60 s. Dazu das Transkript. Auf deiner bisherigen Seite liegt keine Hörprobe als Datei.</p>
+    </details>
+   </div>
+  </div>
+  <div class="felder4 felder3">
    <div><h3>Betonung mit Sinn</h3><p>Betont wird, was in diesem Satz wichtig ist, nicht, was nach Regel betont wird.</p></div>
    <div><h3>Pausen, die wirken</h3><p>Die Pause gibt dem Zuhörer Zeit, dem Gesagten zuzustimmen.</p></div>
-   <div><h3>Ein Text, der trägt</h3><p>Claudia liest den Text vorher und fragt nach, wenn ein Satz nicht trägt. Das ist oft der eigentliche Gewinn.</p></div>
    <div><h3>Eine Stimme für die Marke</h3><p>Dieselbe Stimme über Telefon, Film und Kurs: Deine Kunden hören, dass alles zusammengehört.<span class="vor">Vorschlag</span></p></div>
   </div>
  </div>
 </section>
 
-<!-- 6 Formate -->
+<!-- 4 Angebot: Formate (Liste wie auf claudiaconen.com: Podcast, Imagefilm, Kurs, Werbung, Telefonansage, Hörbuch) -->
 <section id="anlaesse" aria-labelledby="anlass-titel">
  <div class="huelle">
   <div class="kicker">Formate</div>
@@ -429,16 +470,15 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
   <div class="anlaesse">
    <div><h3>Telefonansage und Anrufbeantworter</h3><p>Der erste Kontakt mit deinem Unternehmen. Die Leute sollen sich trauen anzurufen.</p></div>
    <div><h3>Imagefilm</h3><p>Die Stimme, die deinen Film zusammenhält und sagt, wofür dein Unternehmen steht.</p></div>
-   <div><h3>Erklärvideo</h3><p>Klar und ruhig gesprochen, damit Erklärungen ankommen, statt vorbeizurauschen.</p><p class="platz">Erklärvideo steht nicht in deiner bisherigen Liste: bitte bestätigen.</p></div>
    <div><h3>Werbung</h3><p>Kurz, präzise, wiedererkennbar. Und trotzdem nicht nach Werbung klingend.</p></div>
    <div><h3>Podcast-Intro und Trailer</h3><p>Die ersten Sekunden entscheiden, ob jemand weiterhört.</p></div>
    <div><h3>E-Learning und Kurse</h3><p>Eine Stimme, der man auch im zehnten Modul noch gern zuhört.</p></div>
+   <div><h3>Hörbuch</h3><p>Für Verlage und Autoren: eine Stimme, die ein ganzes Buch trägt.</p></div>
   </div>
-  <p style="margin-top:24px"><b>Markenstimme:</b> Wenn eine Stimme über alle diese Formate hinweg zu deiner Marke gehört, wird sie zum Wiedererkennungszeichen.<span class="vor">Vorschlag</span></p>
  </div>
 </section>
 
-<!-- 6 Leistungsumfang -->
+<!-- 5 Leistungsumfang + 7 Passung -->
 <section class="umfang hell-weiss" id="leistung" aria-labelledby="leistung-titel">
  <div class="huelle">
   <div class="kicker">Leistungsumfang</div>
@@ -446,7 +486,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
   <div class="zwei-sp">
    <ul class="raute">
     <li>Eigenes Studio, keine Miete, keine Terminkette. Kurzfristiges geht meistens.</li>
-    <li>Claudia liest den Text vorher und fragt nach, wenn ein Satz nicht trägt.</li>
+    <li>Claudia liest den Text vorher und fragt nach, wenn ein Satz nicht trägt. Das ist oft der eigentliche Gewinn.</li>
     <li>Zwei bis drei Fassungen zur Auswahl: sachlich, wärmer, schneller. Du hörst den Unterschied und entscheidest.</li>
     <li>Lieferung im gewünschten Format, geschnitten und ausgesteuert.</li>
     <li>Korrekturschleife inbegriffen, solange es um dieselbe Aufnahme geht.</li>
@@ -468,7 +508,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     </details>
    </div>
   </div>
-  <p class="platz" style="margin-top:28px">Honorar: auf claudiaconen.com steht „auf Anfrage“, im Shop gibt es ein Produkt mit festem Preis. Welcher Preis öffentlich gilt: bitte von dir entscheiden. Hier bewusst ohne Preis.</p>
+  <p class="platz" style="margin-top:28px">Honorar: Auf claudiaconen.com steht „auf Anfrage“, im Shop gibt es „Professionell eingesprochene Werbung“ (30, 60 oder 90 Sekunden) mit festem Preis. Welcher Preis öffentlich gilt: bitte von dir. Hier bewusst „auf Anfrage“.</p>
  </div>
 </section>
 
@@ -487,122 +527,61 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </section>
 
-<!-- 7 Medienbeispiele -->
-<section class="medien hell-weiss" id="medien" aria-labelledby="medien-titel">
+<!-- 6 Belege: Video Fürst + zwei Stimmen zur Stimme (vorher zwei Abschnitte, jetzt einer) -->
+<section class="medien hell-weiss" id="belege" aria-labelledby="belege-titel">
  <div class="huelle">
-  <div class="kicker">Medienbeispiele</div>
-  <h2 id="medien-titel">Die Stimme am Telefon von Kloster Kitchen</h2>
+  <div class="kicker">Belege</div>
+  <h2 id="belege-titel">Die Stimme am Telefon von Kloster Kitchen</h2>
   <div class="reihe">
    <figure class="vfigur">
     <div class="vbox">
      <img src="p/ergebnisse/fuerst.webp" alt="Mario Fürst, Gründer von Kloster Kitchen, sitzt in einem Sessel und spricht in die Kamera" width="377" height="472" loading="lazy" style="aspect-ratio:4/5">
      <a class="ecke" href="p/ergebnisse/fuerst.mp4" data-video="p/ergebnisse/fuerst.mp4" aria-label="Video von Mario Fürst abspielen, 1:00 Minuten">▶ Abspielen · 1:00</a>
     </div>
-    <figcaption>Mario Fürst über die Ansage auf seinem Anrufbeantworter. Startet nur auf Klick.</figcaption>
+    <figcaption>Mario Fürst, Gründer von Kloster Kitchen, über die Ansage auf seinem Anrufbeantworter. Startet nur auf Klick.</figcaption>
    </figure>
    <div class="text">
-    <p>„Wir wollten einen extrem guten Text besprochen auf unserem normalen Anrufbeantworter und auf anderen Medien nutzen.“</p>
+    <p class="gross" style="font:500 italic clamp(24px,2.6vw,32px)/1.3 'Cormorant Garamond',Georgia,serif;border-left:2px solid var(--gold);padding-left:20px">„Ich kann nur die Zusammenarbeit mit Claudia wärmstens empfehlen.“</p>
+    <details class="vtext"><summary>Text des Videos lesen</summary><p>Wir wollten einen extrem guten Text besprochen auf unserem normalen Anrufbeantworter und auf anderen Medien nutzen.</p><p>Claudia hat sich bereit erklärt, auf eine sehr unkomplizierte Weise das mit uns zu machen, und hat auch mit uns sehr schnell daran gearbeitet, dass wir jetzt einen extrem gut gesprochenen, von ihr gesprochenen Text auf unserem Anrufbeantworter haben.</p><p>Die Zusammenarbeit war echt gut und sehr harmonisch und hat auch sehr viel Spaß gemacht.</p><p>Ich kann nur die Zusammenarbeit mit Claudia wärmstens empfehlen.</p></details>
     <p style="font-size:15px;font-weight:600">Quelle: Videostimme auf claudiaconen.com</p>
-    <h3 style="font:600 26px/1.15 'Cormorant Garamond',Georgia,serif;margin-top:12px">Hörproben</h3>
-    <div class="hoerproben">
-     <div class="probe" role="group" aria-label="Hörprobe Telefonansage">
-      <div class="probe-zeile"><button class="spiel" type="button" disabled aria-label="Hörprobe Telefonansage abspielen – Aufnahme folgt">▶</button><div><b>Telefonansage</b><span class="meta">Dauer folgt · startet nur auf Klick</span></div></div>
-      <details><summary>Transkript lesen</summary><p class="platz">Aufnahme (MP3) und Transkript: bitte von dir.</p></details>
-     </div>
-     <div class="probe" role="group" aria-label="Hörprobe Imagefilm">
-      <div class="probe-zeile"><button class="spiel" type="button" disabled aria-label="Hörprobe Imagefilm abspielen – Aufnahme folgt">▶</button><div><b>Imagefilm</b><span class="meta">Dauer folgt · startet nur auf Klick</span></div></div>
-      <details><summary>Transkript lesen</summary><p class="platz">Aufnahme (MP3) und Transkript: bitte von dir.</p></details>
-     </div>
-     <div class="probe" role="group" aria-label="Hörprobe Werbung">
-      <div class="probe-zeile"><button class="spiel" type="button" disabled aria-label="Hörprobe Werbung abspielen – Aufnahme folgt">▶</button><div><b>Werbung</b><span class="meta">Dauer folgt · startet nur auf Klick</span></div></div>
-      <details><summary>Transkript lesen</summary><p class="platz">Aufnahme (MP3) und Transkript: bitte von dir.</p></details>
-     </div>
+    <div class="stimmen2">
+     <article class="kst">
+      <div class="innen">
+       <div class="wer mit-bild"><img src="i/julien-backhaus.webp" alt="" width="540" height="960" loading="lazy"><span><b>Julien Backhaus</b><small>Julien Backhaus Verlag · Herausgeber ERFOLG Magazin</small></span></div>
+       <blockquote>„Claudia Conen hat eine beeindruckende Stimme.“</blockquote>
+       <p>Und dazu ist sie noch schnell, kompetent und unkompliziert. Wir als Verlag arbeiten gerne mit ihr.</p>
+       <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span></div>
+      </div>
+     </article>
+     <article class="kst">
+      <div class="innen">
+       <div class="wer mit-bild"><img src="p/ergebnisse/bastian.webp" alt="" width="360" height="640" loading="lazy"><span><b>Aimée Bastian</b><small>PR-Beraterin und Führungs-Coach</small></span></div>
+       <blockquote>„Tolle Radiostimme: samtig-weich und angenehm.“</blockquote>
+       <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span></div>
+      </div>
+     </article>
     </div>
-    <img class="probe-bild" src="p/voice-over/mikro.webp" alt="Claudia Conen hält lächelnd ein Studiomikrofon" width="600" height="900" loading="lazy">
-    <p class="platz">Hörproben bitte von dir: Auf deiner bisherigen Seite liegt keine Hörprobe als Datei. Je Probe brauche ich MP3, Titel, Dauer und Transkript, dann baue ich Player ohne Autoplay ein.</p>
+    <p class="platz">Referenzen von Unternehmen zu Imagefilm, Werbung oder E-Learning mit Freigabe für Namen und Logo: bitte von dir.</p>
    </div>
   </div>
  </div>
 </section>
 
-<!-- 7 Referenzen -->
-<section id="referenzen" aria-labelledby="ref-titel">
- <div class="huelle">
-  <div class="kicker">Referenzen</div>
-  <h2 id="ref-titel">Was Kunden über Claudias Stimme sagen<span class="vor">Vorschlag</span></h2>
-  <div class="kartenfeld">
-   <article class="kst">
-    <div class="innen">
-     <div class="wer"><b>Mario Fürst</b><small>Gründer von Kloster Kitchen · Anrufbeantworter</small></div>
-     <blockquote>„Ich kann nur die Zusammenarbeit mit Claudia wärmstens empfehlen.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Wir wollten einen extrem guten Text besprochen auf unserem normalen Anrufbeantworter und auf anderen Medien nutzen.</p><p>Claudia hat sich bereit erklärt, auf eine sehr unkomplizierte Weise das mit uns zu machen, und hat auch mit uns sehr schnell daran gearbeitet, dass wir jetzt einen extrem gut gesprochenen, von ihr gesprochenen Text auf unserem Anrufbeantworter haben.</p><p>Die Zusammenarbeit war echt gut und sehr harmonisch und hat auch sehr viel Spaß gemacht.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com · Video oben unter „Medienbeispiel“</span></div>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="medium">
-     <img src="i/julien-backhaus.webp" alt="Julien Backhaus" width="540" height="960" loading="lazy" style="object-position:50% 25%">
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Julien Backhaus</b><small>Julien Backhaus Verlag · Herausgeber ERFOLG Magazin</small></div>
-     <blockquote>„Claudia Conen hat eine beeindruckende Stimme.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Und dazu ist sie noch schnell, kompetent und unkompliziert. Wir als Verlag arbeiten gerne mit ihr.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span></div>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="medium">
-     <img src="p/ergebnisse/bastian.webp" alt="Aimée Bastian" width="360" height="640" loading="lazy" style="object-position:50% 25%">
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Aimée Bastian</b><small>PR-Beraterin und Führungs-Coach</small></div>
-     <blockquote>„Tolle Radiostimme: samtig-weich und angenehm.“</blockquote>
-     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span></div>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="medium">
-     <img src="p/ergebnisse/mahnke.webp" alt="Fabian Mahnke" width="360" height="640" loading="lazy" style="object-position:50% 30%">
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Fabian Mahnke</b><small>Experte für KI und Automatisierung im Marketing</small></div>
-     <blockquote>„Ihre Stimme lockt Kunden an wie Magnete!“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Als Unternehmer durfte ich erkennen, dass meine Stimme oft mehr verrät als meine Worte.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span></div>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="medium">
-     <img src="p/ergebnisse/miniaci.webp" alt="Melanie Miniaci im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
-     <a class="play" href="https://vimeo.com/1144287147" target="_blank" rel="noopener" aria-label="Video von Melanie Miniaci bei Vimeo ansehen">bei Vimeo</a>
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Melanie Miniaci</b><small>Gründerin von Miderma · Permanent Make-up und Medical Beauty · über Texte</small></div>
-     <blockquote>„Die Texte fühlen sich für mich so an, als hätte ich sie selber gesagt.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Die Zusammenarbeit mit Claudia Conen hat mich unheimlich nach vorne gebracht – mir viel Zeit erspart und es war das Beste, was mir passieren konnte.</p><p>Sie konnte sich im Vorfeld ganz mit mir identifizieren, so dass sie wusste, worum es bei mir und meiner Arbeit geht.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span></div>
-    </div>
-   </article>
-  </div>
-  <p class="platz" style="margin-top:24px">Referenzen von Unternehmen zu Imagefilm, Werbung oder E-Learning mit Freigabe für Namen und Logo: bitte von dir.</p>
- </div>
-</section>
-
-<!-- 8 Claudia-Bezug -->
-<section class="bezug hell-weiss" aria-labelledby="bezug-titel">
+<!-- 8 Claudia-Bezug (Elfenbein: Rhythmus weiß / hell / weiß) -->
+<section class="bezug" aria-labelledby="bezug-titel">
  <div class="huelle">
   <img src="p/voice-over/handmikro.webp" alt="Claudia Conen spricht lachend in ein Handmikrofon, heller Hintergrund" width="675" height="900" loading="lazy" style="object-position:50% 30%">
   <div class="text">
    <div class="kicker">Warum Claudia</div>
    <h2 id="bezug-titel">Die Umsatzstimme</h2>
    <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter und trägt ihre Stimme im Markennamen. Seit 37 Jahren arbeitet sie als Coach und Trainerin; ihre Stimme ist dabei ihr hörbarster Beweis. Aufgenommen wird im eigenen Studio.<span class="vor">Vorschlag</span></p>
-   <p><a class="leise" href="ueber-claudia.html#hoeren">Claudia hören</a></p>
+   <p><a class="leise" href="ueber-claudia.html#hoeren">Mehr von Claudia hören</a></p>
   </div>
  </div>
 </section>
 
 <!-- 9 FAQ -->
-<section id="fragen" aria-labelledby="fragen-titel">
+<section class="hell-weiss" id="fragen" aria-labelledby="fragen-titel">
  <div class="huelle">
   <div class="kicker">Häufige Fragen</div>
   <h2 id="fragen-titel">Was Auftraggeber vorher wissen wollen</h2>
@@ -624,7 +603,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <div class="kicker" style="margin:0">Nächster Schritt</div>
    <h2 id="schluss-titel">Schick Claudia deinen Text.<span class="vor">Vorschlag</span></h2>
    <p>Sag, wo er läuft. Du bekommst eine Einschätzung und den Preis – und wenn eine KI-Stimme für deinen Zweck reicht, sagt Claudia dir das.</p>
-   <a class="knopf" href="kontakt.html#buchen">Text schicken</a>
+   <a class="knopf" href="kontakt.html#buchen">Gespräch vereinbaren</a>
   </div>
  </div>
 </section>
@@ -635,7 +614,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>

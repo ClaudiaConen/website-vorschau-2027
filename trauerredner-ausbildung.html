@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ausbildung Trauerrednerin und Trauerredner | Rund ums Reden | Claudia Conen</title>
+<meta name="description" content="Ausbildung zur Trauerrednerin und zum Trauerredner: Angehörigengespräch, Trauerrede, Stimme in der Trauerhalle und der Umgang mit dem, was die Arbeit mit einem macht. Auch als Kombi mit der Ausbildung zur Hochzeitsrednerin. Live in Köln, Witten oder online in Echtzeit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Ausbildungsseiten Rund ums Reden – eigenes CSS, style.css bleibt unberührt */
+main [id]{scroll-margin-top:96px}
+main .leise{display:inline-flex;align-items:center;min-height:44px}
+main .knopf{max-width:100%}
+@media(max-width:600px){main .knopf{white-space:normal;text-align:center;line-height:1.3;padding-block:12px}}
+.pfad{padding-block:16px 0;font-size:16px;background:var(--ivory)}
+.pfad ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.pfad li+li::before{content:"/";margin-right:10px}
+.pfad a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+/* Kopf */
+.uk{padding-block:36px 72px;background:linear-gradient(180deg,var(--ivory),var(--champ) 170%)}
+.uk .huelle{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px;align-items:center}
+.uk h1{font:600 clamp(38px,4.4vw,60px)/1.06 'Cormorant Garamond',Georgia,serif;letter-spacing:-.005em}
+.uk .frage{font:500 italic clamp(22px,2.1vw,28px)/1.3 'Cormorant Garamond',Georgia,serif;margin-top:18px;max-width:34ch}
+.uk .sub{font-size:19px;line-height:1.55;margin-top:14px;max-width:56ch}
+.chips{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{border:1px solid var(--linie);background:var(--weiss);border-radius:999px;padding:7px 14px;font-size:14.5px;font-weight:600}
+.uk .wege{display:flex;flex-wrap:wrap;gap:14px 22px;margin-top:28px;align-items:center}
+.uk .huerde{font-size:15px;margin-top:10px}
+.uk figure{margin:0}
+.uk figure img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+@media(max-width:860px){.uk{padding-block:20px 56px}.uk .huelle{grid-template-columns:1fr;gap:26px}.uk figure{order:-1}.uk figure img{aspect-ratio:4/3;max-height:420px}}
+/* Rhythmus */
+.hellweiss{background:var(--weiss);border-block:1px solid var(--linie)}
+.einleitung{max-width:64ch;font-size:18px;margin-top:16px}
+.zwei{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+@media(max-width:860px){.zwei{grid-template-columns:1fr;gap:32px}}
+.text{display:grid;gap:16px;max-width:64ch;align-content:start}
+.karte-w{background:var(--ivory);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:8px;padding:26px 26px 28px;display:grid;gap:12px;align-content:start}
+section:not(.hellweiss) .karte-w{background:var(--weiss)}
+.karte-w h3{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.raute{font-size:17px}
+.nicht li::before{background:transparent!important;border:1.5px solid var(--rot)}
+/* Lehrplan */
+.module{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;counter-reset:m}
+@media(max-width:760px){.module{grid-template-columns:1fr}}
+.module li{counter-increment:m;display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 14px;padding:18px 20px;background:var(--ivory);border:1px solid var(--linie);border-radius:8px}
+.module li::before{content:counter(m,decimal-leading-zero);font:600 34px/1 'Cormorant Garamond',Georgia,serif;grid-row:span 2}
+.module b{font-size:17px;line-height:1.35}
+.module p{font-size:16px;line-height:1.5}
+.module li.praxis{border-top:3px solid var(--gold)}
+/* Ablauf, dunkel */
+.schritte{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:20px;counter-reset:s;max-width:880px}
+.schritte li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;counter-increment:s}
+.schritte li::before{content:"0" counter(s);font:600 38px/1 'Cormorant Garamond',Georgia,serif}
+.schritte b{display:block;font-size:17px;margin-bottom:4px}
+.dunkel .schritte li::before{color:var(--sand)}
+.dunkel .platz{background:transparent;color:var(--sand);border-color:var(--sand)}
+.dunkel a.leise{color:var(--sand)}
+.orte{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px}
+@media(max-width:900px){.orte{grid-template-columns:1fr}}
+.orte div{border:1px solid rgba(255,255,255,.22);border-radius:8px;padding:20px 22px;display:grid;gap:8px;align-content:start}
+.orte h3{font:600 24px/1.15 'Cormorant Garamond',Georgia,serif}
+.orte p{font-size:16px}
+.glas.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:none;border-radius:16px;padding:22px 26px;margin-top:34px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;max-width:880px}
+.glas.glas-dunkel p{font:500 italic 24px/1.3 'Cormorant Garamond',Georgia,serif;max-width:40ch;color:var(--ivory)}
+/* Preise */
+.preise{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:34px;align-items:stretch}
+.preise.vier{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:980px){.preise{grid-template-columns:1fr;max-width:620px}.preise.vier{grid-template-columns:1fr}}
+.preis{background:var(--ivory);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:8px;padding:26px 26px 24px;display:flex;flex-direction:column;gap:12px}
+.preis.empfohlen{border:1.5px solid var(--gold);border-top-width:3px}
+.preis .art{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.preis h3{font:600 28px/1.12 'Cormorant Garamond',Georgia,serif}
+.preis .betrag{font:600 34px/1.1 'Cormorant Garamond',Georgia,serif;margin-top:4px}
+.preis .betrag small{font:600 15px/1.3 'Inter',sans-serif}
+.preis .brutto{font-size:15.5px;font-weight:600;margin-top:-6px}
+.preis .raute{font-size:16px;border-top:1px solid var(--linie);padding-top:14px}
+.preis .platz{margin-top:auto}
+.preis-fuss{margin-top:22px;max-width:72ch;font-size:16px}
+/* Zertifikat */
+.urkunde{background:var(--weiss);border:1.5px solid var(--gold);border-radius:8px;padding:30px 30px 28px;display:grid;gap:12px;align-content:start}
+.urkunde .titel{font:600 italic 28px/1.2 'Cormorant Garamond',Georgia,serif}
+/* Claudia, Buch */
+.zitat-satz{margin:0;font:500 italic 26px/1.3 'Cormorant Garamond',Georgia,serif;border-left:2px solid var(--gold);padding-left:18px;max-width:40ch}
+.zitat-satz figcaption{font:600 14px/1.4 'Inter',sans-serif;font-style:normal;margin-top:8px}
+.buch{border:1px solid var(--linie);border-left:3px solid var(--gold);border-radius:8px;padding:18px 20px;background:var(--weiss);display:grid;gap:6px}
+.buch b{font:600 22px/1.2 'Cormorant Garamond',Georgia,serif}
+/* FAQ */
+.fragen{display:grid;gap:12px;max-width:840px;margin-top:30px}
+.fragen details{background:var(--ivory);border:1px solid var(--linie);border-radius:8px;padding:16px 22px}
+section:not(.hellweiss) .fragen details{background:var(--weiss)}
+.fragen summary{cursor:pointer;font-weight:600;font-size:17px;min-height:28px}
+.fragen details p{margin-top:12px}
+.weiter{display:flex;flex-wrap:wrap;gap:4px 24px;margin-top:8px}
+.schluss .huerde{font-size:15px}
+/* Rund-ums-Reden: eigener Header (Markenwelt), gleich auf allen fünf Seiten */
+.menue.rur .marke span span{display:block}
+.menue.rur .punkte>li>a.punkt-link{font-weight:600}
+.menue.rur .rur-kontakt .knopf{min-height:44px;padding:0 22px;margin-left:10px}
+.menue.rur .rur-tafel ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.menue.rur .rur-tafel a{display:block;padding:12px 14px;border:1px solid var(--linie);border-radius:12px;text-decoration:none;transition:border-color .2s,background .2s}
+.menue.rur .rur-tafel a:hover{border-color:var(--gold);background:var(--ivory)}
+.menue.rur .rur-tafel a b{display:block;font-size:15.5px}
+.menue.rur .rur-tafel a span{display:block;font-size:14px;margin-top:2px}
+.menue.rur .rur-tafel .alle{border-style:dashed}
+@media(min-width:1001px){
+ .menue.rur .punkte{display:flex;flex-direction:row;align-items:center;position:static;max-height:none;overflow:visible;background:none;border:0;padding:0}
+ .menue.rur .burger{display:none}
+ .menue.rur .tafel.rur-tafel{position:absolute;left:auto;right:24px;top:100%;transform:none;width:min(560px,calc(100vw - 48px));margin-top:8px;border:1px solid var(--linie);border-radius:18px;box-shadow:0 30px 60px -28px rgba(19,35,63,.45);padding:22px}
+ .menue.rur .punkte>li.offen>.tafel.rur-tafel{display:grid;grid-template-columns:1fr;gap:0}
+ .menue.rur .schliessen{display:none}
+}
+@media(max-width:1000px){
+ .menue.rur .punkte{display:none}
+ .menue.rur.mobil .punkte{display:flex}
+ .menue.rur .burger{display:block}
+ .menue.rur .rur-kontakt{margin-top:18px}
+ .menue.rur .rur-kontakt .knopf{margin-left:0;width:100%}
+ .menue.rur .punkte>li.offen>.tafel.rur-tafel{gap:14px}
+}
+/* Rund-ums-Reden: eigener Footer */
+footer.rur-fuss .huelle{grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr))}
+footer.rur-fuss .marke-fuss span{display:block;font:500 italic 18px/1.35 'Cormorant Garamond',Georgia,serif;color:var(--sand);margin-top:6px}
+footer.rur-fuss .zurueck{margin-top:18px}
+footer.rur-fuss .zurueck a{color:var(--sand);text-decoration:underline;text-underline-offset:4px}
+footer.rur-fuss li a{display:inline-block;padding-block:3px}
+@media(max-width:860px){footer.rur-fuss .huelle{grid-template-columns:1fr 1fr}footer.rur-fuss .huelle>div:first-child{grid-column:1/-1}}
+@media(max-width:480px){footer.rur-fuss .huelle{grid-template-columns:1fr}}
+</style>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="hinweis"><b>Private Vorschau, nicht online.</b> Seite Ausbildung Trauerrednerin im Bereich Rund ums Reden. Rot gestrichelt = Vorschlag von Vinci oder fehlende Angabe von dir.</div>
+
+<!-- Kopf und Fuß wörtlich aus rur_header_footer.html (Rund-ums-Reden-Welt) -->
+<header class="menue rur" id="menue">
+ <div class="huelle">
+  <a class="marke" href="index.html" aria-label="Claudia Conen – zur Hauptseite"><img src="i/logo.webp" alt="" width="48" height="48"><span><b>Claudia Conen</b><span>Rund ums Reden</span></span></a>
+  <ul class="punkte" id="punkte" aria-label="Menü Rund ums Reden">
+   <li><a class="punkt-link" href="freie-rede-anlaesse.html">Rednerin buchen</a></li>
+   <li>
+    <button type="button" aria-expanded="false" aria-controls="tafel-werden">Redner werden</button>
+    <div class="tafel rur-tafel" id="tafel-werden">
+     <ul>
+      <li><a href="freie-redner-ausbildung.html"><b>Freie Rednerin &amp; Hochzeitsrednerin</b><span>Ausbildung mit Schwerpunkt freie Trauung</span></a></li>
+      <li><a href="trauerredner-ausbildung.html"><b>Trauerrednerin</b><span>Abschiede in Worte fassen</span></a></li>
+      <li><a href="speaker-ausbildung.html"><b>Speakerin</b><span>Mit deinem Thema auf die Bühne</span></a></li>
+      <li><a class="alle" href="rund-ums-reden.html#redner-werden"><b>Alle Ausbildungen im Überblick</b><span>Mit Preisen und Kombi-Ausbildung</span></a></li>
+     </ul>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><a class="punkt-link" href="rund-ums-reden.html#wissen">Wissen</a></li>
+   <li class="rur-kontakt"><a class="knopf" href="kontakt.html?anliegen=rund-ums-reden">Kontakt</a></li>
+  </ul>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="punkte">Menü</button>
+ </div>
+</header>
+
+<main id="main">
+<nav class="pfad" aria-label="Brotkrumen"><div class="huelle"><ol><li><a href="rund-ums-reden.html">Rund ums Reden</a></li><li><a href="rund-ums-reden.html#redner-werden">Redner werden</a></li><li aria-current="page">Trauerrednerin</li></ol></div></nav>
+
+<!-- 1 Kopf -->
+<section class="uk" aria-labelledby="h1">
+ <div class="huelle">
+  <div>
+   <div class="eyebrow">Ausbildung · Trauerrednerin · Trauerredner</div>
+   <h1 id="h1">Ausbildung zur Trauerrednerin und zum Trauerredner</h1>
+   <p class="frage">Kann man lernen, bei einem Abschied die richtigen Worte zu finden?</p>
+   <p class="sub">Man kann. Es ist ein Handwerk, und es ist erlernbar. Was du mitbringen musst, ist die Bereitschaft, fremden Menschen an einem ihrer schwersten Tage zuzuhören.</p>
+   <ul class="chips" aria-label="Auf einen Blick">
+    <li>Live in Köln oder Witten</li>
+    <li>Live online in Echtzeit</li>
+    <li>Höchstens sechs Teilnehmende</li>
+    <li>Kombi mit Trauung möglich</li>
+   </ul>
+   <div class="wege"><a class="knopf" href="kontakt.html?anliegen=trauerredner-ausbildung">Kostenloses Vorgespräch, 30 Minuten</a><a class="leise" href="#lehrplan">Zum Lehrplan</a></div>
+   <p class="huerde">Ohne Verpflichtung. Auch die Frage, ob der Zeitpunkt für dich der richtige ist, gehört hinein.<span class="vor">Vorschlag</span></p>
+  </div>
+  <figure>
+   <img src="p/trauerredner-ausbildung/schreibtisch.webp" width="900" height="600" fetchpriority="high" style="object-position:58% 30%" alt="Claudia Conen am Schreibtisch, schreibend, mit roter Mappe">
+  </figure>
+ </div>
+</section>
+
+<!-- 2 Für wen / Ausgangslage -->
+<section class="hellweiss" id="fuer-wen" aria-labelledby="fuerwen-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Für wen</div>
+   <h2 id="fuerwen-titel">Für alle, die Abschiede begleiten wollen</h2>
+   <p>Wer Abschiede begleitet, braucht zwei Dinge: das Handwerk und einen Umgang mit dem, was die Arbeit mit einem selbst macht. Beides ist lernbar.</p>
+   <ul class="raute">
+    <li>Du willst als Trauerrednerin oder Trauerredner beginnen, oft neben deinem Beruf.</li>
+    <li>Du hältst schon freie Trauungen und willst Trauerfeiern dazunehmen.</li>
+    <li>Du arbeitest im Umfeld von Bestattung oder Begleitung und willst selbst sprechen.</li>
+   </ul>
+   <p class="klein16">Zielgruppen aus dem Markt abgeleitet.<span class="vor">Vorschlag</span></p>
+  </div>
+  <div class="text">
+   <div class="kicker">Was wirklich schwer ist</div>
+   <p>Nicht das Schreiben. Das Gespräch. Du sitzt bei Menschen am Küchentisch, die seit Tagen kaum geschlafen haben, und musst aus widersprüchlichen Erinnerungen ein Leben herausholen. Manchmal streitet die Familie noch währenddessen.</p>
+   <p>Nicht die Trauer der anderen. Die eigene. Wer Abschiede begleitet, nimmt Geschichten mit nach Hause – und das ist der häufigste Grund, warum Menschen diesen Beruf verlassen.</p>
+   <p>Und nicht der große Moment, sondern der kleine: Wenn jemand in der ersten Reihe zusammenbricht, während du sprichst. Darauf kann man sich vorbereiten. Die meisten tun es nicht.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 3 Ergebnisbild -->
+<section id="danach" aria-labelledby="danach-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Was du danach kannst</div>
+   <h2 id="danach-titel">Das Gespräch, die Rede, der Tag – und wie du diese Arbeit über Jahre trägst.</h2>
+   <figure class="zitat-satz"><blockquote>„Eine Trauerrede ist keine Rede über einen Verstorbenen. Sie ist das, was von ihm bleibt, gesagt vor den Menschen, die ihn gekannt haben.“</blockquote><figcaption>Claudia Conen</figcaption></figure>
+   <div class="buch">
+    <span class="kicker">Von Claudia Conen</span>
+    <b>Trauerreden Ratgeber – Todsicher einzigartig wie der Mensch selbst</b>
+    <p>Ihr Buch zur Trauerrede, erschienen 2022, als Taschenbuch und E-Book.</p>
+    <a class="leise" href="https://www.amazon.de/dp/3982487803" rel="noopener">Das Buch ansehen</a>
+   </div>
+  </div>
+  <div class="karte-w">
+   <h3>Danach kannst du</h3>
+   <ul class="raute">
+    <li>ein Angehörigengespräch führen: fragen, ohne zu verhören; schweigen, ohne zu verlieren</li>
+    <li>aus widersprüchlichen Erinnerungen ein Leben bauen, auch wenn die Familie sich uneins ist</li>
+    <li>eine Rede schreiben, die beim Sprechen trägt und nicht nur beim Lesen</li>
+    <li>ruhig sprechen in einem Raum, in dem alle weinen</li>
+    <li>den Tag mit Bestattungshaus, Musik und Technik abstimmen</li>
+    <li>eine Trauerfeier hinter dir lassen, ohne sie zu verdrängen</li>
+   </ul>
+   <p class="klein16">Ergebnisse aus deinem Lehrplan abgeleitet, ohne Erfolgsversprechen.<span class="vor">Vorschlag</span></p>
+  </div>
+ </div>
+</section>
+
+<!-- 4 Lehrplan -->
+<section class="hellweiss" id="lehrplan" aria-labelledby="lehrplan-titel">
+ <div class="huelle">
+  <div class="kicker">Lehrplan</div>
+  <h2 id="lehrplan-titel">Elf Module, vom Küchentisch bis zur Trauerhalle<span class="vor">Vorschlag</span></h2>
+  <p class="einleitung">Die Ausbildung an zwei Wochenenden und die 1:1-Ausbildung umfassen alle elf Module. Der Tagesworkshop greift die Module 2, 5 und 11 auf.</p>
+  <ol class="module">
+   <li><b>Trauer verstehen, die eigene Rolle kennen</b><p>Was Trauernde in diesen Tagen brauchen, und wo deine Aufgabe endet: Du begleitest mit Worten, du ersetzt keine Therapie.</p></li>
+   <li><b>Das Angehörigengespräch</b><p>Fragen, ohne zu verhören; schweigen, ohne zu verlieren. Du übst das Gespräch, bevor du eines führst, mit dem Moment, in dem jemand nicht weiterreden kann.</p></li>
+   <li><b>Wenn die Familie sich uneins ist</b><p>Getrennte Gespräche, widersprüchliche Erinnerungen. Die Rede muss nicht alles erzählen und nicht alles glätten. Sie muss nur wahr sein.</p></li>
+   <li><b>Aus Erinnerungen ein Leben bauen</b><p>Ein Lebensweg ohne Aufzählung. Oft sind es die kleinen Geschichten, die später im Raum tragen.</p></li>
+   <li><b>Die Rede sprechbar schreiben</b><p>Atemstellen, Tempo, der Satz, der die Tränen trägt. Du arbeitest den Text so lange durch, bis er beim Sprechen hält.</p></li>
+   <li><b>Glaube, Konfession, Rituale</b><p>Frei, mit Gebet und Segen oder beides verbunden. Rituale für Trauerhalle, Grab und Urne, und Musik, die zum Menschen passt.</p></li>
+   <li><b>Besondere Abschiede</b><p>Ein plötzlicher Tod, ein junges Leben, ein Suizid. Wie du sprichst, wenn es keine tröstende Erklärung gibt.</p></li>
+   <li><b>Deine Stimme in der Trauerhalle</b><p>Ruhig bleiben, Tempo, Pausen, das Mikrofon in einem Raum, in dem alle weinen. Und Angehörige vorbereiten, die selbst ein paar Worte sagen möchten.</p></li>
+   <li><b>Der Ablauf am Tag</b><p>Absprachen mit Bestattungshaus, Friedhof, Musik und Technik. Übergaben, Zeiten, was du vorher prüfst.</p></li>
+   <li><b>Zusammenarbeit und Angebot</b><p>Der Weg zu Aufträgen läuft fast immer über Bestattungshäuser. Dazu dein Preis, deine Rechnung, deine Erreichbarkeit bei kurzem Vorlauf.</p></li>
+   <li class="praxis"><b>Tragfähig bleiben und Praxisteil</b><p>Abstand finden, ohne kalt zu werden. Zum Schluss hältst du zwei eigene Reden laut vor Menschen, mit Aufnahme und Rückmeldung.</p></li>
+  </ol>
+ </div>
+</section>
+
+<!-- 5 Ablauf und Format: der eine dunkle Abschnitt, mit der einen Glaskachel -->
+<section class="dunkel" id="ablauf" aria-labelledby="ablauf-titel">
+ <div class="huelle">
+  <div class="kicker">Ablauf und Format</div>
+  <h2 id="ablauf-titel">Fünf Schritte, vom Vorgespräch bis zum Tragen</h2>
+  <ol class="schritte">
+   <li><div><b>Vorgespräch, 30 Minuten</b><p>Claudia fragt dich, warum ausgerechnet dieser Beruf. Die Antwort sagt mehr über deine Eignung als jeder Lebenslauf. Es kostet nichts und verpflichtet zu nichts.</p></div></li>
+   <li><div><b>Zuhören lernen</b><p>Du übst das Angehörigengespräch, mit echten Widersprüchen und mit dem Moment, in dem jemand nicht weiterreden kann.</p></div></li>
+   <li><div><b>Die Rede</b><p>Aus deinem Gespräch entsteht ein Text. Ihr arbeitet ihn so lange durch, bis er beim Sprechen trägt.</p></div></li>
+   <li><div><b>Sprechen</b><p>Du sprichst die Rede laut, vor Menschen. Stimme, Stand, Blick, Pausen.</p></div></li>
+   <li><div><b>Tragfähig bleiben</b><p>Der Teil, den viele Ausbildungen auslassen: wie du eine Trauerfeier hinter dir lässt, ohne sie zu verdrängen. Damit du den Beruf in fünf Jahren noch hast.</p></div></li>
+  </ol>
+  <div class="orte">
+   <div><h3>Live vor Ort</h3><p>In Köln oder in Witten, in kleiner Runde. Jede und jeder steht mehrfach auf und redet; die anderen sind dein erstes Publikum.</p></div>
+   <div><h3>Live online</h3><p>In Echtzeit, mit Kamera und Ton, zu festen Terminen. Kein Videokurs zum Abrufen.</p></div>
+   <div><h3>1:1</h3><p>Du und Claudia, in Witten oder live online. Alles dreht sich um deine Stimme, deine Texte, deine Situationen.</p></div>
+  </div>
+  <p class="platz" style="margin-top:20px">Höchstens sechs Teilnehmende als Vorschlag (deine heutigen Seiten nennen einmal „6:1“, einmal „höchstens zwölf“). Termine: bitte von dir.</p>
+  <div class="glas glas-dunkel">
+   <p>Trauung und Trauerfeier: dasselbe Handwerk, zwei Anlässe.</p>
+   <a class="knopf zweit" href="#preise">Zu den Preisen</a>
+  </div>
+ </div>
+</section>
+
+<!-- 6 Preise -->
+<section class="hellweiss" id="preise" aria-labelledby="preise-titel">
+ <div class="huelle">
+  <div class="kicker">Preise</div>
+  <h2 id="preise-titel">Vier Wege, auch als Kombi mit der Trauung<span class="vor">Vorschlag</span></h2>
+  <p class="einleitung">Alle Preise verstehen sich zuzüglich 19 % Mehrwertsteuer. Den Preis bekommst du vor dem ersten Termin schriftlich, mit allem, was enthalten ist.</p>
+  <div class="preise vier">
+   <div class="preis">
+    <span class="art">Einstieg</span>
+    <h3>Tagesworkshop Trauerrede</h3>
+    <p class="betrag">590 € <small>zzgl. MwSt.</small></p>
+    <p class="brutto">702,10 € inkl. 19 % MwSt.</p>
+    <ul class="raute">
+     <li>Ein Tag live, vor Ort oder online in Echtzeit</li>
+     <li>Höchstens sechs Teilnehmende</li>
+     <li>Angehörigengespräch, Aufbau, eine kurze Rede</li>
+     <li>Rückmeldung auf deine Rede</li>
+    </ul>
+    <p class="platz">Preise als Vorschlag von Vinci, Freigabe durch Claudia offen.</p>
+   </div>
+   <div class="preis empfohlen">
+    <span class="art">Der ganze Weg</span>
+    <h3>Ausbildung an zwei Wochenenden</h3>
+    <p class="betrag">1.990 € <small>zzgl. MwSt.</small></p>
+    <p class="brutto">2.368,10 € inkl. 19 % MwSt.</p>
+    <ul class="raute">
+     <li>Alle elf Module, vier Tage live vor Ort</li>
+     <li>Höchstens sechs Teilnehmende</li>
+     <li>Zwei eigene Reden mit Aufnahme und Rückmeldung</li>
+     <li>Eine Nachbesprechung nach deiner ersten Trauerfeier</li>
+     <li>Abschlusszertifikat von Claudia Conen</li>
+    </ul>
+    <p class="platz">Preise als Vorschlag von Vinci, Freigabe durch Claudia offen.</p>
+   </div>
+   <div class="preis">
+    <span class="art">Einzeln</span>
+    <h3>Ausbildung 1:1</h3>
+    <p class="betrag">2.900 € <small>zzgl. MwSt.</small></p>
+    <p class="brutto">3.451 € inkl. 19 % MwSt.</p>
+    <ul class="raute">
+     <li>Alle elf Module, Termine nach Absprache</li>
+     <li>In Witten oder live online</li>
+     <li>Auf Wunsch Begleitung zu deiner ersten Trauerfeier</li>
+     <li>Abschlusszertifikat von Claudia Conen</li>
+    </ul>
+    <p class="platz">Preise als Vorschlag von Vinci, Freigabe durch Claudia offen.</p>
+   </div>
+   <div class="preis" id="kombi">
+    <span class="art">Kombi</span>
+    <h3>Trau- und Trauerrednerin</h3>
+    <p class="betrag">3.900 € <small>zzgl. MwSt.</small></p>
+    <p class="brutto">4.641 € inkl. 19 % MwSt.</p>
+    <ul class="raute">
+     <li>Die <a class="leise" href="freie-redner-ausbildung.html">Ausbildung zur freien Rednerin und Hochzeitsrednerin</a> in kleiner Gruppe</li>
+     <li>Dazu diese Ausbildung an zwei Wochenenden</li>
+     <li>Einzeln gebucht 4.480 € zzgl. MwSt.</li>
+     <li>Ein Abschlusszertifikat für beide Wege</li>
+    </ul>
+    <p class="platz">Preise als Vorschlag von Vinci, Freigabe durch Claudia offen.</p>
+   </div>
+  </div>
+  <p class="preis-fuss">Warum beides? Trauungen liegen am Wochenende und im Sommer, Trauerfeiern werktags und ganzjährig. Wer beides anbietet, hat kein leeres Winterhalbjahr.</p>
+ </div>
+</section>
+
+<!-- 7 Zertifikat -->
+<section id="zertifikat" aria-labelledby="zert-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Zertifikat</div>
+   <h2 id="zert-titel">Was du am Ende in der Hand hast<span class="vor">Vorschlag</span></h2>
+   <p>Nach dem Praxisteil bekommst du ein Abschlusszertifikat von Claudia Conen. Darauf steht, was du durchlaufen hast: die Module, das Format und deine Reden vor Publikum.</p>
+   <p>Trauerredner ist keine geschützte Berufsbezeichnung. Angehörige fragen nicht nach einem Zertifikat, sondern danach, ob du zuhören kannst und ob deine Rede stimmt. Genau das übst du hier.</p>
+  </div>
+  <div class="urkunde">
+   <p class="titel">Abschlusszertifikat von Claudia Conen</p>
+   <ul class="raute">
+    <li>nach dem Praxisteil, nicht nach Anwesenheit</li>
+    <li>mit Modulen und Format</li>
+    <li>kein IHK-Zertifikat und keine staatliche Prüfung</li>
+   </ul>
+   <p class="platz">Gestaltung des Zertifikats und genaue Angaben (Stunden, Datum): bitte von dir.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 8 Wann es nicht passt + Wer ausbildet -->
+<section class="hellweiss" id="passung" aria-labelledby="passung-titel">
+ <div class="huelle zwei">
+  <div class="text">
+   <div class="kicker">Ehrlich vorab</div>
+   <h2 id="passung-titel">Wann es nicht passt</h2>
+   <ul class="raute nicht">
+    <li>Dein eigener Verlust ist noch frisch. Dann wird jede Feier zur eigenen. Das hilft niemandem, dir am wenigsten.</li>
+    <li>Du suchst ein ruhiges Nebeneinkommen. Die Arbeit ist emotional fordernd, und die Termine kommen mit wenigen Tagen Vorlauf.</li>
+    <li>Du möchtest Vorlagen, die sich anpassen lassen. Es gibt sie, und sie sind der Grund, warum Angehörige hinterher sagen, es habe nicht gepasst.</li>
+    <li>Du willst nicht über dich selbst sprechen. Der Umgang mit dem, was die Arbeit mit einem macht, ist hier Teil der Ausbildung.</li>
+    <li>Du suchst einen Videokurs zum Abrufen. Hier wird live gearbeitet, vor Ort oder online in Echtzeit.</li>
+   </ul>
+  </div>
+  <div class="text">
+   <div class="kicker">Wer ausbildet</div>
+   <h2>Claudia Conen</h2>
+   <p>Claudia Conen spricht selbst bei Trauerfeiern im Ruhrgebiet und bildet aus. Sie ist Autorin des „Trauerreden Ratgebers“. Als Coach und Trainerin arbeitet sie seit 37 Jahren an Stimme, Gesprächsführung und Auftritt.</p>
+   <p class="platz">Anzahl deiner gehaltenen Trauerreden: bitte von dir.</p>
+   <p class="platz">Stimmen von Teilnehmenden der Trauerredner-Ausbildung, mit Quelle und Freigabe: bitte von dir.</p>
+   <div class="weiter"><a class="leise" href="freie-redner-ausbildung.html">Freie Rednerin und Hochzeitsrednerin werden</a><a class="leise" href="rund-ums-reden.html">Zurück zu Rund ums Reden</a></div>
+  </div>
+ </div>
+</section>
+
+<!-- 9 FAQ -->
+<section id="fragen" aria-labelledby="faq-titel">
+ <div class="huelle">
+  <div class="kicker">Häufige Fragen</div>
+  <h2 id="faq-titel">Was du vorher wissen willst</h2>
+  <p class="klein16" style="margin-top:12px">Antworten 1, 2, 4, 5, 7 und 8 aus deinen heutigen Seiten (Sie zu du), 3 und 6 neu.<span class="vor">Vorschlag</span></p>
+  <div class="fragen">
+   <details><summary>Ich habe selbst jemanden verloren. Spricht das gegen mich?</summary>
+    <p>Nein, es ist häufig der Anlass. Wichtig ist nur der zeitliche Abstand. Wenn der eigene Verlust noch frisch ist, wird jede Feier zur eigenen – das hilft niemandem, dir am wenigsten. Darüber sprechen wir offen im Vorgespräch.</p></details>
+   <details><summary>Muss ich religiös sein?</summary>
+    <p>Nein. Eine freie Trauerrede ist keine kirchliche Handlung. Wichtig ist, dass du die Überzeugungen der Familie tragen kannst – auch wenn es nicht deine sind. Das ist eine Haltung, keine Frage des Glaubens.</p></details>
+   <details><summary>Bekomme ich ein Zertifikat?</summary>
+    <p>Ja, ein Abschlusszertifikat von Claudia Conen, nach dem Praxisteil. Ein IHK-Zertifikat ist es nicht. Wenn ein IHK-Zertifikat für dich entscheidend ist, sag es im Vorgespräch – dann bekommst du die Adressen von Anbietern, die eines ausstellen.</p></details>
+   <details><summary>Wie oft wird man angefragt?</summary>
+    <p>Das hängt von deiner Region ab und davon, welche Bestattungshäuser du kennst. Eine Zahl zu nennen, die ich für dich nicht kenne, wäre ein Versprechen ohne Deckung. Der Weg läuft fast immer über Bestattungshäuser, nicht über Anzeigen.</p></details>
+   <details><summary>Kann ich das neben meinem Beruf machen?</summary>
+    <p>Ja. Trauerfeiern liegen meist werktags vormittags, die Vorbereitung abends. Viele beginnen so. Rechne mit mehreren Stunden Vorbereitung je Feier – das Gespräch allein dauert oft zwei.</p></details>
+   <details><summary>Ist das ein Videokurs?</summary>
+    <p>Nein. Alles läuft live: vor Ort in Köln oder Witten oder live online in Echtzeit. Es gibt keinen Videokurs zum Abrufen, denn eine Trauerrede lernt man vor Menschen.</p></details>
+   <details><summary>Lohnt es sich, beides zu machen: Trauung und Trauerfeier?</summary>
+    <p>Wirtschaftlich ja. Trauungen liegen am Wochenende und im Sommer, Trauerfeiern werktags und ganzjährig. Wer beides anbietet, hat kein leeres Winterhalbjahr. Inhaltlich ist es derselbe Beruf: zuhören, eine Geschichte finden, sie sprechbar machen.</p></details>
+   <details><summary>Ich bin nah am Wasser gebaut. Geht das trotzdem?</summary>
+    <p>Ja. Gefühl ist kein Fehler, es ist der Grund, warum Menschen dir zuhören. Du lernst, es zu halten, statt es zu verstecken – mit Atem, mit Pausen, mit einem Text, der trägt. Wer nichts fühlt, sollte keine Reden halten.</p></details>
+  </div>
+ </div>
+</section>
+
+<!-- 10 Ein CTA -->
+<section class="schluss">
+ <div class="huelle">
+  <div class="karte auf">
+   <div class="kicker">Vorgespräch</div>
+   <h2>Sprich mit mir, bevor du dich entscheidest.</h2>
+   <p>Ein Vorgespräch, ohne Verpflichtung. Danach weißt du, ob diese Arbeit zu dir passt. Und wenn ich den Eindruck habe, dass sie es nicht tut, sage ich es dir.</p>
+   <a class="knopf" href="kontakt.html?anliegen=trauerredner-ausbildung">Kostenloses Vorgespräch, 30 Minuten</a>
+   <p class="huerde">Telefonisch oder per Video. Den Preis deines Formats bekommst du danach schriftlich.<span class="vor">Vorschlag</span></p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="rur-fuss">
+ <div class="huelle">
+  <div>
+   <p class="marke-fuss">Claudia Conen · Rund ums Reden<span>Die Stimme fürs Herz. Das Leben in gelebten Worten.</span></p>
+   <p style="margin-top:12px">Witten · Ruhrgebiet und Köln, weiter nach Absprache</p>
+   <p class="zurueck"><a href="index.html">Zur Hauptseite für Unternehmen</a></p>
+  </div>
+  <div><b>Rednerin buchen</b><ul><li><a href="freie-rede-anlaesse.html#trauung">Freie Trauung</a></li><li><a href="freie-rede-anlaesse.html#trauerfeier">Trauerrede</a></li><li><a href="freie-rede-anlaesse.html#lebensmomente">Lebensmomente</a></li><li><a href="freie-rede-anlaesse.html#pakete">Pakete und Preise</a></li></ul></div>
+  <div><b>Redner werden</b><ul><li><a href="freie-redner-ausbildung.html">Freie Rednerin &amp; Hochzeitsrednerin</a></li><li><a href="trauerredner-ausbildung.html">Trauerrednerin</a></li><li><a href="speaker-ausbildung.html">Speakerin</a></li><li><a href="rund-ums-reden.html#redner-werden">Alle Ausbildungen</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="rund-ums-reden.html#wissen">Wissen</a></li><li><a href="voice-over.html">Voice-over für Unternehmen</a></li><li><a href="kontakt.html?anliegen=rund-ums-reden">Kontakt</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+ </div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Course",
+   "name": "Ausbildung zur Trauerrednerin und zum Trauerredner",
+   "description": "Ausbildung für Trauerrednerinnen und Trauerredner: Angehörigengespräch, Rede, Rituale, besondere Abschiede, Stimme in der Trauerhalle, Zusammenarbeit mit Bestattungshäusern, Selbstfürsorge und Praxisteil. Auch als Kombi Trau- und Trauerrednerin.",
+   "inLanguage": "de",
+   "provider": {
+    "@type": "Person",
+    "name": "Claudia Conen",
+    "url": "https://claudiaconen.com"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Rund ums Reden",
+     "item": "https://claudiaconen.com/rund-ums-reden"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Redner werden",
+     "item": "https://claudiaconen.com/rund-ums-reden#redner-werden"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Trauerrednerin"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Ich habe selbst jemanden verloren. Spricht das gegen mich?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein, es ist häufig der Anlass. Wichtig ist nur der zeitliche Abstand. Wenn der eigene Verlust noch frisch ist, wird jede Feier zur eigenen – das hilft niemandem, dir am wenigsten. Darüber sprechen wir offen im Vorgespräch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Muss ich religiös sein?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Eine freie Trauerrede ist keine kirchliche Handlung. Wichtig ist, dass du die Überzeugungen der Familie tragen kannst – auch wenn es nicht deine sind. Das ist eine Haltung, keine Frage des Glaubens."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bekomme ich ein Zertifikat?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, ein Abschlusszertifikat von Claudia Conen, nach dem Praxisteil. Ein IHK-Zertifikat ist es nicht. Wenn ein IHK-Zertifikat für dich entscheidend ist, sag es im Vorgespräch – dann bekommst du die Adressen von Anbietern, die eines ausstellen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie oft wird man angefragt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Das hängt von deiner Region ab und davon, welche Bestattungshäuser du kennst. Eine Zahl zu nennen, die ich für dich nicht kenne, wäre ein Versprechen ohne Deckung. Der Weg läuft fast immer über Bestattungshäuser, nicht über Anzeigen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kann ich das neben meinem Beruf machen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Trauerfeiern liegen meist werktags vormittags, die Vorbereitung abends. Viele beginnen so. Rechne mit mehreren Stunden Vorbereitung je Feier – das Gespräch allein dauert oft zwei."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ist das ein Videokurs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Alles läuft live: vor Ort in Köln oder Witten oder live online in Echtzeit. Es gibt keinen Videokurs zum Abrufen, denn eine Trauerrede lernt man vor Menschen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Lohnt es sich, beides zu machen: Trauung und Trauerfeier?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wirtschaftlich ja. Trauungen liegen am Wochenende und im Sommer, Trauerfeiern werktags und ganzjährig. Wer beides anbietet, hat kein leeres Winterhalbjahr. Inhaltlich ist es derselbe Beruf: zuhören, eine Geschichte finden, sie sprechbar machen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ich bin nah am Wasser gebaut. Geht das trotzdem?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Gefühl ist kein Fehler, es ist der Grund, warum Menschen dir zuhören. Du lernst, es zu halten, statt es zu verstecken – mit Atem, mit Pausen, mit einem Text, der trägt. Wer nichts fühlt, sollte keine Reden halten."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script src="site.js"></script>

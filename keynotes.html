@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Keynote Speakerin für Mensch &amp; KI | Claudia Conen</title>
+<title>Keynote Speakerin für Führung, Kommunikation und Veränderung | Claudia Conen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -162,6 +162,21 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
 .player details{font-size:16px}
 .drei p,.drei li{font-size:16px}
 @media(max-width:900px){.skopf figure{max-width:320px}}
+/* Nachtauftrag 11./12.10.: Ausgangslage, Passung, Glaskachel auf Dunkel */
+.lage-k{background:var(--weiss);border-block:1px solid var(--linie)}
+.lage-raster{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;margin:28px 0 24px;align-items:start}
+.lage-k .problem{display:grid;gap:14px}
+.lage-k .gross{font:500 italic clamp(25px,2.6vw,33px)/1.25 'Cormorant Garamond',Georgia,serif;padding-left:20px;border-left:2px solid var(--gold)}
+.lage-k .zwei-sp{display:grid;gap:20px}
+.lage-k .zwei-sp>div{border-left:3px solid var(--gold);padding-left:16px}
+.lage-k h3{font:600 24px/1.2 'Cormorant Garamond',Georgia,serif;margin-bottom:6px}
+@media(max-width:860px){.lage-raster{grid-template-columns:1fr;gap:28px}}
+.ueberblick .weiter{margin-top:18px}
+.anlass-k{background:var(--weiss);border-block:1px solid var(--linie)}
+.anlass-k .anlaesse div{background:var(--ivory)}
+.anlass-k .passung{margin-top:24px;padding:16px 20px;border:1px solid var(--linie);border-left:3px solid var(--gold);border-radius:8px;max-width:860px}
+.transfer .glaskachel{padding:24px 26px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-radius:20px;box-shadow:none}
+.transfer .glaskachel .raute{margin:0}
 </style>
 <meta name="description" content="Claudia Conen ist Keynote Speakerin für Führung, Kommunikation und Veränderung: Keynotes zur menschlichen Wirkungskraft im KI-Zeitalter für Unternehmen, Kongresse und Führungstreffen. Mit Transfer-Lab und Infos für Veranstalter.">
 <script type="application/ld+json">
@@ -291,7 +306,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -300,9 +315,10 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -322,8 +338,8 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  <div class="huelle">
   <div>
    <div class="eyebrow">Keynotes · Claudia Conen – Die Umsatzstimme</div>
-   <h1 id="h1">Menschliche Wirkungskraft im KI-Zeitalter</h1>
-   <p class="rolle">Keynote Speakerin für Führung, Kommunikation und Veränderung</p>
+   <h1 id="h1">Keynote Speakerin für Führung, Kommunikation und Veränderung</h1>
+   <p class="rolle">Menschliche Wirkungskraft im KI-Zeitalter</p>
    <p class="sub">Keynotes für Unternehmen, die KI voranbringen wollen, ohne den Menschen zu verlieren. Ein Vortrag, der nach dem Applaus noch etwas verändert.</p>
    <div class="handlung">
     <a class="knopf" href="kontakt.html#keynote">Keynote anfragen</a>
@@ -350,7 +366,33 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  </div>
 </nav>
 
-<!-- 2 Showreel oder Bühnenausschnitt (§16, §30.3) – Glas 2 von 3 -->
+<!-- 2 Problem und Ergebnis (Masterplan 7.3, Schritte 1 und 2) -->
+<section class="lage-k" id="ausgangslage" aria-labelledby="lage-titel">
+ <div class="huelle">
+  <div class="kicker">Ausgangslage</div>
+  <h2 id="lage-titel">Die Strategie steht. Im Saal bleibt es still.<span class="vor">Vorschlag</span></h2>
+  <div class="lage-raster">
+   <div class="problem">
+    <p class="gross">KI ist eingeführt, die Folien sind perfekt, die Botschaft ist richtig.</p>
+    <p>Trotzdem ändert sich nach der Veranstaltung wenig. Menschen folgen nicht Folien. Sie folgen Menschen, denen sie glauben.</p>
+    <p>Für Unternehmer, Führungskräfte und Experten – und für Veranstalter, die ihrem Publikum mehr mitgeben wollen als einen Abend.</p>
+   </div>
+   <div class="zwei-sp">
+    <div>
+     <h3>Für das Publikum</h3>
+     <p>Ein klarer Perspektivwechsel und ein konkreter Transferimpuls, nicht nur Inspiration.</p>
+    </div>
+    <div>
+     <h3>Für das Unternehmen</h3>
+     <p>Eine gemeinsame Sprache für menschliche Wirkung im KI-Zeitalter – und der Anfang von Vertrauen, Akzeptanz und Handlungsbereitschaft.</p>
+    </div>
+   </div>
+  </div>
+  <p class="platz">Beobachtete Wirkung nach einer deiner Keynotes (z. B. Rückmeldung eines Auftraggebers, was danach anders lief): bitte von dir.</p>
+ </div>
+</section>
+
+<!-- 2 Bühnenausschnitt (Masterplan 8.4) – Glas 2 von 3 -->
 <section class="buehne-sek" id="buehne" aria-labelledby="buehne-titel">
  <div class="huelle">
   <figure class="film-platz">
@@ -360,28 +402,19 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
   <div class="rechts">
    <div class="kicker" style="margin:0">Claudia live erleben</div>
    <h2 id="buehne-titel" style="margin:0">Claudia live hören</h2>
-   <div class="player glas" role="group" aria-label="Audio: Claudia live hören">
-    <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
+   <div class="player glas" role="group" aria-label="Audio: Bühnenausschnitt">
+    <button class="spiel" type="button" disabled aria-label="Abspielen – Bühnenausschnitt folgt">▶</button>
     <div>
-     <b>Claudia live hören</b>
-     <span class="meta">Echter Bühnenausschnitt · 0:45 bis 1:30 · startet nur auf Klick</span>
+     <b>Bühnenausschnitt</b>
+     <span class="meta">Echter Moment aus einer Keynote · 0:45 bis 1:30 · startet nur auf Klick</span>
      <div class="balken" aria-hidden="true"><span></span></div>
     </div>
     <details>
      <summary>Transkript lesen</summary>
-     <p class="platz">Ausschnitt und Transkript fehlen noch – bitte von dir.</p>
+     <p class="platz">Bühnenausschnitt folgt. Das Transkript kommt mit der Aufnahme.</p>
     </details>
    </div>
-   <div class="platz">
-    <p><b>Bühnenvideo und Bühnenton: bitte von dir.</b> Was der Ausschnitt zeigen soll (§16):</p>
-    <ul>
-     <li>echter Bühnenton, ein prägnanter Gedanke</li>
-     <li>sichtbare Publikumsreaktion</li>
-     <li>keine reine Studio-Werbeansage</li>
-     <li>startet nicht automatisch</li>
-     <li>mit Untertiteln oder Transkript</li>
-    </ul>
-   </div>
+   <p class="platz">Audio von dir: Bühnenausschnitt, 45–90 Sekunden. Echter Bühnenton, ein prägnanter Gedanke, hörbare Reaktion des Publikums. Bühnenausschnitt folgt.</p>
   </div>
  </div>
 </section>
@@ -390,7 +423,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
 <section class="ueberblick" id="ueberblick" aria-labelledby="ueberblick-titel">
  <div class="huelle">
   <div class="kicker">Keynotes im Überblick</div>
-  <h2 id="ueberblick-titel">Eine Signatur-Keynote, fünf Themen für Unternehmen</h2>
+  <h2 id="ueberblick-titel">Eine Signatur-Keynote für dein Unternehmen</h2>
   <article class="leitkarte">
    <img src="p/keynotes/ueberblick.webp" alt="Claudia Conen spricht mit Mikrofon in einen Saal, im Hintergrund das Publikum an Tischen" width="900" height="599" loading="lazy" style="object-position:60% 40%">
    <!-- Bildnachweis prüfen: Fotograf/in unbekannt, Original DSC06880-Edit.jpg (vorzeigeseite/drive_neu/jacke) -->
@@ -401,13 +434,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
     <a class="leise" href="#du-wirkst-immer">Alle Angaben zur Signatur-Keynote</a>
    </div>
   </article>
-  <ul class="karten">
-   <li><a href="#persoenlichkeit"><span class="ziel">Keynote</span><b>Persönlichkeit vor Perfektion</b><span>Warum menschliche Wirkung im KI-Zeitalter zum Wettbewerbsvorteil wird.</span></a></li>
-   <li><a href="#fuehren"><span class="ziel">Keynote</span><b>Führung braucht Wirkung</b><span>Menschlich führen im KI-Zeitalter.</span></a></li>
-   <li><a href="#ki-eingefuehrt"><span class="ziel">Keynote</span><b>KI kann viel. Vertrauen entsteht zwischen Menschen.</b><span>Akzeptanz und Veränderungs&shy;kommunikation.</span></a></li>
-   <li><a href="#verkoerpern"><span class="ziel">Keynote</span><b>Die menschliche Stimme im digitalen Wandel</b><span>Wenn KI perfekt formuliert, muss der Mensch glaubwürdig verkörpern.</span></a></li>
-   <li><a href="#vertrauen"><span class="ziel">Keynote</span><b>Emotional verkaufen im KI-Zeitalter</b><span>Vertrauen verkauft.</span></a></li>
-  </ul>
+  <p class="weiter">Dazu fünf Themen für Unternehmen: <a class="leise" href="#themen">Weitere Vortragsthemen ansehen</a></p>
  </div>
 </section>
 
@@ -456,19 +483,19 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  <div class="huelle">
   <div class="kicker">Weitere Vortragsthemen</div>
   <h2 id="detail-titel">Fünf Themen, eine Haltung</h2>
-  <p class="einleitung">Themenreihe nach deinem Masterhandbuch (§9.1); deine bisherigen Titel stehen jeweils als Ausgangsfrage oder Untertitel. <span class="vor">Vorschlag</span></p>
+  <p class="einleitung">Jedes Thema ist ein Zugang zur selben Frage: Wie bleibt Wirkung menschlich, wenn KI Inhalte erzeugt?<span class="vor">Vorschlag</span></p>
   <div class="weitere-ks">
    <details class="klapp" id="persoenlichkeit">
     <summary><span><b>Persönlichkeit vor Perfektion</b><small>Warum menschliche Wirkung im KI-Zeitalter zum Wettbewerbsvorteil wird.</small></span></summary>
     <div class="inhalt">
+     <p><span class="vor">Vorschlag</span> Ausgangsfrage und Ergebnis</p>
      <dl class="mini">
-      <dt>Ausgangsfrage</dt><dd><span class="luecke">bitte von dir</span></dd>
+      <dt>Ausgangsfrage</dt><dd>Wenn alle perfekt klingen: Woran erkennt man dann noch dich?</dd>
       <dt>Relevanz</dt><dd>Im KI-Zeitalter ist Perfektion klickbar. Persönlichkeit weckt Vertrauen. Denn KI kann berechnen, doch Persönlichkeit begeistert, fasziniert und berührt.</dd>
-      <dt>Zentrale Gedanken</dt><dd><span class="luecke">bitte von dir</span></dd>
-      <dt>Ergebnis</dt><dd><span class="luecke">bitte von dir</span></dd>
+      <dt>Zentrale Gedanken</dt><dd>Aus der Masse herauszustechen, erzeugt Aufmerksamkeit. Als Mensch und Experte erkannt zu werden, schafft Vertrauen. Persönlichkeit vor Perfektion.</dd>
+      <dt>Ergebnis</dt><dd>Dein Publikum weiß, was an ihm unverwechselbar ist – und warum es das nicht wegpolieren sollte.</dd>
       <dt>Zielgruppen</dt><dd>Unternehmen, Führungskräfte und Veranstalter mit gemischtem Publikum; Konferenz, Kongress, Jahresauftakt, Kundenveranstaltung.</dd>
-      <dt>Dauer</dt><dd><span class="luecke">bitte von dir</span></dd>
-      <dt>Workshop</dt><dd><span class="luecke">bitte von dir</span></dd>
+      <dt>Workshop</dt><dd>„Als Mensch und Experte erkannt werden“. <a class="leise" href="workshops.html">Workshops ansehen</a></dd>
      </dl>
     </div>
    </details>
@@ -478,10 +505,9 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
      <dl class="mini">
       <dt>Ausgangsfrage</dt><dd>Du sagst es klar. Warum kommt es nicht an?</dd>
       <dt>Relevanz</dt><dd>Führungskräfte scheitern selten am Inhalt. Sie scheitern daran, dass der Inhalt nicht ankommt – weil die Stimme etwas anderes sagt als der Satz, weil der Raum schon eine Meinung hat, oder weil niemand widerspricht und alle trotzdem etwas anderes tun.</dd>
-      <dt>Zentrale Gedanken</dt><dd>Führung wird als Inhalt gedacht und als Wirkung erlebt. Wer nur am Inhalt arbeitet, arbeitet an der falschen Hälfte. <span class="luecke">weitere bitte von dir</span></dd>
-      <dt>Ergebnis</dt><dd><span class="luecke">bitte von dir</span></dd>
+      <dt>Zentrale Gedanken</dt><dd>Führung wird als Inhalt gedacht und als Wirkung erlebt. Wer nur am Inhalt arbeitet, arbeitet an der falschen Hälfte. </dd>
+      <dt>Ergebnis</dt><dd>Führungskräfte prüfen ihre nächste wichtige Botschaft nicht nur auf Inhalt, sondern auf Wirkung: Stimme, Haltung, Moment. <span class="vor">Vorschlag</span></dd>
       <dt>Zielgruppen</dt><dd>Führungskräfte, Führungsteams, Führungskräfteentwicklung; Führungskräftetagung, Führungskreis, Change-Auftakt.</dd>
-      <dt>Dauer</dt><dd><span class="luecke">bitte von dir</span></dd>
       <dt>Workshop</dt><dd>„Menschlich führen und kommunizieren im KI-Zeitalter“. <a class="leise" href="workshops.html">Workshops ansehen</a></dd>
      </dl>
     </div>
@@ -493,9 +519,8 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
       <dt>Ausgangsfrage</dt><dd>KI ist eingeführt. Warum nutzt sie kaum jemand?</dd>
       <dt>Relevanz</dt><dd>Weil die Technik das kleinere Problem ist. Werkzeuge lassen sich ausrollen. Vertrauen nicht – und ohne Vertrauen rührt niemand freiwillig etwas an, das seinen Arbeitsplatz kosten könnte.</dd>
       <dt>Zentrale Gedanken</dt><dd>Wer ein Werkzeug benutzt, das seine eigene Arbeit überflüssig machen könnte, tut das nicht aus Neugier. Er tut es, wenn er weiß, was aus ihm wird. Diese Frage beantwortet kein Werkzeug und kein Leitfaden. Kein Werkzeugtraining: Es geht nicht um Prompts oder Software, sondern um Kommunikation.</dd>
-      <dt>Ergebnis</dt><dd><span class="luecke">bitte von dir</span></dd>
+      <dt>Ergebnis</dt><dd>Führung und Belegschaft haben eine gemeinsame Sprache für das, was KI verändert, und für das, was beim Menschen bleibt. <span class="vor">Vorschlag</span></dd>
       <dt>Zielgruppen</dt><dd>Belegschaften und Führungskräfte in der KI-Einführung, HR, People &amp; Culture; KI-Einführung und Digitalprojekte, Betriebsversammlung, Führungskräftetagung.</dd>
-      <dt>Dauer</dt><dd><span class="luecke">bitte von dir</span></dd>
       <dt>Workshop</dt><dd>„Wirkungskraft für Teams in Veränderung“. <a class="leise" href="unternehmen.html#mensch-ki">Mensch &amp; KI im Unternehmen</a></dd>
      </dl>
      <p class="platz">Sollen die vier Zahlen der Pronova-BKK-Studie „Arbeiten 2025“ von deiner heutigen Seite hierher (mit Quelle)? Bitte von dir.</p>
@@ -507,11 +532,10 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
      <dl class="mini">
       <dt>Ausgangsfrage</dt><dd>Wenn KI perfekt formuliert – wer verkörpert die Botschaft glaubwürdig?<span class="vor">Vorschlag</span></dd>
       <dt>Relevanz</dt><dd>Wenn jeder Text perfekt formuliert werden kann, entscheidet, wer ihn glaubwürdig sagt: mit Stimme, Haltung und Präsenz.<span class="vor">Vorschlag</span></dd>
-      <dt>Zentrale Gedanken</dt><dd><span class="luecke">bitte von dir</span></dd>
-      <dt>Ergebnis</dt><dd><span class="luecke">bitte von dir</span></dd>
-      <dt>Zielgruppen</dt><dd><span class="luecke">bitte von dir</span></dd>
-      <dt>Dauer</dt><dd><span class="luecke">bitte von dir</span></dd>
-      <dt>Workshop</dt><dd><span class="luecke">bitte von dir</span></dd>
+      <dt>Zentrale Gedanken</dt><dd>KI kann Inhalte erzeugen. Wirkung entsteht durch den Menschen. Deine Botschaft ist nur so viel wert wie die Fähigkeit, sie zu kommunizieren.</dd>
+      <dt>Ergebnis</dt><dd>Dein Publikum erlebt im Saal, was Stimme und Präsenz zu einer Botschaft beitragen.</dd>
+      <dt>Zielgruppen</dt><dd>Führungskräfte, Vertrieb, Experten mit Kundenkontakt; Konferenz, Kundenveranstaltung, Jahresauftakt.</dd>
+      <dt>Workshop</dt><dd>Präsenz und Wirkung. <a class="leise" href="workshops.html">Workshops ansehen</a></dd>
      </dl>
     </div>
    </details>
@@ -521,40 +545,21 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
      <dl class="mini">
       <dt>Ausgangsfrage</dt><dd>Dein Angebot ist gut. Warum kauft trotzdem der andere?</dd>
       <dt>Relevanz</dt><dd>Weil Menschen selten das beste Angebot nehmen, sondern das, bei dem sie sich sicher fühlen. Diese Sicherheit entsteht im Gespräch – daran, wie jemand fragt, wie er zuhört und was er sagt, wenn er die Antwort nicht kennt.</dd>
-      <dt>Zentrale Gedanken</dt><dd>„Wir verkaufen nicht an Brieftaschen. Wir verkaufen an den Menschen dahinter.“ <span class="luecke">weitere bitte von dir</span></dd>
-      <dt>Ergebnis</dt><dd><span class="luecke">bitte von dir</span></dd>
+      <dt>Zentrale Gedanken</dt><dd>„Wir verkaufen nicht an Brieftaschen. Wir verkaufen an den Menschen dahinter.“ </dd>
+      <dt>Ergebnis</dt><dd>Dein Vertrieb weiß, woran Kunden Sicherheit festmachen, und nimmt eine Frage mit ins nächste Gespräch. <span class="vor">Vorschlag</span></dd>
       <dt>Zielgruppen</dt><dd>Vertriebsteams, Vertriebsleitung und alle, die verkaufen, ohne dass es im Titel steht; Vertriebstagung, Kundenveranstaltung und Roadshow, Messe.</dd>
-      <dt>Dauer</dt><dd><span class="luecke">bitte von dir</span></dd>
       <dt>Workshop</dt><dd>„Vertrauen, das verkauft – Emotional Sales“. <a class="leise" href="workshops.html">Workshops ansehen</a></dd>
      </dl>
     </div>
    </details>
   </div>
-  <p class="platz" style="margin-top:20px">Rot „bitte von dir“ = Feld aus dem Vortragsthema-Template (§16), zu dem es noch keine belegte Angabe gibt.</p>
+  <p class="platz" style="margin-top:20px">Dauer je Thema: bitte von dir (gilt für alle fünf, siehe Signatur-Keynote).</p>
  </div>
 </section>
 
-<!-- 5 Ergebnisse für Publikum und Unternehmen (§9.1, §16) -->
-<section class="ergebnis-k" aria-labelledby="erg-titel">
- <div class="huelle">
-  <div class="kicker">Ergebnisse</div>
-  <h2 id="erg-titel">Was nach der Keynote bleibt<span class="vor">Vorschlag</span></h2>
-  <div class="zwei-sp">
-   <div>
-    <h3>Für das Publikum</h3>
-    <p>Die Keynote soll nicht nur inspirieren. Sie soll einen klaren Perspektivwechsel auslösen und einen konkreten Transferimpuls hinterlassen.</p>
-   </div>
-   <div>
-    <h3>Für das Unternehmen</h3>
-    <p>Eine gemeinsame Sprache für menschliche Wirkung im KI-Zeitalter – und der Anfang von Vertrauen, Akzeptanz und Handlungsbereitschaft.</p>
-   </div>
-  </div>
-  <p class="platz">Beobachtete Wirkung nach einer deiner Keynotes (z. B. Rückmeldung eines Auftraggebers, was danach anders lief): bitte von dir.</p>
- </div>
-</section>
 
 <!-- 6 Geeignete Veranstaltungsformate -->
-<section id="anlaesse" aria-labelledby="anlass-titel">
+<section class="anlass-k" id="anlaesse" aria-labelledby="anlass-titel">
  <div class="huelle">
   <div class="kicker">Veranstaltungsformate</div>
   <h2 id="anlass-titel">Wofür Unternehmen und Veranstalter Claudia buchen</h2>
@@ -566,6 +571,9 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
    <div><h3>Betriebs- und Mitarbeiterversammlung</h3><p>Wenn etwas Unbequemes zu sagen ist: Umbau, Standortfrage, neue Richtung. Die Versammlung entscheidet, ob man dir danach noch glaubt.</p></div>
    <div><h3>Kundenveranstaltung und Roadshow</h3><p>Der Unterschied ist der Mensch, der vorne steht – und ob man ihm abnimmt, was er sagt.</p></div>
    <div><h3>Messe, Kongress, Verbandstagung</h3><p>Ein Saal entscheidet, ob er sich deinen Namen merkt.</p></div>
+  </div>
+  <div class="passung">
+   <p><b>Passt nicht, wenn</b> du reine Unterhaltung für den Abend suchst, ein Software- oder Prompt-Training brauchst oder die Keynote ohne Vorgespräch gebucht werden soll.<span class="vor">Vorschlag</span></p>
   </div>
  </div>
 </section>
@@ -580,6 +588,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
    <p>Keine Standardrede mit deinem Logo darauf. Und wenn der Impuls im Alltag ankommen soll: das Transfer-Lab. Keynote am Vormittag für alle, Arbeit am Nachmittag mit denen, die danach sprechen müssen.</p>
   </div>
   <div class="text">
+   <div class="glaskachel glas">
    <ul class="raute">
     <li>Vorgespräch mit dir: Was ist die eigentliche Lage, und was darf angesprochen werden?</li>
     <li>Keynote für die gesamte Mannschaft, auf deine Situation zugeschnitten.</li>
@@ -587,6 +596,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
     <li>Jede und jeder spricht, wird aufgenommen und bekommt Rückmeldung.</li>
     <li>Eine Seite Zusammenfassung für dich: was im Raum wirklich Thema war.</li>
    </ul>
+   </div>
    <p class="platz">Dauer und Gruppengröße des Transfer-Labs: bitte von dir. Laut deinem Markenhandbuch dauert es „2–3 Stunden“ – für die Website bestätigen oder ändern.</p>
    <p><a class="leise" href="workshops.html">Workshops ansehen</a></p>
   </div>
@@ -686,7 +696,6 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
    <article>
     <h3>Speakerprofil</h3>
     <p><b>Claudia Conen – Die Umsatzstimme</b><br>Keynote Speakerin und Expertin für menschliche Wirkungskraft im KI-Zeitalter.</p>
-    <p>Themen: Du wirkst immer · Persönlichkeit vor Perfektion · Führung braucht Wirkung · KI kann viel. Vertrauen entsteht zwischen Menschen. · Die menschliche Stimme im digitalen Wandel · Emotional verkaufen im KI-Zeitalter.</p>
     <p class="platz">Speakerprofil als PDF, Pressefotos, Anmoderationstext und Honorarrahmen: bitte von dir.</p>
     <p class="platz">Weiterleitungsdomain claudiaconen-keynote.de: Entscheidung und Kauf bei Claudia (Masterhandbuch §16; Ziel wäre eine dauerhafte Weiterleitung auf diese Seite, keine zweite Website).</p>
    </article>
@@ -726,7 +735,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>

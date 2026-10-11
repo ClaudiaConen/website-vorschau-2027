@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Events | Claudia Conen – Die Umsatzstimme</title>
-<meta name="description" content="Termine von Claudia Conen – Die Umsatzstimme: The Power of AI in Köln am 18. Oktober 2026 und die 7-Tage-Wirkungskraft-Challenge ab 26. Oktober. Für Veranstalter: Claudia als Keynote Speakerin anfragen.">
+<meta name="description" content="Erlebe Claudia Conen – Die Umsatzstimme live: The Power of AI in Köln am 18. Oktober 2026 und die 7-Tage-Challenge für Experten und Unternehmer ab 26. Oktober. Für Veranstalter: Keynote anfragen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -52,6 +52,30 @@ main [id]{scroll-margin-top:96px}
 /* Überarbeitung 11.10.2026 */
 main .leise{min-height:44px;display:inline-flex;align-items:center}
 .termin ul{font-size:16px}
+/* Nachtauftrag 11./12.10.2026: Rhythmus, Preise, dunkler Abschnitt mit Glas */
+.schluss{border-top:1px solid var(--linie)}
+.preisleiste{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:4px 0 0}
+.preisleiste>div{border:1px solid var(--linie);border-left:3px solid var(--gold);border-radius:8px;padding:12px 14px;background:var(--ivory)}
+.preisleiste dt{font:700 11.5px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.preisleiste dd{margin:6px 0 0;display:grid;gap:2px;font-size:15px}
+.preisleiste dd b{font-size:17px}
+.preisleiste .brutto{font-size:14px}
+@media(max-width:520px){.preisleiste{grid-template-columns:1fr}}
+.weitere{margin-top:40px;padding-top:28px;border-top:1px solid var(--linie);display:grid;gap:12px;max-width:820px}
+.weitere h3{font:600 27px/1.15 'Cormorant Garamond',Georgia,serif}
+.ev-veranstalter .huelle{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+.ev-veranstalter p{max-width:58ch;margin-top:14px;font-size:18px}
+.ev-veranstalter h2{color:var(--ivory)}
+.ev-glas{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 20px 50px rgba(0,0,0,.18);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:28px 30px;display:grid;gap:14px;color:var(--ivory)}
+.ev-glas-titel{font:700 13px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.ev-glas ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:17px}
+.ev-glas li{padding-left:20px;position:relative}
+.ev-glas li::before{content:"";position:absolute;left:1px;top:.6em;width:7px;height:7px;background:var(--sand);transform:rotate(45deg)}
+.ev-glas .ev-nicht{margin:0;font-size:15.5px;padding-top:12px;border-top:1px solid rgba(255,255,255,.2)}
+.ev-glas a{color:var(--ivory)}
+.ev-glas .leise{justify-self:start}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.ev-glas{background:var(--ink2)}}
+@media(max-width:860px){.ev-veranstalter .huelle{grid-template-columns:1fr;gap:32px}}
 </style>
 
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -159,7 +183,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -168,9 +192,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -185,23 +210,22 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 </header>
 
 <main id="main">
-<!-- 1 Hero (§10.1) -->
+<!-- 1 Hero: Problem und Ergebnis (Masterplan 7.3) -->
 <section class="uk" aria-labelledby="h1">
  <div class="huelle">
   <div>
    <div class="eyebrow">Events</div>
    <h1 id="h1">Erlebe Claudia live<span class="vor">Vorschlag</span></h1>
-   <p class="sub">Auf der Bühne und im Workshop: Hier stehen die Termine, bei denen du Claudia Conen live erlebst und spürst, wie menschliche Wirkung im KI-Zeitalter Vertrauen schafft.<span class="vor">Vorschlag</span></p>
+   <p class="sub">Bevor du eine Keynote buchst, willst du wissen, wie sie wirkt. Hier stehen die Termine, an denen du Claudia Conen auf der Bühne und im Workshop erlebst. Für Unternehmer, Führungskräfte und Experten.<span class="vor">Vorschlag</span></p>
    <div class="wege">
     <a class="knopf" href="#termine">Termine ansehen</a>
-    <a class="leise" href="kontakt.html#keynote">Claudia für dein Event anfragen</a>
    </div>
   </div>
-  <div class="bild"><img src="i/keynote.webp" alt="Claudia Conen spricht auf einer großen Bühne, hinter ihr eine Leinwand mit ihrem Bild" width="960" height="720" fetchpriority="high" style="object-position:50% 50%"></div>
+  <div class="bild"><img src="i/keynote.webp" alt="Claudia Conen spricht auf einer großen Bühne, hinter ihr zeigt eine Leinwand ihr Bild" width="960" height="720" fetchpriority="high" style="object-position:37% 50%"></div>
  </div>
 </section>
 
-<!-- 2 Relevanz -->
+<!-- 2 Perspektive: warum live -->
 <section class="warum">
  <div class="huelle">
   <div>
@@ -210,17 +234,18 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
   </div>
   <div class="saetze">
    <p>Überall dort, wo jemand das Wort ergreift, beginnt Wirkung.</p>
-   <p>Live merkst du, wie deine Stimme, deine Worte und deine Haltung bei anderen ankommen. Das lässt sich nicht lesen, nur erleben.<span class="vor">Vorschlag</span></p>
+   <p>Ein Text zeigt, was jemand sagt. Live erlebst du, wie Persönlichkeit, Botschaft, Stimme und Präsenz zusammenwirken.<span class="vor">Vorschlag</span></p>
+   <p>So siehst du selbst, ob Claudia zu deinem Publikum passt.</p>
   </div>
  </div>
 </section>
 
-<!-- 3 Aktuelle Termine -->
+<!-- 3 Angebot: aktuelle Termine -->
 <section id="termine" aria-labelledby="termine-titel">
  <div class="huelle">
   <div class="kicker">Aktuelle Termine</div>
   <h2 id="termine-titel">Die nächsten Termine</h2>
-  <p class="platz">Termine werden im neuen System aus deiner Terminverwaltung geladen (heute: Supabase, Tabelle website_events). Hier stehen sie von Hand als Vorschau.</p>
+  <p class="platz">Im neuen System kommen die Termine aus deiner Terminverwaltung (heute: Supabase, Tabelle website_events). Hier stehen sie von Hand.</p>
   <div class="termine">
    <article class="termin">
     <div class="datum" aria-hidden="true"><b>18</b><span>Okt 2026</span></div>
@@ -236,73 +261,98 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <article class="termin">
     <div class="datum" aria-hidden="true"><b>26</b><span>Okt 2026</span></div>
     <div class="innen">
-     <span class="art">Online-Einstieg · Zoom und WhatsApp-Gruppe</span>
-     <h3>7 Tage für deine Wirkungskraft – die Video-Challenge</h3>
-     <p>Sieben Tage, jeden Tag eine Anleitung, eine Minute Video mit dem Handy, Feedback von Claudia Conen. Kostenfrei, in einer WhatsApp-Gruppe – mit den sieben Schritten, dem Workbook und dem Weg danach.</p>
+     <span class="art">Einstieg · online mit Zoom und WhatsApp-Gruppe</span>
+     <h3>7 Tage für deine Wirkungskraft im Business</h3>
+     <p>Der Einstieg für selbstständige Experten und Unternehmer: sieben Tage, jeden Tag eine Aufgabe und eine Minute Video mit dem Handy.</p>
      <ul>
-      <li>Start 26. Oktober<span class="vor">Termin bestätigen</span></li>
-      <li>Auftakt live im Zoom · Montag, 26. Oktober 2026 · 19:00 Uhr</li>
+      <li>Start · Montag, 26. Oktober 2026 · 19:00 Uhr · live im Zoom<span class="vor">Termin bestätigen</span></li>
       <li>Abschluss · Montag, 2. November 2026 · 19:00–20:00 Uhr · Zoom freiwillig</li>
      </ul>
-     <p class="platz">Die Challenge ist ein Einstieg, kein Hauptangebot. Zielgruppe im Sinne der B2B-Ausrichtung (z. B. als Diagnoseformat für Teams) oder ausblenden: bitte von dir.</p>
-     <div class="handlung"><a class="leise" href="https://claudiaconen.com/challenge">Zur Challenge-Seite</a></div>
+     <dl class="preisleiste">
+      <div><dt>Basis</dt><dd><b>0 €</b><span>ohne individuelles Tagesfeedback</span></dd></div>
+      <div><dt>Feedback-Pass</dt><dd><b>97 € zzgl. MwSt.</b><span class="brutto">115,43 € inkl. 19 % MwSt.</span><span>mit persönlichem Feedback von Claudia</span></dd></div>
+     </dl>
+     <div class="handlung"><a class="leise" href="challenge.html">Zur Challenge</a></div>
     </div>
     <div class="foto"><img src="p/events/video.webp" alt="Claudia Conen sitzt auf einer hellen Veranda und spricht lächelnd in die Kamera" width="900" height="506" loading="lazy" style="object-position:55% 35%"><!-- Standbild aus dem Rederaum-Video (0:27) --></div>
    </article>
   </div>
+
+  <div class="weitere" id="workshops">
+   <span id="vortraege"></span><span id="rueckblicke"></span>
+   <h3>Offene Workshops, Vorträge, Rückblicke</h3>
+   <p>Sie erscheinen hier, sobald Termine feststehen.<span class="vor">Vorschlag</span></p>
+   <p class="platz">Termine, Dauer, Ort und Teilnehmerzahl offener Workshops; weitere Vorträge mit Datum und Veranstalter; Fotos vergangener Events mit Freigabe: bitte von dir. Offen aus der Inventur: Läuft der KI-Workshop „Die Unverwechselbaren“ noch, und sollen die Webinare hier erscheinen?</p>
+  </div>
  </div>
 </section>
 
-<!-- 4–6 Weitere Formate: offene Workshops, Vorträge, Rückblicke -->
-<section class="hellweiss" aria-labelledby="formate-titel">
+<!-- 4 Passung für Veranstalter – einziger dunkler Abschnitt, Glas 2 von 3 -->
+<section class="dunkel ev-veranstalter" id="veranstalter" aria-labelledby="veranstalter-titel">
  <div class="huelle">
-  <div class="kicker">Weitere Termine</div>
-  <h2 id="formate-titel">Workshops, Vorträge, Rückblicke</h2>
-  <p class="einleitung">Offene B2B-Workshops, öffentliche Vorträge und Rückblicke auf vergangene Bühnen erscheinen hier, sobald Termine feststehen.<span class="vor">Vorschlag</span></p>
-  <p class="platz" id="workshops" style="margin-top:16px">Termine, Dauer, Ort und Teilnehmerzahl offener Workshops; weitere Vorträge mit Datum und Veranstalter; Fotos oder Ausschnitte vergangener Events mit Freigabe: bitte von dir. Offen aus der Inventur: Läuft der KI-Workshop „Die Unverwechselbaren“ (/ki-workshop-unverwechselbar) noch, und sollen die Webinare (/wissen-webinare) hier erscheinen?</p>
-  <span id="vortraege"></span><span id="rueckblicke"></span>
+  <div>
+   <div class="kicker">Für Veranstalter</div>
+   <h2 id="veranstalter-titel">Perfektion ist klickbar. Persönlichkeit schafft Vertrauen.</h2>
+   <p>Claudia Conen ist Keynote Speakerin für Führung, Kommunikation und Veränderung.</p>
+   <p>Ihre Keynote „Du wirkst immer – menschliche Wirkungskraft im KI-Zeitalter“ zeigt, wie Unternehmer, Führungskräfte und Experten trotz perfekter KI-Inhalte als Mensch erkennbar bleiben, Vertrauen schaffen und Menschen bewegen.</p>
+  </div>
+  <div class="glas ev-glas">
+   <b class="ev-glas-titel">Passt zu deinem Anlass<span class="vor">Vorschlag</span></b>
+   <ul>
+    <li>Konferenz oder Kongress</li>
+    <li>Kick-off oder Strategietag</li>
+    <li>Kundenevent</li>
+    <li>Führungstreffen in einer Veränderung</li>
+   </ul>
+   <p class="ev-nicht">Nicht hier: private Feiern. Dafür gibt es <a href="rund-ums-reden.html">Rund ums Reden</a>.</p>
+   <a class="leise" href="keynotes.html">Keynotes ansehen</a>
+  </div>
  </div>
 </section>
 
-<!-- 7 Proof + 8 Claudia-Bezug -->
-<section aria-labelledby="bezug-titel">
+<!-- 5 Belege und Claudia-Bezug -->
+<section class="hellweiss" aria-labelledby="bezug-titel">
  <div class="huelle bezug">
   <div>
    <div class="kicker">Wer hier spricht</div>
    <h2 id="bezug-titel">Expertin für menschliche Wirkungskraft im KI-Zeitalter</h2>
   </div>
   <div class="text">
-   <p>Claudia Conen – bekannt als „Die Umsatzstimme“ – stärkt die menschliche Wirkungskraft in Unternehmen. Seit 37 Jahren ist sie als Coach und Trainerin unterwegs.</p>
-   <p>Heute verbindet sie Kommunikation und künstliche Intelligenz. Denn KI kann berechnen, doch Persönlichkeit begeistert, fasziniert und berührt.</p>
+   <p>Claudia Conen – Die Umsatzstimme – stärkt die menschliche Wirkungskraft in Unternehmen, damit Führung, Kommunikation und Veränderung im KI-Zeitalter Vertrauen schaffen und Menschen bewegen. Seit 37 Jahren arbeitet sie als Coach und Trainerin.</p>
+   <p>KI kann Inhalte erzeugen. Wirkung entsteht durch den Menschen.</p>
    <p class="platz">Stimme einer Teilnehmerin oder eines Veranstalters zu einem Event (mit Quelle und Freigabe): bitte von dir.</p>
-   <p><a class="leise" href="ueber-claudia.html">Mehr über Claudia</a></p>
+   <p><a class="leise" href="ergebnisse.html">Stimmen und Ergebnisse</a> · <a class="leise" href="ueber-claudia.html">Mehr über Claudia</a></p>
   </div>
  </div>
 </section>
 
-<!-- 9 FAQ -->
-<section class="hellweiss" aria-labelledby="faq-titel">
+<!-- 6 Passung und häufige Fragen -->
+<section aria-labelledby="faq-titel">
  <div class="huelle">
   <div class="kicker">Häufige Fragen</div>
   <h2 id="faq-titel">Fragen zu den Terminen</h2>
   <div class="fragen">
+   <details>
+    <summary>Für wen sind die Termine gedacht?</summary>
+    <p>Für Unternehmer, Führungskräfte und Experten. Die Challenge ist der Einstieg für selbstständige Experten und Unternehmer. Für Teams gibt es eine geschlossene Unternehmensedition, der Preis wird individuell vereinbart.</p>
+   </details>
    <details>
     <summary>Wie melde ich mich an?</summary>
     <p>Für The Power of AI über die Seite des Veranstalters. Für die Challenge über die Challenge-Seite.<span class="vor">Vorschlag</span></p>
    </details>
    <details>
     <summary>Kann ich Claudia für mein eigenes Event buchen?</summary>
-    <p>Ja, als Keynote-Speakerin für Konferenz, Kick-off oder Kundenevent. Schreib ihr über <a class="leise" href="kontakt.html#keynote">Keynote anfragen</a>.<span class="vor">Vorschlag</span></p>
+    <p>Ja, als Keynote Speakerin für Konferenz, Kick-off oder Kundenevent. Im Gespräch klärt ihr Anlass, Publikum und Rahmen.<span class="vor">Vorschlag</span></p>
    </details>
    <details>
-    <summary>Für wen ist die Challenge gedacht?</summary>
-    <p class="platz">Zielgruppe der Challenge im Sinne der neuen B2B-Ausrichtung: bitte von dir.</p>
+    <summary>Gibt es Termine für private Anlässe?</summary>
+    <p>Nein. Freie Trauungen, Trauerreden und die Ausbildung freier Redner stehen im eigenen Bereich <a class="leise" href="rund-ums-reden.html">Rund ums Reden</a>.</p>
    </details>
   </div>
  </div>
 </section>
 
-<!-- 10 ein primärer CTA -->
+<!-- 7 ein nächster Schritt -->
 <section class="schluss">
  <div class="huelle">
   <div class="karte">
@@ -319,18 +369,20 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"CollectionPage","name":"Events","description":"Termine von Claudia Conen – Die Umsatzstimme."},
+ {"@type":"CollectionPage","name":"Events","description":"Termine, an denen du Claudia Conen – Die Umsatzstimme live erlebst."},
  {"@type":"Event","name":"The Power of AI","startDate":"2026-10-18","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Köln","address":{"@type":"PostalAddress","addressLocality":"Köln","addressCountry":"DE"}},"performer":{"@type":"Person","name":"Claudia Conen","alternateName":"Die Umsatzstimme"},"url":"https://the-power-of-ai.team"},
  {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Für wen sind die Termine gedacht?","acceptedAnswer":{"@type":"Answer","text":"Für Unternehmer, Führungskräfte und Experten. Die Challenge ist der Einstieg für selbstständige Experten und Unternehmer. Für Teams gibt es eine geschlossene Unternehmensedition, der Preis wird individuell vereinbart."}},
   {"@type":"Question","name":"Wie melde ich mich an?","acceptedAnswer":{"@type":"Answer","text":"Für The Power of AI über die Seite des Veranstalters. Für die Challenge über die Challenge-Seite."}},
-  {"@type":"Question","name":"Kann ich Claudia für mein eigenes Event buchen?","acceptedAnswer":{"@type":"Answer","text":"Ja, als Keynote-Speakerin für Konferenz, Kick-off oder Kundenevent. Schreib ihr über Keynote anfragen."}}
+  {"@type":"Question","name":"Kann ich Claudia für mein eigenes Event buchen?","acceptedAnswer":{"@type":"Answer","text":"Ja, als Keynote Speakerin für Konferenz, Kick-off oder Kundenevent. Im Gespräch klärt ihr Anlass, Publikum und Rahmen."}},
+  {"@type":"Question","name":"Gibt es Termine für private Anlässe?","acceptedAnswer":{"@type":"Answer","text":"Nein. Freie Trauungen, Trauerreden und die Ausbildung freier Redner stehen im eigenen Bereich Rund ums Reden."}}
  ]}
 ]}
 </script>

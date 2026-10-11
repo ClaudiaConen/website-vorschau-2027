@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Menschliche Wirkung für Unternehmen im KI-Zeitalter | Claudia Conen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -152,6 +152,22 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
 .player details{font-size:16px}
 .player details p+p{margin-top:10px}
 @media(max-width:640px){.kst .medium img{aspect-ratio:4/3}}
+/* Nacht 11.10.: Glas auf Dunkel, Audio-Karte, Passung, Rhythmus */
+.dunkel .glas.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 18px 40px -24px rgba(0,0,0,.5);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:26px 30px;margin-top:30px;max-width:780px;display:grid;gap:10px}
+.glas-dunkel .kernsatz{font:600 clamp(24px,2.6vw,32px)/1.2 'Cormorant Garamond',Georgia,serif;color:var(--ivory)}
+.glas-dunkel .kernsatz em{font-style:normal;color:var(--sand)}
+.audio-karte{background:var(--weiss);border:1.5px solid rgba(201,169,97,.55);border-radius:20px;margin-top:36px}
+.audio-karte .platz{margin-top:4px}
+#ablauf{background:var(--weiss);border-block:1px solid var(--linie)}
+#stimmen{background:var(--ivory);border-block:0}
+.passung{background:var(--weiss);border-block:1px solid var(--linie)}
+.passung .zwei{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:30px}
+.passung .spalte{border:1px solid var(--linie);border-radius:8px;padding:26px 26px 22px;background:var(--ivory)}
+.passung .spalte.ja{border-top:3px solid var(--gold)}
+.passung .spalte.nein{border-top:3px solid var(--ink)}
+.passung h3{font:700 14px/1.3 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:0 0 12px}
+@media(max-width:760px){.passung .zwei{grid-template-columns:1fr}}
+#fragen{background:var(--weiss);border-block:1px solid var(--linie)}
 </style>
 <meta name="description" content="Claudia Conen zeigt Unternehmen, wie menschliche Wirkung im KI-Zeitalter Vertrauen schafft und Veränderung möglich macht: Keynotes, Workshops und Entwicklungsprogramme für Führung, Kommunikation und Veränderung.">
 <script type="application/ld+json">
@@ -273,7 +289,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -282,9 +298,10 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -306,10 +323,10 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
    <div class="eyebrow">Für Unternehmen</div>
    <h1 id="h1">Menschlich führen und kommunizieren, wenn KI alles beschleunigt.</h1>
    <p class="sub">Claudia Conen zeigt Unternehmen, wie menschliche Wirkung im KI-Zeitalter Vertrauen schafft und Veränderung möglich macht. Für Führung, Kommunikation und Veränderung, mit KI als Verstärker, nicht als Ersatz.</p>
-   <p class="fuer">Für Geschäftsführung, HR, Führungskräfteentwicklung, Vertrieb und Veranstalter.</p>
+   <p class="fuer">Für Unternehmer, Führungskräfte und Experten – und für alle, die Führungskreise, Teams und Veranstaltungen verantworten.</p>
    <div class="handlung">
     <a class="knopf" href="kontakt.html#unternehmen">Gespräch vereinbaren</a>
-    <a class="leise" href="#formate">Drei Wege ansehen</a>
+    <a class="leise" href="#workshops">Formate ansehen</a>
    </div>
   </div>
   <figure>
@@ -347,14 +364,28 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
    <li>Teams verlieren Verbindung, Orientierung oder Eigenverantwortung.</li>
    <li>Kommunikation ist korrekt, aber nicht vertrauensbildend.</li>
    <li>Der Vertrieb argumentiert, ohne den Menschen zu erreichen.</li>
-   <li>Präsentationen sind professionell, aber austauschbar.</li>
    <li>Veränderungen werden verkündet, aber nicht innerlich angenommen.</li>
   </ul>
+  <!-- Audio „Einladung an Entscheider“ (Masterplan 8.4, nach der Problembeschreibung) – Karte, kein Glas -->
+  <div class="player audio-karte" role="group" aria-label="Audio: Einladung an Entscheider">
+   <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
+   <div>
+    <b>Einladung an Entscheider</b>
+    <span class="meta">Claudia spricht · 0:45 bis 1:00 · startet nur auf Klick</span>
+    <div class="balken" aria-hidden="true"><span></span></div>
+   </div>
+   <details>
+    <summary>Transkript lesen</summary>
+    <p>„Wenn KI in ein Unternehmen einzieht, verändert sich nicht nur ein Prozess. Es verändert sich, wie Menschen führen, entscheiden und miteinander kommunizieren. Genau dort beginnt meine Arbeit. Denn neue Technologie wird erst dann wirksam, wenn Menschen sie verstehen, ihr vertrauen und bereit sind, Veränderung mitzutragen.“</p>
+    <p>Skript aus dem Masterhandbuch §30.2. Für 45 bis 60 Sekunden fehlt noch ein Satz mit der Einladung zum Gespräch.</p>
+   </details>
+   <p class="platz" style="grid-column:1/-1">Audio von dir: Einladung an Entscheider, 45–60 s</p>
+  </div>
  </div>
 </section>
 <section class="thema" id="fuehrung" aria-labelledby="fuehrung-titel">
  <div class="huelle">
-  <figure><img src="p/unternehmen/fuehrung-haftnotizen.webp" alt="Claudia Conen steht im Workshop vor einer Wand mit Haftnotizen und erklärt der Gruppe etwas" width="900" height="900" loading="lazy" style="object-position:45% 30%">
+  <figure><img src="p/unternehmen/fuehrung-flipchart.webp" alt="Claudia Conen steht im Workshop vor einer Wand mit Haftnotizen und erklärt der Gruppe etwas" width="879" height="659" loading="lazy" style="object-position:40% 30%">
   </figure>
   <div class="text">
    <div class="kicker">Führung &amp; Kommunikation</div>
@@ -380,8 +411,8 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
 </section>
 <section class="thema rechts" id="vertrieb" aria-labelledby="vertrieb-titel">
  <div class="huelle">
-  <figure><img src="p/unternehmen/gespraech.webp" alt="Claudia Conen im Gespräch mit einem Unternehmer auf einer Veranstaltung, beide lachen" width="900" height="600" loading="lazy" style="object-position:55% 40%">
-   <!-- Bildnachweis prüfen: Fotografin Monika Gharbi? Original DSC02977.jpg (Drive „Fotos von Monika 2“); erkennbarer Gesprächspartner: Einverständnis klären -->
+  <figure><img src="p/unternehmen/vertrieb-gespraech.webp" alt="Claudia Conen im Gespräch an einem Tisch im Garten, sie lächelt ihr Gegenüber an, das unscharf im Vordergrund sitzt" width="900" height="600" loading="lazy" style="object-position:45% 35%">
+   <!-- Bildnachweis prüfen: Drehtag-120.jpg (Garten-Shooting), Fotograf/in bestätigen -->
   </figure>
   <div class="text">
    <div class="kicker">Vertrieb &amp; Emotional Sales</div>
@@ -414,7 +445,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
   <div class="text">
    <div class="kicker">Veränderung · Mensch &amp; KI</div>
    <h2 id="ki-titel">KI ist eingeführt. Warum nutzt sie kaum jemand?</h2>
-   <p>Weil die Technik das kleinere Problem ist. Werkzeuge lassen sich ausrollen. Vertrauen nicht – und ohne Vertrauen rührt niemand freiwillig etwas an, das seinen Arbeitsplatz kosten könnte.</p>
+   <p>Weil die Technik das kleinere Problem ist. Ohne Vertrauen rührt niemand freiwillig etwas an, das seinen Arbeitsplatz kosten könnte.</p>
    <p>Wer ein Werkzeug benutzt, das seine eigene Arbeit überflüssig machen könnte, tut das nicht aus Neugier. Er tut es, wenn er weiß, was aus ihm wird. Diese Frage beantwortet kein Werkzeug und kein Leitfaden.</p>
    <p>Claudia macht Veränderung besprechbar: Führungskräfte erklären glaubwürdig, was bleibt und was sich ändert. Aus Verunsicherung wird Mitwirkung.<span class="vor">Vorschlag</span></p>
    <details class="klapp">
@@ -434,19 +465,50 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  </div>
 </section>
 
-<!-- 4 Drei passende Wege: Keynote, Workshop, Programm (§15.4, Texte §14.5) -->
-<section id="formate" aria-labelledby="formate-titel">
+<!-- 6 Mögliche Ergebnisse (§15.6, §8) -->
+<section class="ergebnis" aria-labelledby="ergebnis-titel">
  <div class="huelle">
-  <div class="kicker">Drei Wege</div>
-  <h2 id="formate-titel">Keynote, Workshop oder Entwicklungsprogramm</h2>
-  <p class="einleitung">Jedes Format beginnt mit einem Vorgespräch: Was ist die eigentliche Lage, und was soll danach anders sein?</p>
-  <div class="formate-kurz drei">
-   <a href="keynotes.html"><small>Bewusstsein und Aufbruch</small><b>Keynotes</b><span>Bewusstsein schaffen, Perspektiven verändern und Menschen für den Wandel öffnen.</span><em>Keynotes entdecken</em></a>
-   <a href="workshops.html"><small>Erkenntnis wird Verhalten</small><b>Workshops</b><span>Kommunikation, Präsenz und Wirkung praktisch trainieren.</span><em>Workshops ansehen</em></a>
-   <a href="entwicklungsprogramme.html"><small>Nachhaltig verankern</small><b>Entwicklungsprogramme</b><span>Veränderung nachhaltig in Führung, Kommunikation und Zusammenarbeit verankern.</span><em>Programme kennenlernen</em></a>
+  <div>
+   <div class="kicker">Mögliche Ergebnisse</div>
+   <h2 id="ergebnis-titel">Was danach anders sein soll<span class="vor">Vorschlag</span></h2>
+   <p class="marken-titel">Geschäftliche Wirkung</p>
+   <ul class="marken">
+    <li>Vertrauen</li><li>Akzeptanz</li><li>Handlungsbereitschaft</li>
+   </ul>
+  </div>
+  <div>
+   <ul class="raute">
+    <li>Führungskräfte vermitteln Veränderungen so, dass ihre Teams sie verstehen, glauben und mittragen.</li>
+    <li>Im Kundengespräch wird zuerst gefragt und zugehört, dann argumentiert.</li>
+    <li>Deine Leute sprechen offen darüber, was KI für ihre Arbeit bedeutet, statt sie stillschweigend zu umgehen.</li>
+    <li>Präsentationen haben eine Botschaft, die in einem Satz trägt.</li>
+   </ul>
+   <p class="hinweis-klein">Ergebnisse werden nicht garantiert. Woran ihr sie messt, legt ihr im Vorgespräch gemeinsam fest.<span class="vor">Vorschlag</span></p>
+   <p class="platz" style="margin-top:20px">Beobachtbare Ergebnisse aus echten Aufträgen (z. B. was eine Führungsrunde danach anders gemacht hat): bitte von dir.</p>
   </div>
  </div>
 </section>
+
+<!-- 5 Wirkungskraft-Methode, kurz (§15.5) – der eine dunkle Abschnitt -->
+<section class="dunkel" id="methode" aria-labelledby="methode-titel">
+ <div class="huelle">
+  <div class="kicker">Die Wirkungskraft-Methode</div>
+  <h2 id="methode-titel">Vier Schritte, eine feste Reihenfolge</h2>
+  <ol class="schritte4">
+   <li><span class="nr">01</span><b>Persönlichkeit erkennen</b></li>
+   <li><span class="nr">02</span><b>Botschaft klären</b></li>
+   <li><span class="nr">03</span><b>Wirkung verkörpern</b></li>
+   <li><span class="nr">04</span><b>KI sinnvoll einsetzen</b></li>
+  </ol>
+  <!-- Glaskachel der Seite (mit Aktuell-Leiste 2 von max. 3) -->
+  <div class="glas glas-dunkel">
+   <p class="kernsatz">KI kann Inhalte erzeugen. <em>Wirkung entsteht durch den Menschen.</em></p>
+   <p class="reihenfolge">Erst den persönlichen und unternehmerischen Kern klären. Dann die Botschaft formen. Anschließend die Wirkung verkörpern. Erst danach KI gezielt als Verstärker einsetzen.</p>
+   <p><a class="leise" href="wirkungskraft.html">Methode kennenlernen</a></p>
+  </div>
+ </div>
+</section>
+
 <!-- 4a Workshops gekürzt: Details auf workshops.html; Anker bleiben -->
 <section id="workshops" class="kompakt" aria-labelledby="ws-titel">
  <div class="huelle">
@@ -489,50 +551,6 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  </div>
 </section>
 
-<!-- 5 Wirkungskraft-Methode, kurz (§15.5) – der eine dunkle Abschnitt -->
-<section class="dunkel" id="methode" aria-labelledby="methode-titel">
- <div class="huelle">
-  <div class="kicker">Die Wirkungskraft-Methode</div>
-  <h2 id="methode-titel">Vier Schritte, eine feste Reihenfolge</h2>
-  <ol class="schritte4">
-   <li><span class="nr">01</span><b>Persönlichkeit erkennen</b></li>
-   <li><span class="nr">02</span><b>Botschaft klären</b></li>
-   <li><span class="nr">03</span><b>Wirkung verkörpern</b></li>
-   <li><span class="nr">04</span><b>KI sinnvoll einsetzen</b></li>
-  </ol>
-  <p class="reihenfolge">Erst den persönlichen und unternehmerischen Kern klären. Dann die Botschaft formen. Anschließend die Wirkung verkörpern. Erst danach KI gezielt als Verstärker einsetzen.</p>
-  <p><a class="leise" href="wirkungskraft.html">Methode kennenlernen</a></p>
- </div>
-</section>
-
-<!-- 6 Mögliche Ergebnisse (§15.6, §8) -->
-<section class="ergebnis" aria-labelledby="ergebnis-titel">
- <div class="huelle">
-  <div>
-   <div class="kicker">Mögliche Ergebnisse</div>
-   <h2 id="ergebnis-titel">Was danach anders sein soll<span class="vor">Vorschlag</span></h2>
-   <p class="marken-titel">Geschäftliche Wirkung</p>
-   <ul class="marken">
-    <li>Vertrauen</li><li>Akzeptanz</li><li>Handlungsbereitschaft</li>
-   </ul>
-   <p class="marken-titel">Das verändert ihr</p>
-   <ul class="marken">
-    <li>Klar kommunizieren</li><li>Vertrauen stärken</li><li>Emotional verkaufen</li><li>Teams verbinden</li><li>Kunden gewinnen</li>
-   </ul>
-  </div>
-  <div>
-   <ul class="raute">
-    <li>Führungskräfte vermitteln Veränderungen so, dass ihre Teams sie verstehen, glauben und mittragen.</li>
-    <li>Im Kundengespräch wird zuerst gefragt und zugehört, dann argumentiert.</li>
-    <li>Deine Leute sprechen offen darüber, was KI für ihre Arbeit bedeutet, statt sie stillschweigend zu umgehen.</li>
-    <li>Präsentationen haben eine Botschaft, die in einem Satz trägt.</li>
-   </ul>
-   <p class="hinweis-klein">Ergebnisse werden nicht garantiert. Woran ihr sie messt, legt ihr im Vorgespräch gemeinsam fest.<span class="vor">Vorschlag</span></p>
-   <p class="platz" style="margin-top:20px">Beobachtbare Ergebnisse aus echten Aufträgen (z. B. was eine Führungsrunde danach anders gemacht hat): bitte von dir.</p>
-  </div>
- </div>
-</section>
-
 <!-- 7 Einsatzfelder (§15.7): Firmenanlässe, gebündelt unter „Claudia buchen“ -->
 <section class="thema rechts" id="moderation" aria-labelledby="mod-titel">
  <div class="huelle">
@@ -552,6 +570,20 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
    </ul>
    <p>Keynote und Moderation aus einer Hand sind möglich. Sinnvoll ist es, wenn die Keynote früh liegt – danach moderiert Claudia den Rest des Tages.</p>
   </div>
+ </div>
+</section>
+
+<!-- 9 Ablauf von Erstgespräch bis Umsetzung (§15.9) -->
+<section id="ablauf" aria-labelledby="ablauf-titel">
+ <div class="huelle">
+  <div class="kicker">Ablauf</div>
+  <h2 id="ablauf-titel">Vom ersten Gespräch bis zur Umsetzung<span class="vor">Vorschlag</span></h2>
+  <ol class="ablauf">
+   <li><b>Erstgespräch</b><span>Es geht um die Lage, nicht um das Wunschthema. Was ist los, und was soll danach anders sein?</span></li>
+   <li><b>Format und Angebot</b><span>Claudia empfiehlt Keynote, Workshop oder Programm – und sagt es, wenn keines passt. Den Preis bekommst du vor der Zusage, schriftlich.</span></li>
+   <li><b>Vorbereitung</b><span>Mit euren echten Situationen: die Ansage, die nicht ankam, das Gespräch, das verloren ging.</span></li>
+   <li><b>Umsetzung und Transfer</b><span>Arbeit an beobachtbarem Verhalten, auf Wunsch mit Nachgespräch. Dann zeigt sich, was geblieben ist.</span></li>
+  </ol>
  </div>
 </section>
 
@@ -613,17 +645,30 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  </div>
 </section>
 
-<!-- 9 Ablauf von Erstgespräch bis Umsetzung (§15.9) -->
-<section id="ablauf" aria-labelledby="ablauf-titel">
+<!-- Passung und Nicht-Passung (Masterplan 7.3, Punkt 7) -->
+<section class="passung" id="passung" aria-labelledby="passung-titel">
  <div class="huelle">
-  <div class="kicker">Ablauf</div>
-  <h2 id="ablauf-titel">Vom ersten Gespräch bis zur Umsetzung<span class="vor">Vorschlag</span></h2>
-  <ol class="ablauf">
-   <li><b>Erstgespräch</b><span>Es geht um die Lage, nicht um das Wunschthema. Was ist los, und was soll danach anders sein?</span></li>
-   <li><b>Format und Angebot</b><span>Claudia empfiehlt Keynote, Workshop oder Programm – und sagt es, wenn keines passt. Den Preis bekommst du vor der Zusage, schriftlich.</span></li>
-   <li><b>Vorbereitung</b><span>Mit euren echten Situationen: die Ansage, die nicht ankam, das Gespräch, das verloren ging.</span></li>
-   <li><b>Umsetzung und Transfer</b><span>Arbeit an beobachtbarem Verhalten, auf Wunsch mit Nachgespräch. Dann zeigt sich, was geblieben ist.</span></li>
-  </ol>
+  <div class="kicker">Passung</div>
+  <h2 id="passung-titel">Wann es passt und wann nicht<span class="vor">Vorschlag</span></h2>
+  <div class="zwei">
+   <div class="spalte ja">
+    <h3>Passt, wenn</h3>
+    <ul class="raute">
+     <li>ihr KI, einen Umbau oder neue Ziele einführt und die Menschen mitnehmen wollt.</li>
+     <li>eure Führungskräfte fachlich stark sind und trotzdem nicht durchdringen.</li>
+     <li>euer Vertrieb gute Angebote hat und Gespräche trotzdem verliert.</li>
+     <li>ihr an euren echten Situationen arbeiten wollt, nicht an Fallbeispielen.</li>
+    </ul>
+   </div>
+   <div class="spalte nein">
+    <h3>Passt nicht, wenn</h3>
+    <ul class="raute">
+     <li>ihr ein Werkzeug- oder Prompt-Training sucht.</li>
+     <li>ihr Abschlusstechniken oder Druck im Verkauf trainieren wollt.</li>
+     <li>ein Programmpunkt gefüllt werden soll, ohne dass sich danach etwas ändern muss.</li>
+    </ul>
+   </div>
+  </div>
  </div>
 </section>
 
@@ -641,25 +686,6 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
    <p>„In Firmen durfte ich erleben, wie das beste Produkt am Gespräch scheitert – nicht am Wissen, sondern am Ton: am Telefon, beim Kunden, im Team. Worte, die kein Vertrauen wecken, bringen kein Geschäft. Was ein Team entzündet, ist die Energie der Führungskraft. Wie willst du deins stärken – damit aus Motivation Selbstsicherheit wird, aus Vertrauen Kunden?“</p>
    <footer>Claudia Conen</footer>
   </blockquote>
- </div>
-</section>
-
-<!-- 10 Persönliche Audio-Einladung (§15.10, §30.2) – Glas 2 von 3 -->
-<section class="audio-u" aria-label="Claudia hören">
- <div class="huelle">
-  <div class="player glas" role="group" aria-label="Audio: Warum Veränderung menschliche Wirkung braucht">
-   <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
-   <div>
-    <b>Warum Veränderung menschliche Wirkung braucht</b>
-    <span class="meta">Claudia spricht · etwa 0:45 · startet nur auf Klick</span>
-    <div class="balken" aria-hidden="true"><span></span></div>
-   </div>
-   <details>
-    <summary>Transkript lesen</summary>
-    <p>„Wenn KI in ein Unternehmen einzieht, verändert sich nicht nur ein Prozess. Es verändert sich, wie Menschen führen, entscheiden und miteinander kommunizieren. Genau dort beginnt meine Arbeit. Denn neue Technologie wird erst dann wirksam, wenn Menschen sie verstehen, ihr vertrauen und bereit sind, Veränderung mitzutragen.“</p>
-    <p class="platz">Aufnahme fehlt noch: Skript aus dem Masterhandbuch §30.2, bitte einsprechen.</p>
-   </details>
-  </div>
  </div>
 </section>
 
@@ -696,7 +722,7 @@ main .leise{display:inline-flex;align-items:center;min-height:44px}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>

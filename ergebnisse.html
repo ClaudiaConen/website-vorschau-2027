@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ergebnisse und Kundenstimmen | Claudia Conen – Die Umsatzstimme</title>
 <meta name="description" content="Wirkung zeigt sich im Ergebnis: Stimmen von Auftraggebern aus Unternehmen und von Teilnehmenden über die Zusammenarbeit mit Claudia Conen – Die Umsatzstimme. Wörtlich, mit Quelle, ohne Gesamtnote.">
@@ -91,6 +91,25 @@ details.alle[open]>summary{margin-bottom:28px}
 .passend{margin-top:40px;border:1.5px solid rgba(201,169,97,.55);border-radius:8px;padding:24px;background:var(--ivory)}
 .passend h3{font:600 26px/1.15 'Cormorant Garamond',Georgia,serif}
 .passend-links{display:flex;flex-wrap:wrap;gap:4px 26px;margin-top:8px}
+
+/* Stimmen nach Kategorie (Nachtauftrag 11./12.10.) */
+.gruppe{margin-top:48px;padding-top:8px;border-top:1px solid var(--linie)}
+.gruppe[hidden]{display:none}
+.gruppe .untertitel{margin:24px 0 4px;display:flex;align-items:baseline;gap:12px}
+.gruppe .anz{font:700 14px/1 'Inter',sans-serif;border:1.5px solid var(--gold);border-radius:999px;padding:5px 10px}
+.gruppe-unter{margin:0;font-size:16px}
+.gruppe .mehr{margin-top:24px}
+.gruppe.zu .kst.weitere{display:none}
+.gruppe[data-gruppe="privat"]{margin-top:72px;border-top:2px solid var(--gold)}
+.filter{margin-top:24px}
+.einl{margin-top:8px}
+.hoeren-huelle{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px 48px;align-items:center}
+.hoeren-huelle .platz{grid-column:1/-1}
+.dunkel .glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 18px 44px rgba(0,0,0,.18);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:var(--ivory);border-radius:16px}
+.dunkel .glas-dunkel .spiel{background:var(--sand);color:var(--ink)}
+.dunkel .glas-dunkel summary,.dunkel .glas-dunkel .meta,.dunkel .glas-dunkel b{color:var(--ivory)}
+.dunkel h2{color:var(--ivory)}
+@media(max-width:860px){.hoeren-huelle{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -207,7 +226,7 @@ details.alle[open]>summary{margin-bottom:28px}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -216,9 +235,10 @@ details.alle[open]>summary{margin-bottom:28px}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -242,7 +262,7 @@ details.alle[open]>summary{margin-bottom:28px}
    <p class="sub">Was Auftraggeber und Teilnehmende nach der Zusammenarbeit sagen: wörtlich, mit Quelle an jeder Stimme und ohne Gesamtnote.<span class="vor">Vorschlag</span></p>
    <div class="wege">
     <a class="knopf" href="kontakt.html">Gespräch vereinbaren</a>
-    <a class="leise" href="#auftraggeber">Zu den Stimmen</a>
+    <a class="leise" href="#stimmen">Zu den 35 Stimmen</a>
    </div>
   </div>
   <div class="bild"><img src="p/ergebnisse/hero.webp" alt="Claudia Conen moderiert mit Mikrofon auf einer Holzbühne, neben ihr eine Gesprächspartnerin, im Vordergrund das Publikum" width="1600" height="1067" fetchpriority="high" style="object-position:30% 40%"><!-- Bildnachweis prüfen: Monika Gharbi, DSC00702 --></div>
@@ -292,21 +312,26 @@ details.alle[open]>summary{margin-bottom:28px}
  </div>
 </section>
 
-<!-- 3 Stimmen von Auftraggebern (§20.3) – B2B nach vorn (Claudia 14:37 UTC: Fürst, Backhaus, Kampmann) -->
-<section class="hell-weiss" id="auftraggeber" aria-labelledby="auftraggeber-titel">
+<!-- 3+4 Alle Stimmen, nach Kategorie (Masterplan 10.4: nach Zielgruppe und Angebot sortiert; je Stimme genau eine Hauptkategorie) -->
+<section class="hell-weiss" id="stimmen" aria-labelledby="stimmen-titel">
  <div class="huelle">
-  <div class="kicker">Auftraggeber und Veranstalter</div>
-  <h2 id="auftraggeber-titel">Stimmen aus Unternehmen</h2>
-  <div class="filter" role="group" aria-label="Stimmen filtern" id="filter" hidden>
+  <div class="kicker">Stimmen</div>
+  <h2 id="stimmen-titel">Was Menschen nach der Arbeit mit Claudia sagen</h2>
+  <p class="einl">35 Stimmen, davon 29 als Video zum Abspielen und 1 bei Vimeo. Jede Stimme steht in genau einer Kategorie.<span class="vor">Vorschlag</span></p>
+  <div class="filter" role="group" aria-label="Stimmen nach Kategorie filtern" id="filter">
    <button type="button" data-f="alle" aria-pressed="true">Alle</button>
    <button type="button" data-f="unternehmen" aria-pressed="false">Unternehmen</button>
-   <button type="button" data-f="fuehrung" aria-pressed="false">Führung</button>
-   <button type="button" data-f="experten" aria-pressed="false">Unternehmer &amp; Experten</button>
-   <button type="button" data-f="buehne" aria-pressed="false">Bühne</button>
+   <button type="button" data-f="fuehrung" aria-pressed="false">Führungskräfte</button>
+   <button type="button" data-f="experten" aria-pressed="false">Experten</button>
+   <button type="button" data-f="buehne" aria-pressed="false">Keynote und Bühne</button>
+   <button type="button" data-f="workshop" aria-pressed="false">Workshops und Seminare</button>
+   <button type="button" data-f="privat" aria-pressed="false">Rund ums Reden</button>
   </div>
-  <p class="filter-status" id="filter-status" aria-live="polite"></p>
-  <p class="platz leer-hinweis" id="leer-fuehrung" hidden>Für „Führung“ liegt noch keine Stimme mit Text vor. Kandidat: die Videostimme „Führungskraft bei Dometic“ auf Vimeo, bisher ohne Abschrift. Bitte von dir.</p>
-  <div class="kartenfeld" id="stimmen">
+  <p class="filter-status" id="filter-status" aria-live="polite">35 von 35 Stimmen</p>
+  <div class="gruppe" data-gruppe="unternehmen" id="kat-unternehmen">
+   <h3 class="untertitel">Unternehmen <span class="anz">7</span></h3>
+   <p class="gruppe-unter">Geschäftsführung, Firmen und Veranstalter</p>
+   <div class="kartenfeld">
    <article class="kst" data-kat="unternehmen">
     <div class="medium">
      <img src="p/ergebnisse/fuerst.webp" alt="Mario Fürst im Video" width="377" height="472" loading="lazy" style="object-position:50% 40%">
@@ -332,16 +357,29 @@ details.alle[open]>summary{margin-bottom:28px}
    </article>
    <article class="kst" data-kat="unternehmen">
     <div class="medium">
-     <img src="l/dometic.png" alt="Logo Dometic" width="400" height="120" loading="lazy" style="object-fit:contain;padding:30% 18%;background:var(--weiss)">
+     <img src="p/ergebnisse/niklas.webp" alt="Niklas Mertens im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
+     <a class="play" href="p/ergebnisse/niklas.mp4" data-video="p/ergebnisse/niklas.mp4" aria-label="Video von Niklas Mertens abspielen, 1:45 Minuten">1:45</a>
     </div>
     <div class="innen">
-     <div class="wer"><b>Thomas Kampmann</b><small>Dometic · Velbert</small></div>
-     <p>Videostimme von Dometic – Abschrift folgt</p>
-     <p class="platz">Bitte von dir: Das bisherige Video zeigte laut dir nicht Thomas Kampmann. Das richtige Video (fünf Männer, darunter Thomas Kampmann) liegt in deinem Ordner. Bild und Abschrift folgen, sobald ich es habe.</p>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf Vimeo</span><span>Kategorie: Unternehmen</span></div>
+     <div class="wer"><b>Niklas Mertens</b><small>Co-Founder oneBanking und Connect</small></div>
+     <blockquote>„Du hast sie ins Bewusstsein gesprochen, dass man die Angst davor sich nehmen darf.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Also ich glaube, dass der Vortrag das transportiert hat, was wir eigentlich auch bei oneBanking und auch bei AI Assistance und bei Connect wirklich transportieren wollen, ist, dass die KI den Menschen nicht ersetzen soll, sondern sie soll den Menschen unterstützen.</p><p>Ja, du hast sie natürlich ins Bewusstsein gesprochen, dass man die Angst davor sich nehmen darf, aber dazu gehört es auch, im Austausch zu bleiben, weil erst in dem Dialog auch Angst genommen werden kann. Und das ist eigentlich dein Vortrag, den du den Menschen dann auch gibst, auch ein bisschen dieses Bewusstsein und diese Offenheit einfach auch darzustellen und die Angst zu nehmen.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmen</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="unternehmen buehne">
+   <article class="kst weitere" data-kat="unternehmen">
+    <div class="medium">
+     <img src="p/ergebnisse/sabina.webp" alt="Sabina Kocherhans im Video" width="360" height="640" loading="lazy" style="object-position:50% 30%">
+     <a class="play" href="p/ergebnisse/sabina.mp4" data-video="p/ergebnisse/sabina.mp4" aria-label="Video von Sabina Kocherhans abspielen, 1:25 Minuten">1:25</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Sabina Kocherhans</b><small>Veranstalterin Business Community Day, Worms</small></div>
+     <blockquote>„… aber sie kann auch hinhören, sie kann zuhören …“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ein Teammember ist Claudia Conen von unserer Create4We Community, wo sie regelmäßig ihre wertvollen Inhalte mit unseren Kunden, mit unseren Menschen teilt.</p><p>Was ich an Claudia so schätze, ist zum Teil ihre sehr direkte Art, aber sie kann auch hinhören, sie kann zuhören, sie ist einfach da, sie beobachtet und zum richtigen Moment greift sie dann ein, im positiven Sinne natürlich, und hat auch heute wieder die Bühne gerockt mit ihrer Keynote zum Thema KI.</p><p>Diese Verwandlungen auch, was sie auf eine ehrliche Art und Weise zeigt, aber auch ihre Menschlichkeit, wo dann eben die KI auch mal fehl am Platz sein darf. Und genau das liebe ich an Claudia. Danke, Claudia.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmen</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="unternehmen">
     <div class="medium">
      <img src="p/ergebnisse/onebuddy.webp" alt="Vertreter der Firma OneBuddy im Video nach Claudias KI-Vortrag" width="360" height="640" loading="lazy" style="object-position:50% 25%">
      <a class="play" href="p/ergebnisse/onebuddy.mp4" data-video="p/ergebnisse/onebuddy.mp4" aria-label="Video der Firma OneBuddy abspielen, 1:29 Minuten">1:29</a>
@@ -353,103 +391,36 @@ details.alle[open]>summary{margin-bottom:28px}
      <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift</span><span>Kategorie: Unternehmen</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="unternehmen buehne">
+   <article class="kst weitere" data-kat="unternehmen">
     <div class="medium">
-     <img src="p/ergebnisse/niklas.webp" alt="Niklas Mertens im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
-     <a class="play" href="p/ergebnisse/niklas.mp4" data-video="p/ergebnisse/niklas.mp4" aria-label="Video von Niklas Mertens abspielen, 1:45 Minuten">1:45</a>
+     <img src="p/ergebnisse/stephan.webp" alt="Stephan im Video" width="360" height="640" loading="lazy" style="object-position:50% 25%">
+     <a class="play" href="p/ergebnisse/stephan.mp4" data-video="p/ergebnisse/stephan.mp4" aria-label="Video von Stephan abspielen, 0:30 Minuten">0:30</a>
     </div>
     <div class="innen">
-     <div class="wer"><b>Niklas Mertens</b><small>Co-Founder oneBanking und Connect</small></div>
-     <blockquote>„Du hast sie ins Bewusstsein gesprochen, dass man die Angst davor sich nehmen darf.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Also ich glaube, dass der Vortrag das transportiert hat, was wir eigentlich auch bei oneBanking und auch bei AI Assistance und bei Connect wirklich transportieren wollen, ist, dass die KI den Menschen nicht ersetzen soll, sondern sie soll den Menschen unterstützen.</p><p>Ja, du hast sie natürlich ins Bewusstsein gesprochen, dass man die Angst davor sich nehmen darf, aber dazu gehört es auch, im Austausch zu bleiben, weil erst in dem Dialog auch Angst genommen werden kann. Und das ist eigentlich dein Vortrag, den du den Menschen dann auch gibst, auch ein bisschen dieses Bewusstsein und diese Offenheit einfach auch darzustellen und die Angst zu nehmen.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmen · Bühne</span></div>
+     <div class="wer"><b>Stephan</b><small>Videograf · Video-Marketing-Firma Videographiq</small></div>
+     <blockquote>„Sie hat jedes Mal ein unfassbares Engagement an den Tag gelegt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ich persönlich kann die Frau Conen nur jedem wärmstens ans Herz legen, denn wir als Video-Marketing-Firma haben schon des Öfteren mit ihr zusammengearbeitet und sie des Öfteren in Aktion gesehen.</p><p>Und es spielt keine Rolle, ob sie jetzt Menschen dazu bewegt hat, eigene Texte zu verfassen und sie anschließend vorzutragen, ob sie selbst gesprochen hat oder ob sie selbst als Speaker unterwegs war. Sie hat jedes Mal ein unfassbares Engagement an den Tag gelegt, und es ist mir einfach immer wieder eine Freude gewesen, ihr beim Arbeiten zuzuschauen.</p></details>
+     <p class="platz">Nachname laut Einblendung im Video „Stefan Köhn“ oder „Köln“ (Schreibschrift, nicht sicher lesbar): bitte bestätigen.</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift</span><span>Kategorie: Unternehmen</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="buehne unternehmen">
+   <article class="kst weitere" data-kat="unternehmen">
     <div class="medium">
-     <img src="p/ergebnisse/sabina.webp" alt="Sabina Kocherhans im Video" width="360" height="640" loading="lazy" style="object-position:50% 30%">
-     <a class="play" href="p/ergebnisse/sabina.mp4" data-video="p/ergebnisse/sabina.mp4" aria-label="Video von Sabina Kocherhans abspielen, 1:25 Minuten">1:25</a>
+     <img src="l/dometic.png" alt="Logo Dometic" width="400" height="120" loading="lazy" style="object-fit:contain;padding:30% 18%;background:var(--weiss)">
     </div>
     <div class="innen">
-     <div class="wer"><b>Sabina Kocherhans</b><small>Veranstalterin Business Community Day, Worms</small></div>
-     <blockquote>„… aber sie kann auch hinhören, sie kann zuhören …“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Ein Teammember ist Claudia Conen von unserer Create4We Community, wo sie regelmäßig ihre wertvollen Inhalte mit unseren Kunden, mit unseren Menschen teilt.</p><p>Was ich an Claudia so schätze, ist zum Teil ihre sehr direkte Art, aber sie kann auch hinhören, sie kann zuhören, sie ist einfach da, sie beobachtet und zum richtigen Moment greift sie dann ein, im positiven Sinne natürlich, und hat auch heute wieder die Bühne gerockt mit ihrer Keynote zum Thema KI.</p><p>Diese Verwandlungen auch, was sie auf eine ehrliche Art und Weise zeigt, aber auch ihre Menschlichkeit, wo dann eben die KI auch mal fehl am Platz sein darf. Und genau das liebe ich an Claudia. Danke, Claudia.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Bühne · Unternehmen</span></div>
+     <div class="wer"><b>Thomas Kampmann</b><small>Dometic · Velbert</small></div>
+     <p class="platz">Das Video mit fünf Männern, darunter Thomas Kampmann, habe ich in den Ordnern „Testimonial Claudia“, „Witten Feedback Claudia“, „Hochzeitsstimmen“, „Vinci 17.09.26“ und „Vinci 2“ nicht gefunden. Bitte schick mir den Link zu genau diesem Video. Das bisher als Kampmann beschriftete Vimeo-Video zeigt eine Führungskraft aus einem Teamtraining (siehe „Führungskräfte“).</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme gesucht</span><span>Kategorie: Unternehmen</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="experten buehne">
-    <div class="medium">
-     <img src="p/ergebnisse/andresen.webp" alt="Dr.-Ing. Ann-Kathrin Andresen im Video" width="350" height="640" loading="lazy" style="object-position:50% 30%">
-     <a class="play" href="p/ergebnisse/andresen.mp4" data-video="p/ergebnisse/andresen.mp4" aria-label="Video von Dr.-Ing. Ann-Kathrin Andresen abspielen, 2:00 Minuten">2:00</a>
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Dr.-Ing. Ann-Kathrin Andresen</b><small>Verfahrenstechnikerin, Mentorin und Beraterin · Ing.-up</small></div>
-     <blockquote>„Die Atmosphäre ist sehr herzlich, sehr direkt und sehr intensiv, aber wir lachen auch viel gemeinsam.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Ich habe mit Claudia zusammen eine Rede erstellt und einstudiert, die ich vor einem technischen Publikum halte. Ich bin Ingenieurin.</p><p>Sie schmeißt einen auch gerne mal ins kalte Wasser.</p><p>Mit vollem Herzblut dabei und fordert dich auch gerne heraus.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span><span>Kategorie: Unternehmer &amp; Experten · Bühne</span></div>
-    </div>
-   </article>
+   </div>
+   <button class="knopf zweit mehr" type="button" hidden aria-expanded="false">Alle 7 Stimmen aus „Unternehmen“ zeigen</button>
   </div>
- </div>
-</section>
-
-<!-- 4 Stimmen von Teilnehmenden (§20.4) – drei sichtbar, der Rest hinter „Alle Stimmen zeigen“ (alle dürfen gezeigt werden) -->
-<section id="teilnehmende" aria-labelledby="teilnehmende-titel">
- <div class="huelle">
-  <div class="kicker">Teilnehmende</div>
-  <h2 id="teilnehmende-titel">Stimmen von Unternehmern, Experten und Teilnehmenden</h2>
-  <div class="kartenfeld">
-   <article class="kst" data-kat="buehne experten">
-    <div class="medium">
-     <img src="p/ergebnisse/voigtlaender.webp" alt="Verena Voigtländer im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
-     <a class="play" href="p/ergebnisse/voigtlaender.mp4" data-video="p/ergebnisse/voigtlaender.mp4" aria-label="Video von Verena Voigtländer abspielen, 0:44 Minuten">0:44</a>
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Verena Voigtländer</b><small>Personal Coach · nach dem KI-Vortrag</small></div>
-     <blockquote>„… dass ich zum ersten Mal begriffen habe, wie wichtig das für unser Business wirklich ist.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Der Vortrag zur KI von der Claudia Conen, den fand ich super interessant. Natürlich habe ich mich damit schon beschäftigt mit den Themen, aber sie hat das so dargestellt, so plastisch, dass ich zum ersten Mal begriffen habe, wie wichtig das für unser Business wirklich ist. Und dass wir wirklich für die Zukunft nicht ohne dem in die Zukunft gehen können.</p><p>Und sie hat das so beschrieben, dass ich genau weiß, dass sie sich mit der Thematik intensiv auseinandergesetzt hat. Und das finde ich total wichtig, weil dann würde ich immer zur Claudia gehen, mit diesem Thema …</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Bühne · Unternehmer &amp; Experten</span></div>
-    </div>
-   </article>
-   <article class="kst" data-kat="experten">
-    <div class="medium">
-     <img src="p/ergebnisse/sommerfeld.webp" alt="Verena Sommerfeld im Video" width="432" height="540" loading="lazy" style="object-position:50% 35%">
-     <a class="play" href="p/unternehmer-experten/sommerfeld.mp4" data-video="p/unternehmer-experten/sommerfeld.mp4" aria-label="Video von Verena Sommerfeld abspielen, 2:10 Minuten">2:10</a>
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Verena Sommerfeld</b><small>Bauingenieurin und Energieberaterin · Esslingen</small></div>
-     <blockquote>„Ich habe sie wirklich abgelegt, diese Scheu vor der Kamera.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Ich möchte mich nie wieder im Leben verstellen.</p><p>Ich interessiere mich für den Menschen dahinter, und zu dem rede ich. Und nicht dieses ganze Kopfkino. Das hast du mir wirklich sehr deutlich beigebracht.</p><p>Du bist wahnsinnig vertrauensvoll, und ich habe mich gleich gut aufgehoben gefühlt.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-    </div>
-   </article>
-   <article class="kst" data-kat="experten">
-    <div class="medium">
-     <img src="p/ergebnisse/miniaci.webp" alt="Melanie Miniaci im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
-     <a class="play" href="https://vimeo.com/1144287147" target="_blank" rel="noopener" aria-label="Video von Melanie Miniaci bei Vimeo ansehen">bei Vimeo</a>
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Melanie Miniaci</b><small>Gründerin von Miderma · Permanent Make-up und Medical Beauty</small></div>
-     <blockquote>„Die Texte fühlen sich für mich so an, als hätte ich sie selber gesagt.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Die Zusammenarbeit mit Claudia Conen hat mich unheimlich nach vorne gebracht – mir viel Zeit erspart und es war das Beste, was mir passieren konnte.</p><p>Sie konnte sich im Vorfeld ganz mit mir identifizieren, so dass sie wusste, worum es bei mir und meiner Arbeit geht.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-    </div>
-   </article>
-  </div>
-  <details class="alle" id="alle-stimmen">
-   <summary class="knopf zweit">Alle Stimmen zeigen</summary>
+  <div class="gruppe" data-gruppe="fuehrung" id="kat-fuehrung">
+   <h3 class="untertitel">Führungskräfte <span class="anz">2</span></h3>
+   <p class="gruppe-unter">Menschen, die Teams führen</p>
    <div class="kartenfeld">
-   <article class="kst" data-kat="experten">
-    <div class="medium">
-     <img src="p/ergebnisse/mahnke.webp" alt="Fabian Mahnke" width="360" height="640" loading="lazy" style="object-position:50% 30%">
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Fabian Mahnke</b><small>Experte für KI und Automatisierung im Marketing</small></div>
-     <blockquote>„Ihre Stimme lockt Kunden an wie Magnete!“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Als Unternehmer durfte ich erkennen, dass meine Stimme oft mehr verrät als meine Worte.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-    </div>
-   </article>
    <article class="kst" data-kat="fuehrung">
     <div class="medium">
      <img src="p/ergebnisse/andreas.webp" alt="Andreas Meyer im Gespräch mit Claudia Conen vor einer Tür mit Bildern" width="480" height="600" loading="lazy" style="object-position:60% 50%">
@@ -459,48 +430,145 @@ details.alle[open]>summary{margin-bottom:28px}
      <div class="wer"><b>Andreas Meyer</b><small>„Der Mann der sieben Türen“ · Coaching zur Markenentwicklung</small></div>
      <blockquote>„… und auch meine Vision wie nochmal neu entdeckt.“</blockquote>
      <details><summary>Weiterlesen</summary><p>Das Gefühl war für mich unglaublich intensiv. Also ich habe ganz viele Bilder von dieser Zeit, ganz viele Emotionen von dieser Zeit bei mir. Es war wirklich eine Reise.</p><p>Ich erzähle ja auch in meiner Arbeit über sieben Türen und über diese Reise. Und es war auch eine Reise nochmals für mich. Also ich habe diese Reise, die ich auch mit anderen Menschen mache, für mich nochmals gemeinsam mit dir erlebt und auch meine Vision wie nochmal neu entdeckt.</p><p>Du hast mich unterstützt, diesen emotionalen Teil zu machen. Ich bin ja sehr ein blauer Typ, sehr rational und durchdacht, und so diese Verbindung zu mir selbst, auch zu Themen von mir, die ich schon ganz lange gehütet habe irgendwo, nochmals für auch diesen Teil bei mir anzuschauen und so auch diese Symbolik herauszuarbeiten.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Führung</span></div>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Führungskräfte</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="buehne">
-    <div class="innen">
-     <div class="wer"><b>Tobias Conrad</b><small>Life Coach, Speaker und Motivationstrainer</small></div>
-     <blockquote>„Ihre Präsenz auf der Bühne und ihre Stimme ist außergewöhnlich.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Mit ihrer Vielfalt, mit ihrer Tiefe berührt sie die Menschen.</p><p>Die Klarheit, mit der sie Botschaften transportiert, beeindruckt.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><span>Kategorie: Bühne</span></div>
-    </div>
-   </article>
-   <article class="kst" data-kat="buehne">
+   <article class="kst" data-kat="fuehrung">
     <div class="medium">
-     <img src="p/ergebnisse/cora.webp" alt="Cora im Video" width="360" height="640" loading="lazy" style="object-position:50% 35%">
+     <img src="p/ergebnisse/teamleitung.webp" alt="Kundenstimme im Video, Name folgt" width="432" height="764" loading="lazy" style="object-position:50% 30%">
+     <a class="play" href="p/ergebnisse/teamleitung.mp4" data-video="p/ergebnisse/teamleitung.mp4" aria-label="Video von einer Kundenstimme abspielen, 1:44 Minuten">1:44</a>
     </div>
     <div class="innen">
-     <div class="wer"><b>Cora</b><small>Hotellerie · Netzwerk für Frauen auf der Bühne</small></div>
-     <blockquote>„Man kann viel ersetzen, aber den persönlichen Kontakt … das kann es einfach nicht ersetzen.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Vielen, vielen Dank, liebe Claudia, dass ich heute deinem Vortrag lauschen durfte und ganz viel Neues erfahren habe, auch neue Sichtweisen auf KI, die Nutzung und was denn eigentlich der Unterschied zur Person ausmacht, und den Unterschied feststellen durfte, was denn die KI kann und was wir Menschen nur können.</p><p>Ich finde es unheimlich wichtig, dass der persönliche Kontakt immer noch bestehen bleibt. Es lebt nur von den Menschen miteinander, von den Veranstaltungen, von dem sich Kennenlernen, von dem Austauschen. Man kann viel ersetzen, aber den persönlichen Kontakt und das Miteinander und das Emotionen-Erfahren und miteinander Leben, das kann es einfach nicht ersetzen.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Bühne</span></div>
+     <div class="wer"><b>Name folgt</b><small>Führungskraft · nach dem ersten Tag eines Teamtrainings</small></div>
+     <blockquote>„… sodass wir auch gemerkt haben, wir sind auf Augenhöhe.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Der erste Trainingstag war für mich wirklich sehr besonders, wie er schon anfing im Team, dass jeder mal zeigen konnte, was ist. Jeder konnte sich öffnen, welche Probleme ihn bewegen und welche Themen er hat, die ganzen Felsen, die ihm im Weg liegen …</p><p>Auch ich konnte mich zeigen, wie ich bin, dass ich auch Fehler mache, dass ich für einige Dinge oder Aufgaben in meinem Leben noch Dinge lernen muss, und habe mich meinem Team auch offenbart. Und das tat mir sehr, sehr gut, sodass wir auch gemerkt haben, wir sind auf Augenhöhe.</p><p>Und dann haben wir ein Teamspiel gemacht, wo wir mit verbundenen Augen gearbeitet haben … Ich habe erst gedacht, werden wir niemals schaffen, wie soll das klappen. Und dann sind wir richtig in die Stille gegangen, mit verbundenen Augen, ohne reden, und haben diesen Turm aufgebaut, und es hat alles so funktioniert.</p><p>… das hat mich sehr bewegt und gestärkt und mir gezeigt, welche Kompetenzen und welche Fähigkeiten mein Team hat. Und wir gehen jetzt die Dinge an, die uns behindern, die werden wir aus dem Weg räumen, und dann werden wir unseren Erfolg weiter ausbauen und unser Team und unsere Abteilung zum Erfolg führen. Danke für diesen wunderschönen Tag, Claudia.</p></details>
+     <p class="platz">Name und Firma bitte von dir. Dieses Video stand bei Vimeo unter „Thomas Kampmann“; laut dir ist er es nicht. Es stammt aus derselben Aufnahmereihe wie das Video von Roland (Training bei Dometic).</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Führungskräfte</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="buehne">
+   </div>
+  </div>
+  <div class="gruppe" data-gruppe="experten" id="kat-experten">
+   <h3 class="untertitel">Experten <span class="anz">9</span></h3>
+   <p class="gruppe-unter">Coaches, Trainer, Speaker, Berater und Selbstständige</p>
+   <div class="kartenfeld">
+   <article class="kst" data-kat="experten">
     <div class="medium">
-     <img src="p/ergebnisse/stephan.webp" alt="Stephan im Video" width="360" height="640" loading="lazy" style="object-position:50% 25%">
-     <a class="play" href="https://vimeo.com/1144142728" target="_blank" rel="noopener" aria-label="Video von Stephan bei Vimeo ansehen">bei Vimeo</a>
+     <img src="p/ergebnisse/sommerfeld.webp" alt="Verena Sommerfeld im Video" width="432" height="540" loading="lazy" style="object-position:50% 35%">
+     <a class="play" href="p/unternehmer-experten/sommerfeld.mp4" data-video="p/unternehmer-experten/sommerfeld.mp4" aria-label="Video von Verena Sommerfeld abspielen, 2:10 Minuten">2:10</a>
     </div>
     <div class="innen">
-     <div class="wer"><b>Stephan</b><small>Kameramann bei Videographiq</small></div>
-     <blockquote>„Es ist immer wieder eine Freude, mit ihr zu arbeiten.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Wir haben schon öfters mit ihr zusammengearbeitet.</p><p>Ob sie Menschen dazu bewegt, selber Texte zu verfassen und selber vorzutragen oder ob sie selbst spricht oder als Speaker auftritt – sie legt jedesmal ein unfassbares Engagement an den Tag.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf Vimeo, wörtliche Abschrift</span><span>Kategorie: Bühne</span></div>
+     <div class="wer"><b>Verena Sommerfeld</b><small>Bauingenieurin und Energieberaterin · Esslingen</small></div>
+     <blockquote>„Ich habe sie wirklich abgelegt, diese Scheu vor der Kamera.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ich möchte mich nie wieder im Leben verstellen.</p><p>Ich interessiere mich für den Menschen dahinter, und zu dem rede ich. Und nicht dieses ganze Kopfkino. Das hast du mir wirklich sehr deutlich beigebracht.</p><p>Du bist wahnsinnig vertrauensvoll, und ich habe mich gleich gut aufgehoben gefühlt.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span><span>Kategorie: Experten</span></div>
     </div>
    </article>
    <article class="kst" data-kat="experten">
+    <div class="medium">
+     <img src="p/ergebnisse/miniaci.webp" alt="Melanie Miniaci im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
+     <a class="play" href="p/ergebnisse/miniaci.mp4" data-video="p/ergebnisse/miniaci.mp4" aria-label="Video von Melanie Miniaci abspielen, 1:52 Minuten">1:52</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Melanie Miniaci</b><small>Gründerin von Miderma · Permanent Make-up und Medical Beauty</small></div>
+     <blockquote>„Die Texte fühlen sich für mich so an, als hätte ich sie selber gesagt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Claudia Conen kann sich super in denjenigen hineinversetzen, mit dem sie zusammenarbeitet. Und zwar habe ich mir schon gedacht, dass es ein bisschen schwieriger wird, mit mir zu arbeiten, weil ich ein sehr hibbeliger Typ bin. Sie konnte aber komplett meine Art aufnehmen und mich sogar noch ein ganz kleines bisschen mehr runterfahren, dass ich einfach entspannter mit mir selber umgehen kann, wenn ich Dinge ausarbeite und die dann auch wirklich vor der Kamera sage.</p><p>Ich bin ein unheimlich perfektionistischer Typ, aber ich bin nicht die Person, die unheimlich viel redet, und nicht vor Publikum redet, auch nicht so viel vor der Kamera. … Und bei Claudia Conen war es wirklich für mich so, dass sie mich einfach aufgenommen hat. Ich habe mich direkt ganz sicher gefühlt, weil sie einfach ein Gespür dafür hat, wie der Mensch sich fühlt.</p><p>… Und das hat mich unheimlich nach vorne gebracht, mir unheimlich viel Zeit gespart. Und das war für mich einfach das Beste, was mir passieren konnte, dass wir uns kennengelernt haben und ich bei ihr dann das Coaching gebucht habe.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme (Aufnahme 21.12.2020 laut Dateiname), Abschrift maschinell erstellt, gekürzt</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   <article class="kst" data-kat="experten">
+    <div class="medium">
+     <img src="p/ergebnisse/andresen.webp" alt="Dr.-Ing. Ann-Kathrin Andresen im Video" width="350" height="640" loading="lazy" style="object-position:50% 30%">
+     <a class="play" href="p/ergebnisse/andresen.mp4" data-video="p/ergebnisse/andresen.mp4" aria-label="Video von Dr.-Ing. Ann-Kathrin Andresen abspielen, 2:00 Minuten">2:00</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Dr.-Ing. Ann-Kathrin Andresen</b><small>Verfahrenstechnikerin, Mentorin und Beraterin · Ing.-up</small></div>
+     <blockquote>„Die Atmosphäre ist sehr herzlich, sehr direkt und sehr intensiv, aber wir lachen auch viel gemeinsam.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ich habe mit Claudia zusammen eine Rede erstellt und einstudiert, die ich vor einem technischen Publikum halte. Ich bin Ingenieurin.</p><p>Sie schmeißt einen auch gerne mal ins kalte Wasser.</p><p>Mit vollem Herzblut dabei und fordert dich auch gerne heraus.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="experten">
+    <div class="medium">
+     <img src="p/ergebnisse/gorter.webp" alt="Freimuth Gorter im Video" width="480" height="600" loading="lazy" style="object-position:50% 35%">
+     <a class="play" href="p/ergebnisse/gorter.mp4" data-video="p/ergebnisse/gorter.mp4" aria-label="Video von Freimuth Gorter abspielen, 0:58 Minuten">0:58</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Freimuth Gorter</b><small>Heilpraktiker, Pohl®-Therapeut, Masseur · Köln und Essen</small></div>
+     <blockquote>„Du hast das so gut immer wieder aufgefangen, mich begleitet, mich wieder reingeführt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Das ist völlig neu. Ich merke dann, dass ich halt ja auch total eingespannt bin, Lampenfieber habe. Ich denke dann die ganze Zeit daran, ja gut, das nimmt man jetzt auf, das kommt dann irgendwo im Internet, das gucken sich irgendwelche Leute an.</p><p>Dann will man das alles irgendwie perfekt und richtig machen, aber man weiß gar nicht, wie perfekt oder richtig überhaupt ist. Dann ist es mir heiß, dann ist es mir kalt, dann geht es wieder, dann bin ich wieder im Fluss mit meinem Thema.</p><p>Aber ich muss sagen, du hast das so gut immer wieder aufgefangen, mich begleitet, mich wieder reingeführt. Also ich finde das total super, mit dir zu arbeiten. Danke schön.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="experten">
+    <div class="medium">
+     <img src="p/ergebnisse/becks.webp" alt="Jennifer Becks im Video" width="184" height="402" loading="lazy" style="object-position:50% 20%">
+     <a class="play" href="p/ergebnisse/becks.mp4" data-video="p/ergebnisse/becks.mp4" aria-label="Video von Jennifer Becks abspielen, 0:40 Minuten">0:40</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Jennifer Becks</b><small>Coach für Kommunikationsfähigkeiten und die Kunst des Smalltalks</small></div>
+     <blockquote>„Ich habe mit ihr zusammen meine Landingpage gebastelt, die übrigens richtig klasse geworden ist.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Claudia habe ich kennengelernt bei einer Speaker-Ausbildung, weil sie ein ganz großer Bestandteil war. Ich habe mich vorbereitet auf meine erste Rede … Da kam sie sofort auf mich zu, um eine Lösung anzubieten.</p><p>Ich habe mit ihr zusammen meine Landingpage gebastelt, die übrigens richtig klasse geworden ist. Es gab die ganze Zeit Tipps, wie man noch etwas besser darstellen kann, noch ein bisschen schöner und vor allen Dingen mit ganz, ganz viel Herz. Das ist das, was sie immer gesagt hat: Sei du und sei mit ganz viel Herz dabei, und dann wird es schön. Ich danke dir von Herzen.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="experten">
+    <div class="medium">
+     <img src="p/ergebnisse/mahnke.webp" alt="Fabian Mahnke" width="360" height="640" loading="lazy" style="object-position:50% 30%">
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Fabian Mahnke</b><small>Experte für KI und Automatisierung im Marketing</small></div>
+     <blockquote>„Ihre Stimme lockt Kunden an wie Magnete!“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Als Unternehmer durfte ich erkennen, dass meine Stimme oft mehr verrät als meine Worte.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="experten">
     <div class="medium">
      <img src="p/ergebnisse/bastian.webp" alt="Aimée Bastian" width="360" height="640" loading="lazy" style="object-position:50% 25%">
     </div>
     <div class="innen">
      <div class="wer"><b>Aimée Bastian</b><small>PR-Beraterin und Führungs-Coach</small></div>
      <blockquote>„Tolle Radiostimme: samtig-weich und angenehm.“</blockquote>
-     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
+     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="experten">
+    <div class="innen">
+     <div class="wer"><b>Tobias Conrad</b><small>Life Coach, Speaker und Motivationstrainer</small></div>
+     <blockquote>„Ihre Präsenz auf der Bühne und ihre Stimme ist außergewöhnlich.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Mit ihrer Vielfalt, mit ihrer Tiefe berührt sie die Menschen.</p><p>Die Klarheit, mit der sie Botschaften transportiert, beeindruckt.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="experten">
+    <div class="medium">
+     <img src="p/ergebnisse/volz.webp" alt="Regina Volz im Video" width="540" height="960" loading="lazy" style="object-position:50% 25%">
+     <a class="play" href="https://vimeo.com/1144281010" target="_blank" rel="noopener" aria-label="Video von Regina Volz bei Vimeo ansehen">bei Vimeo</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Regina Volz</b><small>Inhaberin der Volz Personalberatung · Köln</small></div>
+     <p class="platz">Abschrift fehlt: Das Video liegt nur bei Vimeo (Download gesperrt). Bitte die Originaldatei in den Ordner legen, dann schreibe ich den Text wörtlich ab.</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme auf Vimeo (claudiaconen.com)</span><span>Kategorie: Experten</span></div>
+    </div>
+   </article>
+   </div>
+   <button class="knopf zweit mehr" type="button" hidden aria-expanded="false">Alle 9 Stimmen aus „Experten“ zeigen</button>
+  </div>
+  <div class="gruppe" data-gruppe="buehne" id="kat-buehne">
+   <h3 class="untertitel">Keynote und Bühne <span class="anz">8</span></h3>
+   <p class="gruppe-unter">Publikum nach Vorträgen</p>
+   <div class="kartenfeld">
+   <article class="kst" data-kat="buehne">
+    <div class="medium">
+     <img src="p/ergebnisse/voigtlaender.webp" alt="Verena Voigtländer im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
+     <a class="play" href="p/ergebnisse/voigtlaender.mp4" data-video="p/ergebnisse/voigtlaender.mp4" aria-label="Video von Verena Voigtländer abspielen, 0:44 Minuten">0:44</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Verena Voigtländer</b><small>Personal Coach · nach dem KI-Vortrag</small></div>
+     <blockquote>„… dass ich zum ersten Mal begriffen habe, wie wichtig das für unser Business wirklich ist.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Der Vortrag zur KI von der Claudia Conen, den fand ich super interessant. Natürlich habe ich mich damit schon beschäftigt mit den Themen, aber sie hat das so dargestellt, so plastisch, dass ich zum ersten Mal begriffen habe, wie wichtig das für unser Business wirklich ist. Und dass wir wirklich für die Zukunft nicht ohne dem in die Zukunft gehen können.</p><p>Und sie hat das so beschrieben, dass ich genau weiß, dass sie sich mit der Thematik intensiv auseinandergesetzt hat. Und das finde ich total wichtig, weil dann würde ich immer zur Claudia gehen, mit diesem Thema …</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
     </div>
    </article>
    <article class="kst" data-kat="buehne">
@@ -512,26 +580,92 @@ details.alle[open]>summary{margin-bottom:28px}
      <div class="wer"><b>Sabine Caspar</b><small>Vertrieb · Team Sabina Kocherhans</small></div>
      <blockquote>„… habe gerne deiner wundervollen Stimme gefolgt.“</blockquote>
      <details><summary>Weiterlesen</summary><p>Also, liebe Claudia, ich fand deinen Vortrag über KI und die Zukunft wirklich super, super spannend und auch habe ich gerne deiner wundervollen Stimme gefolgt, sehr, sehr spannend, am Puls der Zeit, was die Zukunft bringen wird.</p><p>Die negativen und die positiven Seiten dessen und die Essenz des Ganzen, dass es doch sehr, sehr wichtig ist, sich am Puls der Zeit zu orientieren und sich mit diesen Themen auseinanderzusetzen und sich auch entsprechend zu positionieren und in die Sichtbarkeit zu bringen.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Bühne</span></div>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
+    </div>
+   </article>
+   <article class="kst" data-kat="buehne">
+    <div class="medium">
+     <img src="p/ergebnisse/strunz.webp" alt="Cornelia Strunz im Video" width="184" height="402" loading="lazy" style="object-position:50% 20%">
+     <a class="play" href="p/ergebnisse/strunz.mp4" data-video="p/ergebnisse/strunz.mp4" aria-label="Video von Cornelia Strunz abspielen, 1:09 Minuten">1:09</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Cornelia Strunz</b><small>Die UnterschiedMacherin · Autorin und Podcasterin</small></div>
+     <blockquote>„Claudia hat mich mit ihrer Rede voll im Herzen berührt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>… Und dann letzten Endes geht es an sich nur darum, die Herzen der Menschen zu berühren. Claudia hat mich mit ihrer Rede voll im Herzen berührt.</p><p>Obwohl ich sogar das meiste schon kannte … das selber einfach nochmal zu hören. Nein, nicht nur zu hören, sondern auch zu spüren, dass sie mit ganzem Herzblut dafür brennt, was sie tut. Das ist nochmal eine ganz andere Geschichte. Dankeschön.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="buehne">
+    <div class="medium">
+     <img src="p/ergebnisse/schmidt.webp" alt="Simone Schmidt im Video" width="184" height="402" loading="lazy" style="object-position:50% 22%">
+     <a class="play" href="p/ergebnisse/schmidt.mp4" data-video="p/ergebnisse/schmidt.mp4" aria-label="Video von Simone Schmidt abspielen, 0:43 Minuten">0:43</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Simone Schmidt</b><small>Coach und Mentorin · neue Arbeitswelten</small></div>
+     <blockquote>„Es waren die ganz neuen Impulse, einfach auch mal über seine Stimme und wie sie wirkt nachzudenken.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Was hat mir an Claudias Rede gefallen? Es waren die ganz neuen Impulse, einfach auch mal über seine Stimme und wie sie wirkt nachzudenken.</p><p>Dieses Gehirn, was da so präsent auf dem Tisch lag, hat mich auch nicht nur dafür inspiriert, sondern auch darüber hinaus, wie oft man mit seinem Kopf ganz woanders ist. Und dass man einfach mit einer kraftvollen Stimme es schafft, immer mehr im Hier und Jetzt zu sein. … Deshalb danke ich Claudia vom ganzen Herzen für diesen wertvollen Vortrag.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="buehne">
+    <div class="medium">
+     <img src="p/ergebnisse/menz.webp" alt="Stephanie Menz im Video" width="184" height="402" loading="lazy" style="object-position:50% 22%">
+     <a class="play" href="p/ergebnisse/menz.mp4" data-video="p/ergebnisse/menz.mp4" aria-label="Video von Stephanie Menz abspielen, 1:06 Minuten">1:06</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Stephanie Menz</b><small>Coach und Moderatorin · beim Charity Speakers Event</small></div>
+     <blockquote>„… denn sie ist eine Frau, die im Ohr bleibt und ihren Kunden hilft, wie sie bei ihren Kunden im Ohr bleibt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Beim Charity Speakers Event habe ich Claudia Conen kennengelernt, und ich dachte mir: Wow, was für eine Frau. … Auf einmal ging die Stimme an von der Claudia Conen, und ich dachte mir: Das muss ich mir anhören. Das, was sie zu sagen hat, muss in meine Ohren.</p><p>Und es hat sich echt gelohnt, bei ihr dabei zu sein, denn sie ist eine Frau, die im Ohr bleibt und ihren Kunden hilft, wie sie bei ihren Kunden im Ohr bleibt. … Ich liebe es. Merci vielmals für deine Speech.</p></details>
+     <p class="platz">Schreibweise des Namens aus der Einblendung (Schreibschrift): bitte bestätigen.</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="buehne">
+    <div class="medium">
+     <img src="p/ergebnisse/niermann.webp" alt="Siegrid Niermann im Video" width="184" height="402" loading="lazy" style="object-position:80% 22%">
+     <a class="play" href="p/ergebnisse/niermann.mp4" data-video="p/ergebnisse/niermann.mp4" aria-label="Video von Siegrid Niermann abspielen, 0:35 Minuten">0:35</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Siegrid Niermann</b><small>Style und Personal Brand</small></div>
+     <blockquote>„So viel Energie du in den Raum bringst, mit dieser angenehmen Stimme … hat mich tief beeindruckt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Liebe Claudia, ich muss sagen … So viel Energie du in den Raum bringst, mit dieser angenehmen Stimme und auch mit diesen tollen Informationen … muss ich sagen, hat mich tief beeindruckt. … eine charmante Art.</p><p>Also ich würde mal sagen, das hier ist ein Paket, was man buchen kann. Vielen Dank!</p></details>
+     <p class="platz">Schreibweise „Siegrid“ oder „Sigrid“ aus der Einblendung: bitte bestätigen.</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="buehne">
+    <div class="medium">
+     <img src="p/ergebnisse/cora.webp" alt="Cora im Video" width="360" height="640" loading="lazy" style="object-position:50% 35%">
+     <a class="play" href="p/ergebnisse/cora.mp4" data-video="p/ergebnisse/cora.mp4" aria-label="Video von Cora abspielen, 4:15 Minuten">4:15</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Cora</b><small>Hotellerie · Netzwerk für Frauen auf der Bühne</small></div>
+     <blockquote>„Man kann viel ersetzen, aber den persönlichen Kontakt … das kann es einfach nicht ersetzen.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Vielen, vielen Dank, liebe Claudia, dass ich heute deinem Vortrag lauschen durfte und ganz viel Neues erfahren habe, auch neue Sichtweisen auf KI, die Nutzung und was denn eigentlich der Unterschied zur Person ausmacht, und den Unterschied feststellen durfte, was denn die KI kann und was wir Menschen nur können.</p><p>Ich finde es unheimlich wichtig, dass der persönliche Kontakt immer noch bestehen bleibt. Es lebt nur von den Menschen miteinander, von den Veranstaltungen, von dem sich Kennenlernen, von dem Austauschen. Man kann viel ersetzen, aber den persönlichen Kontakt und das Miteinander und das Emotionen-Erfahren und miteinander Leben, das kann es einfach nicht ersetzen.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="buehne">
+    <div class="medium">
+     <img src="p/ergebnisse/baerenherz.webp" alt="Juli im Video" width="184" height="402" loading="lazy" style="object-position:50% 22%">
+     <a class="play" href="p/ergebnisse/baerenherz.mp4" data-video="p/ergebnisse/baerenherz.mp4" aria-label="Video von Juli abspielen, 0:30 Minuten">0:30</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Juli</b><small>Kinderhospiz Bärenherz, Döbeln · beim ersten Charity Speakers Event</small></div>
+     <blockquote>„Dieses erste Charity Speakers Event hat mich echt wirklich so bewegt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ich bin die Juli von Bärenherz. Ich bin total dankbar, dass ich hier für das Kinderhospiz Bärenherz da sein darf. Dieses erste Charity Speakers Event hat mich echt wirklich so bewegt, und ich bin richtig baff, dass so viele tolle Menschen sich beteiligt haben an dieser guten Sache.</p><p>Und ich danke Claudia Conen dafür, dass sie so vielen tollen und interessanten Speakerinnen und Speakern ermöglicht hat, dass sie sich hier auf die Bühne trauen. … Ganz, ganz herzlichen Dank!</p></details>
+     <p class="platz">Nachname von Juli: bitte von dir, falls er genannt werden soll.</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Keynote und Bühne</span></div>
     </div>
    </article>
    </div>
-   <h3 class="untertitel">Weitere Stimmen aus Workshops und Seminaren</h3>
+   <button class="knopf zweit mehr" type="button" hidden aria-expanded="false">Alle 8 Stimmen aus „Keynote und Bühne“ zeigen</button>
+  </div>
+  <div class="gruppe" data-gruppe="workshop" id="kat-workshop">
+   <h3 class="untertitel">Workshops und Seminare <span class="anz">9</span></h3>
+   <p class="gruppe-unter">Teilnehmende aus Trainings, Workshops und Seminaren</p>
    <div class="kartenfeld">
-   <article class="kst" data-kat="experten">
-    <div class="medium">
-     <img src="p/ergebnisse/gorter.webp" alt="Freimuth Gorter im Video" width="480" height="600" loading="lazy" style="object-position:50% 35%">
-     <a class="play" href="p/ergebnisse/gorter.mp4" data-video="p/ergebnisse/gorter.mp4" aria-label="Video von Freimuth Gorter abspielen, 0:58 Minuten">0:58</a>
-    </div>
-    <div class="innen">
-     <div class="wer"><b>Freimuth Gorter</b><small>Heilpraktiker, Pohl®-Therapeut, Masseur · Köln und Essen</small></div>
-     <blockquote>„Du hast das so gut immer wieder aufgefangen, mich begleitet, mich wieder reingeführt.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Das ist völlig neu. Ich merke dann, dass ich halt ja auch total eingespannt bin, Lampenfieber habe. Ich denke dann die ganze Zeit daran, ja gut, das nimmt man jetzt auf, das kommt dann irgendwo im Internet, das gucken sich irgendwelche Leute an.</p><p>Dann will man das alles irgendwie perfekt und richtig machen, aber man weiß gar nicht, wie perfekt oder richtig überhaupt ist. Dann ist es mir heiß, dann ist es mir kalt, dann geht es wieder, dann bin ich wieder im Fluss mit meinem Thema.</p><p>Aber ich muss sagen, du hast das so gut immer wieder aufgefangen, mich begleitet, mich wieder reingeführt. Also ich finde das total super, mit dir zu arbeiten. Danke schön.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-     
-    </div>
-   </article>
-   <article class="kst" data-kat="experten">
+   <article class="kst" data-kat="workshop">
     <div class="medium">
      <img src="p/ergebnisse/michael.webp" alt="Michael Kleinert im Video" width="480" height="600" loading="lazy" style="object-position:50% 35%">
      <a class="play" href="p/ergebnisse/michael.mp4" data-video="p/ergebnisse/michael.mp4" aria-label="Video von Michael Kleinert abspielen, 0:16 Minuten">0:16</a>
@@ -540,47 +674,97 @@ details.alle[open]>summary{margin-bottom:28px}
      <div class="wer"><b>Michael Kleinert</b><small>Videocoach · Teilnehmer im Seminar</small></div>
      <blockquote>„Wie fühlen sich Kunden richtig angesprochen?“</blockquote>
      <details><summary>Weiterlesen</summary><p>Ich bin Videocoach und bei der Claudia, der lerne ich in dem Seminar, noch mal die Botschaften zu vertiefen. Worum geht es wirklich? Wie fühlen sich Kunden richtig angesprochen? Und da kann ich wieder so viel lernen. Das ist cool, das kann ich natürlich täglich nutzen.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-     
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="experten">
+   <article class="kst" data-kat="workshop">
     <div class="medium">
-     <img src="p/ergebnisse/diana.webp" alt="Diana Winter im Video" width="480" height="600" loading="lazy" style="object-position:50% 30%">
+     <img src="p/ergebnisse/roland.webp" alt="Roland im Video" width="432" height="764" loading="lazy" style="object-position:50% 30%">
+     <a class="play" href="p/ergebnisse/roland.mp4" data-video="p/ergebnisse/roland.mp4" aria-label="Video von Roland abspielen, 1:55 Minuten">1:55</a>
     </div>
     <div class="innen">
-     <div class="wer"><b>Diana Winter</b><small>Teilnehmerin im Workshop</small></div>
-     <blockquote>„Mega viel Input.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Ja, das war ein wunderschönes Wochenende, die zwei super spannenden Tage. Und was Claudia an einem dabei bringt, was man mit Wörter und den verschiedenen Tools bewegen kann und Leute erreichen kann, ist wirklich irre. Mega viel Input. Und ja, ich bin froh, dass ich hier dabei war.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-     
+     <div class="wer"><b>Roland</b><small>Vertrieb · nach einem dreitägigen Training bei Dometic</small></div>
+     <blockquote>„Das ist für mich ein Aha-Effekt gewesen.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Das Spannende an den drei Tagen fand ich auf jeden Fall, dass die Stimme so einen krassen Einfluss hat. Ich formuliere das wirklich mal auf das Verkaufsgespräch. Das habe ich eigentlich vorher überhaupt nicht so berücksichtigt.</p><p>Also mir war schon klar, du brauchst einen guten Ausdruck. Und meine Intention ist, den Kunden in Watte zu packen, dass ich aber das mit der Tonlage der Stimme auch so was von beeinflussen kann. Das ist für mich ein Aha-Effekt gewesen. Und das werde ich auch ganz klar trainieren …</p><p>Und auch sehr positiv fand ich, dass man auf Bereiche sehr detailliert immer wieder eingegangen ist. Was kann man da tun? Wie sollte man das sehen? … um dann im Verkaufsgespräch noch besser zu werden.</p></details>
+     <p class="platz">Der Vorname fällt im Video, das Dometic-Logo steht im Bild. Nachname und Funktion bitte von dir. Bei Vimeo hieß das Video bisher „Führungskraft bei Dometic“.</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="experten">
+   <article class="kst" data-kat="workshop">
+    <div class="medium">
+     <img src="p/ergebnisse/delfs.webp" alt="Anke Elsa Delfs im Video" width="432" height="790" loading="lazy" style="object-position:50% 18%">
+     <a class="play" href="p/ergebnisse/delfs.mp4" data-video="p/ergebnisse/delfs.mp4" aria-label="Video von Anke Elsa Delfs abspielen, 2:05 Minuten">2:05</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Anke Elsa Delfs</b><small>Coach und Mentorin · im KI-Workshop</small></div>
+     <blockquote>„Also wenn du die KI authentisch fütterst, so wie du bist, dann kommen genau deine geschriebenen Texte raus.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Der KI-Workshop mit Claudia Conen und Fabian Mahnke war also für mich wirklich super interessant. Dazu muss ich sagen: Bei allem, was Technik betrifft, habe ich ehrlich gesagt Schiss. Und ich war skeptisch in Bezug auf die KI, aber habe in diesen Tagen jetzt wirklich erfahren, wie wichtig das ist, sich damit auch auseinanderzusetzen …</p><p>Und ob du nun Social-Media-Beiträge damit machen möchtest oder ein Buch schreiben möchtest oder irgendwelche Blogbeiträge, es bleibt deine Persönlichkeit. Und das war mir auch als Coach wichtig, dass da nicht irgendwelche Texte bei rauskommen, wo es sich für mich anfühlt: Das bin ja gar nicht ich.</p><p>Und genau das habe ich mitgenommen. Also wenn du die KI authentisch fütterst, so wie du bist, dann kommen genau deine geschriebenen Texte raus.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="workshop">
+    <div class="medium">
+     <img src="p/ergebnisse/staib.webp" alt="Dipl.-Kfm. Stefan Staib im Video" width="220" height="272" loading="lazy" style="object-position:50% 30%">
+     <a class="play" href="p/ergebnisse/staib.mp4" data-video="p/ergebnisse/staib.mp4" aria-label="Video von Dipl.-Kfm. Stefan Staib abspielen, 0:14 Minuten">0:14</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Dipl.-Kfm. Stefan Staib</b><small>Steuerberater, Master of International Taxation</small></div>
+     <blockquote>„… wie wichtig Kommunikation ist und dass es manchmal auf kleine Worte ankommt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Liebe Claudia, vielen Dank für die tolle Unterstützung. Ich habe heute unwahrscheinlich viel mitgenommen, wie wichtig Kommunikation ist und dass es manchmal auf kleine Worte ankommt. Vielen Dank für deine tolle Unterstützung. Ich habe mich wirklich gefreut, heute … den Tag zu verbringen.</p></details>
+     <p class="platz">Schreibweise des Namens aus der Einblendung (Schreibschrift): bitte bestätigen.</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="workshop">
+    <div class="medium">
+     <img src="p/ergebnisse/gerolzhofen.webp" alt="Kundenstimme im Video, Name folgt" width="432" height="790" loading="lazy" style="object-position:50% 20%">
+     <a class="play" href="p/ergebnisse/gerolzhofen.mp4" data-video="p/ergebnisse/gerolzhofen.mp4" aria-label="Video von einer Kundenstimme abspielen, 1:46 Minuten">1:46</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Name folgt</b><small>Unternehmer aus Gerolzhofen, laut Einblendung · Techniker</small></div>
+     <blockquote>„Ich sehe, dass das ein mächtiges Tool ist, mit dem man sich unterstützen kann, wenn man ein Buch schreiben möchte.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ja, also ich habe heute beim Fabian und bei dir, Claudia, zum ersten Mal mal reingehört in dieses Thema künstliche Intelligenz, um ein Buch zu schreiben. … Und auch heute fand ich das sehr inspirativ, und ich sehe, dass das ein mächtiges Tool ist, mit dem man sich unterstützen kann, wenn man ein Buch schreiben möchte.</p><p>Ich sehe aber auch, ich bin ja Techniker und so ein bisschen verliebt darin, sehr präzise Dinge zu formulieren und auch faktenbasiert alles zu machen. … Insofern kann ich nur sagen: Danke, es war ein toller Tag für mich, hat mir viel Spaß gemacht, und man entwickelt sich ja immer weiter.</p></details>
+     <p class="platz">Name bitte von dir. Ist das „der Handwerker“, nach dessen Bild du gefragt hast?</p>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift (maschinell erstellt), gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="workshop">
     <div class="medium">
      <img src="p/ergebnisse/sandy.webp" alt="Sandy Lörx im Video" width="480" height="600" loading="lazy" style="object-position:50% 35%">
+     <a class="play" href="p/ergebnisse/sandy.mp4" data-video="p/ergebnisse/sandy.mp4" aria-label="Video von Sandy Lörx abspielen, 0:38 Minuten">0:38</a>
     </div>
     <div class="innen">
      <div class="wer"><b>Sandy Lörx</b><small>Teilnehmerin im Workshop</small></div>
      <blockquote>„So viel Inspiration und Wissen tanken.“</blockquote>
      <details><summary>Weiterlesen</summary><p>Ich bin hier bei Claudia Conen zum Workshop und bin so happy, dass ich hier bin. So viel Inspiration und Wissen tanken. Wie funktioniert Stimme? Wie funktioniert eigentlich das Gehirn? Und was müssen wir tun, um unsere Zielgruppe wirklich anzusprechen, mitzunehmen und zum Verkauf einzuladen?</p><p>Denn das ist ja wirklich das gewisse Etwas, was es benötigt, und dieses Wissen zu haben und zu tanken ist einfach phänomenal. Und ich danke dir, liebe Claudia.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-     
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="experten">
+   <article class="kst weitere" data-kat="workshop">
+    <div class="medium">
+     <img src="p/ergebnisse/diana.webp" alt="Diana Winter im Video" width="480" height="600" loading="lazy" style="object-position:50% 30%">
+     <a class="play" href="p/ergebnisse/diana.mp4" data-video="p/ergebnisse/diana.mp4" aria-label="Video von Diana Winter abspielen, 0:27 Minuten">0:27</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Diana Winter</b><small>Teilnehmerin im Workshop</small></div>
+     <blockquote>„Mega viel Input.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ja, das war ein wunderschönes Wochenende, die zwei super spannenden Tage. Und was Claudia an einem dabei bringt, was man mit Wörter und den verschiedenen Tools bewegen kann und Leute erreichen kann, ist wirklich irre. Mega viel Input. Und ja, ich bin froh, dass ich hier dabei war.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
+    </div>
+   </article>
+   <article class="kst weitere" data-kat="workshop">
     <div class="medium">
      <img src="p/ergebnisse/marianne.webp" alt="Marianne Bauer im Video" width="480" height="600" loading="lazy" style="object-position:50% 30%">
+     <a class="play" href="p/ergebnisse/marianne.mp4" data-video="p/ergebnisse/marianne.mp4" aria-label="Video von Marianne Bauer abspielen, 0:15 Minuten">0:15</a>
     </div>
     <div class="innen">
      <div class="wer"><b>Marianne Bauer</b><small>Teilnehmerin im Seminar</small></div>
      <blockquote>„Das tut einfach der Seele gut.“</blockquote>
      <details><summary>Weiterlesen</summary><p>Ich bin die Marianne und ich bin so froh, bei der Claudia dieses Seminar gebucht zu haben. Sie ist Spitze, ihr Feedback, Unterstützung. Das tut einfach der Seele gut.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-     
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
     </div>
    </article>
-   <article class="kst" data-kat="experten">
+   <article class="kst weitere" data-kat="workshop">
     <div class="medium">
      <img src="p/ergebnisse/martin.webp" alt="Martin Wolf im Video" width="480" height="600" loading="lazy" style="object-position:50% 30%">
      <a class="play" href="p/ergebnisse/martin.mp4" data-video="p/ergebnisse/martin.mp4" aria-label="Video von Martin Wolf abspielen, 0:07 Minuten">0:07</a>
@@ -589,12 +773,41 @@ details.alle[open]>summary{margin-bottom:28px}
      <div class="wer"><b>Martin Wolf</b><small>Teilnehmer im Workshop</small></div>
      <blockquote>„Ich lern bei Claudia richtig viel.“</blockquote>
      <details><summary>Weiterlesen</summary><p>Claudia hat diesen Workshop sehr gut organisiert und ich fühle mich sehr wohl. Ich lern bei Claudia richtig viel.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Unternehmer &amp; Experten</span></div>
-     
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span><span>Kategorie: Workshops und Seminare</span></div>
     </div>
    </article>
    </div>
-  </details>
+   <button class="knopf zweit mehr" type="button" hidden aria-expanded="false">Alle 9 Stimmen aus „Workshops und Seminare“ zeigen</button>
+  </div>
+  <div class="gruppe" data-gruppe="privat" id="kat-privat">
+   <h3 class="untertitel">Rund ums Reden <span class="anz">0</span></h3>
+   <p class="gruppe-unter">Privat: Trauung, Trauer, Rednerausbildung</p>
+   <p class="platz">Noch keine private Stimme. Im Ordner „Hochzeitsstimmen“ liegen nur die Unterordner „Ausbildung“ und „Geschenk“ (beide ohne lesbare Datei) und „Nina“ (Material einer Sängerin, keine Bewertung). Stimmen zu Trauungen, Trauerreden und Rednerausbildungen bitte von dir. Sie erscheinen nur hier und nie auf den Unternehmensseiten.</p>
+  </div>
+ </div>
+</section>
+
+<!-- Audio-Platzhalter Kundenstimme (Masterplan 8.4) – Glas 2 von 3, auf dem dunklen Abschnitt -->
+<section class="dunkel" id="hoeren" aria-labelledby="hoeren-titel">
+ <div class="huelle hoeren-huelle">
+  <div>
+   <div class="kicker">Zum Hören</div>
+   <h2 id="hoeren-titel">Eine Kundenstimme: vorher und nachher<span class="vor">Vorschlag</span></h2>
+   <p>Ein konkretes Erlebnis in eigenen Worten, zum Anhören statt zum Lesen.<span class="vor">Vorschlag</span></p>
+  </div>
+  <div class="player glas glas-dunkel" role="group" aria-label="Audio: Kundenstimme">
+   <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
+   <div>
+    <b>Kundenstimme: vorher und nachher</b>
+    <span class="meta">30 bis 60 Sekunden · startet nur auf Klick</span>
+    <div class="balken" aria-hidden="true"><span></span></div>
+   </div>
+   <details>
+    <summary>Transkript lesen</summary>
+    <p>Das Transkript erscheint hier wörtlich, sobald die Aufnahme da ist.</p>
+   </details>
+  </div>
+  <p class="platz">Audio von dir: Kundenstimme mit konkretem Vorher-Nachher-Erlebnis, 30–60 Sekunden, mit dokumentierter Freigabe der Person (Masterplan 8.4).</p>
  </div>
 </section>
 
@@ -605,7 +818,7 @@ details.alle[open]>summary{margin-bottom:28px}
   <div class="logos">
    <img src="l/rtl.svg" alt="RTL" loading="lazy"><img src="l/sat1.png" alt="Sat.1" loading="lazy"><img src="l/greator.png" alt="Greator" loading="lazy"><img src="l/gsa.png" alt="German Speakers Association" loading="lazy"><img src="l/erfolg.png" alt="ERFOLG Magazin" loading="lazy"><img src="l/karrierebibel.svg" alt="Karrierebibel" loading="lazy"><img src="l/dometic.png" alt="Dometic" loading="lazy"><img src="l/powerofai.png" alt="The Power of AI" loading="lazy">
   </div>
-  <p class="platz">Freigabe je Logo: bitte bestätigen (§19). Dazu ein Bühnenmitschnitt mit Publikumsreaktion als Video-Referenz (§20.5) und Untertitel für die Videostimmen: bitte von dir.</p>
+  <p class="platz">Ein Bühnenmitschnitt mit Publikumsreaktion als Video-Referenz (§20.5) und Untertitel für die Videostimmen: bitte von dir.</p>
  </div>
 </section>
 
@@ -615,12 +828,15 @@ details.alle[open]>summary{margin-bottom:28px}
   <div class="kicker">Einsatzfelder</div>
   <h2>Wo diese Stimmen herkommen<span class="vor">Vorschlag</span></h2>
   <ul class="felder-liste">
-   <li><b>Industrie</b>Dometic, Velbert</li>
+   <li><b>Industrie</b>Dometic, Velbert: Training für den Vertrieb</li>
    <li><b>Verlag und Medien</b>Julien Backhaus Verlag, ERFOLG Magazin</li>
    <li><b>Finanzen und KI</b>oneBanking und Connect</li>
    <li><b>Veranstalter</b>Business Community Day, Worms</li>
    <li><b>Technik und Ingenieurwesen</b>Ing.-up, Energieberatung</li>
    <li><b>Gastronomie</b>Kloster Kitchen</li>
+   <li><b>Steuerberatung</b>Dipl.-Kfm. Stefan Staib</li>
+   <li><b>Soziales</b>Kinderhospiz Bärenherz, Döbeln</li>
+   <li><b>Personalberatung</b>Volz Personalberatung, Köln</li>
   </ul>
   <div class="passend">
    <h3>Welches Format passt zu dir?</h3>
@@ -773,7 +989,7 @@ details.alle[open]>summary{margin-bottom:28px}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>
@@ -781,21 +997,22 @@ details.alle[open]>summary{margin-bottom:28px}
 <script src="site.js"></script>
 <script>
 
-/* Filter: ohne JS bleiben alle Karten sichtbar und die Knöpfe ausgeblendet */
+/* Filter nach Kategorie und „Alle zeigen“ je Gruppe. Ohne JS: alle Gruppen und Karten sichtbar, Knöpfe für „mehr“ versteckt */
 (function(){
  const leiste=document.getElementById('filter');if(!leiste)return;
- const knoepfe=[...leiste.querySelectorAll('button')],karten=[...document.querySelectorAll('.kst')];
- const status=document.getElementById('filter-status'),leerF=document.getElementById('leer-fuehrung');
- const namen={alle:'alle Kategorien',unternehmen:'Unternehmen',fuehrung:'Führung',experten:'Unternehmer & Experten',buehne:'Bühne'};
- leiste.hidden=false;
+ const knoepfe=[...leiste.querySelectorAll('button')],gruppen=[...document.querySelectorAll('.gruppe')];
+ const status=document.getElementById('filter-status'),gesamt=document.querySelectorAll('.gruppe .kst').length;
+ gruppen.forEach(g=>{const b=g.querySelector('.mehr');if(!b)return;g.classList.add('zu');b.hidden=false;
+  b.addEventListener('click',()=>{const zu=g.classList.toggle('zu');b.setAttribute('aria-expanded',String(!zu));b.hidden=!zu})});
  function setze(f){
   let n=0;
-  karten.forEach(k=>{const an=f==='alle'||k.dataset.kat.split(' ').includes(f);k.hidden=!an;if(an)n++});
+  gruppen.forEach(g=>{const an=f==='alle'||g.dataset.gruppe===f;g.hidden=!an;
+   if(an){n+=g.querySelectorAll('.kst').length;if(f!=='alle'&&g.classList.contains('zu')){g.classList.remove('zu');const b=g.querySelector('.mehr');if(b)b.hidden=true}}});
   knoepfe.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.f===f)));
-  status.textContent=n+(n===1?' Stimme':' Stimmen')+' für '+namen[f];
-  leerF.hidden=!(f==='fuehrung'&&n===0);
+  const name=f==='alle'?'':': '+leiste.querySelector('[data-f="'+f+'"]').textContent;
+  status.textContent=n+' von '+gesamt+' Stimmen'+name;
  }
- knoepfe.forEach(b=>b.addEventListener('click',()=>{const d=document.getElementById('alle-stimmen');if(d&&b.dataset.f!=='alle')d.open=true;setze(b.dataset.f)}));
+ knoepfe.forEach(b=>b.addEventListener('click',()=>setze(b.dataset.f)));
  setze('alle');
 })();
 

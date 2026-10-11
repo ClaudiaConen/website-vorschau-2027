@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Unternehmer &amp; Experten – Claudia Conen – Die Umsatzstimme</title>
+<title>Für Experten: Positionierung, Auftritt, Sparring – Claudia Conen – Die Umsatzstimme</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -101,6 +101,14 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 .ue-zitat .quelle{font-size:14px}
 .ue-karte-bild{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;margin-bottom:4px}
 .ue-reise img{max-height:560px}
+/* Nacht 11./12.10.: Methode als dunkler Abschnitt mit einer Glaskachel; Speaker-Abschnitt weiß, damit er sich von der Wirkungsreise abhebt */
+.ue-methode.dunkel .schritte.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:none;border-radius:16px}
+.ue-methode.dunkel .schritt{border-color:rgba(255,255,255,.22)!important}
+.ue-methode.dunkel .nr{color:var(--sand)}
+.ue-methode.dunkel .schritt b{color:var(--ivory)}
+.ue-methode.dunkel .schritt i{color:var(--champ)}
+.ue-speaker{border-top:1px solid var(--linie)}
+.ue-einstieg+.ue-einstieg{margin-top:12px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -221,7 +229,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -230,9 +238,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -251,7 +260,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 <section class="ue-kopf" aria-labelledby="h1">
  <div class="huelle">
   <div>
-   <div class="eyebrow">Für Unternehmer &amp; Experten</div>
+   <div class="eyebrow">Für Experten und Unternehmer</div>
    <h1 id="h1">Deine Expertise soll nicht nur sichtbar, sondern spürbar werden.</h1>
    <p class="sub">Für Unternehmer, Berater, Coaches, Trainer und Speaker mit Geschäftskunden: Claudia Conen, Expertin für menschliche Wirkungskraft im KI-Zeitalter, arbeitet mit dir daran, dass man dich erkennt, dir vertraut und dich bucht. Persönlichkeit, Botschaft und Präsenz sind die Werkzeuge, KI ist der Verstärker, nicht der Ersatz.<span class="vor">Vorschlag</span></p>
    <div class="wege">
@@ -316,12 +325,12 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 </section>
 
 <!-- 5 Methode, kurz (§5) -->
-<section class="ue-methode" aria-labelledby="ue-methode">
+<section class="ue-methode dunkel" aria-labelledby="ue-methode">
  <div class="huelle">
   <div class="kicker">So arbeitet Claudia</div>
   <h2 id="ue-methode">Erst der Kern. Dann die Botschaft. Dann der Auftritt. Dann KI.<span class="vor">Vorschlag</span></h2>
   <p style="max-width:66ch">Alle Themen auf dieser Seite folgen der Wirkungskraft-Methode: vier Schritte in fester Reihenfolge.</p>
-  <div class="schritte">
+  <div class="schritte glas glas-dunkel">
    <div class="schritt"><span class="nr">01</span><b>Persönlichkeit erkennen</b><i>Wofür stehst du?</i></div>
    <div class="schritt"><span class="nr">02</span><b>Botschaft klären</b><i>Was soll bei deinem Gegenüber ankommen?</i></div>
    <div class="schritt"><span class="nr">03</span><b>Wirkung verkörpern</b><i>Wie werden Persönlichkeit und Botschaft hörbar und sichtbar?</i></div>
@@ -538,7 +547,8 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <p class="mehr"><a class="leise" href="kontakt.html#experten">Anlass im Gespräch schildern</a></p>
    </article>
   </div>
-  <p class="ue-einstieg"><span>Zum Hineinschnuppern gibt es die 7-Tage-Wirkungskraft-Challenge (Start 26. Oktober). Sie ist ein Einstieg, kein eigenes Angebot.<span class="vor">Vorschlag</span></span><a class="leise" href="events.html">Termine ansehen</a></p>
+  <p class="ue-einstieg"><span>Zum Hineinschnuppern gibt es die 7-Tage-Wirkungskraft-Challenge (Start 26. Oktober). Sie ist ein Einstieg, kein eigenes Angebot.<span class="vor">Vorschlag</span></span><a class="leise" href="challenge.html">Zur Challenge</a></p>
+  <p class="ue-einstieg"><span>Nach der Zusammenarbeit: <b>Die Unverwechselbaren</b>, der kuratierte Raum für Kunden und Alumni, die als Mensch und Experte erkannt werden wollen.<span class="vor">Vorschlag</span></span><a class="leise" href="ueber-claudia.html#unverwechselbaren">Mehr zur Community</a></p>
  </div>
 </section>
 
@@ -557,7 +567,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 </section>
 
 <!-- 7c Speaker-Ausbildung (aus „Rund ums Reden“ hierher, Claudia 11.10.2026) -->
-<section class="ue-reise" aria-labelledby="ue-speaker">
+<section class="ue-reise ue-speaker" aria-labelledby="ue-speaker">
  <div class="huelle" id="speaker">
   <img class="auf" src="p/unternehmer-experten/pitch.webp" alt="Claudia Conen spricht lächelnd auf einer dunklen Bühne, mit Headset und offenen Händen" width="360" height="640" loading="lazy" style="object-position:50% 20%">
   <div class="text auf">
@@ -565,8 +575,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <h2 id="ue-speaker">Speakerin oder Speaker werden</h2>
    <p>Du hast ein Fachgebiet. Was fehlt, ist das Thema, mit dem ein Veranstalter dich ankündigt – und eine Stimme, die einen Saal hält.</p>
    <ul class="raute"><li>Vom Fachgebiet zum Thema</li><li>Die Keynote bauen</li><li>Auftritt und Aufnahme</li></ul>
-   <p><a class="leise" href="https://claudiaconen.com/speaker-ausbildung">Zur Speaker-Ausbildung</a></p>
-   <p class="platz">Dauer, Gruppengröße, Termine und Preis der Speaker-Ausbildung: bitte von dir.</p>
+   <p><a class="leise" href="speaker-ausbildung.html">Zur Speaker-Ausbildung</a></p>
   </div>
  </div>
 </section>
@@ -601,7 +610,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 <!-- 9 Claudia-Bezug (freigegebener Text, Startseite) -->
 <section class="ue-person" aria-labelledby="ue-person">
  <div class="huelle">
-  <img class="auf" src="p/unternehmer-experten/person.webp" alt="Claudia Conen lacht herzlich, eine Brille in der Hand" width="600" height="900" loading="lazy" style="object-position:50% 25%"><!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC09490), Fotografin und Nachweis vor Veröffentlichung bestätigen -->
+  <img class="auf" src="p/unternehmer-experten/person-steinmauer.webp" alt="Claudia Conen sitzt lachend vor einer alten Steinmauer, in heller Satinbluse" width="600" height="900" loading="lazy" style="object-position:50% 20%"><!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC03676), Fotografin und Nachweis vor Veröffentlichung bestätigen. Ersetzt DSC09490: dort Augen beim Lachen fast geschlossen -->
   <div class="text auf">
    <div class="kicker">Warum Claudia</div>
    <h2 id="ue-person">Eine klare Positionierung, große methodische Tiefe.<span class="vor">Vorschlag</span></h2>
@@ -647,7 +656,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>

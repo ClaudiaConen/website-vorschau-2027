@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Festrede, Laudatio, Jubiläumsrede für Unternehmen | Claudia Conen</title>
 <meta name="description" content="Festrede, Laudatio, Jubiläumsrede: Claudia Conen – Die Umsatzstimme schreibt und hält Reden für Unternehmensmomente wie Firmenjubiläum, Ehrung, Abschied in den Ruhestand, Eröffnung, Gedenken und Weihnachtsfeier – geschrieben, gehalten oder mit der Führungskraft vorbereitet.">
@@ -130,6 +130,32 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 .skopf .eyebrow{hyphens:manual}
 .kst .fuss .leise{font-size:15px}
 @media(max-width:900px){.skopf{padding-block:20px 48px}.skopf figure img{max-height:300px}}
+/* Nacht 11./12.10.2026: Glaskachel auf Dunkel, Ergebniskopf, Videotext, Rhythmus */
+.nutzen-kopf{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.95fr);gap:44px;align-items:end}
+.nutzen-kopf h2{margin-bottom:0}
+@media(max-width:900px){.nutzen-kopf{grid-template-columns:minmax(0,1fr);gap:26px}}
+.dunkel .glas.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);box-shadow:0 1px 0 rgba(255,255,255,.14) inset,0 20px 44px rgba(9,18,34,.35);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:var(--ivory)}
+.dunkel .glas.glas-dunkel::after{background:linear-gradient(90deg,transparent 42%,rgba(255,255,255,.22) 50%,transparent 58%)}
+.merksatz{margin:0;padding:26px 28px;display:grid;gap:12px}
+.merksatz blockquote{margin:0;font:600 italic clamp(25px,2.4vw,31px)/1.25 'Cormorant Garamond',Georgia,serif;color:var(--sand)}
+.merksatz figcaption{font-size:16px;line-height:1.5}
+.dunkel .player{max-width:none}
+.dunkel .player .spiel{background:var(--ivory);color:var(--ink)}
+.dunkel .player .balken{background:rgba(253,251,247,.22)}
+.dunkel .player summary{min-height:44px;display:flex;align-items:center}
+.nutzen .felder3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:860px){.nutzen .felder3{grid-template-columns:minmax(0,1fr)}}
+.vtext{font-size:16px}
+.vtext summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.vtext p{margin-top:8px}
+.fuer{margin-top:14px;font-size:16px;font-weight:600}
+.stimmen2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:6px}
+@media(max-width:700px){.stimmen2{grid-template-columns:minmax(0,1fr)}}
+.wer.mit-bild{display:flex;gap:12px;align-items:center}
+.wer.mit-bild img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 22%;flex:none;border:1px solid var(--linie)}
+.umfang .kasten .klapp{background:var(--weiss)}
+.medien .text .kst blockquote{font-size:21px}
+.skopf h1{hyphens:manual}
 </style>
 <script type="application/ld+json">
 {
@@ -296,7 +322,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -305,9 +331,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -322,14 +349,14 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 </header>
 
 <main id="main">
-<!-- 1 Hero -->
+<!-- 1 Hero: Problem + Zweck in einem Satz (Markenarchitektur „Claudia buchen“, 14:37 UTC) -->
 <section class="skopf" aria-labelledby="h1">
  <div class="huelle">
   <div>
    <div class="eyebrow">Claudia buchen · Festrede, Laudatio, Jubiläumsrede</div>
-   <h1 id="h1">Reden für besondere Unternehmensmomente, die würdigen und Bedeutung geben</h1>
-   <p class="sub">Ein Jubiläum, ein Abschied, eine Ehrung: An solchen Tagen erinnern sich Menschen nicht an Folien, sondern an Worte. Ob Festrede zum Firmenjubiläum, Laudatio bei einer Ehrung oder Ansprache zum Abschied: Claudia schreibt die Rede, hält sie – oder bereitet die Person vor, die selbst spricht.<span class="vor">Vorschlag</span></p>
-   <p class="dach">Die Unternehmensrede würdigt und gibt Bedeutung – damit Menschen spüren, dass sie gemeint sind.<span class="vor">Vorschlag</span></p>
+   <h1 id="h1">Reden für besondere Unternehmens&shy;momente</h1>
+   <p class="dach">Die Unternehmensrede würdigt und gibt Bedeutung.</p>
+   <p class="sub">Ein Jubiläum, ein Abschied, eine Ehrung: An solchen Tagen erinnern sich Menschen nicht an Folien, sondern an Worte. Für Unternehmer und Führungskräfte, deren Anlass mehr verdient als eine Pflichtrede. Claudia schreibt die Rede, hält sie oder bereitet die Person vor, die selbst spricht.<span class="vor">Vorschlag</span></p>
    <div class="handlung">
     <a class="knopf" href="kontakt.html#buchen">Gespräch vereinbaren</a>
     <a class="leise" href="#anlaesse">Anlässe ansehen</a>
@@ -354,29 +381,37 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </nav>
 
-<!-- 2+3 Situation -->
-<section class="lage" id="situation" aria-labelledby="lage-titel">
+<!-- 2 Problem (weiß mit Linie: trennt vom hellen Familienstreifen) -->
+<section class="lage hell-weiss" id="situation" aria-labelledby="lage-titel">
  <div class="huelle">
   <div>
    <div class="kicker">Die Situation</div>
    <h2 id="lage-titel">Der Anlass ist groß. Die Worte müssen es auch sein.<span class="vor">Vorschlag</span></h2>
-   <p class="gross">Woran sich später alle erinnern, ist das, was gesagt wurde.<span class="vor">Vorschlag</span></p>
+   <p class="gross">Woran sich später alle erinnern, ist das, was gesagt wurde.</p>
   </div>
   <div class="lese">
-   <p>Zwischen Ablaufplan, Gästeliste und Catering bleibt kaum Zeit, um zu überlegen, was eigentlich gesagt werden soll. Und genau das ist das Einzige, woran sich später alle erinnern.</p>
+   <p>Zwischen Ablaufplan, Gästeliste und Catering bleibt kaum Zeit, um zu überlegen, was eigentlich gesagt werden soll.</p>
    <p>Viele fürchten zwei Dinge: dass die Rede allgemein klingt und auf jedes Unternehmen passen würde. Und dass die Person, die sprechen soll, es nicht so sagen kann, wie sie es meint.</p>
    <p>Beides lässt sich abnehmen.</p>
-   <p style="font-size:15px">Gedanken aus Claudias Seiten zu Reden, auf den Unternehmenskontext übertragen.<span class="vor">Vorschlag</span></p>
   </div>
  </div>
 </section>
 
-<!-- 4 Nutzen (der eine dunkle Abschnitt) -->
+<!-- 3 Ergebnis + Perspektive (der eine dunkle Abschnitt, mit der Glaskachel) -->
 <section class="dunkel nutzen" id="nutzen" aria-labelledby="nutzen-titel">
  <div class="huelle">
-  <div class="kicker">Dein Nutzen</div>
-  <h2 id="nutzen-titel">Die Unternehmensrede würdigt und gibt Bedeutung</h2>
-  <p class="einleitung">Eine gute Rede macht aus einem Termin einen Moment, über den im Unternehmen noch lange gesprochen wird. Gerade wenn KI Texte in Sekunden liefert, zählt, ob ein Mensch spürbar meint, was er sagt.<span class="vor">Vorschlag</span></p>
+  <div class="kicker">Dein Ergebnis</div>
+  <div class="nutzen-kopf">
+   <div>
+    <h2 id="nutzen-titel">Was eine gute Rede im Unternehmen bewirkt<span class="vor">Vorschlag</span></h2>
+    <p class="einleitung">Eine gute Rede macht aus einem Termin einen Moment, über den im Unternehmen noch lange gesprochen wird.</p>
+   </div>
+   <!-- Glaskachel (einziges Glas im Inhalt; Aktuell-Leiste = Glas 1) -->
+   <figure class="glas glas-dunkel merksatz">
+    <blockquote>KI kann Inhalte erzeugen. Wirkung entsteht durch den Menschen.</blockquote>
+    <figcaption>Gerade bei einer Rede hört der Saal, ob ein Mensch meint, was er sagt.<span class="vor">Vorschlag</span></figcaption>
+   </figure>
+  </div>
   <div class="felder4">
    <div><h3>Würdigung, die ankommt</h3><p>Menschen fühlen sich gemeint, nicht nur erwähnt.</p></div>
    <div><h3>Bedeutung statt Chronik</h3><p>Aus Daten und Jahreszahlen wird eine Geschichte, die dein Unternehmen erzählen kann.</p></div>
@@ -386,10 +421,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </section>
 
-<!-- 6 Anlässe (gebündelt) -->
+<!-- 4 Angebot: Anlässe (gebündelt) -->
 <section id="anlaesse" aria-labelledby="anlass-titel">
  <div class="huelle">
-  <div class="kicker">Anlässe und Formate</div>
+  <div class="kicker">Anlässe</div>
   <h2 id="anlass-titel">Für Momente, in denen ein Unternehmen etwas zu sagen hat</h2>
   <p class="einleitung">Jeder Anlass hat einen anderen Zweck. Die Rede richtet sich danach, was bei den Menschen im Raum ankommen soll.<span class="vor">Kartentexte: Vorschlag</span></p>
   <div class="anlaesse">
@@ -404,7 +439,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </section>
 
-<!-- 6 Leistungsumfang -->
+<!-- 5 Leistungsumfang + 7 Passung -->
 <section class="umfang hell-weiss" id="leistung" aria-labelledby="leistung-titel">
  <div class="huelle">
   <div class="kicker">Leistungsumfang</div>
@@ -427,9 +462,20 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <div class="kasten">
     <h3>Das Handwerk dahinter</h3>
     <p>Zuhören. Lebensgeschichten verstehen. Verantwortungsvoll formulieren. Sprechbare Texte entwickeln. Mit echter Präsenz vor Menschen stehen.</p>
+    <details class="klapp">
+     <summary>Wann es passt und wann nicht<span class="vor">Vorschlag</span></summary>
+     <div class="inhalt">
+      <p><b>Passt,</b> wenn der Anlass Menschen würdigen soll und die Rede wahr sein darf.</p>
+      <ul class="raute">
+       <li>Passt nicht, wenn nur eine Chronik aus Zahlen und Daten gewünscht ist.</li>
+       <li>Passt nicht, wenn die Rede schönfärben soll, was im Team anders erlebt wurde.</li>
+       <li>Private Anlässe wie Hochzeit oder Trauerfeier gehören nicht hierher: <a class="leise" href="rund-ums-reden.html">Rund ums Reden</a>.</li>
+      </ul>
+     </div>
+    </details>
    </div>
   </div>
-  <p class="platz" style="margin-top:28px">Offene Frage an dich: Welche der drei Wege (Rede schreiben, Rede halten, Führungskraft vorbereiten) bietest du für Unternehmen an? Bis zu deiner Antwort sind alle drei als Vorschlag markiert. Bitte bestätigen: Welche der drei Wege bietest du für Unternehmen an, und für welche Anlässe? Belegt sind auf deinen heutigen Seiten das Schreiben für Veranstaltungen, das Halten von Reden zum Firmenjubiläum und zum Abschied aus dem Berufsleben und die Vorbereitung von Menschen, die selbst sprechen. Honorar und Vorlauf: bitte von dir.</p>
+  <p class="platz" style="margin-top:28px">Bitte bestätigen: Welche der drei Wege bietest du Unternehmen an, und für welche Anlässe? Belegt sind auf deinen heutigen Seiten das Schreiben für Veranstaltungen, Reden zum Firmenjubiläum und zum Abschied aus dem Berufsleben und die Vorbereitung von Menschen, die selbst sprechen. Honorar und Vorlauf: bitte von dir.</p>
  </div>
 </section>
 
@@ -448,73 +494,51 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  </div>
 </section>
 
-<!-- 7 Medienbeispiel -->
-<section class="medien hell-weiss" id="medien" aria-labelledby="medien-titel">
+<!-- 6 Belege: Video + Stimme + offener Platz (vorher zwei Abschnitte, jetzt einer) -->
+<section class="medien hell-weiss" id="belege" aria-labelledby="belege-titel">
  <div class="huelle">
-  <div class="kicker">Medienbeispiel</div>
-  <h2 id="medien-titel">Eine Rede, gemeinsam erstellt und einstudiert</h2>
+  <div class="kicker">Belege</div>
+  <h2 id="belege-titel">Eine Rede, gemeinsam erstellt und einstudiert</h2>
   <div class="reihe">
    <figure class="vfigur">
     <div class="vbox">
      <img src="p/unternehmer-experten/andresen-standbild.webp" alt="Dr.-Ing. Ann-Kathrin Andresen spricht in die Kamera" width="464" height="848" loading="lazy">
      <a class="ecke" href="p/ergebnisse/andresen.mp4" data-video="p/ergebnisse/andresen.mp4" aria-label="Video von Dr.-Ing. Ann-Kathrin Andresen abspielen, 2:00 Minuten">▶ Abspielen · 2:00</a>
     </div>
-    <figcaption>Dr.-Ing. Ann-Kathrin Andresen über die Arbeit an ihrer Rede. Startet nur auf Klick.</figcaption>
+    <figcaption>Dr.-Ing. Ann-Kathrin Andresen, Verfahrenstechnikerin, Mentorin und Beraterin (Ing.-up), über die Arbeit an ihrer Rede. Startet nur auf Klick.</figcaption>
+    <details class="vtext"><summary>Text des Videos lesen</summary><p>Ich habe mit Claudia zusammen eine Rede erstellt und einstudiert, die ich vor einem technischen Publikum halte. Ich bin Ingenieurin.</p><p>Die Atmosphäre ist sehr herzlich, sehr direkt und sehr intensiv, aber wir lachen auch viel gemeinsam.</p><p>Sie schmeißt einen auch gerne mal ins kalte Wasser.</p><p>Mit vollem Herzblut dabei und fordert dich auch gerne heraus.</p></details>
    </figure>
    <div class="text">
     <p class="gross" style="font:500 italic clamp(24px,2.6vw,32px)/1.3 'Cormorant Garamond',Georgia,serif;border-left:2px solid var(--gold);padding-left:20px">„Ich habe mit Claudia zusammen eine Rede erstellt und einstudiert, die ich vor einem technischen Publikum halte.“</p>
     <p style="font-size:15px;font-weight:600">Quelle: Videostimme auf claudiaconen.com</p>
-    <p class="platz">Ein Mitschnitt einer Unternehmensrede (Jubiläum, Ehrung, Abschied), die du gehalten oder geschrieben hast, mit Freigabe: bitte von dir.</p>
+    <article class="kst" style="margin-top:12px">
+     <div class="innen">
+      <div class="wer"><b>Stephan</b><small>Kameramann bei Videographiq</small></div>
+      <blockquote>„Ob sie Menschen dazu bewegt, selber Texte zu verfassen und selber vorzutragen oder ob sie selbst spricht oder als Speaker auftritt – sie legt jedesmal ein unfassbares Engagement an den Tag.“</blockquote>
+      <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><a class="leise" href="https://vimeo.com/1144142728" target="_blank" rel="noopener">Video bei Vimeo ansehen</a></div>
+     </div>
+    </article>
+    <p class="platz">Bitte von dir: eine Stimme oder ein Mitschnitt zu einer Unternehmensrede (Jubiläum, Ehrung, Abschied), wörtlich und mit Freigabe für Namen und Logo.</p>
    </div>
   </div>
  </div>
 </section>
 
-<!-- 7 Referenzen -->
-<section id="referenzen" aria-labelledby="ref-titel">
- <div class="huelle">
-  <div class="kicker">Referenzen</div>
-  <h2 id="ref-titel">Was Menschen über Claudias Arbeit an Texten sagen<span class="vor">Vorschlag</span></h2>
-  <div class="kartenfeld">
-   <article class="kst">
-    <div class="innen">
-     <div class="wer"><b>Dr.-Ing. Ann-Kathrin Andresen</b><small>Verfahrenstechnikerin, Mentorin und Beraterin · Ing.-up</small></div>
-     <blockquote>„Die Atmosphäre ist sehr herzlich, sehr direkt und sehr intensiv, aber wir lachen auch viel gemeinsam.“</blockquote>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span></div>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="innen">
-     <div class="wer"><b>Stephan</b><small>Kameramann bei Videographiq</small></div>
-     <blockquote>„Ob sie Menschen dazu bewegt, selber Texte zu verfassen und selber vorzutragen oder ob sie selbst spricht oder als Speaker auftritt – sie legt jedesmal ein unfassbares Engagement an den Tag.“</blockquote>
-     <div class="fuss"><span class="quelle">Quelle: geschriebene Kundenstimme auf claudiaconen.com</span><a class="leise" href="https://vimeo.com/1144142728" target="_blank" rel="noopener">Video bei Vimeo ansehen</a></div>
-    </div>
-   </article>
-   <article class="kst">
-    <div class="innen">
-     <div class="wer"><b>Referenz Unternehmensrede</b><small>Unternehmen, Anlass, Jahr</small></div>
-     <p class="platz">Bitte von dir: eine Stimme zu einer Rede bei Jubiläum, Ehrung oder Abschied, wörtlich und mit Freigabe für Namen und Logo.</p>
-    </div>
-   </article>
-  </div>
- </div>
-</section>
-
-<!-- 8 Claudia-Bezug -->
-<section class="bezug hell-weiss" aria-labelledby="bezug-titel">
+<!-- 8 Claudia-Bezug (Elfenbein: Rhythmus weiß / hell / weiß) -->
+<section class="bezug" aria-labelledby="bezug-titel">
  <div class="huelle">
   <img src="p/unternehmensreden/bezug.webp" alt="Claudia Conen im weißen Blazer lächelt in die Kamera und öffnet erklärend die Hände" width="600" height="900" loading="lazy" style="object-position:50% 25%">
   <div class="text">
    <div class="kicker">Warum Claudia</div>
    <h2 id="bezug-titel">Erst zuhören. Dann schreiben. Dann sprechen.<span class="vor">Vorschlag</span></h2>
-   <p>Claudia Conen – Die Umsatzstimme ist Expertin für menschliche Wirkungskraft im KI-Zeitalter und arbeitet seit 37 Jahren als Coach und Trainerin. In eine Unternehmensrede bringt sie mit, was eine Rede braucht: das Gespräch, das die Geschichte findet, einen Text, der sich sprechen lässt, und eine Stimme, die auch in der letzten Reihe ankommt.<span class="vor">Vorschlag</span></p>
+   <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter und arbeitet seit 37 Jahren als Coach und Trainerin. In eine Unternehmensrede bringt sie mit, was eine Rede braucht: das Gespräch, das die Geschichte findet, einen Text, der sich sprechen lässt, und eine Stimme, die den Raum erreicht.<span class="vor">Vorschlag</span></p>
    <p><a class="leise" href="ueber-claudia.html">Mehr über Claudia</a></p>
   </div>
  </div>
 </section>
 
 <!-- 9 FAQ -->
-<section id="fragen" aria-labelledby="fragen-titel">
+<section class="hell-weiss" id="fragen" aria-labelledby="fragen-titel">
  <div class="huelle">
   <div class="kicker">Häufige Fragen</div>
   <h2 id="fragen-titel">Was Auftraggeber vorher wissen wollen</h2>
@@ -546,7 +570,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>

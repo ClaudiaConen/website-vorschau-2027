@@ -22,6 +22,19 @@
 .wirkung3 p{font-size:17px;line-height:1.5}
 .wirkung-ki{margin-top:24px;font:500 italic 24px/1.35 'Cormorant Garamond',Georgia,serif;max-width:60ch}
 @media(max-width:860px){.wirkung3{grid-template-columns:1fr}}
+/* Abschluss dunkel mit Glaskachel (Claudia 17:20 UTC: Glas auf dem blauen Teil, nicht Hell an Hell) */
+.schluss-dunkel{background:var(--ink);color:var(--ivory)}
+.schluss-dunkel .karte.glas-dunkel{background:rgba(255,255,255,.07);border:1px solid rgba(235,209,151,.45);box-shadow:0 18px 50px rgba(0,0,0,.25);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:var(--ivory)}
+.schluss-dunkel h2,.schluss-dunkel p{color:var(--ivory)}
+.schluss-dunkel .kicker{color:var(--sand)}
+.schluss-dunkel .vor{background:transparent;color:var(--sand);border-color:var(--sand)}
+.ueber{background:var(--weiss);border-top:1px solid var(--linie)}
+.live-spur{grid-auto-columns:calc((100% - 48px) / 2.4)}
+@media(max-width:1000px){.live-spur{grid-auto-columns:calc((100% - 24px) / 1.3)}}
+@media(max-width:620px){.live-spur{grid-auto-columns:88%}}
+.live-karte .medium img,.live-karte .medium video{aspect-ratio:16/9;object-position:50% 35%}
+.live-kopf{margin-top:-8px}
+.live-hinweis{font-size:14px;margin-top:4px}
 </style>
 
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -129,7 +142,7 @@
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -138,9 +151,10 @@
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -201,7 +215,6 @@
   <div class="logos">
    <img src="l/rtl.svg" alt="RTL" loading="lazy"><img src="l/sat1.png" alt="Sat.1" loading="lazy"><img src="l/greator.png" alt="Greator" loading="lazy"><img src="l/gsa.png" alt="German Speakers Association" loading="lazy"><img src="l/erfolg.png" alt="ERFOLG Magazin" loading="lazy"><img src="l/karrierebibel.svg" alt="Karrierebibel" loading="lazy"><img src="l/dometic.png" alt="Dometic" loading="lazy"><img src="l/powerofai.png" alt="The Power of AI" loading="lazy">
   </div>
-  <p class="platz">Logos nur mit Freigabe: bitte je Logo bestätigen.</p>
  </div>
 </section>
 
@@ -340,7 +353,70 @@
   <div class="kicker">Live</div>
   <h2 id="live-titel">Claudia live erleben</h2>
   <p class="lead">Worte können erklären, wofür Claudia Conen steht. Ihre Stimme und Präsenz lassen dich erleben, wie sich Wirkung anfühlt.</p>
-  <!--LIVE-INHALT--><p class="platz" id="live-platz">Die Bühnenausschnitte (3 bis 5 Videos mit Untertiteln) werden gerade aus deinen Videos geschnitten und erscheinen hier im nächsten Stand.</p>
+  <div class="sit-kopf live-kopf"><div></div>
+   <div class="sit-steuer">
+    <span class="sit-pos" data-pos aria-live="polite">1 / 5</span>
+    <button type="button" class="sit-btn" data-zurueck aria-label="Vorheriger Ausschnitt">←</button>
+    <button type="button" class="sit-btn" data-vor aria-label="Nächster Ausschnitt">→</button>
+   </div>
+  </div>
+ </div>
+ <div class="sit-rahmen">
+  <ol class="reihe-spur live-spur" data-reihe tabindex="0" aria-label="Bühnenausschnitte, mit Pfeiltasten blättern">
+   <li class="kst reihe-karte live-karte">
+    <div class="medium">
+     <img src="p/live/live1.webp" alt="Claudia Conen live auf der Bühne: Du wirkst in jedem Moment" width="1280" height="720" loading="lazy">
+     <a class="play" href="p/live/live1.mp4" data-video="p/live/live1.mp4" data-vtt="p/live/live1.vtt" aria-label="Bühnenausschnitt „Du wirkst in jedem Moment“ abspielen, 0:36 Minuten">0:36</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Du wirkst in jedem Moment</b><small>Business Community Day, Worms</small></div>
+     <details><summary>Wortlaut lesen</summary><p>Also es ist egal, mit wem du redest, ob du hier mit jemandem redest, an der Kasse mit jemandem, im Aufzug mit jemandem redest. Du musst dir immer vorstellen, du wirkst in jedem Moment. Was ist, wenn dir beim Wandern dein bester Kunde begegnet, der dir einen festen Auftrag gibt? Wie machst du das mit deinem Gesicht, wenn du unterwegs bist? Wie redest du mit der Kassiererin? Wie redest du mit dem Menschen, der dir vielleicht kein Geld gibt im ersten Moment? Es hat was mit deinem eigenen Ich zu tun, mit welcher Haltung du mit Menschen umgehst, mit welcher Wertschätzung du mit Menschen umgehst. Und dann ziehst du automatisch Menschen an.</p></details>
+    </div>
+   </li>
+   <li class="kst reihe-karte live-karte">
+    <div class="medium">
+     <img src="p/live/live3.webp" alt="Claudia Conen live auf der Bühne: Weil wir ein Unikat sind" width="1280" height="720" loading="lazy">
+     <a class="play" href="p/live/live3.mp4" data-video="p/live/live3.mp4" data-vtt="p/live/live3.vtt" aria-label="Bühnenausschnitt „Weil wir ein Unikat sind“ abspielen, 0:25 Minuten">0:25</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Weil wir ein Unikat sind</b><small>Business Community Day, Worms</small></div>
+     <details><summary>Wortlaut lesen</summary><p>Und genau das ist heute das Thema. Und warum ich hier bin? Ich bin hier, um die Menschen wachzurütteln. Ich bin hier, um endlich dafür zu sorgen, dass jeder Mensch kapiert – Entschuldigung, weil ich das so krass sage – kapiert, dass wir aufhören müssen, zu denken, wir müssen perfekt sein. Denn wir sind das beste Marketinginstrument, was es gibt. Weil wir sind ein Unikat.</p></details>
+    </div>
+   </li>
+   <li class="kst reihe-karte live-karte">
+    <div class="medium">
+     <img src="p/live/live2.webp" alt="Claudia Conen live auf der Bühne: Damit KI dir Lebenszeit schenkt" width="1280" height="720" loading="lazy">
+     <a class="play" href="p/live/live2.mp4" data-video="p/live/live2.mp4" data-vtt="p/live/live2.vtt" aria-label="Bühnenausschnitt „Damit KI dir Lebenszeit schenkt“ abspielen, 0:25 Minuten">0:25</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Damit KI dir Lebenszeit schenkt</b><small>Business Community Day, Worms</small></div>
+     <details><summary>Wortlaut lesen</summary><p>Wenn wir die Zukunft nicht aufhalten können, das ist schon immer so wahr, nutzt sie clever, damit sie euch Lebenszeit schenkt. Nutzt sie, weil Lebenszeit ist das wertvollste Gut, was wir besitzen. Und ihr könnt diese Lebenszeit dann wiederum einsetzen, um echte Kontakte zu knüpfen, um auf Netzwerkveranstaltungen zu gehen.</p></details>
+    </div>
+   </li>
+   <li class="kst reihe-karte live-karte">
+    <div class="medium">
+     <img src="p/live/live5.webp" alt="Claudia Conen live auf der Bühne: So wie du hier sitzt, bist du gut genug" width="1280" height="720" loading="lazy">
+     <a class="play" href="p/live/live5.mp4" data-video="p/live/live5.mp4" data-vtt="p/live/live5.vtt" aria-label="Bühnenausschnitt „So wie du hier sitzt, bist du gut genug“ abspielen, 0:33 Minuten">0:33</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>So wie du hier sitzt, bist du gut genug</b><small>Business Community Day, Worms</small></div>
+     <details><summary>Wortlaut lesen</summary><p>Aber ich bin einfach ich, und ich möchte den Menschen mitgeben: So wie du hier sitzt, bist du gut genug. Das Einzige, was es braucht, ist die Wertschätzung nach außen für den anderen. Was willst du dem eigentlich mitgeben und das klar zu kommunizieren? Dann haben wir eine Chance, und Netzwerken ist das Wichtigste, was du tun kannst. Netzwerken, echt und live, aber kohärent mit dem, was du nach außen zeigst. Worte, Bilder, Wirkung, Videos, es muss kohärent sein.</p></details>
+    </div>
+   </li>
+   <li class="kst reihe-karte live-karte">
+    <div class="medium">
+     <img src="p/live/worms-selfie.webp" alt="Claudia Conen live auf der Bühne: Persönlichkeit zeigen, sofort" width="1280" height="720" loading="lazy">
+     <a class="play" href="p/live/worms-selfie.mp4" data-video="p/live/worms-selfie.mp4" data-vtt="p/live/worms-selfie.vtt" aria-label="Bühnenausschnitt „Persönlichkeit zeigen, sofort“ abspielen, 0:16 Minuten">0:16</a>
+    </div>
+    <div class="innen">
+     <div class="wer"><b>Persönlichkeit zeigen, sofort</b><small>Business Community Day, Worms – das Publikum filmt mit</small></div>
+     <details><summary>Wortlaut lesen</summary><p>Go! Jetzt! All diese Menschen, die möchten in ihrem Beruf Erfolg haben. Sie sind selbstständig, Unternehmer und Speaker, und ich habe sie aufgefordert, jetzt mit ihrer Persönlichkeit einfach Werbung zu machen. Authentisch, echt.</p></details>
+    </div>
+   </li>
+  </ol>
+ </div>
+ <div class="huelle">
+  <p class="live-hinweis">Echte Ausschnitte, ungeschnitten im Satz, mit Untertiteln. Sie starten nur auf Klick.</p>
  </div>
 </section>
 
@@ -381,7 +457,7 @@
    <div>
     <div class="kicker">Ergebnisse</div>
     <h2 id="stimmen-titel">Was Menschen nach der Zusammenarbeit sagen</h2>
-    <p class="stimmen-zahl">15 von 23 Stimmen · Video- und Textstimmen, wörtlich und mit Quelle</p>
+    <p class="stimmen-zahl">15 von 35 Stimmen · Video- und Textstimmen, wörtlich und mit Quelle</p>
    </div>
    <div class="sit-steuer">
     <span class="sit-pos" data-pos aria-live="polite">1 / 15</span>
@@ -395,13 +471,14 @@
 <li class="kst reihe-karte">
     <div class="medium">
      <img src="p/ergebnisse/stephan.webp" alt="Stephan im Video" width="360" height="640" loading="lazy" style="object-position:50% 25%">
-     <a class="play" href="https://vimeo.com/1144142728" target="_blank" rel="noopener" aria-label="Video von Stephan bei Vimeo ansehen">bei Vimeo</a>
+     <a class="play" href="p/ergebnisse/stephan.mp4" data-video="p/ergebnisse/stephan.mp4" aria-label="Video von Stephan abspielen, 0:30 Minuten">0:30</a>
     </div>
     <div class="innen">
-     <div class="wer"><b>Stephan</b><small>Kameramann bei Videographiq</small></div>
-     <blockquote>„Es ist immer wieder eine Freude, mit ihr zu arbeiten.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Wir haben schon öfters mit ihr zusammengearbeitet.</p><p>Ob sie Menschen dazu bewegt, selber Texte zu verfassen und selber vorzutragen oder ob sie selbst spricht oder als Speaker auftritt – sie legt jedesmal ein unfassbares Engagement an den Tag.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf Vimeo, wörtliche Abschrift</span></div>
+     <div class="wer"><b>Stephan</b><small>Videograf · Video-Marketing-Firma Videographiq</small></div>
+     <blockquote>„Sie hat jedes Mal ein unfassbares Engagement an den Tag gelegt.“</blockquote>
+     <details><summary>Weiterlesen</summary><p>Ich persönlich kann die Frau Conen nur jedem wärmstens ans Herz legen, denn wir als Video-Marketing-Firma haben schon des Öfteren mit ihr zusammengearbeitet und sie des Öfteren in Aktion gesehen.</p><p>Und es spielt keine Rolle, ob sie jetzt Menschen dazu bewegt hat, eigene Texte zu verfassen und sie anschließend vorzutragen, ob sie selbst gesprochen hat oder ob sie selbst als Speaker unterwegs war. Sie hat jedes Mal ein unfassbares Engagement an den Tag gelegt, und es ist mir einfach immer wieder eine Freude gewesen, ihr beim Arbeiten zuzuschauen.</p></details>
+     
+     <div class="fuss"><span class="quelle">Quelle: Videostimme, wörtliche Abschrift</span></div>
     </div>
    </li>
 <li class="kst reihe-karte">
@@ -467,13 +544,13 @@
 <li class="kst reihe-karte">
     <div class="medium">
      <img src="p/ergebnisse/miniaci.webp" alt="Melanie Miniaci im Video" width="360" height="640" loading="lazy" style="object-position:50% 40%">
-     <a class="play" href="https://vimeo.com/1144287147" target="_blank" rel="noopener" aria-label="Video von Melanie Miniaci bei Vimeo ansehen">bei Vimeo</a>
+     <a class="play" href="p/ergebnisse/miniaci.mp4" data-video="p/ergebnisse/miniaci.mp4" aria-label="Video von Melanie Miniaci abspielen, 1:52 Minuten">1:52</a>
     </div>
     <div class="innen">
      <div class="wer"><b>Melanie Miniaci</b><small>Gründerin von Miderma · Permanent Make-up und Medical Beauty</small></div>
      <blockquote>„Die Texte fühlen sich für mich so an, als hätte ich sie selber gesagt.“</blockquote>
-     <details><summary>Weiterlesen</summary><p>Die Zusammenarbeit mit Claudia Conen hat mich unheimlich nach vorne gebracht – mir viel Zeit erspart und es war das Beste, was mir passieren konnte.</p><p>Sie konnte sich im Vorfeld ganz mit mir identifizieren, so dass sie wusste, worum es bei mir und meiner Arbeit geht.</p></details>
-     <div class="fuss"><span class="quelle">Quelle: Videostimme auf claudiaconen.com</span></div>
+     <details><summary>Weiterlesen</summary><p>Claudia Conen kann sich super in denjenigen hineinversetzen, mit dem sie zusammenarbeitet. Und zwar habe ich mir schon gedacht, dass es ein bisschen schwieriger wird, mit mir zu arbeiten, weil ich ein sehr hibbeliger Typ bin. Sie konnte aber komplett meine Art aufnehmen und mich sogar noch ein ganz kleines bisschen mehr runterfahren, dass ich einfach entspannter mit mir selber umgehen kann, wenn ich Dinge ausarbeite und die dann auch wirklich vor der Kamera sage.</p><p>Ich bin ein unheimlich perfektionistischer Typ, aber ich bin nicht die Person, die unheimlich viel redet, und nicht vor Publikum redet, auch nicht so viel vor der Kamera. … Und bei Claudia Conen war es wirklich für mich so, dass sie mich einfach aufgenommen hat. Ich habe mich direkt ganz sicher gefühlt, weil sie einfach ein Gespür dafür hat, wie der Mensch sich fühlt.</p><p>… Und das hat mich unheimlich nach vorne gebracht, mir unheimlich viel Zeit gespart. Und das war für mich einfach das Beste, was mir passieren konnte, dass wir uns kennengelernt haben und ich bei ihr dann das Coaching gebucht habe.</p></details>
+     <div class="fuss"><span class="quelle">Quelle: Videostimme (Aufnahme 21.12.2020 laut Dateiname), Abschrift maschinell erstellt, gekürzt</span></div>
     </div>
    </li>
 <li class="kst reihe-karte">
@@ -577,7 +654,7 @@
   </ol>
  </div>
  <div class="huelle stimmen-wege">
-  <a class="knopf zweit" href="ergebnisse.html">Alle 23 Stimmen ansehen</a>
+  <a class="knopf zweit" href="ergebnisse.html">Alle 35 Stimmen ansehen</a>
   <a class="leise" href="ergebnisse.html#bewerten">Selbst eine Bewertung abgeben</a>
  </div>
 </section>
@@ -585,7 +662,8 @@
 <!-- 10 Claudia kompakt §14.10 -->
 <section class="ueber" id="ueber">
  <div class="huelle">
-  <img class="auf" src="p/start/kompakt.webp" alt="Claudia Conen spricht im Garten, die Hände offen, im Gespräch zugewandt" width="800" height="1200" loading="lazy" style="object-position:50% 25%">
+  <img class="auf" src="p/start/kompakt-flipchart.webp" alt="Claudia Conen im schwarzen Blazer leitet einen Workshop am Flipchart" width="860" height="1147" loading="lazy" style="object-position:50% 30%">
+  <!-- Mini-Clip (stumm) am Flipchart folgt, sobald das Video gefunden ist -->
   <div class="text auf">
    <div class="kicker">Claudia kompakt</div>
    <h2>Expertin für menschliche Wirkungskraft im KI‑Zeitalter</h2>
@@ -598,9 +676,9 @@
 </section>
 
 <!-- 11 Abschluss §14.11 -->
-<section class="schluss" id="kontakt">
+<section class="schluss schluss-dunkel" id="kontakt">
  <div class="huelle">
-  <div class="karte auf">
+  <div class="karte glas glas-dunkel auf">
    <div class="kicker" style="margin:0">Nächster Schritt</div>
    <h2>Welche Wirkung soll nach deiner Veranstaltung bleiben?</h2>
    <p>Im Gespräch klären wir Anlass, Publikum und Ziel – und welches Format passt: Keynote, Workshop oder Entwicklungsprogramm.<span class="vor">Vorschlag</span></p>
@@ -614,9 +692,21 @@
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>
 
 <script src="site.js"></script>
+<script>
+/* Bühnenausschnitte: erst auf Klick laden, mit Untertiteln */
+document.querySelectorAll('.live-karte .play[data-video]').forEach(a=>a.addEventListener('click',e=>{
+ e.preventDefault();document.querySelectorAll('.kst video').forEach(x=>x.pause());
+ const box=a.parentElement,bild=box.querySelector('img'),vid=document.createElement('video');
+ vid.src=a.dataset.video;vid.poster=bild.getAttribute('src');vid.controls=true;vid.playsInline=true;vid.preload='none';
+ vid.setAttribute('aria-label',a.getAttribute('aria-label').replace(' abspielen',''));
+ const tr=document.createElement('track');tr.kind='subtitles';tr.srclang='de';tr.label='Deutsch';tr.src=a.dataset.vtt;tr.default=true;vid.appendChild(tr);
+ bild.replaceWith(vid);a.remove();vid.play().catch(()=>{});
+}));
+</script>
+

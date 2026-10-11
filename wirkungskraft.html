@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Die Wirkungskraft-Methode – Claudia Conen – Die Umsatzstimme</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,6 +112,11 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 .wk-treppe details p{font-size:16px}
 .wk-bezug{font-size:16px}
 .vertieft{justify-self:start;font:700 11.5px/1.3 'Inter',sans-serif;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(201,169,97,.7);border-radius:999px;padding:6px 11px}
+/* Nacht 11./12.10.: Glaskachel nur noch auf dem dunklen Abschnitt, Audio als ruhige Karte */
+.glas.glas-dunkel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:none;border-radius:16px;padding:24px 28px;margin-top:40px;display:grid;gap:12px}
+#methode .glas-dunkel .reihenfolge{margin:0;border-left:0;padding-left:0}
+#methode .glas-dunkel .grenze{margin:0}
+.player.karte-audio{background:var(--weiss);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:20px;box-shadow:0 16px 44px -28px rgba(19,35,63,.35)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -232,7 +237,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
     <div class="tafel" id="t5">
      <div>
       <h3>Persönlichkeit vor Perfektion.</h3>
-      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <p class="mikro">Wer hier spricht und warum Wirkung ihr Lebensthema ist.</p>
       <span class="label">Hauptwege</span>
       <div class="wege3">
        <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
@@ -241,9 +246,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
       </div>
      </div>
      <div>
-      <span class="label">Mehr</span>
+      <span class="label">Vertrauen</span>
       <ul class="themen">
-       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+       <li><a href="ueber-claudia.html#medien">Bücher, Bühnen und Medien</a></li>
+       <li><a href="ergebnisse.html">Stimmen und Ergebnisse</a></li>
       </ul>
      </div>
      <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
@@ -271,7 +277,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
      <a class="leise" href="#methode">Die vier Schritte ansehen</a>
    </div>
   </div>
-  <figure><img src="p/wirkungskraft/hero-buehne.webp" alt="Claudia Conen im hellen Anzug spricht auf einer großen Bühne und erklärt mit beiden Händen" width="1600" height="900" fetchpriority="high" style="object-position:50% 45%"><!-- Standbild aus Claudias Webseiten-Video (3:09) --></figure>
+  <figure><img src="p/wirkungskraft/hero-gespraech.webp" alt="Claudia Conen erklärt lächelnd mit offener Hand, ihr Gegenüber unscharf im Vordergrund" width="1600" height="1066" fetchpriority="high" style="object-position:45% 40%"><!-- Bildnachweis prüfen: Drehtag im Garten (Drehtag-117), Fotograf bestätigen. Ersetzt das Bühnen-Standbild: dort waren die Augen geschlossen --></figure>
  </div>
 </section>
 
@@ -315,7 +321,7 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
 <section class="wk-audio" aria-labelledby="wk-audio">
  <div class="huelle">
   <h2 id="wk-audio" class="kicker">Claudia hören</h2>
-  <div class="player glas" role="group" aria-label="Audio: Warum Wirkung Verantwortung bedeutet">
+  <div class="player karte-audio" role="group" aria-label="Audio: Warum Wirkung Verantwortung bedeutet">
    <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
    <div>
     <b>Warum Wirkung Verantwortung bedeutet</b>
@@ -346,8 +352,10 @@ main .leise{min-height:44px;display:inline-flex;align-items:center}
    <div class="feld auf"><span class="nr">04</span><h3>KI sinnvoll verstärken</h3><p class="frage">Wie unterstützt KI dich, ohne dich austauschbar zu machen?</p>
     <ul><li>Vorbereitung und Struktur</li><li>Content- und Storyentwicklung</li><li>Präsentationen und Pitches</li><li>KI-Agenten und wiederkehrende Prozesse</li><li>persönliche Sprachprofile</li><li>Qualitätsprüfung auf Authentizität</li><li>Zeitgewinn für Führung, Kunden und Beziehungen</li></ul></div>
   </div>
-  <p class="reihenfolge" style="margin-top:44px">Erst den persönlichen und unternehmerischen Kern klären. Dann die Botschaft formen. Anschließend die Wirkung verkörpern. Erst danach KI gezielt als Verstärker einsetzen.</p>
+  <div class="glas glas-dunkel">
+  <p class="reihenfolge">Erst den persönlichen und unternehmerischen Kern klären. Dann die Botschaft formen. Anschließend die Wirkung verkörpern. Erst danach KI gezielt als Verstärker einsetzen.</p>
   <p class="grenze">KI ersetzt dabei nie Haltung, Verantwortung, Beziehung oder persönliche Präsenz.<span class="vor">Vorschlag</span></p>
+  </div>
  </div>
 </section>
 
@@ -433,13 +441,13 @@ Perfektion klickt. Persönlichkeit bleibt.</p></details></div></li>
    <tbody>
     <tr><th scope="row">Keynote</th><td data-titel="Ziel">Aufmerksamkeit, Orientierung und gemeinsame Sprache schaffen.</td><td data-titel="Schwerpunkt"><div class="schritt-chips"><span class="chip">alle vier Schritte als Impuls</span></div></td><td data-titel="Für wen">Konferenzen, Führungstreffen, Kick-offs, Kundenevents<p style="margin-top:8px"><a class="leise" href="keynotes.html">Keynotes ansehen</a></p></td></tr>
     <tr><th scope="row">Workshop</th><td data-titel="Ziel">Wissen in beobachtbares Verhalten überführen.</td><td data-titel="Schwerpunkt"><div class="schritt-chips"><span class="chip">02 Botschaft</span><span class="chip">03 Verkörpern</span><span class="chip">04 KI</span></div></td><td data-titel="Für wen">Teams, Führungskräfte, Vertrieb<p class="platz">Dauer und Teilnehmerzahl: dein Handbuch nennt 1–2 Tage, bitte bestätigen.</p><p style="margin-top:8px"><a class="leise" href="workshops.html">Workshops ansehen</a></p></td></tr>
-    <tr><th scope="row">Entwicklungs­programm</th><td data-titel="Ziel">Nachhaltige Veränderung über mehrere Wochen oder Monate.</td><td data-titel="Schwerpunkt"><div class="schritt-chips"><span class="chip">alle vier Schritte in fester Reihenfolge</span></div></td><td data-titel="Für wen">Führungsteams inhouse, Unternehmer und Experten in der Gruppe<p class="platz">Laufzeit: dein Handbuch nennt 8–12 Wochen, bitte bestätigen. Starttermine: bitte von dir.</p><p style="margin-top:8px"><a class="leise" href="entwicklungsprogramme.html">Programme kennenlernen</a></p></td></tr>
+    <tr><th scope="row">Entwicklungs­programm</th><td data-titel="Ziel">Nachhaltige Veränderung über mehrere Wochen oder Monate.</td><td data-titel="Schwerpunkt"><div class="schritt-chips"><span class="chip">alle vier Schritte in fester Reihenfolge</span></div></td><td data-titel="Für wen">Führungsteams inhouse, Unternehmer und Experten in der Gruppe<p class="platz">Laufzeit: 90 Tage laut Masterplan 2027 (WIRKUNGSKRAFT – das 90-Tage-Programm), dein Handbuch nannte 8–12 Wochen. Bitte bestätigen, dazu Starttermine: bitte von dir.</p><p style="margin-top:8px"><a class="leise" href="entwicklungsprogramme.html">Programme kennenlernen</a></p></td></tr>
     <tr><th scope="row">Executive-Sparring</th><td data-titel="Ziel">Individuelle Führungs-, Kommunikations- und Auftrittssituationen.</td><td data-titel="Schwerpunkt"><div class="schritt-chips"><span class="chip">der Schritt, an dem es gerade hakt</span></div></td><td data-titel="Für wen">Führungskräfte, Unternehmer und Experten, 1:1<p style="margin-top:8px"><a class="leise" href="executive-sparring.html">Executive-Sparring ansehen</a></p></td></tr>
    </tbody>
   </table>
   <div class="wk-varianten">
    <div>
-    <h3>Wirkungskraft – das Entwicklungsprogramm für Führungskräfte, Unternehmer und Experten</h3>
+    <h3>WIRKUNGSKRAFT – das 90-Tage-Programm und seine Wege</h3>
     <ul class="raute">
      <li>Inhouse-Programm für Führungsteams</li>
      <li>Gruppenprogramm für Unternehmer und Experten</li>
@@ -486,7 +494,7 @@ Perfektion klickt. Persönlichkeit bleibt.</p></details></div></li>
 <!-- 10 Claudia-Bezug -->
 <section class="wk-person" aria-labelledby="wk-person">
  <div class="huelle">
-  <img class="auf" src="p/voice-over/handmikro.webp" alt="Claudia Conen lacht mit einem Handmikrofon vor hellem Hintergrund" width="675" height="900" loading="lazy" style="object-position:50% 30%">
+  <img class="auf" src="p/wirkungskraft/handmikro.webp" alt="Claudia Conen lacht mit einem Handmikrofon vor hellem Hintergrund" width="675" height="900" loading="lazy" style="object-position:50% 30%">
   <div class="text auf">
    <div class="kicker">Woher die Methode kommt</div>
    <h2 id="wk-person">Erfahrungswissen, auf Bühnen und in Unternehmen erprobt.<span class="vor">Vorschlag</span></h2>
@@ -531,7 +539,7 @@ Perfektion klickt. Persönlichkeit bleibt.</p></details></div></li>
  <div class="huelle">
   <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
   <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
-  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="speaker-ausbildung.html">Speaker-Ausbildung</a></li><li><a href="rund-ums-reden.html">Rund ums Reden</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
  </div>
 </footer>
