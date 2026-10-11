@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unternehmer &amp; Experten – Claudia Conen – Die Umsatzstimme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Seite Unternehmer & Experten – nur Tokens aus style.css */
+.ue-kopf{padding-block:64px 88px;background:linear-gradient(180deg,var(--ivory),var(--champ) 160%)}
+.ue-kopf .huelle{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+.ue-kopf h1{font:600 clamp(40px,4.6vw,66px)/1.05 'Cormorant Garamond',Georgia,serif}
+.ue-kopf .sub{font-size:19px;line-height:1.55;margin-top:22px;max-width:56ch}
+.ue-kopf .wege{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;margin-top:32px}
+.ue-kopf figure{margin:0}
+.ue-kopf img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:8px;border:1.5px solid rgba(201,169,97,.55)}
+@media(max-width:900px){.ue-kopf .huelle{grid-template-columns:1fr;gap:32px}.ue-kopf figure{order:-1;max-width:460px}.ue-kopf img{aspect-ratio:4/3;object-position:50% 8%}}
+.ue-lage .huelle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.ue-lage .text{display:grid;gap:16px;max-width:58ch}
+.ue-liste{background:var(--weiss);border:1.5px solid rgba(201,169,97,.55);border-radius:8px;padding:28px 30px;display:grid;gap:14px}
+.ue-liste .erkennst{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:860px){.ue-lage .huelle{grid-template-columns:1fr;gap:28px}}
+.ue-ergebnis{background:var(--weiss);border-block:1px solid var(--linie)}
+.ue-ergebnis h2{max-width:24ch}
+.ue-vier{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:36px;list-style:none;padding:0}
+.ue-vier li{border-top:2px solid var(--gold);padding-top:16px;font-size:16.5px}
+.ue-vier b{display:block;font:600 24px/1.15 'Cormorant Garamond',Georgia,serif;margin-bottom:6px}
+@media(max-width:960px){.ue-vier{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.ue-vier{grid-template-columns:1fr}}
+.ue-methode .schritte{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:32px;border:1px solid var(--linie);border-radius:8px;overflow:hidden;background:var(--weiss)}
+.ue-methode .schritt{padding:22px 22px 24px;border-right:1px solid var(--linie);display:grid;gap:6px;align-content:start}
+.ue-methode .schritt:last-child{border-right:0}
+.ue-methode .nr{font:600 40px/1 'Cormorant Garamond',Georgia,serif}
+.ue-methode .schritt b{font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+.ue-methode .schritt i{font:500 italic 20px/1.25 'Cormorant Garamond',Georgia,serif}
+.ue-methode .unter{margin-top:24px}
+@media(max-width:900px){.ue-methode .schritte{grid-template-columns:repeat(2,minmax(0,1fr))}.ue-methode .schritt:nth-child(2){border-right:0}.ue-methode .schritt:nth-child(-n+2){border-bottom:1px solid var(--linie)}}
+@media(max-width:520px){.ue-methode .schritte{grid-template-columns:1fr}.ue-methode .schritt{border-right:0;border-bottom:1px solid var(--linie)}.ue-methode .schritt:last-child{border-bottom:0}}
+.ue-themen{padding-top:24px}
+.ue-thema{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:start;padding-block:56px;border-top:1px solid var(--linie);scroll-margin-top:96px}
+.ue-thema:first-of-type{border-top:0}
+.ue-thema.rechts{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+.ue-thema.rechts>.medium{order:2}
+.ue-thema .medium img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:8px}
+.ue-thema .text{display:grid;gap:14px;max-width:62ch}
+.ue-thema h3{font:600 clamp(32px,3.4vw,44px)/1.08 'Cormorant Garamond',Georgia,serif}
+.ue-schritt{font:700 11.5px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(201,169,97,.6);border-radius:999px;padding:7px 12px;justify-self:start;background:var(--weiss)}
+.ue-thema .frage{font:500 italic 25px/1.25 'Cormorant Garamond',Georgia,serif}
+@media(max-width:860px){.ue-thema,.ue-thema.rechts{grid-template-columns:1fr;gap:24px;padding-block:44px}.ue-thema.rechts>.medium{order:0}.ue-thema .medium{max-width:440px}.ue-thema .medium img{aspect-ratio:4/3}}
+.ue-mehr{border:1px solid var(--linie);border-radius:8px;background:var(--weiss)}
+.ue-mehr summary{cursor:pointer;padding:14px 18px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.ue-mehr summary::-webkit-details-marker{display:none}
+.ue-mehr summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg);flex:none;transition:transform .2s}
+.ue-mehr[open] summary::after{transform:rotate(225deg)}
+.ue-mehr .innen{padding:0 18px 18px;display:grid;gap:12px}
+.ue-mehr ol{margin:0;padding-left:20px;display:grid;gap:8px}
+.ue-zitat{margin:0;padding:18px 20px;border-left:2px solid var(--gold);background:var(--weiss);border-radius:0 8px 8px 0;display:grid;gap:8px}
+.ue-zitat blockquote{margin:0;font:500 italic 22px/1.3 'Cormorant Garamond',Georgia,serif}
+.ue-zitat figcaption{font-size:14px}
+.ue-zitat .quelle{display:block;font-size:12.5px;font-weight:600}
+/* Video: eigenes Standbild, Knopf in der Ecke, lädt erst auf Klick */
+.ue-video{margin:0;display:grid;gap:12px}
+.ue-film{position:relative;border-radius:8px;overflow:hidden;background:var(--ink)}
+.ue-film img,.ue-film video{width:100%;display:block}
+.ue-film.hoch{max-width:340px}
+.ue-film.hoch img,.ue-film.hoch video{aspect-ratio:464/848;object-fit:cover}
+.ue-film.quer img,.ue-film.quer video{aspect-ratio:16/9;object-fit:cover}
+.ue-play{position:absolute;left:14px;bottom:14px;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 16px 0 12px;border-radius:999px;border:1.5px solid var(--gold);background:var(--weiss);color:var(--ink);font:700 13px/1 'Inter',sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.ue-play::before{content:"";width:0;height:0;border-left:12px solid var(--ink);border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:4px}
+.ue-play:hover{background:var(--champ)}
+.ue-formate{background:var(--weiss);border-block:1px solid var(--linie)}
+.ue-karten{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:36px}
+.ue-karte{background:var(--ivory);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:8px;padding:26px 26px 28px;display:flex;flex-direction:column;gap:12px}
+.ue-karte h3{font:600 28px/1.1 'Cormorant Garamond',Georgia,serif}
+.ue-karte .fuer{font:700 11.5px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.ue-karte .mehr{margin-top:auto;padding-top:6px}
+@media(max-width:940px){.ue-karten{grid-template-columns:1fr}}
+.ue-einstieg{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;padding:16px 20px;border:1px dashed rgba(201,169,97,.8);border-radius:8px;font-size:16px}
+.ue-reise .huelle{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:56px;align-items:center;scroll-margin-top:96px}
+.ue-reise img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 30%;border-radius:8px}
+.ue-reise .text{display:grid;gap:16px;max-width:60ch}
+@media(max-width:860px){.ue-reise .huelle{grid-template-columns:1fr;gap:28px}.ue-reise img{max-width:360px;aspect-ratio:4/5}}
+.stimme .kopfzeile img{border-radius:50%}
+.ue-person .huelle{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1.4fr);gap:56px;align-items:center}
+.ue-person img{width:100%;max-width:320px;aspect-ratio:9/16;object-fit:cover;border-radius:8px}
+.ue-person .text{display:grid;gap:16px;max-width:62ch}
+@media(max-width:760px){.ue-person .huelle{grid-template-columns:1fr;gap:24px}.ue-person img{max-width:240px}}
+.ue-faq{background:var(--weiss);border-block:1px solid var(--linie)}
+.ue-faq .liste{display:grid;gap:12px;margin-top:28px;max-width:860px}
+.ue-faq details{border:1px solid var(--linie);border-radius:8px;background:var(--ivory)}
+.ue-faq summary{cursor:pointer;padding:18px 20px;font-weight:600;font-size:17.5px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.ue-faq summary::-webkit-details-marker{display:none}
+.ue-faq summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg);flex:none;transition:transform .2s}
+.ue-faq details[open] summary::after{transform:rotate(225deg)}
+.ue-faq details>div{padding:0 20px 20px;display:grid;gap:10px;max-width:70ch}
+.ue-faq .hinweis-klein{font-size:13.5px;margin-top:8px}
+/* Überarbeitung 11.10.2026: Touchflächen, Lesegröße, Kartenbild */
+main .leise{min-height:44px;display:inline-flex;align-items:center}
+.ue-zitat figcaption{font-size:16px}
+.ue-zitat .quelle{font-size:14px}
+.ue-karte-bild{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;margin-bottom:4px}
+.ue-reise img{max-height:560px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","@id":"#claudia","name":"Claudia Conen – Die Umsatzstimme","jobTitle":"Expertin für menschliche Wirkungskraft im KI-Zeitalter"},
+{"@type":"Service","name":"Wirkungskraft für Unternehmer und Experten","description":"Positionierung und Botschaft, Auftritt und Performance, Stimme, Kamera und Präsenz, Storytelling und Pitch sowie Executive-Sparring 1:1 für Unternehmer, Berater, Coaches, Trainer und Speaker.","provider":{"@id":"#claudia"},"audience":{"@type":"BusinessAudience","name":"Unternehmer, Berater, Coaches, Trainer und Speaker"},"serviceType":["Positionierung und Botschaft","Auftritt und Performance","Stimme, Kamera und Präsenz","Storytelling und Pitch","Executive-Sparring"]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Ist das auch für Privatpersonen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Angebote sind für geschäftlich tätige Menschen: Unternehmer, Selbstständige mit etabliertem Angebot, Berater, Coaches, Trainer, Speaker und Führungspersönlichkeiten. Private Lebensberatung gehört nicht dazu."}},
+{"@type":"Question","name":"Ist das Stimmtraining?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Stimme ist der Zugang, die Persönlichkeit ist das Ergebnis. Über die Stimme wird erkennbar, wie jemand zu sich steht. Daran wird gearbeitet, nicht an Tonhöhe und Atemtechnik allein."}},
+{"@type":"Question","name":"Ich mache mehrere Dinge. Muss ich mich auf eines festlegen?","acceptedAnswer":{"@type":"Answer","text":"Nicht auf ein Angebot, aber auf einen Satz. Du darfst weiter alles tun – nur die Tür, durch die jemand hereinkommt, sollte eine sein. Wer drinnen ist, entdeckt den Rest von allein."}},
+{"@type":"Question","name":"Bekomme ich einen fertigen Satz von Claudia?","acceptedAnswer":{"@type":"Answer","text":"Nein, und das ist Absicht. Ein Satz, den Claudia dir schreibt, klingt nach ihr. Du merkst das beim Sprechen, und dein Gegenüber merkt es auch. Claudia stellt die Fragen, du formulierst, ihr schleift gemeinsam."}},
+{"@type":"Question","name":"Muss ich Privates erzählen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Du bestimmst die Grenze, und ihr legt sie ausdrücklich fest, bevor du anfängst. Eine gute Geschichte braucht Nähe, nicht Intimität."}}
+]}
+]}
+</script>
+<meta name="description" content="Für Unternehmer, Berater, Coaches, Trainer und Speaker: Positionierung, Auftritt, Stimme und Kamera, Storytelling und Pitch sowie Executive-Sparring mit Claudia Conen – Die Umsatzstimme.">
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="hinweis"><b>Private Vorschau, nicht online.</b> Seite Unternehmer &amp; Experten nach deinem Masterhandbuch. Rot gestrichelt = Vorschlag von Vinci oder fehlende Angabe von dir.</div>
+
+<div class="aktuell-wrap">
+ <p class="aktuell glas"><b>Aktuell:</b> <span class="lang">7-Tage-Wirkungskraft-Challenge · Start 26. Oktober</span><span class="kurz">Challenge · Start 26.10.</span> · <a href="challenge.html">Platz sichern</a><span class="vor">Termin bestätigen</span></p>
+</div>
+
+<header class="menue" id="menue">
+ <div class="huelle">
+  <a class="marke" href="index.html" aria-label="Claudia Conen – zur Startseite"><img src="i/logo.webp" alt="" width="48" height="48"><span><b>Claudia Conen – Die Umsatzstimme</b><span>Menschliche Wirkungskraft im KI-Zeitalter</span></span></a>
+  <ul class="punkte" id="punkte" aria-label="Hauptmenü">
+   <li><a class="punkt-link" href="index.html">Start</a></li>
+   <li><button type="button" aria-expanded="false" aria-controls="t1">Für Unternehmen</button>
+    <div class="tafel" id="t1">
+     <div>
+      <h3>Wirkung, die im Unternehmen ankommt.</h3>
+      <p class="mikro">Für Geschäftsführung, Führungskräfte, HR, Vertrieb und Veranstalter.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="unternehmen.html"><b>Für Unternehmen</b><small>Situation, Formate, Ergebnisse</small></a>
+       <a href="workshop-fuehrung-kommunikation.html"><b>Menschlich führen und kommunizieren</b><small>Der Workshop für Führungskräfte</small></a>
+       <a href="entwicklungsprogramme.html"><b>WIRKUNGSKRAFT – 90 Tage</b><small>Veränderung nachhaltig verankern</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Themen</span>
+      <ul class="themen">
+       <li><a href="unternehmen.html#fuehrung">Führung &amp; Kommunikation</a></li>
+       <li><a href="unternehmen.html#mensch-ki">Mensch &amp; KI</a></li>
+       <li><a href="workshop-emotional-sales.html">Vertrieb &amp; Emotional Sales</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/keynote.webp" alt="Claudia Conen auf einer Unternehmensbühne" width="464" height="208"><p>„KI ist eingeführt. Warum nutzt sie kaum jemand?“</p><a class="knopf" href="kontakt.html#unternehmen">Gespräch vereinbaren</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t6">Für Experten</button>
+    <div class="tafel" id="t6">
+     <div>
+      <h3>Als Mensch und Experte erkannt werden.</h3>
+      <p class="mikro">Für Coaches, Trainer, Speaker, Berater, Autoren und Selbstständige.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="unternehmer-experten.html"><b>Für Experten</b><small>Positionierung, Botschaft, Auftritt</small></a>
+       <a href="executive-sparring.html"><b>Experten-Sparring</b><small>1:1 für Positionierung, Keynote oder Pitch</small></a>
+       <a href="challenge.html"><b>7-Tage-Challenge</b><small>Der Einstieg für Experten und Unternehmer</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Außerdem</span>
+      <ul class="themen">
+       <li><a href="wirkungskraft.html">Die Wirkungskraft-Methode</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/mentoring.webp" alt="Claudia Conen im Gespräch mit Laptop" width="464" height="208"><p>Deine Persönlichkeit ist längst da. Wir machen sie erkennbar.</p><a class="knopf" href="kontakt.html#experten">Gespräch vereinbaren</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t2">Keynotes</button>
+    <div class="tafel tafel-buchen" id="t2">
+     <div class="buchen-wege">
+      <h3>Keynotes und Auftritte</h3>
+      <p class="mikro">Claudia gibt Unternehmensmomenten eine Stimme, eine Richtung und eine Wirkung.</p>
+      <span class="label">Claudia buchen</span>
+      <div class="wege3 wege4">
+       <a href="keynotes.html"><b>Keynote Speakerin</b><small>Die Keynote setzt Impulse.</small></a>
+       <a href="moderation.html"><b>Business- und Eventmoderation</b><small>Moderation verbindet und führt.</small></a>
+       <a href="unternehmensreden.html"><b>Reden für besondere Unternehmensmomente</b><small>Die Unternehmensrede würdigt und gibt Bedeutung.</small></a>
+       <a href="voice-over.html"><b>Voice-over und Markenstimme</b><small>Voice-over macht Markenbotschaften hörbar.</small></a>
+      </div>
+     </div>
+     <div class="tafel-foto"><img src="m/buchen.webp" alt="Claudia Conen im hellblauen Blazer, lächelnd" width="464" height="261"><p>Eine Stimme, eine Richtung, eine Wirkung.</p><a class="knopf" href="kontakt.html#keynote">Keynote anfragen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t3">Workshops &amp; Programme</button>
+    <div class="tafel" id="t3">
+     <div>
+      <h3>Aus Wissen wird Verhalten.</h3>
+      <p class="mikro">Workshop, 90-Tage-Programm oder Sparring: vor Ort oder online.</p>
+      <span class="label">Formate</span>
+      <div class="wege3">
+       <a href="workshops.html"><b>Workshop: Als Mensch und Experte erkannt werden</b><small>Klare Botschaft, glaubwürdige Kommunikation, souveräne Präsenz</small></a>
+       <a href="entwicklungsprogramme.html"><b>WIRKUNGSKRAFT – das 90-Tage-Programm</b><small>Persönlichkeit, Botschaft, Präsenz, Verstärkung</small></a>
+       <a href="executive-sparring.html"><b>Executive- und Experten-Sparring</b><small>Individuell vor wichtigen Auftritten</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Workshop-Schwerpunkte</span>
+      <ul class="themen">
+       <li><a href="workshop-fuehrung-kommunikation.html">Führung &amp; Kommunikation</a></li>
+       <li><a href="workshop-emotional-sales.html">Emotional Sales</a></li>
+       <li><a href="workshop-praesenz-wirkung.html">Präsenz &amp; Wirkung</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/ausbildung.webp" alt="Claudia Conen im Workshop" width="464" height="208"><p>Aus Wissen wird Verhalten.</p><a class="knopf" href="kontakt.html#unternehmen">Workshop anfragen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><a class="punkt-link" href="ergebnisse.html">Ergebnisse</a></li>
+   <li><button type="button" aria-expanded="false" aria-controls="t5">Über Claudia</button>
+    <div class="tafel" id="t5">
+     <div>
+      <h3>Persönlichkeit vor Perfektion.</h3>
+      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
+       <a href="wissen.html"><b>Wissen</b><small>Artikel und Ressourcen</small></a>
+       <a href="events.html"><b>Events</b><small>Aktuelle Termine</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Mehr</span>
+      <ul class="themen">
+       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li class="mobil-knopf"><a class="knopf" href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <a class="knopf" href="kontakt.html">Kontakt</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="punkte">Menü</button>
+ </div>
+</header>
+
+<main id="main">
+<!-- 1 Hero (§8 Überschrift, §4 Zielgruppe B) -->
+<section class="ue-kopf" aria-labelledby="h1">
+ <div class="huelle">
+  <div>
+   <div class="eyebrow">Für Unternehmer &amp; Experten</div>
+   <h1 id="h1">Deine Expertise soll nicht nur sichtbar, sondern spürbar werden.</h1>
+   <p class="sub">Für Unternehmer, Berater, Coaches, Trainer und Speaker mit Geschäftskunden: Claudia Conen, Expertin für menschliche Wirkungskraft im KI-Zeitalter, arbeitet mit dir daran, dass man dich erkennt, dir vertraut und dich bucht. Persönlichkeit, Botschaft und Präsenz sind die Werkzeuge, KI ist der Verstärker, nicht der Ersatz.<span class="vor">Vorschlag</span></p>
+   <div class="wege">
+    <a class="knopf" href="kontakt.html#experten">Gespräch vereinbaren</a>
+    <a class="leise" href="#themen">Themen ansehen</a>
+   </div>
+  </div>
+  <figure><img src="p/unternehmer-experten/hero.webp" alt="Claudia Conen im hellblauen Anzug, lächelnd an einem Fenster" width="853" height="1280"></figure>
+ </div>
+</section>
+
+<!-- 2 Relevanz -->
+<section class="warum" aria-labelledby="ue-warum">
+ <div class="huelle">
+  <div class="auf">
+   <div class="kicker">Warum jetzt</div>
+   <h2 id="ue-warum" class="gross-zitat">Perfektion ist klickbar geworden. <strong>Was nicht klickbar ist, bist du.</strong></h2>
+  </div>
+  <div class="saetze auf">
+   <p>Je mehr Texte, Bilder und Angebote auf Knopfdruck entstehen, desto ähnlicher wird alles.</p>
+   <p>KI kann Inhalte erzeugen. Wirkung entsteht durch den Menschen.</p>
+   <p>Menschen vertrauen Menschen, deren Worte und Haltung zusammenpassen.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 3 Ausgangslage (§4, wörtlich in Du-Form) -->
+<section class="ue-lage" aria-labelledby="ue-lage">
+ <div class="huelle">
+  <div class="text">
+   <div class="kicker">Ausgangslage</div>
+   <h2 id="ue-lage">Dein Problem ist nicht Können. Es ist Vergleichbarkeit.</h2>
+   <p>Du bist gut in dem, was du tust. Das bestreitet niemand. Nur steht neben dir jemand, der dasselbe verspricht, und für den, der bucht, sieht beides gleich aus.</p>
+   <p>Die Frage ist also nicht, wie du besser wirst. Sie lautet, woran man dich erkennt, wenn dein Name nicht danebensteht.</p>
+  </div>
+  <div class="ue-liste auf">
+   <p class="erkennst">Woran du es erkennst</p>
+   <ul class="raute">
+    <li>Deine Expertise ist größer als deine erkennbare Positionierung.</li>
+    <li>Du klingst wie andere Anbieter.</li>
+    <li>KI-generierte Texte passen nicht zu deiner Persönlichkeit.</li>
+    <li>Bühne, Kamera, Pitch oder Kundengespräch transportieren deine Kompetenz nicht überzeugend.</li>
+    <li>Du wirst über Leistungen und Preise verglichen, statt über Vertrauen und Perspektive gewählt.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- 4 Ergebnisbild (Markenversprechen §3, Ergebnisse aus deinen bestehenden Angebotsseiten) -->
+<section class="ue-ergebnis" aria-labelledby="ue-ergebnis">
+ <div class="huelle">
+  <div class="kicker">Ergebnis</div>
+  <h2 id="ue-ergebnis">Du wirst als Mensch klar erkennbar, glaubwürdig hörbar und geschäftlich wirksam.</h2>
+  <p>Am Ende steht kein gutes Gefühl, sondern etwas, das du vorzeigen kannst. Zum Beispiel:<span class="vor">Auswahl: Vorschlag</span></p>
+  <ul class="ue-vier">
+   <li class="auf"><b>Ein Satz</b>Deine Positionierung in einem Satz, den du selbst überzeugend sagen kannst.</li>
+   <li class="auf"><b>Ein Pitch</b>Ein Satz, den du sagen kannst, ohne nachzudenken – und zwei Varianten davon: eine für dreißig Sekunden, eine für zwei Minuten.</li>
+   <li class="auf"><b>Drei Geschichten</b>Eine über dich, eine über einen Kunden, eine über einen Fehler. Alle drei gesprochen, nicht nur geschrieben.</li>
+   <li class="auf"><b>Ein Auftritt</b>Eine fertige Keynote, ein sitzender Pitch oder ein Kameraauftritt.</li>
+  </ul>
+ </div>
+</section>
+
+<!-- 5 Methode, kurz (§5) -->
+<section class="ue-methode" aria-labelledby="ue-methode">
+ <div class="huelle">
+  <div class="kicker">So arbeitet Claudia</div>
+  <h2 id="ue-methode">Erst der Kern. Dann die Botschaft. Dann der Auftritt. Dann KI.<span class="vor">Vorschlag</span></h2>
+  <p style="max-width:66ch">Alle Themen auf dieser Seite folgen der Wirkungskraft-Methode: vier Schritte in fester Reihenfolge.</p>
+  <div class="schritte">
+   <div class="schritt"><span class="nr">01</span><b>Persönlichkeit erkennen</b><i>Wofür stehst du?</i></div>
+   <div class="schritt"><span class="nr">02</span><b>Botschaft klären</b><i>Was soll bei deinem Gegenüber ankommen?</i></div>
+   <div class="schritt"><span class="nr">03</span><b>Wirkung verkörpern</b><i>Wie werden Persönlichkeit und Botschaft hörbar und sichtbar?</i></div>
+   <div class="schritt"><span class="nr">04</span><b>KI sinnvoll verstärken</b><i>Wie unterstützt KI dich, ohne dich austauschbar zu machen?</i></div>
+  </div>
+  <p class="unter"><a class="leise" href="wirkungskraft.html#methode">Methode kennenlernen</a></p>
+ </div>
+</section>
+
+<!-- 6 Themen mit Ankern aus dem Menü -->
+<section class="ue-themen" id="themen" aria-labelledby="ue-themen">
+ <div class="huelle">
+  <div class="kicker">Themen</div>
+  <h2 id="ue-themen">Woran ihr gemeinsam arbeitet<span class="vor">Vorschlag</span></h2>
+
+  <article class="ue-thema" id="positionierung" aria-labelledby="t-pos">
+   <div class="medium"><img src="p/unternehmer-experten/positionierung-neu.webp" alt="Claudia Conen im Beratungsgespräch an einem hellen Tisch, ihr gegenüber eine Unternehmerin" width="900" height="600" loading="lazy" style="object-position:42% 45%"><!-- Bildnachweis prüfen: aus „Gaby Fotos“ (JVS_9117), Fotograf und Nachweis vor Veröffentlichung bestätigen --></div>
+   <div class="text">
+    <span class="ue-schritt">Schritt 1 und 2 · Persönlichkeit und Botschaft</span>
+    <h3 id="t-pos">Positionierung &amp; Botschaft</h3>
+    <p class="frage">Wofür stehst du – in einem Satz, den ein anderer wiederholen kann?</p>
+    <p>Kompetenz allein macht noch keine unverwechselbare Marke. Entscheidend ist, ob Menschen erkennen, wofür du stehst, dir vertrauen und dich im Kopf behalten.</p>
+    <p>Eine Positionierung ist nicht, was du über dich denkst, sondern das, was hängenbleibt.</p>
+    <details class="ue-mehr">
+     <summary>So entsteht dein Satz</summary>
+     <div class="innen">
+      <ol>
+       <li><b>Rückwärts:</b> Ihr geht deine letzten zehn Aufträge durch. Wofür wurdest du wirklich geholt? Das ist selten das, was auf der Webseite steht.</li>
+       <li><b>Weglassen:</b> Alles streichen, was auch auf andere passt. Was übrig bleibt, ist schmal und fühlt sich zu klein an. Das ist das Zeichen, dass es stimmt.</li>
+       <li><b>Formulieren:</b> Mehrere Fassungen, laut gesprochen. Ein Satz, der auf Papier gut aussieht und sich beim Sprechen sperrt, ist der falsche.</li>
+       <li><b>Probe:</b> Du sagst den Satz drei Menschen, die du nicht kennst, und fragst, was sie verstanden haben.</li>
+       <li><b>Nachziehen:</b> Der Satz gilt erst, wenn er überall steht: Profil, Seite, Angebot, Vorstellung im Gespräch.</li>
+      </ol>
+      <p>Wenn KI-generierte Texte nicht nach dir klingen: Aus deinem Satz und deiner Sprache entsteht im vierten Schritt ein persönliches Sprachprofil, mit dem KI in deinem Ton vorarbeitet.<span class="vor">Vorschlag</span></p>
+     </div>
+    </details>
+    <figure class="ue-zitat">
+     <blockquote>„Die Texte fühlen sich für mich so an, als hätte ich sie selber gesagt.“</blockquote>
+     <figcaption><b>Melanie Miniaci</b>, Gründerin von Miderma<span class="quelle">Quelle: Videostimme auf claudiaconen.com</span></figcaption>
+    </figure>
+   </div>
+  </article>
+
+  <article class="ue-thema rechts" id="auftritt" aria-labelledby="t-auf">
+   <div class="medium">
+    <figure class="ue-video">
+     <div class="ue-film hoch" data-film="p/unternehmer-experten/andresen.mp4">
+      <img src="p/unternehmer-experten/andresen-standbild.webp" alt="Dr.-Ing. Ann-Kathrin Andresen sitzt lächelnd an einem Tisch, Standbild aus ihrer Videostimme" width="464" height="848" loading="lazy">
+      <button type="button" class="ue-play" aria-label="Video abspielen: Ann-Kathrin Andresen über ihre Rede, 2:01 Minuten, mit Ton">Video · 2:01</button>
+     </div>
+     <figcaption class="ue-zitat">
+      <blockquote>„Ich habe mit Claudia zusammen eine Rede erstellt und einstudiert, die ich vor einem technischen Publikum halte.“</blockquote>
+      <span><b>Dr.-Ing. Ann-Kathrin Andresen</b>, Verfahrenstechnikerin, Mentorin und Beraterin · Ing.-up<span class="quelle">Quelle: Videostimme auf claudiaconen.com</span></span>
+     </figcaption>
+    </figure>
+   </div>
+   <div class="text">
+    <span class="ue-schritt">Schritt 3 · Wirkung verkörpern</span>
+    <h3 id="t-auf">Auftritt &amp; Performance</h3>
+    <p class="frage">Der Inhalt sitzt. Warum wirkt der Auftritt trotzdem unsicher?</p>
+    <p>Weil Wirkung auf der Bühne nicht am Text hängt, sondern an drei Dingen, die man vergisst, sobald man aufgeregt ist: wo man steht, wohin man schaut, und ob man eine Pause aushält. Alle drei lassen sich üben.</p>
+    <p>Ob Keynote, Präsentation vor dem Vorstand oder Kundengespräch: Du arbeitest an einem echten Auftritt, den du wirklich halten wirst. Nicht an einem Übungsthema.</p>
+    <details class="ue-mehr">
+     <summary>Woran ihr arbeitet</summary>
+     <div class="innen">
+      <ul class="raute">
+       <li>Stand und Bewegung: wann man geht, wann man stehen bleibt und warum das ein Unterschied ist.</li>
+       <li>Der Blick: wohin man in einem großen Saal schaut, und wohin in einem kleinen Raum.</li>
+       <li>Pausen setzen und aushalten.</li>
+       <li>Stimme im Raum: tragen statt lauter werden. Das sind zwei verschiedene Dinge.</li>
+       <li>Was tun, wenn etwas schiefgeht: Technik weg, Blackout, Zwischenruf.</li>
+       <li>Aufnahme und gemeinsames Ansehen. Unangenehm, und der wirksamste Teil.</li>
+      </ul>
+     </div>
+    </details>
+   </div>
+  </article>
+
+  <article class="ue-thema" id="kamera" aria-labelledby="t-kam">
+   <div class="medium">
+    <figure class="ue-video">
+     <div class="ue-film quer" data-film="p/unternehmer-experten/sommerfeld.mp4">
+      <img src="p/unternehmer-experten/sommerfeld-standbild.webp" alt="Verena Sommerfeld sitzt lächelnd an einem Holztisch in einer hellen Küche, Standbild aus ihrer Videostimme" width="960" height="540" loading="lazy">
+      <button type="button" class="ue-play" aria-label="Video abspielen: Verena Sommerfeld über ihre Kamerascheu, 2:10 Minuten, mit Ton">Video · 2:10</button>
+     </div>
+     <figcaption class="ue-zitat">
+      <blockquote>„Ich habe sie wirklich abgelegt, diese Scheu vor der Kamera.“</blockquote>
+      <span><b>Verena Sommerfeld</b>, Bauingenieurin und Energieberaterin · Esslingen<span class="quelle">Quelle: Videostimme auf claudiaconen.com</span></span>
+     </figcaption>
+    </figure>
+   </div>
+   <div class="text">
+    <span class="ue-schritt">Schritt 3 · Wirkung verkörpern</span>
+    <h3 id="t-kam">Stimme, Kamera &amp; Präsenz</h3>
+    <p class="frage">Vor Menschen kannst du sprechen. Warum nicht vor der Kamera?</p>
+    <p>Weil die Kamera nicht zurückschaut. Im Raum merkt man, ob jemand folgt, und passt sich an. Vor der Linse fehlt genau diese Rückmeldung – und das Ergebnis klingt entweder gehetzt oder wie vorgelesen.</p>
+    <p>Die Stimme ist dabei der Zugang, die Persönlichkeit ist das Ergebnis. Über die Stimme wird erkennbar, wie jemand zu sich steht.</p>
+    <details class="ue-mehr">
+     <summary>Woran ihr arbeitet</summary>
+     <div class="innen">
+      <ul class="raute">
+       <li>Ein Gedanke pro Video, zu Ende gebracht. Das ist schwerer, als es klingt.</li>
+       <li>Sprechen vor der Kamera: Tempo, Pausen, und wohin man schaut, wenn niemand zurückschaut.</li>
+       <li>Deine eigenen Geschichten in Formate bringen, die auch ohne Ton funktionieren.</li>
+       <li>Ein Plan, den du durchhältst. Lieber wenig und verlässlich als viel und einmal.</li>
+       <li>Was du brauchst und was nicht. Für den Anfang reichen Telefon, Fenster und ein ruhiger Raum.</li>
+      </ul>
+      <p class="platz">Untertitel für beide Videos fehlen noch (§22). Nutzungsfreigabe der Videostimmen für die neue Seite: bitte von dir.</p>
+     </div>
+    </details>
+   </div>
+  </article>
+
+  <article class="ue-thema rechts" id="pitch" aria-labelledby="t-pit">
+   <div class="medium"><img src="p/unternehmer-experten/pitch-neu.webp" alt="Claudia Conen im dunklen Blazer spricht am Tisch und unterstreicht ihre Worte mit beiden Händen" width="600" height="900" loading="lazy" style="object-position:50% 30%"><!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC03563), Fotografin und Nachweis vor Veröffentlichung bestätigen --></div>
+   <div class="text">
+    <span class="ue-schritt">Schritt 2 · Botschaft klären</span>
+    <h3 id="t-pit">Storytelling &amp; Pitch</h3>
+    <p class="frage">Was antwortest du, wenn jemand fragt: Und was machst du so?</p>
+    <p>Die meisten antworten mit ihrem Beruf. Das ist die Frage nach dem Etikett, aber gemeint war: Warum sollte ich weiterfragen?</p>
+    <p>Und dann die Geschichte dahinter. Weitererzählt wird, was sich nacherzählen lässt. Eine Zahl kann man nicht nacherzählen. Eine Szene schon.</p>
+    <details class="ue-mehr">
+     <summary>Elevator Pitch: dein Satz in drei Längen</summary>
+     <div class="innen">
+      <ul class="raute">
+       <li>Dein Ergebnis in Worte fassen: was hinterher anders ist, nicht was du tust.</li>
+       <li>Der Satz in drei Längen: ein Halbsatz, dreißig Sekunden, zwei Minuten.</li>
+       <li>Die Anschlussfrage einbauen, damit ein Gespräch entsteht statt einer Pause.</li>
+       <li>Laut sprechen, aufnehmen, hören, ändern – so lange, bis er sitzt.</li>
+       <li>Was tun, wenn das Gegenüber abwinkt, unterbricht oder etwas ganz anderes will.</li>
+      </ul>
+     </div>
+    </details>
+    <details class="ue-mehr">
+     <summary>Storytelling: dein Vorrat an Geschichten</summary>
+     <div class="innen">
+      <ul class="raute">
+       <li>Geschichten finden: die drei Sorten, die in jedem Berufsleben liegen.</li>
+       <li>Den Einstieg an die richtige Stelle legen, nicht an den Anfang.</li>
+       <li>Szene statt Zusammenfassung: ein Ort, eine Uhrzeit, ein Satz, den jemand gesagt hat.</li>
+       <li>Der Bruch: der Moment, in dem es hätte schiefgehen können.</li>
+       <li>Aufhören, bevor du es erklärst.</li>
+       <li>Dieselbe Geschichte in einer Minute, in fünf Minuten und in einem Satz.</li>
+      </ul>
+      <p>Gearbeitet wird ausschließlich mit Erlebtem. Am Ende stehen die Geschichten dort, wo sie gebraucht werden: im Vortrag, im Kundengespräch, auf der ersten Seite deiner Webseite.</p>
+     </div>
+    </details>
+    <p class="platz">Elevator-Pitch-Kurs und Storytelling-Kurs sind hier als Bausteine eingeordnet (offene Frage 4 der Inventur). Bleibt das so, oder gehören die Kurse nach „Rund ums Reden“? Format, Dauer und Preis: bitte von dir.</p>
+    <p><a class="leise" href="wissen.html#elevator-pitch">Was ist ein Elevator Pitch?</a></p>
+   </div>
+  </article>
+
+  <article class="ue-thema" id="sparring" aria-labelledby="t-spa">
+   <div class="medium"><img src="p/unternehmer-experten/sparring-neu.webp" alt="Claudia Conen im Sparring zu zweit, ihr Gegenüber hört konzentriert zu" width="900" height="600" loading="lazy" style="object-position:8% 35%"><!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC09617), Fotografin und Nachweis vor Veröffentlichung bestätigen --></div>
+   <div class="text">
+    <span class="ue-schritt">Alle vier Schritte · an deinem Anlass</span>
+    <h3 id="t-spa">Executive-Sparring 1:1</h3>
+    <p class="frage">Warum sollte man dich buchen – und nicht den nächsten Experten?</p>
+    <p>Vor einer Keynote, einem Pitch, einer Verhandlung oder einem öffentlichen Auftritt arbeitet Claudia mit dir allein an genau der Situation, die ansteht.<span class="vor">Vorschlag</span></p>
+    <p><a class="leise" href="executive-sparring.html">Executive-Sparring im Überblick</a></p>
+    <details class="ue-mehr">
+     <summary>Fokus-Sitzung: 90 Minuten, eine Herausforderung</summary>
+     <div class="innen">
+      <p>Manchmal braucht es keinen Marathon, sondern einen Sprint. In 90 Minuten konzentriert ihr euch auf eine konkrete Herausforderung und erarbeitet gemeinsam eine Lösung.</p>
+      <ul class="raute">
+       <li>Positionierung schärfen</li>
+       <li>Elevator Pitch</li>
+       <li>Feedback zu deiner Keynote</li>
+       <li>Konkrete Stimmfragen</li>
+       <li>Vorbereitung auf wichtige Verkaufsgespräche</li>
+       <li>Den nächsten Schritt in deinem Business klären</li>
+      </ul>
+      <p>Vorher ein kurzes Vorgespräch, danach eine Zusammenfassung mit Plan für die Umsetzung.</p>
+      <p class="platz">Bisheriger Name „Gold-Training“: neuer Name und Preis bitte von dir.</p>
+     </div>
+    </details>
+    <details class="ue-mehr">
+     <summary>90-Tage-Wirkungskraft-Mentoring</summary>
+     <div class="innen">
+      <p>Eine Einzelbegleitung. Am Ende steht kein gutes Gefühl, sondern etwas, das du vorzeigen kannst: eine fertige Keynote, ein sitzender Pitch oder ein Kameraauftritt – und deine Positionierung in einem Satz, den du selbst überzeugend sagen kannst.</p>
+      <p>Feste Termine, dazwischen Arbeit an deinen echten Auftritten.</p>
+      <p class="platz">Laufzeit: dein Handbuch nennt 90 Tage, die bestehende Mentoring-Seite zwölf Wochen. Preis: offen. Beides bitte von dir.</p>
+     </div>
+    </details>
+   </div>
+  </article>
+ </div>
+</section>
+
+<!-- 7 Formate (§6 Säule 3) -->
+<section class="ue-formate" id="formate" aria-labelledby="ue-formate">
+ <div class="huelle">
+  <div class="kicker">Formate</div>
+  <h2 id="ue-formate">Wie du mit Claudia arbeitest<span class="vor">Vorschlag</span></h2>
+  <div class="ue-karten">
+   <article class="ue-karte auf">
+    <span class="fuer">Einzeln</span>
+    <h3>Executive-Sparring 1:1</h3>
+    <p>Fokus-Sitzung oder 90-Tage-Mentoring: konzentrierte Arbeit an deinem Anlass, im Tempo deines Kalenders.</p>
+    <p class="mehr"><a class="leise" href="#sparring">Sparring ansehen</a></p>
+   </article>
+   <article class="ue-karte auf">
+    <span class="fuer">In der Gruppe</span>
+    <h3>Wirkungskraft-Programm</h3>
+    <p>Das Entwicklungsprogramm für Unternehmer und Experten: alle vier Schritte der Methode in fester Reihenfolge, gemeinsam mit anderen.</p>
+    <p class="platz">Laufzeit, Gruppengröße, Starttermine und Preis: bitte von dir.</p>
+    <p class="mehr"><a class="leise" href="entwicklungsprogramme.html">Programme kennenlernen</a></p>
+   </article>
+   <article class="ue-karte auf">
+    <span class="fuer">Vor dem großen Moment</span>
+    <h3>Intensivbegleitung</h3>
+    <p>Vor einer Keynote, einer Veränderung oder einem öffentlichen Auftritt.</p>
+    <p class="platz">Umfang und Ablauf: bitte von dir.</p>
+    <p class="mehr"><a class="leise" href="kontakt.html#experten">Anlass im Gespräch schildern</a></p>
+   </article>
+  </div>
+  <p class="ue-einstieg"><span>Zum Hineinschnuppern gibt es die 7-Tage-Wirkungskraft-Challenge (Start 26. Oktober). Sie ist ein Einstieg, kein eigenes Angebot.<span class="vor">Vorschlag</span></span><a class="leise" href="events.html">Termine ansehen</a></p>
+ </div>
+</section>
+
+<!-- 7b Wirkungsreise (§6: strategische Intensivbegleitung, nicht Wellness) -->
+<section class="ue-reise" aria-labelledby="ue-reise">
+ <div class="huelle" id="wirkungsreise">
+  <img class="auf" src="p/unternehmer-experten/reise-neu.webp" alt="Claudia Conen spricht im Garten vor einer Filmkamera auf einem Stativ" width="600" height="900" loading="lazy" style="object-position:55% 40%"><!-- Bildnachweis prüfen: Drehtag im Garten (Ordner „ClaudiaTrauredner“), Fotograf bestätigen -->
+  <div class="text auf">
+   <div class="kicker">Wirkungsreise</div>
+   <h2 id="ue-reise">Raus aus dem Alltag. Rein in die Entscheidung.<span class="vor">Vorschlag</span></h2>
+   <p>Die Wirkungsreise ist eine exklusive strategische Intensivbegleitung für Unternehmer und Führungspersönlichkeiten – außerhalb des Alltags.</p>
+   <p>Mit Abstand zum Tagesgeschäft arbeitest du an Positionierung, Botschaft und Auftritt, so konzentriert, wie es zwischen zwei Terminen nicht geht.<span class="vor">Vorschlag</span></p>
+   <p class="platz">Ort, Dauer, Termin, Teilnehmerkreis und Preis: bitte von dir. Offene Frage aus der Inventur: Wird die Spanien-Woche mit Gabi Lindemann zur Wirkungsreise, oder läuft sie getrennt?</p>
+  </div>
+ </div>
+</section>
+
+<!-- 7c Speaker-Ausbildung (aus „Rund ums Reden“ hierher, Claudia 11.10.2026) -->
+<section class="ue-reise" aria-labelledby="ue-speaker">
+ <div class="huelle" id="speaker">
+  <img class="auf" src="p/unternehmer-experten/pitch.webp" alt="Claudia Conen spricht lächelnd auf einer dunklen Bühne, mit Headset und offenen Händen" width="360" height="640" loading="lazy" style="object-position:50% 20%">
+  <div class="text auf">
+   <div class="kicker">Speaker-Ausbildung</div>
+   <h2 id="ue-speaker">Speakerin oder Speaker werden</h2>
+   <p>Du hast ein Fachgebiet. Was fehlt, ist das Thema, mit dem ein Veranstalter dich ankündigt – und eine Stimme, die einen Saal hält.</p>
+   <ul class="raute"><li>Vom Fachgebiet zum Thema</li><li>Die Keynote bauen</li><li>Auftritt und Aufnahme</li></ul>
+   <p><a class="leise" href="https://claudiaconen.com/speaker-ausbildung">Zur Speaker-Ausbildung</a></p>
+   <p class="platz">Dauer, Gruppengröße, Termine und Preis der Speaker-Ausbildung: bitte von dir.</p>
+  </div>
+ </div>
+</section>
+
+<!-- 8 Proof -->
+<section class="beweise" aria-labelledby="ue-stimmen">
+ <div class="huelle">
+  <div class="kicker">Ergebnisse</div>
+  <h2 id="ue-stimmen">Was Unternehmer und Experten sagen<span class="vor">Vorschlag</span></h2>
+  <div class="stimmen">
+   <figure class="stimme auf">
+    <div class="kopfzeile"><img src="p/unternehmer-experten/andreas.webp" alt="" width="160" height="160" loading="lazy"><div><b>Andreas Meyer</b><small>„Der Mann der sieben Türen“ · Coaching zur Markenentwicklung</small></div></div>
+    <blockquote>„… und auch meine Vision wie nochmal neu entdeckt.“</blockquote>
+    <span class="quelle">Quelle: wörtliche Abschrift aus seiner Videostimme, gekürzt</span>
+   </figure>
+   <figure class="stimme auf">
+    <div class="kopfzeile"><img src="p/unternehmer-experten/miniaci.webp" alt="" width="160" height="160" loading="lazy"><div><b>Melanie Miniaci</b><small>Gründerin von Miderma</small></div></div>
+    <blockquote>„Die Zusammenarbeit mit Claudia Conen hat mich unheimlich nach vorne gebracht – mir viel Zeit erspart und es war das Beste, was mir passieren konnte.“</blockquote>
+    <span class="quelle">Quelle: Videostimme auf claudiaconen.com</span>
+   </figure>
+   <figure class="stimme auf">
+    <div class="kopfzeile"><img src="p/unternehmer-experten/michael.webp" alt="" width="160" height="160" loading="lazy"><div><b>Michael Kleinert</b><small>Videocoach · Teilnehmer im Seminar</small></div></div>
+    <blockquote>„Worum geht es wirklich? Wie fühlen sich Kunden richtig angesprochen?“</blockquote>
+    <span class="quelle">Quelle: wörtliche Abschrift aus seiner Videostimme, gekürzt</span>
+   </figure>
+  </div>
+  <p class="platz" style="margin-top:24px">Andreas Meyer und Michael Kleinert stehen noch nicht auf claudiaconen.com: Nutzungsfreigabe für Name, Bild und Zitat bitte bestätigen (§19).</p>
+  <div class="mitte"><a class="leise" href="ergebnisse.html">Ergebnisse ansehen</a></div>
+ </div>
+</section>
+
+<!-- 9 Claudia-Bezug (freigegebener Text, Startseite) -->
+<section class="ue-person" aria-labelledby="ue-person">
+ <div class="huelle">
+  <img class="auf" src="p/unternehmer-experten/person.webp" alt="Claudia Conen lacht herzlich, eine Brille in der Hand" width="600" height="900" loading="lazy" style="object-position:50% 25%"><!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC09490), Fotografin und Nachweis vor Veröffentlichung bestätigen -->
+  <div class="text auf">
+   <div class="kicker">Warum Claudia</div>
+   <h2 id="ue-person">Eine klare Positionierung, große methodische Tiefe.<span class="vor">Vorschlag</span></h2>
+   <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter – bekannt als „Die Umsatzstimme“.</p>
+   <p>Seit 37 Jahren ist sie als Coach und Trainerin unterwegs. Was sie mit dir erarbeitet, hat sie selbst auf Bühnen, vor der Kamera und im Kundengespräch erprobt. Die Belege stehen oben: Stimmen von Menschen, die mit ihr gearbeitet haben.<span class="vor">Vorschlag</span></p>
+   <p>Denn KI kann berechnen, doch Persönlichkeit begeistert, fasziniert und berührt.</p>
+   <p><a class="leise" href="ueber-claudia.html">Mehr über Claudia</a></p>
+  </div>
+ </div>
+</section>
+
+<!-- 10 FAQ -->
+<section class="ue-faq" aria-labelledby="ue-faq">
+ <div class="huelle">
+  <div class="kicker">Häufige Fragen</div>
+  <h2 id="ue-faq">Bevor du anfragst</h2>
+  <p class="hinweis-klein">Antworten aus deinen bestehenden Seiten, in Du-Form und mit „Claudia“ statt „ich“.<span class="vor">Vorschlag</span></p>
+  <div class="liste">
+   <details><summary>Ist das auch für Privatpersonen?</summary><div><p>Nein. Die Angebote sind für geschäftlich tätige Menschen: Unternehmer, Selbstständige mit etabliertem Angebot, Berater, Coaches, Trainer, Speaker und Führungspersönlichkeiten. Private Lebensberatung gehört nicht dazu.</p></div></details>
+   <details><summary>Ist das Stimmtraining?</summary><div><p>Nein. Die Stimme ist der Zugang, die Persönlichkeit ist das Ergebnis. Über die Stimme wird erkennbar, wie jemand zu sich steht. Daran wird gearbeitet, nicht an Tonhöhe und Atemtechnik allein.</p></div></details>
+   <details><summary>Ich mache mehrere Dinge. Muss ich mich auf eines festlegen?</summary><div><p>Nicht auf ein Angebot, aber auf einen Satz. Du darfst weiter alles tun – nur die Tür, durch die jemand hereinkommt, sollte eine sein. Wer drinnen ist, entdeckt den Rest von allein.</p></div></details>
+   <details><summary>Bekomme ich einen fertigen Satz von Claudia?</summary><div><p>Nein, und das ist Absicht. Ein Satz, den Claudia dir schreibt, klingt nach ihr. Du merkst das beim Sprechen, und dein Gegenüber merkt es auch. Claudia stellt die Fragen, du formulierst, ihr schleift gemeinsam.</p></div></details>
+   <details><summary>Muss ich Privates erzählen?</summary><div><p>Nein. Du bestimmst die Grenze, und ihr legt sie ausdrücklich fest, bevor du anfängst. Eine gute Geschichte braucht Nähe, nicht Intimität.</p></div></details>
+   <details><summary>Was kostet die Zusammenarbeit?</summary><div><p class="platz">Preise bzw. Preisrahmen für Fokus-Sitzung, Mentoring, Programm und Wirkungsreise: bitte von dir. Bis dahin steht diese Frage nicht in den strukturierten Daten.</p></div></details>
+  </div>
+ </div>
+</section>
+
+<!-- 11 Ein primärer CTA -->
+<section class="schluss" id="kontakt">
+ <div class="huelle">
+  <div class="karte auf">
+   <div class="kicker" style="margin:0">Nächster Schritt</div>
+   <h2>Woran erkennt man dich, wenn dein Name nicht danebensteht?</h2>
+   <p>Im Kennenlerngespräch klärt ihr, wo du stehst und welches Format passt.<span class="vor">Vorschlag</span></p>
+   <a class="knopf" href="kontakt.html#experten">Gespräch vereinbaren</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="huelle">
+  <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
+  <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+ </div>
+</footer>
+
+<script src="site.js"></script>
+<script>
+(function(){
+ /* Videostimmen: erst auf Klick laden (preload none), dann mit Ton und Steuerung */
+ document.querySelectorAll('.ue-film').forEach(function(box){
+  var knopf=box.querySelector('.ue-play');
+  knopf.addEventListener('click',function(){
+   var bild=box.querySelector('img'),vid=document.createElement('video');
+   vid.src=box.dataset.film;vid.controls=true;vid.playsInline=true;vid.preload='none';vid.poster=bild.getAttribute('src');
+   vid.setAttribute('aria-label',knopf.getAttribute('aria-label').replace('Video abspielen: ',''));
+   bild.replaceWith(vid);knopf.remove();vid.play().catch(function(){});vid.focus();
+  });
+ });
+})();
+</script>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rund ums Reden – Akademie für freie Redner | Claudia Conen</title>
+<meta name="description" content="Rund ums Reden – die Akademie für freie Redner von Claudia Conen: Ausbildung und Fortbildung für freie Rednerinnen und Redner, dazu freie Trauungen, Trauerreden und private Lebensmomente. Getrennt vom Unternehmensangebot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Unterseiten-Grundlagen (nur in dieser Seite, style.css bleibt unberührt) */
+main [id]{scroll-margin-top:96px}
+.uk{padding-block:64px 72px;background:linear-gradient(180deg,var(--ivory),var(--champ) 170%)}
+.uk .huelle{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center}
+.uk h1{font:600 clamp(42px,5vw,68px)/1.04 'Cormorant Garamond',Georgia,serif;letter-spacing:-.005em}
+.uk .sub{font-size:19px;line-height:1.55;margin-top:22px;max-width:56ch}
+.uk .wege{display:flex;flex-wrap:wrap;gap:14px 22px;margin-top:30px;align-items:center}
+.uk .bild img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+@media(max-width:860px){.uk{padding-block:32px 56px}.uk .huelle{grid-template-columns:1fr;gap:28px}.uk .bild{order:-1}.uk .bild img{aspect-ratio:4/3;max-height:420px}}
+.einleitung{max-width:64ch;font-size:18px}
+.hellweiss{background:var(--weiss);border-block:1px solid var(--linie)}
+.fragen{display:grid;gap:12px;max-width:820px;margin-top:32px}
+.fragen details{background:var(--weiss);border:1px solid var(--linie);border-radius:8px;padding:18px 22px}
+.hellweiss .fragen details{background:var(--ivory)}
+.fragen summary{cursor:pointer;font-weight:600;font-size:17px}
+.fragen details p{margin-top:12px}
+.fragen details p+p{margin-top:10px}
+@media(max-width:600px){main .knopf{white-space:normal;text-align:center;line-height:1.3;padding-block:12px}}
+/* Eigene schlanke Navigation der Markenwelt (§12), nutzt die Menü-Grundlagen aus style.css */
+.rur .punkte>li>a:not(.knopf){display:block;padding:12px;border-radius:8px;text-decoration:none;white-space:nowrap}
+.rur .punkte>li>a:not(.knopf):hover{background:rgba(201,169,97,.16)}
+@media(max-width:1000px){.menue.mobil.rur .punkte>li>a:not(.knopf){padding:18px 4px;border-radius:0;border-bottom:1px solid var(--linie);font-size:17px}}
+.uk .bild img{object-position:42% 40%}
+/* Zwei Eingänge */
+.eingaenge{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:36px}
+.eingang{background:var(--weiss);border:1.5px solid rgba(201,169,97,.55);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .25s,border-color .25s}
+.eingang:hover{border-color:var(--gold);box-shadow:0 18px 40px -18px rgba(201,169,97,.6)}
+.eingang img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.eingang .innen{padding:28px 32px 32px;display:flex;flex-direction:column;gap:14px;flex:1}
+.eingang .wer{font:700 11.5px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.eingang h3{font:600 36px/1.08 'Cormorant Garamond',Georgia,serif}
+.eingang .anlaesse{font-weight:600}
+.eingang .knopf{align-self:flex-start;margin-top:auto}
+@media(max-width:860px){.eingaenge{grid-template-columns:1fr}.eingang .innen{padding:24px 20px 26px}}
+/* Haltung und Audio */
+.haltung .huelle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.haltung .player{grid-column:1/-1;margin-top:8px}
+@media(max-width:860px){.haltung .huelle{grid-template-columns:1fr;gap:32px}}
+/* Anlässe */
+.anlass-karten{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px}
+.anlass{background:var(--weiss);border:1px solid var(--linie);border-radius:8px;padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.anlass .zeile{font:700 11.5px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.anlass h3{font:600 30px/1.1 'Cormorant Garamond',Georgia,serif}
+.anlass .leise{margin-top:auto;padding-top:8px;align-self:flex-start}
+@media(max-width:940px){.anlass-karten{grid-template-columns:1fr}}
+.ablauf{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:48px;margin-top:56px;align-items:start}
+.schritte{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s}
+.schritte li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;counter-increment:s}
+.schritte li::before{content:"0" counter(s);font:600 40px/1 'Cormorant Garamond',Georgia,serif}
+.schritte b{display:block;font-size:17px;margin-bottom:4px}
+.erhalt{background:var(--weiss);border:1px solid var(--linie);border-radius:8px;padding:26px}
+.erhalt h3{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.erhalt .raute{font-size:15.5px}
+.erhalt .platz{margin-top:16px}
+@media(max-width:900px){.ablauf{grid-template-columns:1fr;gap:32px}}
+/* Redner werden (der eine dunkle Abschnitt) */
+.dunkel .einleitung a{color:var(--sand)}
+.wege4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:40px}
+.wege4 .feld .zeile{font:700 11px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.wege4 .feld h3{font:600 28px/1.1 'Cormorant Garamond',Georgia,serif;text-transform:none;letter-spacing:0;color:var(--ivory)}
+.wege4 .feld ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}
+.wege4 .feld li{padding-left:16px;position:relative}
+.wege4 .feld li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;background:var(--sand);transform:rotate(45deg)}
+.wege4 .feld .leise{margin-top:auto;padding-top:8px;align-self:flex-start;color:var(--ivory)}
+@media(max-width:1000px){.wege4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.wege4{grid-template-columns:1fr}}
+.ki-werkzeug{margin-top:40px;max-width:72ch;padding-left:22px;border-left:2px solid var(--sand)}
+.dunkel .format-hinweis{margin-top:22px;max-width:72ch}
+.dunkel .platz{background:transparent;color:var(--sand);border-color:var(--sand)}
+/* Claudia-Bezug */
+.bezug .huelle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.bezug .text{display:grid;gap:16px}
+@media(max-width:860px){.bezug .huelle{grid-template-columns:1fr;gap:28px}}
+.artikel-liste{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;max-width:980px}
+.artikel-liste li{padding:16px 0;border-bottom:1px solid var(--linie)}
+.artikel-liste a{font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:5px}
+@media(max-width:760px){.artikel-liste{grid-template-columns:1fr}}
+/* Ergänzungen 11.10.2026: Touchflächen §34, Fließtext ≥16 px §25 */
+main .leise{display:inline-flex;align-items:center;min-height:44px}
+.erhalt .raute,.wege4 .feld ul,.klein16{font-size:16px}
+.rueckweg{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center;margin:0 0 14px;font-size:16px}
+.einordnung{max-width:72ch;font-size:16px;margin-top:18px;padding-left:18px;border-left:2px solid var(--gold)}
+</style>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="hinweis"><b>Private Vorschau, nicht online.</b> Seite Rund ums Reden nach deinem Masterhandbuch (§6.3: eigener Akademiebereich, getrennt von der B2B-Hauptwebsite). Rot gestrichelt = Vorschlag von Vinci oder fehlende Angabe von dir.</div>
+
+
+<!-- Eigene schlanke Navigation (§12): kein B2B-Mega-Menü. id="menue", .punkte und .burger bleiben, weil site.js sie erwartet. -->
+<header class="menue rur" id="menue">
+ <div class="huelle">
+  <a class="marke" href="index.html" aria-label="Claudia Conen – zur Startseite"><img src="i/logo.webp" alt="" width="48" height="48"><span><b>Claudia Conen</b><span>Rund ums Reden</span></span></a>
+  <ul class="punkte" id="punkte" aria-label="Menü Rund ums Reden">
+   <li><a href="#buchen">Rednerin buchen</a></li>
+   <li><a href="#redner-werden">Redner werden</a></li>
+   <li><a href="#wissen">Wissen</a></li>
+   <li class="mobil-knopf"><a class="knopf" href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <a class="knopf" href="kontakt.html">Kontakt</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="punkte">Menü</button>
+ </div>
+</header>
+
+<main id="main">
+<!-- 1 Hero -->
+<section class="uk" aria-labelledby="h1">
+ <div class="huelle">
+  <div>
+   <p class="rueckweg"><a class="leise" href="index.html">Zur Hauptseite für Unternehmen</a></p>
+   <div class="eyebrow">Rund ums Reden · Akademie für freie Redner</div>
+   <p style="margin:-10px 0 18px"><span class="vor" style="margin-left:0">Name der Akademie bestätigen</span></p>
+   <h1 id="h1">Die Stimme fürs Herz</h1>
+   <p class="sub">Das Leben in gelebten Worten.</p>
+   <p class="sub" style="margin-top:12px">Ausbildung und Fortbildungen für alle, die als freie Rednerin oder freier Redner sprechen wollen. Und für private Anlässe: freie Trauung, Trauerfeier und Lebensmomente mit Claudia Conen.<span class="vor">Vorschlag</span></p>
+   <div class="wege">
+    <a class="knopf" href="kontakt.html">Gespräch vereinbaren</a>
+    <a class="leise" href="#redner-werden">Ausbildungswege ansehen</a>
+   </div>
+   <p class="einordnung">Rund ums Reden ist ein eigener Bereich, getrennt von Claudias Arbeit mit Unternehmen. Für Anlässe in deinem Unternehmen gibt es <a class="leise" href="keynotes.html">Claudia buchen</a>.<span class="vor">Vorschlag</span></p>
+  </div>
+  <div class="bild"><img src="p/rund-ums-reden/hero.webp" alt="Claudia Conen im hellen Kleid auf einer Wiese, dahinter die Buchstaben LOVE und Seifenblasen" width="900" height="600"></div>
+ </div>
+</section>
+
+<!-- 2 Zwei klare Eingänge (§12) -->
+<section id="eingaenge" aria-labelledby="eingaenge-titel">
+ <div class="huelle">
+  <div class="kicker">Zwei Wege</div>
+  <h2 id="eingaenge-titel">Zwei Wege – wähl deinen</h2>
+  <div class="eingaenge">
+   <article class="eingang auf">
+    <img src="p/rund-ums-reden/buchen-neu.webp" alt="Claudia Conen sitzt lächelnd im hellen Hosenanzug vor einer alten Natursteinmauer" width="585" height="900" loading="lazy" style="object-position:50% 30%">
+    <!-- Bildnachweis prüfen: Fotos von Monika Gharbi, Original DSC03863-Edit.jpg -->
+    <div class="innen">
+     <span class="wer">Ich suche eine Rednerin</span>
+     <h3>Claudia als Rednerin buchen</h3>
+     <p class="anlaesse">Freie Trauung, Trauerfeier, private Lebensmomente.</p>
+     <p>Du buchst mich, und ich lerne die Menschen kennen, bevor ich über sie spreche.</p>
+     <a class="knopf zweit" href="#buchen">Anlässe ansehen</a>
+    </div>
+   </article>
+   <article class="eingang auf">
+    <img src="p/rund-ums-reden/redner-werden-neu.webp" alt="Claudia Conen steht in einem Seminarraum vor der Leinwand, die Teilnehmenden sitzen an Tischen mit Laptops" width="900" height="675" loading="lazy" style="object-position:62% 45%">
+    <div class="innen">
+     <span class="wer">Ich möchte selbst sprechen</span>
+     <h3>Redner werden</h3>
+     <p class="anlaesse">Freie Rednerin, Trauredner, Trauerrednerin – Ausbildung und Fortbildung.</p>
+     <p>Drei Ausbildungswege und Fortbildungen für alle, die schon sprechen.<span class="vor">Vorschlag</span></p>
+     <a class="knopf zweit" href="#redner-werden">Ausbildungswege ansehen</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- 3 Relevanz und Haltung, mit Audio (§17: „was eine Rede für Claudia tragen muss“) – Glas 2 von 3 -->
+<section class="warum haltung" aria-labelledby="haltung-titel">
+ <div class="huelle">
+  <div>
+   <div class="kicker">Was eine Rede trägt</div>
+   <h2 id="haltung-titel" class="gross-zitat" style="margin:0">Die Bühne ist da, wo jemand den Mund aufmacht.</h2>
+  </div>
+  <div class="saetze">
+   <p>Das ist mal ein Saal mit dreihundert Gästen und mal ein Raum mit elf Menschen, die geweint haben.</p>
+   <p>Eine Trauerrede ist keine Rede über einen Verstorbenen. Sie ist das, was von ihm bleibt, gesagt vor den Menschen, die ihn gekannt haben.</p>
+   <p>Eine freie Trauung ist kein Programmpunkt zwischen Sekt und Fotos. Sie ist der Moment, an den sich alle erinnern, auch in zwanzig Jahren.</p>
+  </div>
+  <div class="player glas" role="group" aria-label="Audio: Was eine Rede für Claudia tragen muss">
+   <button class="spiel" type="button" disabled aria-label="Abspielen – Aufnahme folgt">▶</button>
+   <div>
+    <b>Was eine Rede für Claudia tragen muss</b>
+    <span class="meta">Claudia spricht · Dauer folgt · startet nur auf Klick</span>
+    <div class="balken" aria-hidden="true"><span></span></div>
+   </div>
+   <details>
+    <summary>Transkript lesen</summary>
+    <p class="platz">Text und Aufnahme fehlen noch: aus deiner PDF „Audio-Skripte und Platzierungen“ (Platzierung „Rund ums Reden“).</p>
+   </details>
+  </div>
+ </div>
+</section>
+
+<!-- 4 Eingang 1: Rednerin buchen (Ausgangslage, Ergebnisbild, Methode, Format) -->
+<section id="buchen" aria-labelledby="buchen-titel">
+ <div class="huelle">
+  <div class="kicker">Claudia als Rednerin buchen</div>
+  <h2 id="buchen-titel">Für die Momente, in denen Worte zählen<span class="vor">Vorschlag</span></h2>
+  <div class="anlass-karten">
+   <article class="anlass">
+    <span class="zeile">Wenn die Worte fehlen</span>
+    <h3>Trauerfeier</h3>
+    <p>Ich berühre mit persönlichen Lebensgeschichten. Angehörige sollen lebendige Momente im Herzen spüren — so, wie der Mensch wirklich war. Nicht wie ein Lebenslauf klingt.</p>
+    <a class="leise" href="https://claudiaconen.com/trauerrede">Zur Trauerrede</a>
+   </article>
+   <article class="anlass">
+    <span class="zeile">Wenn zwei Menschen Ja sagen</span>
+    <h3>Freie Trauung</h3>
+    <p>Eine Zeremonie, die nur zu euch passt. Aus eurer Geschichte geschrieben, vorab zum Lesen und Ändern, und am Tag selbst getragen von einer Stimme, die auch in der letzten Reihe ankommt.</p>
+    <a class="leise" href="https://claudiaconen.com/freie-trauung">Zur freien Trauung</a>
+   </article>
+   <article class="anlass">
+    <span class="zeile">Willkommensfest und private Feste</span>
+    <h3>Private Lebensmomente</h3>
+    <p>Überall, wo jemand vor Menschen steht und es ernst meint: die Begrüßung eines Kindes, ein Fest im Kreis der Familie. Erzähl mir den Anlass, dann sage ich dir, ob ich die Richtige bin.</p>
+    <a class="leise" href="https://claudiaconen.com/freie-rednerin">Alle Anlässe ansehen</a>
+   </article>
+  </div>
+
+  <p class="klein16" style="margin-top:22px">Ein Anlass in deinem Unternehmen? Dafür gibt es eigene Seiten: <a class="leise" href="unternehmensreden.html">Reden für besondere Unternehmensmomente</a> und <a class="leise" href="moderation.html">Business- und Eventmoderation</a>.</p>
+
+  <div class="ablauf">
+   <div>
+    <h3 style="font:600 32px/1.12 'Cormorant Garamond',Georgia,serif;margin-bottom:22px">So entsteht deine Rede</h3>
+    <ol class="schritte">
+     <li><div><b>Das Gespräch</b>Du erzählst. Ich frage nach. Es gibt kein Formular und keine Liste, die abgearbeitet wird. Oft sind es die kleinen Geschichten, die später im Raum tragen.</div></li>
+     <li><div><b>Die Rede entsteht</b>Du bekommst den Text vorab. Was nicht stimmt, wird geändert. Was zu privat ist, bleibt draußen. Du entscheidest, nicht ich.</div></li>
+     <li><div><b>Der Tag selbst</b>Ich bin vorher da, spreche mit dem Bestattungshaus oder der Location und mit der Technik. Du musst dich um nichts kümmern.</div></li>
+    </ol>
+   </div>
+   <div class="erhalt">
+    <h3>Was du bekommst</h3>
+    <ul class="raute">
+     <li>Ein persönliches Gespräch, telefonisch, online oder bei dir</li>
+     <li>Die geschriebene Rede, vorab zum Lesen, mit der Möglichkeit zu ändern</li>
+     <li>Abstimmung mit Bestattungshaus oder Location, Musik und Technik</li>
+     <li>Die Rede als gedrucktes Exemplar, wenn du es möchtest</li>
+    </ul>
+    <p class="platz">Honorar: auf deinen heutigen Seiten „im Gespräch“ bzw. „auf Anfrage“. Hier bewusst ohne Preis und ohne Marktspannen: bitte von dir entscheiden.</p>
+   </div>
+  </div>
+  <p class="klein16" style="margin-top:22px">Texte dieses Abschnitts aus deinen Seiten Freie Rednerin, Trauerrede und Freie Trauung, von „Sie“ auf „du“ umgestellt und zusammengeführt.<span class="vor">Vorschlag</span></p>
+ </div>
+</section>
+
+<!-- 5 Eingang 2: Redner werden (der eine dunkle Abschnitt) -->
+<section class="dunkel" id="redner-werden" aria-labelledby="werden-titel">
+ <div class="huelle">
+  <div class="kicker">Redner werden</div>
+  <h2 id="werden-titel">Redner werden und dich fortbilden</h2>
+  <p class="einleitung">Der Beruf lässt sich lernen. Was sich nicht lernen lässt, ist der Wunsch, für andere Menschen die richtigen Worte zu finden. Den bringst du mit.</p>
+  <p class="einleitung" style="margin-top:12px">Du willst erst einmal hineinschnuppern? Dann ist der <a class="leise" href="https://claudiaconen.com/redner-ausbildungen">Workshop an einem Tag</a> der kleinere Anfang. Die Ausbildungen hier darunter sind der ganze Weg.</p>
+  <div class="wege4">
+   <div class="feld auf">
+    <span class="zeile">Der ganze Weg</span>
+    <h3>Freie Rednerin werden</h3>
+    <p>Für alle, die vor Menschen sprechen wollen, wenn es zählt — bei Hochzeiten, Abschieden, Festen. Handwerk, Stimme und Haltung in einem Durchgang.</p>
+    <ul><li>Stimme und Wirkung</li><li>Aus einem Leben eine Rede machen</li><li>Der Auftritt selbst</li></ul>
+    <a class="leise" href="https://claudiaconen.com/freie-redner-ausbildung">Zur Ausbildung freie Redner</a>
+   </div>
+   <div class="feld auf">
+    <span class="zeile">Trauredner · bewegend, ohne kitschig zu werden</span>
+    <h3>Hochzeitsrednerin werden</h3>
+    <p>Die häufigste Bitte von Paaren ist: bewegend, aber bitte nicht rührselig. Genau da liegt das Handwerk, und genau das steht im Mittelpunkt.</p>
+    <ul><li>Das Paargespräch, das alles trägt</li><li>Zeremonie und Ritual aufbauen</li><li>Der Tag selbst, mit Technik und Wetter</li></ul>
+    <a class="leise" href="https://claudiaconen.com/hochzeitsredner-ausbildung">Zur Ausbildung Trauredner</a>
+   </div>
+   <div class="feld auf">
+    <span class="zeile">Der schwerste und der schönste Teil</span>
+    <h3>Trauerrednerin werden</h3>
+    <p>Wer Abschiede begleitet, braucht zwei Dinge: das Handwerk und einen Umgang mit dem, was die Arbeit mit einem selbst macht. Beides ist lernbar.</p>
+    <ul><li>Das Gespräch mit Angehörigen führen</li><li>Ein Leben in Worte fassen</li><li>Nähe halten, ohne zu zerbrechen</li></ul>
+    <a class="leise" href="https://claudiaconen.com/trauerredner-ausbildung">Zur Ausbildung Trauerredner</a>
+   </div>
+   <div class="feld auf" id="fortbildung">
+    <span class="zeile">Für alle, die schon reden</span>
+    <h3>Fortbildungen für freie Redner</h3>
+    <p>Für freie Rednerinnen und Redner, die schon vor Menschen stehen und ihr Handwerk vertiefen wollen: Zuhören, sprechbare Texte, Stimme und Präsenz.<span class="vor">Vorschlag</span></p>
+    <p class="platz">Themen, Termine, Format und Preis der Fortbildungen: bitte von dir. Auf deiner bisherigen Website gibt es dazu noch keine Seite.</p>
+   </div>
+  </div>
+  <p class="ki-werkzeug">KI darf hier als Werkzeug vorkommen: für Recherche, Struktur, Varianten oder Reflexion. Der Kern bleibt Zuhören, Lebensgeschichten verstehen, verantwortungsvoll formulieren, sprechbare Texte entwickeln und mit echter Präsenz vor Menschen stehen.<span class="vor">Vorschlag</span></p>
+  <p class="format-hinweis">Live-Workshop in Köln oder in Witten in kleiner Gruppe, oder 1:1 in Witten.</p>
+  <p class="platz" style="margin-top:14px;max-width:72ch">Gruppengröße, Dauer, Termine und Preise je Ausbildung: bitte von dir. Heute steht auf deinen Seiten einmal „höchstens zwölf“ (Workshop), einmal „6:1“ (Ausbildungen).</p>
+ </div>
+</section>
+
+<!-- 7 Proof + 8 Claudia-Bezug -->
+<section class="bezug" aria-labelledby="bezug-titel">
+ <div class="huelle">
+  <div>
+   <div class="kicker">Warum Claudia</div>
+   <h2 id="bezug-titel" class="gross-zitat" style="margin:0">Ich unterrichte nichts, was ich nicht selbst am Wochenende davor gemacht habe.</h2>
+  </div>
+  <div class="text">
+   <p>Claudia Conen spricht selbst bei Trauerfeiern, freien Trauungen und privaten Lebensmomenten, und sie bildet aus. Was du bei ihr bekommst, ist Arbeit an Stimme, Wirkung und Handwerk aus 37 Jahren als Coach und Trainerin.</p>
+   <p>Sie lebt in Witten und spricht im Ruhrgebiet. Weitere Wege sind nach Absprache möglich.</p>
+   <p class="platz">Stimmen von Familien, Paaren und Ausbildungsteilnehmenden, mit Quelle und Freigabe: bitte von dir. Auf deinen heutigen Seiten gibt es dazu noch keine.</p>
+  </div>
+ </div>
+</section>
+
+<!-- Wissen (Fachartikel, §12 „gegebenenfalls in der Wissensbibliothek“) -->
+<section class="hellweiss" id="wissen" aria-labelledby="wissen-titel">
+ <div class="huelle">
+  <div class="kicker">Wissen</div>
+  <h2 id="wissen-titel">Zum Nachlesen</h2>
+  <ul class="artikel-liste">
+   <li><a href="https://claudiaconen.com/wissen/trauerrede-schreiben">Wie schreibe ich eine Trauerrede?</a></li>
+   <li><a href="https://claudiaconen.com/wissen/freie-trauung-ablauf">Wie läuft eine freie Trauung ab?</a></li>
+  </ul>
+  <p style="margin-top:20px"><a class="leise" href="wissen.html">Alle Artikel ansehen</a></p>
+ </div>
+</section>
+
+<!-- 9 FAQ -->
+<section aria-labelledby="faq-titel">
+ <div class="huelle">
+  <div class="kicker">Häufige Fragen</div>
+  <h2 id="faq-titel">Fragen, die beide Seiten betreffen</h2>
+  <p class="klein16">Antworten aus deinen heutigen Seiten, von „Sie“ auf „du“ umgestellt; Marktpreise weggelassen.<span class="vor">Vorschlag</span></p>
+  <div class="fragen">
+   <details>
+    <summary>Du bist Rednerin und bildest gleichzeitig aus. Ist das kein Widerspruch?</summary>
+    <p>Nein, es ist die Voraussetzung. Ich unterrichte nichts, was ich nicht selbst am Wochenende davor gemacht habe. Wer nur noch unterrichtet, verliert nach zwei Jahren den Kontakt zu dem, was im Raum wirklich passiert.</p>
+   </details>
+   <details>
+    <summary>Ich suche eine Rednerin und will mit der Ausbildung nichts zu tun haben.</summary>
+    <p>Dann bleib bei „Claudia als Rednerin buchen“. Von dort kommst du direkt zu deinem Anlass, und die Ausbildung kommt dort nicht vor.</p>
+   </details>
+   <details>
+    <summary>Wie kurzfristig geht eine Trauerrede?</summary>
+    <p>Oft innerhalb weniger Tage. Ruf an, auch wenn es sehr schnell gehen muss. Wenn ich es nicht schaffe, sage ich es dir sofort und nenne dir jemanden aus meinem Netzwerk.</p>
+   </details>
+   <details>
+    <summary>Muss die Rede religiös sein?</summary>
+    <p>Nein. Sie kann ganz ohne Konfession sein, sie kann Gebete und Segen enthalten, und sie kann beides verbinden. Es ist deine Entscheidung, und sie wird nicht hinterfragt.</p>
+   </details>
+   <details>
+    <summary>Gibt es bei dir ein IHK-Zertifikat?</summary>
+    <p>Nein. Mehrere Anbieter im Markt vergeben eines, ich nicht. Was du bei mir bekommst, ist Arbeit an Stimme, Wirkung und Handwerk aus 37 Jahren als Coach und Trainerin. Wenn ein Zertifikat für dich entscheidend ist, sag es im Gespräch — dann nenne ich dir die Anbieter, die eines ausstellen.</p>
+   </details>
+   <details>
+    <summary>Was kostet die Ausbildung?</summary>
+    <p>Das bespreche ich im Vorgespräch, weil es von Umfang und Format abhängt.</p>
+   </details>
+   <details>
+    <summary>Kann ich das nebenberuflich machen?</summary>
+    <p>Ja, und die meisten tun es am Anfang. Trauerfeiern liegen werktags, Trauungen am Wochenende. Wer beides anbietet, kommt schneller auf eine tragfähige Anzahl von Aufträgen als wer sich auf einen Anlass beschränkt.</p>
+   </details>
+  </div>
+ </div>
+</section>
+
+<!-- 10 ein primärer CTA -->
+<section class="schluss" id="anfrage">
+ <div class="huelle">
+  <div class="karte">
+   <div class="kicker" style="margin:0">Dein Anlass</div>
+   <h2>Erzähl mir von deinem Anlass.</h2>
+   <p>Du musst dir nichts überlegen und nichts vorbereiten. Eine kurze Nachricht genügt, und wir klären, ob es passt. Das gilt auch für ein Vorgespräch zur Ausbildung.<span class="vor">Vorschlag</span></p>
+   <a class="knopf" href="kontakt.html">Gespräch vereinbaren</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="huelle">
+  <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
+  <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+ </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Person","name":"Claudia Conen","alternateName":"Die Umsatzstimme","description":"Expertin für menschliche Wirkungskraft im KI-Zeitalter. Rund ums Reden ist ihr eigener Akademiebereich für freie Redner.","url":"https://claudiaconen.com","knowsAbout":["Trauerrede","Freie Trauung","Rednerausbildung","Stimme","Rhetorik"]},
+ {"@type":"Service","name":"Rund ums Reden – Akademie für freie Redner","serviceType":"Ausbildung und Fortbildung für freie Redner sowie private Reden","areaServed":{"@type":"Country","name":"Deutschland"},"provider":{"@type":"Person","name":"Claudia Conen"}},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Du bist Rednerin und bildest gleichzeitig aus. Ist das kein Widerspruch?","acceptedAnswer":{"@type":"Answer","text":"Nein, es ist die Voraussetzung. Ich unterrichte nichts, was ich nicht selbst am Wochenende davor gemacht habe. Wer nur noch unterrichtet, verliert nach zwei Jahren den Kontakt zu dem, was im Raum wirklich passiert."}},
+  {"@type":"Question","name":"Ich suche eine Rednerin und will mit der Ausbildung nichts zu tun haben.","acceptedAnswer":{"@type":"Answer","text":"Dann bleib bei „Claudia als Rednerin buchen“. Von dort kommst du direkt zu deinem Anlass, und die Ausbildung kommt dort nicht vor."}},
+  {"@type":"Question","name":"Wie kurzfristig geht eine Trauerrede?","acceptedAnswer":{"@type":"Answer","text":"Oft innerhalb weniger Tage. Ruf an, auch wenn es sehr schnell gehen muss. Wenn ich es nicht schaffe, sage ich es dir sofort und nenne dir jemanden aus meinem Netzwerk."}},
+  {"@type":"Question","name":"Muss die Rede religiös sein?","acceptedAnswer":{"@type":"Answer","text":"Nein. Sie kann ganz ohne Konfession sein, sie kann Gebete und Segen enthalten, und sie kann beides verbinden. Es ist deine Entscheidung, und sie wird nicht hinterfragt."}},
+  {"@type":"Question","name":"Gibt es bei dir ein IHK-Zertifikat?","acceptedAnswer":{"@type":"Answer","text":"Nein. Mehrere Anbieter im Markt vergeben eines, ich nicht. Was du bei mir bekommst, ist Arbeit an Stimme, Wirkung und Handwerk aus 37 Jahren als Coach und Trainerin. Wenn ein Zertifikat für dich entscheidend ist, sag es im Gespräch — dann nenne ich dir die Anbieter, die eines ausstellen."}},
+  {"@type":"Question","name":"Was kostet die Ausbildung?","acceptedAnswer":{"@type":"Answer","text":"Das bespreche ich im Vorgespräch, weil es von Umfang und Format abhängt."}},
+  {"@type":"Question","name":"Kann ich das nebenberuflich machen?","acceptedAnswer":{"@type":"Answer","text":"Ja, und die meisten tun es am Anfang. Trauerfeiern liegen werktags, Trauungen am Wochenende. Wer beides anbietet, kommt schneller auf eine tragfähige Anzahl von Aufträgen als wer sich auf einen Anlass beschränkt."}}
+ ]}
+]}
+</script>
+
+
+<script src="site.js"></script>
+

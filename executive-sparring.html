@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Executive-Sparring: vertrauliches Sparring vor wichtigen Auftritten | Claudia Conen – Die Umsatzstimme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Workshops, Programme, Sparring – nur vorhandene Tokens */
+main .knopf{max-width:100%}
+@media(max-width:600px){main .knopf{white-space:normal;text-align:center;padding-block:12px;line-height:1.3}}
+main .leise{display:inline-flex;align-items:center;min-height:44px}
+main .platz{font-size:16px;line-height:1.5}
+main .platz+.platz{margin-top:10px}
+.pfad{padding-block:18px 0;font-size:16px}
+.pfad ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.pfad li+li::before{content:"/";margin-right:10px}
+.pfad a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.skopf{padding-block:48px 80px;background:linear-gradient(180deg,var(--ivory),var(--champ) 170%)}
+.skopf .huelle{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+.skopf h1{font:600 clamp(42px,5vw,70px)/1.04 'Cormorant Garamond',Georgia,serif}
+.skopf .sub{font-size:19px;line-height:1.55;margin-top:22px;max-width:56ch}
+.skopf .fuer{margin-top:18px;font-size:16px;font-weight:600}
+.handlung{display:flex;flex-wrap:wrap;gap:14px 24px;margin-top:30px;align-items:center}
+.skopf figure{margin:0}
+.skopf figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+@media(max-width:900px){.skopf .huelle{grid-template-columns:1fr;gap:30px}.skopf{padding-block:28px 56px}}
+.einleitung{max-width:64ch;font-size:18px}
+.text-spalte{display:grid;gap:16px;max-width:66ch}
+.zweispaltig{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 48px;margin-top:28px}
+@media(max-width:760px){.zweispaltig{grid-template-columns:1fr}}
+.hell{background:var(--weiss);border-block:1px solid var(--linie)}
+.satz{font:500 italic 26px/1.3 'Cormorant Garamond',Georgia,serif;border-left:2px solid var(--gold);padding-left:18px;max-width:40ch}
+.satz small{display:block;font:600 14px/1.4 'Inter',sans-serif;font-style:normal;margin-top:6px}
+/* Kette Thema → Format → Werkzeuge → Wirkung */
+.kette{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:36px;border:1px solid var(--linie);border-radius:8px;background:var(--weiss);overflow:hidden}
+.kette div{padding:22px 22px 24px;display:grid;gap:6px;align-content:start;position:relative}
+.kette div+div{border-left:1px solid var(--linie)}
+.kette small{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.kette b{font:600 23px/1.2 'Cormorant Garamond',Georgia,serif}
+.kette div:last-child{border-top:3px solid var(--gold)}
+@media(max-width:860px){.kette{grid-template-columns:1fr 1fr}.kette div:nth-child(3){border-left:0}.kette div:nth-child(n+3){border-top:1px solid var(--linie)}.kette div:last-child{border-top:3px solid var(--gold)}}
+@media(max-width:480px){.kette{grid-template-columns:1fr}.kette div+div{border-left:0;border-top:1px solid var(--linie)}}
+/* Karten der Schwerpunkte / Varianten */
+.karten3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px;align-items:stretch}
+@media(max-width:980px){.karten3{grid-template-columns:1fr;max-width:640px}}
+.karte-w{background:var(--weiss);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.karte-w img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.karte-w .innen{padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.karte-w .ziel{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.karte-w h3{font:600 28px/1.12 'Cormorant Garamond',Georgia,serif}
+.karte-w .enthaelt{font-size:16px;border-top:1px solid var(--linie);padding-top:12px}
+.karte-w .leise{margin-top:auto}
+/* Fakten (Pflichtfelder) */
+.pflicht{display:grid;grid-template-columns:190px minmax(0,1fr);gap:14px 22px;margin:28px 0 0;max-width:900px}
+.pflicht dt{font:700 12px/1.5 'Inter',sans-serif;letter-spacing:.12em;text-transform:uppercase;padding-top:4px}
+.pflicht dd{margin:0;font-size:17px}
+.pflicht dd .platz{margin-top:8px}
+@media(max-width:560px){.pflicht{grid-template-columns:1fr;gap:2px}.pflicht dd{margin-bottom:14px}}
+/* Ablauf */
+.schritte{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:0;max-width:900px;counter-reset:s}
+.schritte li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:4px 20px;padding:20px 0;border-top:1px solid var(--linie);counter-increment:s}
+.schritte li::before{content:counter(s,decimal-leading-zero);font:600 40px/1 'Cormorant Garamond',Georgia,serif;grid-row:span 2}
+.schritte b{font-size:17px}
+.schritte p{font-size:17px}
+/* Zweispalter Text + Bild */
+.bild-text .huelle{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}
+.bild-text figure{margin:0}
+.bild-text figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+@media(max-width:860px){.bild-text .huelle{grid-template-columns:1fr;gap:28px}}
+/* Klappkacheln */
+.klapp{border:1px solid var(--linie);border-radius:8px;background:var(--weiss)}
+.klapp>summary{cursor:pointer;padding:16px 20px;min-height:44px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.klapp>summary::-webkit-details-marker{display:none}
+.klapp>summary::after{content:"+";font:600 22px/1 'Inter',sans-serif;flex:none}
+.klapp[open]>summary::after{content:"–"}
+.klapp .inhalt{padding:0 20px 20px;display:grid;gap:12px}
+.fragen{display:grid;gap:12px;margin-top:32px;max-width:860px}
+/* Stimmen ohne Foto */
+.zitate{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:32px}
+@media(max-width:860px){.zitate{grid-template-columns:1fr}}
+.zitat{margin:0;background:var(--ivory);border:1px solid var(--linie);border-left:3px solid var(--gold);border-radius:8px;padding:24px 26px;display:flex;flex-direction:column;gap:12px}
+.zitat blockquote{margin:0;font:500 italic 23px/1.32 'Cormorant Garamond',Georgia,serif}
+.zitat figcaption{font-size:16px}
+.zitat figcaption b{display:block}
+.zitat .quelle{font-size:14px;font-weight:600;padding-top:10px;border-top:1px solid var(--linie);margin-top:auto}
+/* Dunkler Abschnitt: Werkzeuge */
+.dunkel .einleitung{color:var(--ivory)}
+.felder.drei{grid-template-columns:repeat(4,minmax(0,1fr))}
+.feld p{font-size:16px}
+@media(max-width:980px){.felder,.felder.drei{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.felder,.felder.drei{grid-template-columns:1fr}}
+.unter{margin-top:30px}
+/* Nicht passend */
+.nicht li::before{background:transparent;border:1.5px solid var(--rot)}
+/* Claudia-Bezug */
+.claudia .huelle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.claudia .text{display:grid;gap:16px;max-width:62ch}
+.claudia blockquote{margin:0;padding:30px 32px;background:var(--weiss);border:1.5px solid var(--gold);border-radius:8px;display:grid;gap:14px}
+.claudia blockquote p{font:500 italic 24px/1.35 'Cormorant Garamond',Georgia,serif}
+.claudia blockquote footer{background:none;color:var(--ink);padding:0;font-size:15px;font-weight:600}
+@media(max-width:860px){.claudia .huelle{grid-template-columns:1fr;gap:28px}}
+.weiter{display:flex;flex-wrap:wrap;gap:4px 28px;margin-top:8px}
+section.knapp{padding-block:72px}
+@media(max-width:600px){section{padding-block:64px}section.knapp{padding-block:52px}}
+
+</style>
+<meta name="description" content="Vertrauliches Premium-Sparring für Geschäftsführung, Vorstände und Führungskräfte: vor wichtigen Präsentationen, Bühnen-, Kamera- und Medienauftritten oder Veränderungsbotschaften. 1:1 online, als Intensivtag oder Retreat.">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "name": "Executive-Sparring",
+   "serviceType": "Vertrauliches 1:1-Sparring für Führung, Kommunikation und Auftritt",
+   "description": "Individuelle Begleitung von Geschäftsführern, Vorständen, Führungskräften und sichtbaren Unternehmenspersönlichkeiten vor wichtigen Auftritten und Veränderungen – 1:1 online, als Intensivtag vor Ort oder als Executive Retreat.",
+   "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Geschäftsführung, Vorstände, Führungskräfte, Unternehmenssprecher, sichtbare Experten"
+   },
+   "@type": "Service",
+   "provider": {
+    "@type": "Person",
+    "name": "Claudia Conen",
+    "alternateName": "Die Umsatzstimme",
+    "jobTitle": "Expertin für menschliche Wirkungskraft im KI-Zeitalter"
+   },
+   "areaServed": "DE",
+   "inLanguage": "de"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Startseite",
+     "item": "index.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Entwicklungsprogramme",
+     "item": "entwicklungsprogramme.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Executive-Sparring"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Wie vertraulich ist das Sparring?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Was Claudia im Gespräch erfährt, bleibt zwischen euch. Aufnahmen werden auf deinem Gerät gespeichert, nicht bei Claudia."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Online oder vor Ort?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Beides ist möglich: 1:1 per Video oder als Intensivtag vor Ort. Was passt, hängt vom Anlass ab – das klärt ihr im ersten Gespräch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was unterscheidet das Sparring von einem Entwicklungsprogramm?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Das Sparring ist individuell und an einem Anlass ausgerichtet. Ein Entwicklungsprogramm begleitet ein ganzes Führungsteam über mehrere Wochen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was kostet das Sparring?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Das hängt vom Format und vom Umfang ab. Du bekommst den Preis vor der Zusage, schriftlich."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="hinweis"><b>Private Vorschau, nicht online.</b> Seite Executive-Sparring nach deinem Masterhandbuch. Rot gestrichelt = Vorschlag von Vinci oder fehlende Angabe von dir.</div>
+
+<!-- 1 Ruhiger Eventhinweis (§18) – Glas 1 von 3 -->
+<div class="aktuell-wrap">
+ <p class="aktuell glas"><b>Aktuell:</b> <span class="lang">7-Tage-Wirkungskraft-Challenge · Start 26. Oktober</span><span class="kurz">Challenge · Start 26.10.</span> · <a href="challenge.html">Platz sichern</a><span class="vor">Termin bestätigen</span></p>
+</div>
+
+<header class="menue" id="menue">
+ <div class="huelle">
+  <a class="marke" href="index.html" aria-label="Claudia Conen – zur Startseite"><img src="i/logo.webp" alt="" width="48" height="48"><span><b>Claudia Conen – Die Umsatzstimme</b><span>Menschliche Wirkungskraft im KI-Zeitalter</span></span></a>
+  <ul class="punkte" id="punkte" aria-label="Hauptmenü">
+   <li><a class="punkt-link" href="index.html">Start</a></li>
+   <li><button type="button" aria-expanded="false" aria-controls="t1">Für Unternehmen</button>
+    <div class="tafel" id="t1">
+     <div>
+      <h3>Wirkung, die im Unternehmen ankommt.</h3>
+      <p class="mikro">Für Geschäftsführung, Führungskräfte, HR, Vertrieb und Veranstalter.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="unternehmen.html"><b>Für Unternehmen</b><small>Situation, Formate, Ergebnisse</small></a>
+       <a href="workshop-fuehrung-kommunikation.html"><b>Menschlich führen und kommunizieren</b><small>Der Workshop für Führungskräfte</small></a>
+       <a href="entwicklungsprogramme.html"><b>WIRKUNGSKRAFT – 90 Tage</b><small>Veränderung nachhaltig verankern</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Themen</span>
+      <ul class="themen">
+       <li><a href="unternehmen.html#fuehrung">Führung &amp; Kommunikation</a></li>
+       <li><a href="unternehmen.html#mensch-ki">Mensch &amp; KI</a></li>
+       <li><a href="workshop-emotional-sales.html">Vertrieb &amp; Emotional Sales</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/keynote.webp" alt="Claudia Conen auf einer Unternehmensbühne" width="464" height="208"><p>„KI ist eingeführt. Warum nutzt sie kaum jemand?“</p><a class="knopf" href="kontakt.html#unternehmen">Gespräch vereinbaren</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t6">Für Experten</button>
+    <div class="tafel" id="t6">
+     <div>
+      <h3>Als Mensch und Experte erkannt werden.</h3>
+      <p class="mikro">Für Coaches, Trainer, Speaker, Berater, Autoren und Selbstständige.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="unternehmer-experten.html"><b>Für Experten</b><small>Positionierung, Botschaft, Auftritt</small></a>
+       <a href="executive-sparring.html"><b>Experten-Sparring</b><small>1:1 für Positionierung, Keynote oder Pitch</small></a>
+       <a href="challenge.html"><b>7-Tage-Challenge</b><small>Der Einstieg für Experten und Unternehmer</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Außerdem</span>
+      <ul class="themen">
+       <li><a href="wirkungskraft.html">Die Wirkungskraft-Methode</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/mentoring.webp" alt="Claudia Conen im Gespräch mit Laptop" width="464" height="208"><p>Deine Persönlichkeit ist längst da. Wir machen sie erkennbar.</p><a class="knopf" href="kontakt.html#experten">Gespräch vereinbaren</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t2">Keynotes</button>
+    <div class="tafel tafel-buchen" id="t2">
+     <div class="buchen-wege">
+      <h3>Keynotes und Auftritte</h3>
+      <p class="mikro">Claudia gibt Unternehmensmomenten eine Stimme, eine Richtung und eine Wirkung.</p>
+      <span class="label">Claudia buchen</span>
+      <div class="wege3 wege4">
+       <a href="keynotes.html"><b>Keynote Speakerin</b><small>Die Keynote setzt Impulse.</small></a>
+       <a href="moderation.html"><b>Business- und Eventmoderation</b><small>Moderation verbindet und führt.</small></a>
+       <a href="unternehmensreden.html"><b>Reden für besondere Unternehmensmomente</b><small>Die Unternehmensrede würdigt und gibt Bedeutung.</small></a>
+       <a href="voice-over.html"><b>Voice-over und Markenstimme</b><small>Voice-over macht Markenbotschaften hörbar.</small></a>
+      </div>
+     </div>
+     <div class="tafel-foto"><img src="m/buchen.webp" alt="Claudia Conen im hellblauen Blazer, lächelnd" width="464" height="261"><p>Eine Stimme, eine Richtung, eine Wirkung.</p><a class="knopf" href="kontakt.html#keynote">Keynote anfragen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t3">Workshops &amp; Programme</button>
+    <div class="tafel" id="t3">
+     <div>
+      <h3>Aus Wissen wird Verhalten.</h3>
+      <p class="mikro">Workshop, 90-Tage-Programm oder Sparring: vor Ort oder online.</p>
+      <span class="label">Formate</span>
+      <div class="wege3">
+       <a href="workshops.html"><b>Workshop: Als Mensch und Experte erkannt werden</b><small>Klare Botschaft, glaubwürdige Kommunikation, souveräne Präsenz</small></a>
+       <a href="entwicklungsprogramme.html"><b>WIRKUNGSKRAFT – das 90-Tage-Programm</b><small>Persönlichkeit, Botschaft, Präsenz, Verstärkung</small></a>
+       <a href="executive-sparring.html"><b>Executive- und Experten-Sparring</b><small>Individuell vor wichtigen Auftritten</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Workshop-Schwerpunkte</span>
+      <ul class="themen">
+       <li><a href="workshop-fuehrung-kommunikation.html">Führung &amp; Kommunikation</a></li>
+       <li><a href="workshop-emotional-sales.html">Emotional Sales</a></li>
+       <li><a href="workshop-praesenz-wirkung.html">Präsenz &amp; Wirkung</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/ausbildung.webp" alt="Claudia Conen im Workshop" width="464" height="208"><p>Aus Wissen wird Verhalten.</p><a class="knopf" href="kontakt.html#unternehmen">Workshop anfragen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><a class="punkt-link" href="ergebnisse.html">Ergebnisse</a></li>
+   <li><button type="button" aria-expanded="false" aria-controls="t5">Über Claudia</button>
+    <div class="tafel" id="t5">
+     <div>
+      <h3>Persönlichkeit vor Perfektion.</h3>
+      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
+       <a href="wissen.html"><b>Wissen</b><small>Artikel und Ressourcen</small></a>
+       <a href="events.html"><b>Events</b><small>Aktuelle Termine</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Mehr</span>
+      <ul class="themen">
+       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li class="mobil-knopf"><a class="knopf" href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <a class="knopf" href="kontakt.html">Kontakt</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="punkte">Menü</button>
+ </div>
+</header>
+
+<main id="main">
+<nav class="pfad" aria-label="Brotkrumen"><div class="huelle"><ol><li><a href="entwicklungsprogramme.html">Entwicklungsprogramme</a></li><li aria-current="page">Executive-Sparring</li></ol></div></nav>
+
+<!-- 1 Hero: Situation und Diskretion -->
+<section class="skopf" aria-labelledby="h1">
+ <div class="huelle">
+  <div>
+   <div class="eyebrow">Executive-Sparring · vertraulich</div>
+   <h1 id="h1">Hören, was ankommt – nicht, was gemeint war.</h1>
+   <p class="sub">Du kannst deine eigene Wirkung nicht beurteilen, weil du nicht im Publikum sitzt. Genau dafür braucht es jemanden, der hört, was ankommt, und nicht, was gemeint war – vertraulich, eins zu eins, vor dem Moment, in dem es zählt.<span class="vor">Vorschlag</span></p>
+   <p class="fuer">Für Geschäftsführung, Vorstände, Führungskräfte und Unternehmenssprecher.</p>
+   <div class="handlung">
+    <a class="knopf" href="kontakt.html#unternehmen">Gespräch vereinbaren</a>
+    <a class="leise" href="#formate">Die Formate ansehen</a>
+   </div>
+  </div>
+  <figure>
+   <img src="p/executive-sparring/hero-gross.webp" srcset="p/executive-sparring/hero-klein.webp 800w, p/executive-sparring/hero-gross.webp 1600w" sizes="(max-width:900px) 100vw, 560px" alt="Claudia Conen im vertraulichen Gespräch mit einer Frau, beide nah beieinander und konzentriert" width="1600" height="960" fetchpriority="high" style="object-position:40% 40%">
+   <!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC09617) -->
+  </figure>
+ </div>
+</section>
+
+<!-- 2 Situation und gewünschte Wirkung -->
+<section class="hell knapp" aria-labelledby="lage-titel">
+ <div class="huelle">
+  <div class="kicker">Situation</div>
+  <h2 id="lage-titel">Je höher die Rolle, desto weniger ehrliche Rückmeldung<span class="vor">Vorschlag</span></h2>
+  <div class="text-spalte">
+   <p>Wer vorne steht, bekommt selten ehrliche Rückmeldung. Das Team nickt, die Agentur lobt, und der eigentliche Eindruck bleibt unausgesprochen.<span class="vor">Vorschlag</span></p>
+   <p>Dabei hängt an wenigen Auftritten viel: die Ansage einer Veränderung, der Auftritt vor Investoren, das Interview, die Rede vor der ganzen Belegschaft. Wenn etwas Unbequemes zu sagen ist, entscheidet sich, ob man dir danach noch glaubt.</p>
+  </div>
+  <div class="kicker" style="margin-top:40px">Gewünschte Wirkung</div>
+  <ul class="raute zweispaltig">
+   <li>Klarere Kommunikation – eine Botschaft, die in einem Satz trägt.</li>
+   <li>Glaubwürdigere Führung: Worte und Haltung passen zusammen.</li>
+   <li>Stärkere Präsenz auf der Bühne, vor der Kamera und im Gespräch.</li>
+   <li>Mehr Vertrauen bei denen, die dir zuhören.</li>
+  </ul>
+ </div>
+</section>
+
+<!-- 3 Mögliche Anlässe -->
+<section class="knapp" aria-labelledby="anlass-titel">
+ <div class="huelle">
+  <div class="kicker">Anlässe</div>
+  <h2 id="anlass-titel">Wann Führungspersönlichkeiten ein Sparring suchen</h2>
+  <ul class="raute zweispaltig">
+   <li>Vor einer wichtigen Präsentation – im Vorstand, vor Kunden, vor Investoren.</li>
+   <li>Vor Bühne, Kamera oder Medien: Keynote, Interview, Video-Botschaft.</li>
+   <li>Vor einer Veränderungsbotschaft: Umbau, Standortfrage, neue Richtung, KI-Einführung.</li>
+   <li>Nach einem Rollenwechsel, wenn die eigene Wirkung neu gefunden werden muss.<span class="vor">Vorschlag</span></li>
+  </ul>
+ </div>
+</section>
+
+<!-- 4 Arbeitsweise – der eine dunkle Abschnitt -->
+<section class="dunkel" aria-labelledby="weise-titel">
+ <div class="huelle">
+  <div class="kicker">Arbeitsweise</div>
+  <h2 id="weise-titel">An deinem echten Auftritt, nicht an Beispielen</h2>
+  <div class="felder">
+   <div class="feld auf"><span class="nr">01</span><h3>Lage</h3><p>Zuerst die Lage, nicht das Wunschthema: Was steht an, wer sitzt im Raum, was darf gesagt werden?</p></div>
+   <div class="feld auf"><span class="nr">02</span><h3>Botschaft</h3><p>Der eine Satz, der bleiben soll – und was du im anderen Menschen auslösen möchtest.</p></div>
+   <div class="feld auf"><span class="nr">03</span><h3>Auftritt</h3><p>Sprechen, aufnehmen, gemeinsam ansehen. Stimme, Tempo, Pausen, Präsenz.</p></div>
+   <div class="feld auf"><span class="nr">04</span><h3>KI</h3><p>KI für Vorbereitung und Struktur – ohne dass du austauschbar klingst.</p></div>
+  </div>
+  <p class="reihenfolge" style="margin-top:28px">Die Reihenfolge folgt der Wirkungskraft-Methode: Persönlichkeit erkennen, Botschaft klären, Wirkung verkörpern, KI sinnvoll einsetzen.<span class="vor">Vorschlag Zuordnung</span></p>
+ </div>
+</section>
+
+<!-- 5 Formate, Intensivtag oder Retreat -->
+<section id="formate" aria-labelledby="formate-titel">
+ <div class="huelle">
+  <div class="kicker">Formate</div>
+  <h2 id="formate-titel">So konzentriert, wie es dein Anlass braucht</h2>
+  <dl class="pflicht">
+   <dt>1:1 online</dt><dd>Sparring per Video, im Tempo deines Kalenders.</dd>
+   <dt>Intensivtag</dt><dd>Ein Tag vor Ort, konzentriert auf einen Anlass.</dd>
+   <dt>Begleitung</dt><dd>Begleitung wichtiger Präsentationen und Vorbereitung auf Bühne, Kamera oder Medien.</dd>
+   <dt>Executive Retreat</dt><dd>Mehrere Tage außerhalb des Alltags – kein Wellnessangebot, sondern ein exklusiver Arbeitsraum für Klarheit, Positionierung, Auftritt und strategische Kommunikation.</dd>
+  </dl>
+  <p class="platz" style="margin-top:22px">Diese Formate stehen in deinem Masterhandbuch als „mögliche Formate“. Welche du anbietest, Dauer, Ort und Rahmen: bitte von dir.</p>
+  <p class="weiter"><a class="leise" href="unternehmer-experten.html#wirkungsreise">Zur Wirkungsreise</a><a class="leise" href="entwicklungsprogramme.html">Zu den Entwicklungsprogrammen</a></p>
+ </div>
+</section>
+
+<!-- 6 Ergebnisse / Beweise -->
+<section class="hell knapp" aria-labelledby="stimmen-titel">
+ <div class="huelle">
+  <div class="kicker">Stimmen</div>
+  <h2 id="stimmen-titel">Herausfordernd und vertrauensvoll</h2>
+  <div class="zitate">
+   <figure class="zitat">
+    <blockquote>„Ich habe mit Claudia zusammen eine Rede erstellt und einstudiert, die ich vor einem technischen Publikum halte. … Mit vollem Herzblut dabei und fordert dich auch gerne heraus.“</blockquote>
+    <figcaption><b>Dr.-Ing. Ann-Kathrin Andresen</b>Verfahrenstechnikerin, Mentorin und Beraterin · Ing.-up</figcaption>
+    <span class="quelle">Quelle: Videostimme auf claudiaconen.com</span>
+   </figure>
+   <figure class="zitat">
+    <blockquote>„Du bist wahnsinnig vertrauensvoll, und ich habe mich gleich gut aufgehoben gefühlt.“</blockquote>
+    <figcaption><b>Verena Sommerfeld</b>Bauingenieurin und Energieberaterin · Esslingen</figcaption>
+    <span class="quelle">Quelle: Videostimme auf claudiaconen.com</span>
+   </figure>
+  </div>
+  <p class="platz" style="margin-top:24px">Stimme aus einem Executive-Sparring (wenn Vertraulichkeit es zulässt, auch anonymisiert mit Funktion und Branche – nur mit Freigabe): bitte von dir.</p>
+ </div>
+</section>
+
+<!-- 7 Vertraulichkeit -->
+<section class="claudia knapp" aria-labelledby="vertraulich-titel">
+ <div class="huelle">
+  <div class="text">
+   <div class="kicker">Vertraulichkeit</div>
+   <h2 id="vertraulich-titel">Was im Sparring gesagt wird, bleibt dort.</h2>
+   <p>Was Claudia im Gespräch erfährt, bleibt zwischen euch. Aufnahmen gehören dir: Sie werden auf deinem Gerät gespeichert, nicht bei Claudia.</p>
+   <p class="platz">Vertraulichkeitsvereinbarung (NDA) auf Wunsch? Bitte von dir.</p>
+  </div>
+  <blockquote>
+   <p>Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter. Seit 37 Jahren arbeitet sie als Coach und Trainerin mit Menschen, für die viel davon abhängt, wie sie ankommen.<span class="vor">Vorschlag</span></p>
+   <a class="leise" href="ueber-claudia.html">Mehr über Claudia</a>
+  </blockquote>
+ </div>
+</section>
+
+<!-- 8 FAQ -->
+<section id="fragen" style="padding-top:0" aria-labelledby="fragen-titel">
+ <div class="huelle">
+  <div class="kicker">Häufige Fragen</div>
+  <h2 id="fragen-titel">Was du vorher wissen willst</h2>
+  <div class="fragen">
+   <details class="klapp faq"><summary>Wie vertraulich ist das Sparring?</summary><div class="inhalt"><p>Was Claudia im Gespräch erfährt, bleibt zwischen euch. Aufnahmen werden auf deinem Gerät gespeichert, nicht bei Claudia.</p></div></details>
+   <details class="klapp faq"><summary>Online oder vor Ort?</summary><div class="inhalt"><p>Beides ist möglich: 1:1 per Video oder als Intensivtag vor Ort. Was passt, hängt vom Anlass ab – das klärt ihr im ersten Gespräch.<span class="vor">Vorschlag</span></p></div></details>
+   <details class="klapp faq"><summary>Was unterscheidet das Sparring von einem Entwicklungsprogramm?</summary><div class="inhalt"><p>Das Sparring ist individuell und an einem Anlass ausgerichtet. Ein Entwicklungsprogramm begleitet ein ganzes Führungsteam über mehrere Wochen.</p></div></details>
+   <details class="klapp faq"><summary>Was kostet das Sparring?</summary><div class="inhalt"><p>Das hängt vom Format und vom Umfang ab. Du bekommst den Preis vor der Zusage, schriftlich.</p></div></details>
+  </div>
+ </div>
+</section>
+
+<!-- 9 Kennenlerngespräch -->
+<section class="schluss" aria-labelledby="schluss-titel">
+ <div class="huelle">
+  <div class="karte auf">
+   <div class="kicker" style="margin:0">Kennenlernen</div>
+   <h2 id="schluss-titel">Welcher Auftritt steht dir bevor?<span class="vor">Vorschlag</span></h2>
+   <p>Im ersten Gespräch geht es um deinen Anlass. Danach weißt du, ob ein Sparring das Richtige ist – und wenn nicht, sagt Claudia dir das.</p>
+   <a class="knopf" href="kontakt.html#unternehmen">Gespräch vereinbaren</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="huelle">
+  <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
+  <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+ </div>
+</footer>
+
+<script src="site.js"></script>

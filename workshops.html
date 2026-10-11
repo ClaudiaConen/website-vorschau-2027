@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Workshop: Als Mensch und Experte erkannt werden | Claudia Conen – Die Umsatzstimme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Workshops, Programme, Sparring – nur vorhandene Tokens */
+main .knopf{max-width:100%}
+@media(max-width:600px){main .knopf{white-space:normal;text-align:center;padding-block:12px;line-height:1.3}}
+main .leise{display:inline-flex;align-items:center;min-height:44px}
+main .platz{font-size:16px;line-height:1.5}
+main .platz+.platz{margin-top:10px}
+.pfad{padding-block:18px 0;font-size:16px}
+.pfad ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.pfad li+li::before{content:"/";margin-right:10px}
+.pfad a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.skopf{padding-block:48px 80px;background:linear-gradient(180deg,var(--ivory),var(--champ) 170%)}
+.skopf .huelle{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+.skopf h1{font:600 clamp(42px,5vw,70px)/1.04 'Cormorant Garamond',Georgia,serif}
+.skopf .sub{font-size:19px;line-height:1.55;margin-top:22px;max-width:56ch}
+.skopf .fuer{margin-top:18px;font-size:16px;font-weight:600}
+.handlung{display:flex;flex-wrap:wrap;gap:14px 24px;margin-top:30px;align-items:center}
+.skopf figure{margin:0}
+.skopf figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+@media(max-width:900px){.skopf .huelle{grid-template-columns:1fr;gap:30px}.skopf{padding-block:28px 56px}}
+.einleitung{max-width:64ch;font-size:18px}
+.text-spalte{display:grid;gap:16px;max-width:66ch}
+.zweispaltig{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 48px;margin-top:28px}
+@media(max-width:760px){.zweispaltig{grid-template-columns:1fr}}
+.hell{background:var(--weiss);border-block:1px solid var(--linie)}
+.satz{font:500 italic 26px/1.3 'Cormorant Garamond',Georgia,serif;border-left:2px solid var(--gold);padding-left:18px;max-width:40ch}
+.satz small{display:block;font:600 14px/1.4 'Inter',sans-serif;font-style:normal;margin-top:6px}
+/* Kette Thema → Format → Werkzeuge → Wirkung */
+.kette{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:36px;border:1px solid var(--linie);border-radius:8px;background:var(--weiss);overflow:hidden}
+.kette div{padding:22px 22px 24px;display:grid;gap:6px;align-content:start;position:relative}
+.kette div+div{border-left:1px solid var(--linie)}
+.kette small{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.kette b{font:600 23px/1.2 'Cormorant Garamond',Georgia,serif}
+.kette div:last-child{border-top:3px solid var(--gold)}
+@media(max-width:860px){.kette{grid-template-columns:1fr 1fr}.kette div:nth-child(3){border-left:0}.kette div:nth-child(n+3){border-top:1px solid var(--linie)}.kette div:last-child{border-top:3px solid var(--gold)}}
+@media(max-width:480px){.kette{grid-template-columns:1fr}.kette div+div{border-left:0;border-top:1px solid var(--linie)}}
+/* Karten der Schwerpunkte / Varianten */
+.karten3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px;align-items:stretch}
+@media(max-width:980px){.karten3{grid-template-columns:1fr;max-width:640px}}
+.karte-w{background:var(--weiss);border:1px solid var(--linie);border-top:3px solid var(--gold);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.karte-w img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.karte-w .innen{padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.karte-w .ziel{font:700 12px/1.3 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.karte-w h3{font:600 28px/1.12 'Cormorant Garamond',Georgia,serif}
+.karte-w .enthaelt{font-size:16px;border-top:1px solid var(--linie);padding-top:12px}
+.karte-w .leise{margin-top:auto}
+/* Fakten (Pflichtfelder) */
+.pflicht{display:grid;grid-template-columns:190px minmax(0,1fr);gap:14px 22px;margin:28px 0 0;max-width:900px}
+.pflicht dt{font:700 12px/1.5 'Inter',sans-serif;letter-spacing:.12em;text-transform:uppercase;padding-top:4px}
+.pflicht dd{margin:0;font-size:17px}
+.pflicht dd .platz{margin-top:8px}
+@media(max-width:560px){.pflicht{grid-template-columns:1fr;gap:2px}.pflicht dd{margin-bottom:14px}}
+/* Ablauf */
+.schritte{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:0;max-width:900px;counter-reset:s}
+.schritte li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:4px 20px;padding:20px 0;border-top:1px solid var(--linie);counter-increment:s}
+.schritte li::before{content:counter(s,decimal-leading-zero);font:600 40px/1 'Cormorant Garamond',Georgia,serif;grid-row:span 2}
+.schritte b{font-size:17px}
+.schritte p{font-size:17px}
+/* Zweispalter Text + Bild */
+.bild-text .huelle{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}
+.bild-text figure{margin:0}
+.bild-text figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+@media(max-width:860px){.bild-text .huelle{grid-template-columns:1fr;gap:28px}}
+/* Klappkacheln */
+.klapp{border:1px solid var(--linie);border-radius:8px;background:var(--weiss)}
+.klapp>summary{cursor:pointer;padding:16px 20px;min-height:44px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.klapp>summary::-webkit-details-marker{display:none}
+.klapp>summary::after{content:"+";font:600 22px/1 'Inter',sans-serif;flex:none}
+.klapp[open]>summary::after{content:"–"}
+.klapp .inhalt{padding:0 20px 20px;display:grid;gap:12px}
+.fragen{display:grid;gap:12px;margin-top:32px;max-width:860px}
+/* Stimmen ohne Foto */
+.zitate{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:32px}
+@media(max-width:860px){.zitate{grid-template-columns:1fr}}
+.zitat{margin:0;background:var(--ivory);border:1px solid var(--linie);border-left:3px solid var(--gold);border-radius:8px;padding:24px 26px;display:flex;flex-direction:column;gap:12px}
+.zitat blockquote{margin:0;font:500 italic 23px/1.32 'Cormorant Garamond',Georgia,serif}
+.zitat figcaption{font-size:16px}
+.zitat figcaption b{display:block}
+.zitat .quelle{font-size:14px;font-weight:600;padding-top:10px;border-top:1px solid var(--linie);margin-top:auto}
+/* Dunkler Abschnitt: Werkzeuge */
+.dunkel .einleitung{color:var(--ivory)}
+.felder.drei{grid-template-columns:repeat(4,minmax(0,1fr))}
+.feld p{font-size:16px}
+@media(max-width:980px){.felder,.felder.drei{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.felder,.felder.drei{grid-template-columns:1fr}}
+.unter{margin-top:30px}
+/* Nicht passend */
+.nicht li::before{background:transparent;border:1.5px solid var(--rot)}
+/* Claudia-Bezug */
+.claudia .huelle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.claudia .text{display:grid;gap:16px;max-width:62ch}
+.claudia blockquote{margin:0;padding:30px 32px;background:var(--weiss);border:1.5px solid var(--gold);border-radius:8px;display:grid;gap:14px}
+.claudia blockquote p{font:500 italic 24px/1.35 'Cormorant Garamond',Georgia,serif}
+.claudia blockquote footer{background:none;color:var(--ink);padding:0;font-size:15px;font-weight:600}
+@media(max-width:860px){.claudia .huelle{grid-template-columns:1fr;gap:28px}}
+.weiter{display:flex;flex-wrap:wrap;gap:4px 28px;margin-top:8px}
+section.knapp{padding-block:72px}
+@media(max-width:600px){section{padding-block:64px}section.knapp{padding-block:52px}}
+
+</style>
+<meta name="description" content="Workshops für menschliche Wirkung in Unternehmen: Führung &amp; Kommunikation, Emotional Sales, Präsenz &amp; Wirkung. An euren echten Situationen, mit Übung, Aufnahme und Transfer in den Alltag.">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "name": "Workshops für menschliche Wirkung in Unternehmen",
+   "serviceType": "Workshop: Führung & Kommunikation, Emotional Sales, Präsenz & Wirkung",
+   "description": "Führung, Kommunikation und Wirkung praktisch trainieren – an echten Situationen aus dem Unternehmen, mit Übung, Aufnahme, Rückmeldung und Transfer.",
+   "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Geschäftsführung, HR und Personalentwicklung, Führungskräfte, Vertriebsleitung"
+   },
+   "@type": "Service",
+   "provider": {
+    "@type": "Person",
+    "name": "Claudia Conen",
+    "alternateName": "Die Umsatzstimme",
+    "jobTitle": "Expertin für menschliche Wirkungskraft im KI-Zeitalter"
+   },
+   "areaServed": "DE",
+   "inLanguage": "de"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Startseite",
+     "item": "index.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Workshops"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Ist das ein Rhetorikseminar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Rhetorik arbeitet an der Rede, hier wird an der Wirkung gearbeitet – auch im Gespräch zu zweit, in der Besprechung und in dem Moment, in dem jemand nachfragt und man nicht vorbereitet ist."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ist das ein KI-Training?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Es geht nicht um Werkzeuge, Prompts oder Software. Es geht darum, dass Menschen KI erst dann benutzen, wenn sie wissen, was aus ihnen wird – und das ist eine Frage der Kommunikation, nicht der Schulung. Wenn du ein Werkzeugtraining brauchst, sag es; dann empfiehlt Claudia dir jemanden."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was, wenn jemand nicht mitmachen will?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Das kommt vor und ist kein Problem, solange es offen liegt. Claudia zwingt niemanden vor die Gruppe. Meistens ändert sich das im Lauf des Tages von selbst, wenn sichtbar wird, dass niemand vorgeführt wird."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wird aufgenommen, und was passiert mit den Aufnahmen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, und sie gehören der jeweiligen Person. Sie werden auf deren Gerät gespeichert, nicht bei Claudia. Wer nicht aufgenommen werden will, sagt es – dann wird ohne Aufnahme gearbeitet, der Lerneffekt ist nur kleiner."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wann passt ein Workshop nicht?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wenn es nach dem Tag erledigt sein soll. Ein Tag verändert, wie gesprochen wird, nicht die Struktur, die das Schweigen erzeugt hat. Und wenn die eigentliche Lage nicht angesprochen werden darf: Erfährt Claudia im Vorgespräch nicht, was wirklich los ist, wird es ein freundlicher Workshop – und der wirkt nicht."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was kostet ein Workshop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Der Preis hängt davon ab, wie viele Menschen dabei sind und ob es ein Tag ist oder eine Reihe. Du bekommst ihn vor der Zusage, schriftlich."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="hinweis"><b>Private Vorschau, nicht online.</b> Seite Workshops nach deinem Masterhandbuch. Rot gestrichelt = Vorschlag von Vinci oder fehlende Angabe von dir.</div>
+
+<!-- 1 Ruhiger Eventhinweis (§18) – Glas 1 von 3 -->
+<div class="aktuell-wrap">
+ <p class="aktuell glas"><b>Aktuell:</b> <span class="lang">7-Tage-Wirkungskraft-Challenge · Start 26. Oktober</span><span class="kurz">Challenge · Start 26.10.</span> · <a href="challenge.html">Platz sichern</a><span class="vor">Termin bestätigen</span></p>
+</div>
+
+<header class="menue" id="menue">
+ <div class="huelle">
+  <a class="marke" href="index.html" aria-label="Claudia Conen – zur Startseite"><img src="i/logo.webp" alt="" width="48" height="48"><span><b>Claudia Conen – Die Umsatzstimme</b><span>Menschliche Wirkungskraft im KI-Zeitalter</span></span></a>
+  <ul class="punkte" id="punkte" aria-label="Hauptmenü">
+   <li><a class="punkt-link" href="index.html">Start</a></li>
+   <li><button type="button" aria-expanded="false" aria-controls="t1">Für Unternehmen</button>
+    <div class="tafel" id="t1">
+     <div>
+      <h3>Wirkung, die im Unternehmen ankommt.</h3>
+      <p class="mikro">Für Geschäftsführung, Führungskräfte, HR, Vertrieb und Veranstalter.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="unternehmen.html"><b>Für Unternehmen</b><small>Situation, Formate, Ergebnisse</small></a>
+       <a href="workshop-fuehrung-kommunikation.html"><b>Menschlich führen und kommunizieren</b><small>Der Workshop für Führungskräfte</small></a>
+       <a href="entwicklungsprogramme.html"><b>WIRKUNGSKRAFT – 90 Tage</b><small>Veränderung nachhaltig verankern</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Themen</span>
+      <ul class="themen">
+       <li><a href="unternehmen.html#fuehrung">Führung &amp; Kommunikation</a></li>
+       <li><a href="unternehmen.html#mensch-ki">Mensch &amp; KI</a></li>
+       <li><a href="workshop-emotional-sales.html">Vertrieb &amp; Emotional Sales</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/keynote.webp" alt="Claudia Conen auf einer Unternehmensbühne" width="464" height="208"><p>„KI ist eingeführt. Warum nutzt sie kaum jemand?“</p><a class="knopf" href="kontakt.html#unternehmen">Gespräch vereinbaren</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t6">Für Experten</button>
+    <div class="tafel" id="t6">
+     <div>
+      <h3>Als Mensch und Experte erkannt werden.</h3>
+      <p class="mikro">Für Coaches, Trainer, Speaker, Berater, Autoren und Selbstständige.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="unternehmer-experten.html"><b>Für Experten</b><small>Positionierung, Botschaft, Auftritt</small></a>
+       <a href="executive-sparring.html"><b>Experten-Sparring</b><small>1:1 für Positionierung, Keynote oder Pitch</small></a>
+       <a href="challenge.html"><b>7-Tage-Challenge</b><small>Der Einstieg für Experten und Unternehmer</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Außerdem</span>
+      <ul class="themen">
+       <li><a href="wirkungskraft.html">Die Wirkungskraft-Methode</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/mentoring.webp" alt="Claudia Conen im Gespräch mit Laptop" width="464" height="208"><p>Deine Persönlichkeit ist längst da. Wir machen sie erkennbar.</p><a class="knopf" href="kontakt.html#experten">Gespräch vereinbaren</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t2">Keynotes</button>
+    <div class="tafel tafel-buchen" id="t2">
+     <div class="buchen-wege">
+      <h3>Keynotes und Auftritte</h3>
+      <p class="mikro">Claudia gibt Unternehmensmomenten eine Stimme, eine Richtung und eine Wirkung.</p>
+      <span class="label">Claudia buchen</span>
+      <div class="wege3 wege4">
+       <a href="keynotes.html"><b>Keynote Speakerin</b><small>Die Keynote setzt Impulse.</small></a>
+       <a href="moderation.html"><b>Business- und Eventmoderation</b><small>Moderation verbindet und führt.</small></a>
+       <a href="unternehmensreden.html"><b>Reden für besondere Unternehmensmomente</b><small>Die Unternehmensrede würdigt und gibt Bedeutung.</small></a>
+       <a href="voice-over.html"><b>Voice-over und Markenstimme</b><small>Voice-over macht Markenbotschaften hörbar.</small></a>
+      </div>
+     </div>
+     <div class="tafel-foto"><img src="m/buchen.webp" alt="Claudia Conen im hellblauen Blazer, lächelnd" width="464" height="261"><p>Eine Stimme, eine Richtung, eine Wirkung.</p><a class="knopf" href="kontakt.html#keynote">Keynote anfragen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><button type="button" aria-expanded="false" aria-controls="t3">Workshops &amp; Programme</button>
+    <div class="tafel" id="t3">
+     <div>
+      <h3>Aus Wissen wird Verhalten.</h3>
+      <p class="mikro">Workshop, 90-Tage-Programm oder Sparring: vor Ort oder online.</p>
+      <span class="label">Formate</span>
+      <div class="wege3">
+       <a href="workshops.html"><b>Workshop: Als Mensch und Experte erkannt werden</b><small>Klare Botschaft, glaubwürdige Kommunikation, souveräne Präsenz</small></a>
+       <a href="entwicklungsprogramme.html"><b>WIRKUNGSKRAFT – das 90-Tage-Programm</b><small>Persönlichkeit, Botschaft, Präsenz, Verstärkung</small></a>
+       <a href="executive-sparring.html"><b>Executive- und Experten-Sparring</b><small>Individuell vor wichtigen Auftritten</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Workshop-Schwerpunkte</span>
+      <ul class="themen">
+       <li><a href="workshop-fuehrung-kommunikation.html">Führung &amp; Kommunikation</a></li>
+       <li><a href="workshop-emotional-sales.html">Emotional Sales</a></li>
+       <li><a href="workshop-praesenz-wirkung.html">Präsenz &amp; Wirkung</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/ausbildung.webp" alt="Claudia Conen im Workshop" width="464" height="208"><p>Aus Wissen wird Verhalten.</p><a class="knopf" href="kontakt.html#unternehmen">Workshop anfragen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li><a class="punkt-link" href="ergebnisse.html">Ergebnisse</a></li>
+   <li><button type="button" aria-expanded="false" aria-controls="t5">Über Claudia</button>
+    <div class="tafel" id="t5">
+     <div>
+      <h3>Persönlichkeit vor Perfektion.</h3>
+      <p class="mikro">Wer hier spricht und warum Stimme ihr Thema ist.</p>
+      <span class="label">Hauptwege</span>
+      <div class="wege3">
+       <a href="ueber-claudia.html"><b>Claudia Conen</b><small>Haltung, Geschichte, Erfahrung</small></a>
+       <a href="wissen.html"><b>Wissen</b><small>Artikel und Ressourcen</small></a>
+       <a href="events.html"><b>Events</b><small>Aktuelle Termine</small></a>
+      </div>
+     </div>
+     <div>
+      <span class="label">Mehr</span>
+      <ul class="themen">
+       <li><a href="rund-ums-reden.html" class="dezent">Rund ums Reden: Akademie für freie Redner</a></li>
+      </ul>
+     </div>
+     <div class="tafel-foto"><img src="m/ueber.webp" alt="Claudia Conen lächelnd" width="464" height="208"><p>Seit 37 Jahren als Coach und Trainerin unterwegs, heute auch als Keynote Speakerin.</p><a class="knopf" href="ueber-claudia.html">Claudia kennenlernen</a></div>
+     <button class="schliessen" type="button">Schließen</button>
+    </div>
+   </li>
+   <li class="mobil-knopf"><a class="knopf" href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <a class="knopf" href="kontakt.html">Kontakt</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="punkte">Menü</button>
+ </div>
+</header>
+
+<main id="main">
+<!-- 1 Hero: Workshopversprechen (§17) -->
+<section class="skopf" aria-labelledby="h1">
+ <div class="huelle">
+  <div>
+   <div class="eyebrow">Workshops für menschliche Wirkung in Unternehmen</div>
+   <h1 id="h1">Als Mensch und Experte erkannt werden</h1>
+   <p class="sub">Ein Wirkungsworkshop für klare Botschaften, glaubwürdige Kommunikation und souveräne Präsenz. Für Unternehmen auch als „Menschlich führen und kommunizieren im KI-Zeitalter“.</p>
+   <p class="fuer">Für Geschäftsführung, HR, Personalentwicklung und Vertriebsleitung.</p>
+   <div class="handlung">
+    <a class="knopf" href="kontakt.html#unternehmen">Workshop anfragen</a>
+    <a class="leise" href="#schwerpunkte">Die drei Schwerpunkte ansehen</a>
+   </div>
+  </div>
+  <figure>
+   <img src="p/workshops/hero-gross.webp" srcset="p/workshops/hero-klein.webp 800w, p/workshops/hero-gross.webp 1600w" sizes="(max-width:900px) 100vw, 560px" alt="Claudia Conen leitet einen Workshop im Seminarraum, Teilnehmende sitzen an Tischen mit Laptops vor einer Leinwand" width="1600" height="1200" fetchpriority="high" style="object-position:62% 50%">
+  </figure>
+ </div>
+</section>
+
+<!-- 2 Geschäftliche Herausforderung -->
+<section class="hell knapp" aria-labelledby="lage-titel">
+ <div class="huelle">
+  <div class="kicker">Ausgangslage</div>
+  <h2 id="lage-titel">Das Wissen ist da. Es kommt nur nicht an.<span class="vor">Vorschlag</span></h2>
+  <ul class="raute zweispaltig">
+   <li>Eine Veränderung wird angekündigt. Alle nicken. Wochen später läuft es wie vorher.</li>
+   <li>Deine Leute sind fachlich stark und verlieren trotzdem. Es liegt selten am Angebot, sondern daran, wie es klingt, wenn sie es erklären.</li>
+   <li>Präsentationen sind professionell, aber austauschbar.</li>
+   <li>Je mehr Texte, Präsentationen und Mails erzeugt statt geschrieben werden, desto gleichförmiger klingt dein Unternehmen nach außen.</li>
+  </ul>
+  <p class="einleitung" style="margin-top:28px">Das ist kein Wissensproblem. Es ist ein Kommunikationsproblem – und es wird oft als Technikproblem behandelt.</p>
+ </div>
+</section>
+
+<!-- 3 Workshopversprechen und Einordnung (Hierarchie Thema → Format → Werkzeuge → Wirkung) -->
+<section class="knapp" aria-labelledby="versprechen-titel">
+ <div class="huelle">
+  <div class="kicker">Was ein Workshop leistet</div>
+  <h2 id="versprechen-titel">Aus Wissen wird Verhalten.</h2>
+  <p class="einleitung">Jeder Workshop setzt an einem geschäftlichen Thema an und arbeitet mit denselben Werkzeugen. Gemessen wird er an dem, was danach im Unternehmen passiert.<span class="vor">Vorschlag</span></p>
+  <div class="kette" role="list">
+   <div role="listitem"><small>Thema</small><b>Führung, Kommunikation, Veränderung</b></div>
+   <div role="listitem"><small>Format</small><b>Workshop an euren echten Situationen</b></div>
+   <div role="listitem"><small>Werkzeuge</small><b>Persönlichkeit, Botschaft, Stimme, Präsenz, KI</b></div>
+   <div role="listitem"><small>Wirkung</small><b>Vertrauen, Akzeptanz, Handlungsbereitschaft</b></div>
+  </div>
+ </div>
+</section>
+
+<!-- 4 Drei Signatur-Workshops (§17 Angebotsdarstellung) -->
+<section id="schwerpunkte" class="hell" aria-labelledby="sp-titel">
+ <div class="huelle">
+  <div class="kicker">Drei Schwerpunkte</div>
+  <h2 id="sp-titel">Welche Situation soll sich bei euch ändern?</h2>
+  <p class="einleitung">Kein Themenkatalog, sondern drei Workshops für drei Situationen. Die sechs Formate von deiner Unternehmensseite sind hier zugeordnet.<span class="vor">Vorschlag Zuordnung</span></p>
+  <div class="karten3">
+   <article class="karte-w">
+    <img src="p/workshops/fuehrung.webp" alt="Claudia Conen sitzt lächelnd mit Teilnehmerinnen in einer Workshop-Runde" width="900" height="635" loading="lazy" style="object-position:70% 40%">
+    <!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC02553) -->
+    <div class="innen">
+     <span class="ziel">Führung &amp; Kommunikation</span>
+     <h3>Menschlich führen und kommunizieren im KI-Zeitalter</h3>
+     <p>Für Führungskräfte, deren Ansagen abgenickt und nicht umgesetzt werden.</p>
+     <p class="enthaelt">Enthält „Wirkungskraft für Teams in Veränderung“: Veränderung besprechbar machen – was bleibt, was sich ändert, was aus den Menschen wird.</p>
+     <a class="leise" href="workshop-fuehrung-kommunikation.html">Workshop Führung &amp; Kommunikation</a>
+    </div>
+   </article>
+   <article class="karte-w">
+    <img src="p/workshops/sales.webp" alt="Claudia Conen lacht im Gespräch mit einem Mann, der ihr gegenübersitzt" width="900" height="600" loading="lazy" style="object-position:40% 30%">
+    <div class="innen">
+     <span class="ziel">Emotional Sales</span>
+     <h3>Vertrauen, das verkauft</h3>
+     <p>Für Vertriebsteams und alle, die verkaufen, ohne dass es im Titel steht.</p>
+     <p class="enthaelt">Enthält „Wirkungskraft im Kundengespräch“: Fragen, die etwas öffnen, und Zuhören als Handwerk.</p>
+     <a class="leise" href="workshop-emotional-sales.html">Workshop Emotional Sales</a>
+    </div>
+   </article>
+   <article class="karte-w">
+    <img src="p/workshops/praesenz.webp" alt="Claudia Conen spricht mit Mikrofon vor einer Leinwand zu einer Gruppe" width="900" height="771" loading="lazy" style="object-position:40% 35%">
+    <!-- Bildnachweis prüfen: Foto von Monika Gharbi (DSC01504) -->
+    <div class="innen">
+     <span class="ziel">Präsenz &amp; Wirkung</span>
+     <h3>Präsentieren, pitchen, überzeugen</h3>
+     <p>Für Präsentationen, die professionell sind, aber austauschbar.</p>
+     <p class="enthaelt">Enthält „Vom KI-Text zur glaubwürdigen Botschaft“: KI für Vorbereitung und Struktur nutzen, ohne austauschbar zu werden.</p>
+     <a class="leise" href="workshop-praesenz-wirkung.html">Workshop Präsenz &amp; Wirkung</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- 5 Praxisanteile – der eine dunkle Abschnitt -->
+<section class="dunkel" aria-labelledby="praxis-titel">
+ <div class="huelle">
+  <div class="kicker">So wird gearbeitet</div>
+  <h2 id="praxis-titel">Zuhören allein verändert nichts.</h2>
+  <div class="felder">
+   <div class="feld auf"><span class="nr">01</span><h3>Eure Fälle</h3><p>Gearbeitet wird an euren Fällen, nicht an Beispielen. Jede Führungskraft bringt die Ansage mit, die nicht ankam.</p></div>
+   <div class="feld auf"><span class="nr">02</span><h3>Selbst sprechen</h3><p>Jede und jeder spricht mehrfach vor der Gruppe. Kurze Runden, sofortige Rückmeldung.</p></div>
+   <div class="feld auf"><span class="nr">03</span><h3>Aufnahme</h3><p>Aufnahme und gemeinsames Ansehen – der Teil, an dem die meisten am meisten lernen.</p></div>
+   <div class="feld auf"><span class="nr">04</span><h3>Ein Satz</h3><p>Jede Person nimmt einen Satz mit, den sie ab morgen anders sagt.</p></div>
+  </div>
+  <p class="reihenfolge" style="margin-top:28px">Dahinter steht die Wirkungskraft-Methode: Persönlichkeit erkennen, Botschaft klären, Wirkung verkörpern, KI sinnvoll einsetzen.</p>
+  <div class="unter"><a class="knopf zweit" href="wirkungskraft.html">Methode kennenlernen</a></div>
+ </div>
+</section>
+
+<!-- 6 Format, Dauer, Individualisierung -->
+<section aria-labelledby="format-titel">
+ <div class="huelle">
+  <div class="kicker">Format und Ablauf</div>
+  <h2 id="format-titel">Vom Vorgespräch bis zum Nachgespräch</h2>
+  <ol class="schritte">
+   <li><b>Vorgespräch</b><p>Dreißig Minuten mit dir, ohne Kosten. Claudia fragt nach der Lage, nicht nach dem Wunschthema. Was sie dort erfährt, bleibt zwischen euch.</p></li>
+   <li><b>Zuschnitt</b><p>Der Workshop wird auf eure Situationen gebaut: eure Ansagen, eure Kundengespräche, eure Präsentationen.<span class="vor">Vorschlag</span></p></li>
+   <li><b>Workshop</b><p>Ein Tag oder eine Reihe – mit deinem Führungskreis oder Team, an euren echten Situationen.</p></li>
+   <li><b>Danach</b><p>Auf Wunsch ein Nachgespräch nach sechs bis acht Wochen. Dann zeigt sich, was geblieben ist.</p></li>
+  </ol>
+  <dl class="pflicht">
+   <dt>Dauer</dt><dd>Ein bis zwei Tage. Als kürzere Form nach einer Keynote: ein Transfer-Lab von zwei bis drei Stunden.<p class="platz">Beide Angaben stammen aus deinem Markenhandbuch – für die Website bestätigen, bitte von dir.</p></dd>
+   <dt>Teilnehmende</dt><dd>Sechs bis zwölf. Darunter fehlt der Gruppendruck, der die Übungen ernst macht. Darüber kommt nicht jede Person mehrfach dran.</dd>
+   <dt>Ort</dt><dd>Bei euch im Haus.<p class="platz">Online-Variante und Seminarort außerhalb: bitte von dir.</p></dd>
+   <dt>Preis</dt><dd>Hängt davon ab, wie viele Menschen dabei sind und ob es ein Tag ist oder eine Reihe. Du bekommst ihn vor der Zusage, schriftlich.</dd>
+  </dl>
+ </div>
+</section>
+
+<!-- 7 Referenzen -->
+<section class="hell" aria-labelledby="stimmen-titel">
+ <div class="huelle">
+  <div class="kicker">Stimmen</div>
+  <h2 id="stimmen-titel">Was Teilnehmende sagen</h2>
+  <div class="zitate">
+   <figure class="zitat">
+    <blockquote>„Die Atmosphäre ist sehr herzlich, sehr direkt und sehr intensiv, aber wir lachen auch viel gemeinsam.“</blockquote>
+    <figcaption><b>Dr.-Ing. Ann-Kathrin Andresen</b>Verfahrenstechnikerin, Mentorin und Beraterin · Ing.-up</figcaption>
+    <span class="quelle">Quelle: Videostimme auf claudiaconen.com</span>
+   </figure>
+   <figure class="zitat">
+    <blockquote>„Claudia hat diesen Workshop sehr gut organisiert und ich fühle mich sehr wohl. Ich lern bei Claudia richtig viel.“</blockquote>
+    <figcaption><b>Martin Wolf</b>Teilnehmer im Workshop</figcaption>
+    <span class="quelle">Quelle: Videostimme, wörtliche Abschrift, gekürzt</span>
+   </figure>
+  </div>
+  <p class="platz" style="margin-top:24px">Beide Stimmen stammen aus Claudias offenen Workshops und ihrer Einzelarbeit, nicht aus Unternehmensworkshops. Eine Stimme oder Fallstudie aus einem Unternehmensworkshop (mit Freigabe für Namen und Funktion): bitte von dir.</p>
+  <p class="weiter"><a class="leise" href="ergebnisse.html">Alle Stimmen ansehen</a></p>
+ </div>
+</section>
+
+<!-- 8 Claudia-Bezug und Brücke zu Programmen -->
+<section class="claudia" aria-labelledby="claudia-titel">
+ <div class="huelle">
+  <div class="text">
+   <div class="kicker">Wer den Workshop leitet</div>
+   <h2 id="claudia-titel">Claudia Conen ist Expertin für menschliche Wirkungskraft im KI-Zeitalter.</h2>
+   <p>Seit 37 Jahren arbeitet sie als Coach und Trainerin mit Menschen an dem, was ihre Worte bei anderen auslösen. Sie ist ausgebildete KI-Managerin (IHK) und spricht nicht über etwas, das sie selbst nicht benutzt.</p>
+   <p class="weiter"><a class="leise" href="ueber-claudia.html">Mehr über Claudia</a></p>
+  </div>
+  <blockquote>
+   <p>„Ein Tag verändert, wie gesprochen wird, nicht die Struktur, die das Schweigen erzeugt hat.“</p>
+   <footer>Claudia Conen</footer>
+   <p style="font:400 17px/1.6 'Inter',sans-serif;font-style:normal">Wenn es mehr als einen Tag braucht, gibt es die Entwicklungsprogramme.</p>
+   <a class="leise" href="entwicklungsprogramme.html">Entwicklungsprogramme ansehen</a>
+  </blockquote>
+ </div>
+</section>
+
+<!-- 9 FAQ -->
+<section id="fragen" style="padding-top:0" aria-labelledby="fragen-titel">
+ <div class="huelle">
+  <div class="kicker">Häufige Fragen</div>
+  <h2 id="fragen-titel">Was Entscheider vorher wissen wollen</h2>
+  <div class="fragen">
+   <details class="klapp faq"><summary>Ist das ein Rhetorikseminar?</summary><div class="inhalt"><p>Nein. Rhetorik arbeitet an der Rede, hier wird an der Wirkung gearbeitet – auch im Gespräch zu zweit, in der Besprechung und in dem Moment, in dem jemand nachfragt und man nicht vorbereitet ist.</p></div></details>
+   <details class="klapp faq"><summary>Ist das ein KI-Training?</summary><div class="inhalt"><p>Nein. Es geht nicht um Werkzeuge, Prompts oder Software. Es geht darum, dass Menschen KI erst dann benutzen, wenn sie wissen, was aus ihnen wird – und das ist eine Frage der Kommunikation, nicht der Schulung. Wenn du ein Werkzeugtraining brauchst, sag es; dann empfiehlt Claudia dir jemanden.</p></div></details>
+   <details class="klapp faq"><summary>Was, wenn jemand nicht mitmachen will?</summary><div class="inhalt"><p>Das kommt vor und ist kein Problem, solange es offen liegt. Claudia zwingt niemanden vor die Gruppe. Meistens ändert sich das im Lauf des Tages von selbst, wenn sichtbar wird, dass niemand vorgeführt wird.</p></div></details>
+   <details class="klapp faq"><summary>Wird aufgenommen, und was passiert mit den Aufnahmen?</summary><div class="inhalt"><p>Ja, und sie gehören der jeweiligen Person. Sie werden auf deren Gerät gespeichert, nicht bei Claudia. Wer nicht aufgenommen werden will, sagt es – dann wird ohne Aufnahme gearbeitet, der Lerneffekt ist nur kleiner.</p></div></details>
+   <details class="klapp faq"><summary>Wann passt ein Workshop nicht?</summary><div class="inhalt"><p>Wenn es nach dem Tag erledigt sein soll. Ein Tag verändert, wie gesprochen wird, nicht die Struktur, die das Schweigen erzeugt hat. Und wenn die eigentliche Lage nicht angesprochen werden darf: Erfährt Claudia im Vorgespräch nicht, was wirklich los ist, wird es ein freundlicher Workshop – und der wirkt nicht.</p></div></details>
+   <details class="klapp faq"><summary>Was kostet ein Workshop?</summary><div class="inhalt"><p>Der Preis hängt davon ab, wie viele Menschen dabei sind und ob es ein Tag ist oder eine Reihe. Du bekommst ihn vor der Zusage, schriftlich.</p></div></details>
+  </div>
+ </div>
+</section>
+
+<!-- 10 Ein primärer CTA -->
+<section class="schluss" aria-labelledby="schluss-titel">
+ <div class="huelle">
+  <div class="karte auf">
+   <div class="kicker" style="margin:0">Nächster Schritt</div>
+   <h2 id="schluss-titel">Erzähl Claudia, was bei euch nicht ankommt.<span class="vor">Vorschlag</span></h2>
+   <p>Im Vorgespräch geht es um die Lage, nicht um das Wunschthema. Danach weißt du, welcher Workshop passt – und wenn keiner passt, sagt Claudia dir das.</p>
+   <a class="knopf" href="kontakt.html#unternehmen">Workshop anfragen</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="huelle">
+  <div><p class="marke-fuss">Claudia Conen – Die Umsatzstimme</p><p style="margin-top:8px">Menschliche Wirkungskraft im KI-Zeitalter</p></div>
+  <div><b>Formate</b><ul><li><a href="unternehmen.html">Für Unternehmen</a></li><li><a href="keynotes.html">Keynotes</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="entwicklungsprogramme.html">90-Tage-Programm</a></li><li><a href="executive-sparring.html">Executive- und Experten-Sparring</a></li></ul></div>
+  <div><b>Mehr</b><ul><li><a href="ergebnisse.html">Ergebnisse</a></li><li><a href="ueber-claudia.html">Über Claudia</a></li><li><a href="wissen.html">Wissen</a></li><li><a href="events.html">Events</a></li><li><a href="unternehmer-experten.html">Für Experten</a></li><li><a href="rund-ums-reden.html">Akademie für freie Redner</a></li></ul></div>
+  <div><b>Kontakt</b><ul><li><a href="kontakt.html">Gespräch vereinbaren</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+ </div>
+</footer>
+
+<script src="site.js"></script>
