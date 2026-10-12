@@ -13,6 +13,14 @@
 .kopf .sub .sub-ki{display:block;margin-top:12px;padding-left:14px;border-left:2px solid var(--gold)}
 .kopf h1{font-weight:700}@media(min-width:901px){.kopf h1{font-size:clamp(50px,5.2vw,76px)}}
 .kopf .claim{margin-top:18px;font:600 italic clamp(26px,2.6vw,36px)/1.2 'Cormorant Garamond',Georgia,serif;color:var(--ink);padding-left:16px;border-left:3px solid var(--gold)}
+.kopf .eyebrow{letter-spacing:.11em}
+.kopf .beleg{display:flex;gap:18px;align-items:center;margin-top:28px;max-width:600px}
+.kopf .beleg-clip{position:relative;flex:0 0 220px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;box-shadow:0 10px 28px rgba(19,35,63,.18);background:var(--ink)}
+.kopf .beleg-clip img,.kopf .beleg-clip video{width:100%;height:100%;object-fit:cover;display:block}
+.kopf .beleg-play{position:absolute;left:8px;bottom:8px;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid rgba(201,169,97,.7);background:rgba(253,251,247,.94);color:var(--ink);font:600 12px/1 'Inter',sans-serif;cursor:pointer}
+.kopf .beleg blockquote{margin:0;font:600 italic 21px/1.3 'Cormorant Garamond',Georgia,serif;color:var(--ink)}
+.kopf .beleg cite{display:block;margin-top:8px;font:500 13px/1.4 'Inter',sans-serif;font-style:normal;color:var(--ink)}
+@media(max-width:560px){.kopf .beleg{flex-direction:column;align-items:flex-start}.kopf .beleg-clip{flex:none;width:100%}}
 .kopf .leitfrage{margin-top:22px;font:700 italic clamp(28px,2.9vw,40px)/1.15 'Cormorant Garamond',Georgia,serif;color:var(--ink)}
 .sit-karte img{aspect-ratio:4/3}
 /* Logos einfarbig (Claudia 16:49 UTC) */
@@ -179,13 +187,20 @@
  </div>
  <div class="huelle">
   <div class="inhalt">
-   <div class="eyebrow">Claudia Conen · Expertin für menschliche Wirkungskraft</div>
+   <div class="eyebrow">Wirkung zeigen · Vertrauen wecken · Unverwechselbar bleiben</div>
    <h1 id="h1">Wer Vertrauen weckt, gewinnt.</h1>
    <p class="leitfrage">Du wirkst immer.<br>Die Frage ist nur: wie?</p>
-   <p class="sub">Du willst deinen Expertenstatus unverfälscht und selbstbewusst kommunizieren: auf der Bühne, im Business und wo immer du Menschen triffst? Dann ist Claudia Conen die Expertin an deiner Seite.<span class="vor">Vorschlag</span></p>
+   <p class="sub">Du willst deinen Expertenstatus unverfälscht und selbstbewusst kommunizieren: auf der Bühne, im Business und wo immer du Menschen triffst? Dann ist Claudia Conen an deiner Seite.<span class="vor">Vorschlag</span></p>
    <div class="wege">
-    <a class="knopf" href="kontakt.html#unternehmen">Keynote oder Workshop anfragen</a>
-    <a class="knopf zweit" href="unternehmer-experten.html">Für Experten</a>
+    <a class="knopf" href="kontakt.html#experten">Erstgespräch vereinbaren</a>
+    <a class="knopf zweit" href="kontakt.html#unternehmen">Keynote anfragen</a>
+   </div>
+   <div class="beleg">
+    <div class="beleg-clip">
+     <img src="p/live/worms-selfie-jubel.webp" alt="Claudia Conen auf der Bühne in Worms, das Publikum filmt sich selbst" width="720" height="406">
+     <button class="beleg-play" type="button" data-src="p/live/worms-selfie-jubel.mp4" data-vtt="p/live/worms-selfie-jubel.vtt" aria-label="Bühnenclip aus Worms abspielen, 13 Sekunden">▶ Live in Worms · 0:13</button>
+    </div>
+    <blockquote>„Ich möchte mich nie wieder im Leben verstellen.“<cite>Verena Sommerfeld, Bauingenieurin und Energieberaterin</cite></blockquote>
    </div>
   </div>
  </div>
@@ -711,4 +726,13 @@ document.querySelectorAll('.live-karte .play[data-video]').forEach(a=>a.addEvent
  bild.replaceWith(vid);a.remove();vid.play().catch(()=>{});
 }));
 </script>
+<script>
+document.querySelectorAll('.beleg-play').forEach(b=>b.addEventListener('click',()=>{
+ const box=b.parentElement,bild=box.querySelector('img'),v=document.createElement('video');
+ v.src=b.dataset.src;v.poster=bild.getAttribute('src');v.controls=true;v.playsInline=true;
+ const tr=document.createElement('track');tr.kind='subtitles';tr.srclang='de';tr.label='Deutsch';tr.src=b.dataset.vtt;tr.default=true;v.appendChild(tr);
+ v.setAttribute('aria-label','Bühnenclip aus Worms');bild.replaceWith(v);b.remove();v.play().catch(()=>{});
+}));
+</script>
+
 
