@@ -142,6 +142,19 @@
  <p class="aktuell glas"><b>Aktuell:</b> <span class="lang">7-Tage-Wirkungskraft-Challenge · Start 26. Oktober</span><span class="kurz">Challenge · Start 26.10.</span> · <a href="challenge.html">Platz sichern</a><span class="vor">Termin bestätigen</span></p>
 </div>
 
+<style>
+.buehnen-clip{position:relative;margin-top:18px;max-width:420px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;box-shadow:0 10px 28px rgba(19,35,63,.18);background:var(--ink)}
+.buehnen-clip img,.buehnen-clip video{width:100%;height:100%;object-fit:cover;display:block}
+.buehnen-clip .bc-play{position:absolute;left:10px;bottom:10px;min-height:34px;padding:0 13px;border-radius:999px;border:1px solid rgba(201,169,97,.7);background:rgba(253,251,247,.94);color:var(--ink);font:600 12.5px/1 'Inter',sans-serif;cursor:pointer}
+</style>
+<script>
+addEventListener('DOMContentLoaded',()=>document.querySelectorAll('.bc-play').forEach(b=>b.addEventListener('click',()=>{
+ const box=b.parentElement,bild=box.querySelector('img'),v=document.createElement('video');
+ v.src=b.dataset.src;v.poster=bild.getAttribute('src');v.controls=true;v.playsInline=true;
+ const tr=document.createElement('track');tr.kind='subtitles';tr.srclang='de';tr.label='Deutsch';tr.src=b.dataset.vtt;tr.default=true;v.appendChild(tr);
+ v.setAttribute('aria-label','Bühnenclip aus Worms');bild.replaceWith(v);b.remove();v.play().catch(()=>{});
+})));
+</script>
 <header class="menue" id="menue">
  <div class="huelle">
   <a class="marke" href="index.html" aria-label="Claudia Conen – zur Startseite"><img src="i/logo.webp" alt="" width="48" height="48"><span><b>Claudia Conen – Die Umsatzstimme</b><span>Expertin für menschliche Wirkungskraft</span></span></a>
@@ -438,6 +451,10 @@
     <div class="medien-links">
      <a class="leise" href="https://open.spotify.com/show/1roEST6nZsiRbMfkmpIciC" target="_blank" rel="noopener">Podcast bei Spotify</a>
      <a class="leise" href="https://www.youtube.com/channel/UCjJSrS_4lJ8pSdGtNZarKFQ" target="_blank" rel="noopener">YouTube-Kanal</a>
+    </div>
+    <div class="buehnen-clip">
+     <img src="p/live/worms-selfie-jubel.webp" alt="Claudia Conen auf der Bühne in Worms, das Publikum filmt sich selbst" width="720" height="406" loading="lazy">
+     <button class="bc-play" type="button" data-src="p/live/worms-selfie-jubel.mp4" data-vtt="p/live/worms-selfie-jubel.vtt" aria-label="Bühnenclip aus Worms abspielen, 13 Sekunden">▶ Live in Worms · 0:13</button>
     </div>
     <p class="platz" style="margin-top:16px">Interviews und Presseartikel mit Titel, Medium und Datum: bitte von dir.</p>
    </div>
