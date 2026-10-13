@@ -37,6 +37,9 @@ em{font:italic 600 1.06em/1 var(--ff-a);color:var(--gold-dunkel)}
 /* Abschnitt 2 */
 .sammlung{background:var(--creme-2);padding:clamp(64px,9vw,120px) 0}
 .karten{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:26px;margin-top:48px}
+.gruppe{margin:56px 0 0;font:600 clamp(22px,2.4vw,28px)/1.2 var(--ff-h);display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding-bottom:14px;border-bottom:1px solid var(--linie)}
+.gruppe span{font:italic 500 17px var(--ff-a);color:var(--gold-dunkel)}
+.gruppe+.karten{margin-top:26px}
 .karte{position:relative;background:#fff;border-top:3px solid var(--gold);padding:30px 28px 28px;min-height:250px;display:flex;flex-direction:column}
 .karte .nr{font:italic 600 26px/1 var(--ff-a);color:var(--gold-dunkel)}
 .karte img{position:absolute;right:20px;top:18px;width:76px;height:76px;object-fit:contain}
@@ -76,6 +79,7 @@ footer{border-top:1px solid var(--linie);padding:26px 0;font-size:13px;letter-sp
 <section class="sammlung" id="sammlung"><div class="w">
  <div class="eyebrow">Die Sammlung</div>
  <h2>Welcher Spruch <em>passt zu dir?</em></h2>
+ <h3 class="gruppe">Mit Herz <span>Sympathisch. Zum Schmunzeln und Nachdenken.</span></h3>
  <div class="karten">
   <article class="karte"><div class="nr">01</div><img src="magnet-dateien/schritt-5.webp" alt=""><p class="spruch">Du wirkst immer. Die Frage ist nur: <em>wie?</em></p><p class="vorsicht">Unter uns: Würdest du dir gern zuhören?</p></article>
   <article class="karte"><div class="nr">02</div><img src="magnet-dateien/botschaft.webp" alt=""><p class="spruch">Was passiert, wenn du mit mir redest statt zu scrollen? <em>Ich weiß es auch nicht.</em></p><p class="vorsicht">Vorsicht: Es könnte ein gutes Gespräch werden.</p></article>
@@ -83,6 +87,13 @@ footer{border-top:1px solid var(--linie);padding:26px 0;font-size:13px;letter-sp
   <article class="karte"><div class="nr">04</div><img src="magnet-dateien/schritt-7.webp" alt=""><p class="spruch">Sei so freundlich wie deine KI. <em>Dann reden wir.</em></p><p class="vorsicht">Vorsicht: Menschen merken den Unterschied.</p></article>
   <article class="karte"><div class="nr">05</div><img src="magnet-dateien/schritt-3.webp" alt=""><p class="spruch">Was würdest du tun, wenn du einzigartig auf dieser Welt wärst? <em>Dann mach’s doch.</em></p><p class="vorsicht">Vorsicht: Du bist es schon.</p></article>
   <article class="karte"><div class="nr">06</div><img src="magnet-dateien/schritt-8.webp" alt=""><p class="spruch">Menschen haben <em>keine Reset-Taste.</em></p><p class="vorsicht">Also: Bitte freundlich.</p></article>
+ </div>
+ <h3 class="gruppe">Mit Biss <span>Frech und sarkastisch. Nur für Menschen, die du magst.</span></h3>
+ <div class="karten">
+  <article class="karte"><div class="nr">07</div><img src="magnet-dateien/geschenk.webp" alt=""><p class="spruch">Kompetenz: vorhanden. Wirkung: <em>wird nachgeliefert.</em></p><p class="vorsicht">Vorsicht: Lieferzeit unbekannt.</p></article>
+  <article class="karte"><div class="nr">08</div><img src="magnet-dateien/ki.webp" alt=""><p class="spruch">Du klingst wie ein Prompt. <em>Nur nicht so freundlich.</em></p></article>
+  <article class="karte"><div class="nr">09</div><img src="magnet-dateien/schritt-9.webp" alt=""><p class="spruch">Dein Pitch war super. <em>Hat nur keiner verstanden.</em></p></article>
+  <article class="karte"><div class="nr">10</div><img src="magnet-dateien/praesenz.webp" alt=""><p class="spruch">Kamera an, Persönlichkeit aus? <em>Warum redest du jetzt so anders?</em></p></article>
  </div>
 </div></section>
 
