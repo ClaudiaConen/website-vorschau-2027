@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wie wirkst du auf andere? · Claudia Conen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Playfair+Display:ital,wght@1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--creme:#FDFBF7;--creme-2:#F6F1E7;--navy:#0F1F3A;--navy-2:#13233F;--text:#1A2744;--gold:#D4AF37;--gold-dunkel:#8C6A12;--gold-hell:#EBD197;
+--gold-glanz:linear-gradient(135deg,#E9CF7E 0%,#D4AF37 42%,#B8901F 100%);--linie:rgba(212,175,55,.45);--max:1200px;--rand:clamp(20px,6vw,96px);
+--tiefe:radial-gradient(120% 90% at 78% 18%,#1A2F54 0%,#0F1F3A 46%,#0A1628 100%);
+--ff:"Inter",ui-sans-serif,system-ui,"Segoe UI",Arial,sans-serif;--ff-h:"Montserrat",ui-sans-serif,system-ui,sans-serif;--ff-a:"Playfair Display",Georgia,serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--creme);color:var(--text);font:400 17px/1.6 var(--ff)}
+.w{max-width:var(--max);margin:0 auto;padding:0 var(--rand)}
+.kopfzeile{display:flex;align-items:center;justify-content:space-between;height:68px;border-bottom:1px solid var(--linie)}
+.marke{font:600 17px var(--ff-h);color:var(--text);text-decoration:none}
+.marke span{color:var(--gold-dunkel);font-weight:500}
+.eyebrow{display:flex;align-items:center;gap:14px;font:600 12px var(--ff);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-dunkel)}
+.eyebrow::before{content:"";width:32px;height:1px;background:var(--gold)}
+.navy .eyebrow{color:var(--gold)}
+h1,h2{font-family:var(--ff-h);font-weight:600;letter-spacing:-.015em;line-height:1.08;margin:18px 0 0}
+h1{font-size:clamp(40px,6.4vw,76px)}
+h2{font-size:clamp(32px,4.4vw,54px)}
+em{font:italic 600 1.06em/1 var(--ff-a);color:var(--gold-dunkel)}
+.navy em{color:var(--gold)}
+.knopf{display:inline-block;background:var(--gold-glanz);color:var(--navy);font:600 13px var(--ff);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:17px 30px;box-shadow:0 8px 22px rgba(140,106,18,.25)}
+.knopf:hover{filter:brightness(1.05)}
+.leise{color:var(--text);font-weight:600;text-decoration:none;border-bottom:1px solid var(--linie);padding-bottom:4px}
+.navy .leise{color:#fff}
+/* Abschnitt 1 */
+.held{padding:clamp(56px,9vw,120px) 0 clamp(56px,8vw,100px)}
+.held p.lead{max-width:640px;font-size:clamp(18px,1.6vw,21px);margin:28px 0 0}
+.held .wege{display:flex;flex-wrap:wrap;gap:22px 28px;align-items:center;margin-top:36px}
+.trenn{width:min(380px,60%);height:1px;background:var(--linie);margin-top:34px}
+/* Abschnitt 2 */
+.sammlung{background:var(--creme-2);padding:clamp(64px,9vw,120px) 0}
+.karten{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:26px;margin-top:48px}
+.karte{position:relative;background:#fff;border-top:3px solid var(--gold);padding:30px 28px 28px;min-height:250px;display:flex;flex-direction:column}
+.karte .nr{font:italic 600 26px/1 var(--ff-a);color:var(--gold-dunkel)}
+.karte img{position:absolute;right:20px;top:18px;width:76px;height:76px;object-fit:contain}
+.karte .spruch{font:600 22px/1.28 var(--ff-h);margin:22px 0 0;padding-right:62px}
+.karte .spruch em{font-size:1.1em}
+.karte .vorsicht{margin-top:auto;padding-top:20px;font:italic 500 17px/1.4 var(--ff-a);color:var(--text)}
+/* Abschnitt 3 */
+.navy{background:var(--tiefe);color:#fff;padding:clamp(64px,9vw,120px) 0}
+.ich{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,80px);align-items:center}
+.foto{position:relative}
+.foto img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.foto::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--linie);z-index:-1}
+.foto{z-index:0}
+.navy p{color:var(--gold-hell);font-size:clamp(18px,1.5vw,20px);max-width:560px}
+.navy .klein{color:rgba(255,255,255,.78);font-size:14px}
+.datum{display:inline-block;margin-top:8px;font:600 12px var(--ff);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.navy .wege{display:flex;flex-wrap:wrap;gap:22px 28px;align-items:center;margin-top:30px}
+/* Abschnitt 4 */
+.weiter{padding:clamp(56px,8vw,100px) 0;text-align:center}
+.weiter h2{font-size:clamp(28px,3.6vw,44px)}
+.weiter p{margin:18px auto 30px;max-width:520px}
+footer{border-top:1px solid var(--linie);padding:26px 0;font-size:13px;letter-spacing:.06em}
+@media(max-width:820px){.ich{grid-template-columns:1fr}.foto{max-width:420px}.karte .spruch{font-size:20px;padding-right:74px}.karte img{width:64px;height:64px}}
+</style>
+</head>
+<body>
+<header class="w kopfzeile"><a class="marke" href="https://claudiaconen.com/challenge">Claudia Conen <span>· Die Umsatzstimme</span></a></header>
+
+<section class="held"><div class="w">
+ <div class="eyebrow">Dein Magnet hat dich hergebracht</div>
+ <h1>Wie wirkst du<br><em>auf andere?</em></h1>
+ <p class="lead">Ehrlich? Das wissen die anderen meist besser als du. Du hörst dich von innen, alle anderen hören dich von außen. Deine Stimme, dein Blick, deine Pausen: Sie entscheiden mit, ob man dir glaubt.</p>
+ <div class="wege"><a class="knopf" href="https://claudiaconen.com/challenge">Finde es heraus</a><a class="leise" href="#sammlung">Erst alle Sprüche ansehen ↓</a></div>
+ <div class="trenn"></div>
+</div></section>
+
+<section class="sammlung" id="sammlung"><div class="w">
+ <div class="eyebrow">Die Sammlung</div>
+ <h2>Welcher Spruch <em>passt zu dir?</em></h2>
+ <div class="karten">
+  <article class="karte"><div class="nr">01</div><img src="magnet-dateien/schritt-5.webp" alt=""><p class="spruch">Du wirkst immer. Die Frage ist nur: <em>wie?</em></p><p class="vorsicht">Unter uns: Würdest du dir gern zuhören?</p></article>
+  <article class="karte"><div class="nr">02</div><img src="magnet-dateien/botschaft.webp" alt=""><p class="spruch">Was passiert, wenn du mit mir redest statt zu scrollen? <em>Ich weiß es auch nicht.</em></p><p class="vorsicht">Vorsicht: Es könnte ein gutes Gespräch werden.</p></article>
+  <article class="karte"><div class="nr">03</div><img src="magnet-dateien/schritt-1.webp" alt=""><p class="spruch">Stell dir vor, du bleibst für immer in meinem Kopf. <em>Genau so, wie du gerade redest.</em></p><p class="vorsicht">Vorsicht: Du könntest begeistern. Oder eben nicht.</p></article>
+  <article class="karte"><div class="nr">04</div><img src="magnet-dateien/schritt-7.webp" alt=""><p class="spruch">Sei so freundlich wie deine KI. <em>Dann reden wir.</em></p><p class="vorsicht">Vorsicht: Menschen merken den Unterschied.</p></article>
+  <article class="karte"><div class="nr">05</div><img src="magnet-dateien/schritt-3.webp" alt=""><p class="spruch">Was würdest du tun, wenn du einzigartig auf dieser Welt wärst? <em>Dann mach’s doch.</em></p><p class="vorsicht">Vorsicht: Du bist es schon.</p></article>
+  <article class="karte"><div class="nr">06</div><img src="magnet-dateien/schritt-8.webp" alt=""><p class="spruch">Menschen haben <em>keine Reset-Taste.</em></p><p class="vorsicht">Also: Bitte freundlich.</p></article>
+ </div>
+</div></section>
+
+<section class="navy"><div class="w ich">
+ <div class="foto"><img src="magnet-dateien/claudia.webp" alt="Claudia Conen zeigt lachend auf sich selbst" width="900" height="1066"></div>
+ <div>
+  <div class="eyebrow">Wer hier spricht</div>
+  <h2>Ich bin Claudia.<br><em>Ich zeige dir, wie du wirkst.</em></h2>
+  <p>In der Video-Challenge siehst und hörst du dich so, wie andere dich erleben. Und du lernst, wie du daraus Vertrauen machst.</p>
+  <span class="datum">Start 26.10.2026</span>
+  <div class="wege"><a class="knopf" href="https://claudiaconen.com/challenge">Zur Video-Challenge</a></div>
+  <p class="klein">Claudia Conen · Die Umsatzstimme · seit 37 Jahren als Coach und Trainerin</p>
+ </div>
+</div></section>
+
+<section class="weiter"><div class="w">
+ <h2>Du kennst jemanden, <em>der genau so ist?</em></h2>
+ <p>Dann bekommt er auch einen Magneten. Schreib mir, für wen, und welcher Spruch passt.</p>
+ <a class="knopf" href="mailto:claudiaconen@umsatzstimme.de?subject=Magnet%20f%C3%BCr%20jemanden">Magnet verschenken</a>
+</div></section>
+
+<footer><div class="w">Claudia Conen · Die Umsatzstimme</div></footer>
+</body>
+</html>
