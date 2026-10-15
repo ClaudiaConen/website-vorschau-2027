@@ -143,6 +143,16 @@ main .knopf{max-width:100%}
 .tagesweg li span{font:700 14px/1.3 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase}
 .tagesweg li small{font-size:13.5px;color:rgba(253,251,247,.8)}
 .tagesweg li:nth-child(n+3){background:var(--weiss);color:var(--ink);border:1.5px solid var(--gold)}.tagesweg li:nth-child(n+3) b{color:#8A6D2F}.tagesweg li:nth-child(n+3) small{color:var(--ink2)}
+.gruppenwahl{margin-top:30px;background:var(--weiss);border:1px solid var(--linie);border-radius:20px;padding:24px 26px;display:grid;gap:12px;box-shadow:0 20px 44px -32px rgba(19,35,63,.5)}
+.gruppenwahl h3{font:600 28px/1.15 'Cormorant Garamond',Georgia,serif}
+.wahl{display:flex;gap:16px;align-items:center;text-decoration:none;color:var(--ink);border:1px solid var(--linie);border-radius:14px;padding:14px 18px;transition:translate .2s ease,box-shadow .2s ease}
+.wahl:hover{translate:0 -2px;box-shadow:0 14px 28px -20px rgba(19,35,63,.5)}
+.wahl b{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:600 22px/1 'Cormorant Garamond',Georgia,serif;background:var(--ivory);border:1.5px solid var(--gold);color:#8A6D2F}
+.wahl span{display:grid;gap:2px;font-size:15px;color:var(--ink2)}
+.wahl strong{font-size:17px;color:var(--ink)}
+.wahl-eins{border:1.5px solid var(--gold);background:linear-gradient(135deg,rgba(247,231,206,.55),rgba(255,255,255,0))}
+.wahl-eins b{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+.wahl-notiz{font-size:14px;color:var(--ink2)}
 </style>
 <meta name="description" content="Die 7-Tage-Wirkungskraft-Challenge von Claudia Conen: sieben kurze Schritte im Arbeitsalltag, eine Minute Video am Tag, persönliches Feedback. Für Führungskräfte, Unternehmer und Expertenmarken – mit Wirkungsdiagnose und klarem nächsten Schritt.">
 <script type="application/ld+json">
@@ -420,10 +430,10 @@ main .knopf{max-width:100%}
    </article>
    <article class="ort glas auf">
     <img src="p/angebote/i-botschaft.webp" alt="" width="320" height="320" loading="lazy">
-    <small>In der WhatsApp-Gruppe</small>
+    <small>In deiner Gruppe</small>
     <h3>Dein Video und dein Feedback</h3>
     <p>Hier stellst du dein Video ein, hier bekommst du Claudias persönliches Feedback. Jede Nachricht von Claudia führt dich mit einem Link direkt zu deinem Tag auf der Seite zurück.</p>
-    <p class="ort-tipp">Die Gruppenbeschreibung oben in WhatsApp enthält immer den Link zur Seite.</p>
+    <p class="ort-tipp">Die Gruppenbeschreibung oben in der Gruppe enthält immer den Link zur Seite.</p>
    </article>
   </div>
   <ol class="tagesweg" aria-label="Dein Weg an jedem Tag">
@@ -432,6 +442,13 @@ main .knopf{max-width:100%}
    <li><b>3</b><span>Posten</span><small>in der Gruppe</small></li>
    <li><b>4</b><span>Feedback</span><small>in der Gruppe</small></li>
   </ol>
+  <div class="gruppenwahl" aria-labelledby="wahl-titel">
+   <h3 id="wahl-titel">Du hast die Wahl</h3>
+   <a class="wahl wahl-eins" href="#platz"><b>1</b><span><strong>Empfohlen: die WhatsApp-Gruppe</strong>Hier ist am meisten los.</span></a>
+   <a class="wahl" href="#platz"><b>2</b><span><strong>Kein WhatsApp? Dann die Telegram-Gruppe</strong>Gleiche Inhalte, gleiches Feedback.</span></a>
+   <p class="wahl-notiz"><span class="vor">fehlt noch</span> Beide Links zeigst du erst nach dem Eintragen. Den Telegram-Link bitte von dir.</p>
+  </div>
+
  </div>
 </section>
 
