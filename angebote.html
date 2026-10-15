@@ -547,8 +547,10 @@ section.knapp{padding-block:72px}
 .ue-links a{font-weight:700;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--gold);justify-self:start}
 .ue-links span{color:var(--ink2);font-size:12.5px;word-break:break-all}
 .amp.grau::before{background:#9AA3B2}
-.ue-zurueck{opacity:.62;filter:grayscale(.6)}
-.ue-zurueck:hover{opacity:1;filter:none}
+.ue-zurueck{position:relative}.ue-zurueck .ue-bild,.ue-zurueck .ue-innen{opacity:.55;filter:grayscale(.8)}
+.ue-zurueck::before,.ue-zurueck::after{content:"";position:absolute;left:50%;top:50%;width:120%;height:5px;background:#C0392B;border-radius:3px;z-index:5;box-shadow:0 0 0 2px rgba(255,255,255,.7)}
+.ue-zurueck::before{transform:translate(-50%,-50%) rotate(33deg)}.ue-zurueck::after{transform:translate(-50%,-50%) rotate(-33deg)}
+.ue-zurueck{overflow:hidden}
 .ue-notiz{border-radius:18px;padding:22px 24px;margin:16px 0 40px;max-width:900px;display:grid;gap:8px;background:rgba(255,255,255,.85)}.ue-notiz b{font:600 24px/1.2 'Cormorant Garamond',Georgia,serif}.ue-notiz a{font-weight:700;color:var(--ink);border-bottom:1.5px solid var(--gold);text-decoration:none}
 .nz-bereich{padding-block:60px}
 .nz-spur{border:1px solid var(--linie);border-radius:20px;padding:20px;margin-top:22px;background:var(--weiss);box-shadow:0 18px 40px -32px rgba(19,35,63,.5)}
