@@ -367,6 +367,30 @@ section.knapp{padding-block:72px}
 .spaltenlink{color:inherit;text-decoration:none;border-bottom:1.5px solid var(--gold)}.spaltenlink:hover{border-bottom-width:2.5px}
 .zur-seite td a{font:700 12.5px/1.3 'Inter',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--gold);padding-bottom:2px}
 .zur-seite td a::after{content:" →"}
+.zurueck-angebote{position:fixed;left:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;background:var(--ink);color:var(--ivory);font:700 13px/1 'Inter',sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;box-shadow:0 12px 28px -12px rgba(19,35,63,.7);animation:puls 2.8s ease-out infinite}
+.zurueck-angebote span{color:var(--sand);font-size:16px}
+.zurueck-angebote:hover{background:var(--ink2);animation-play-state:paused}
+.zurueck-angebote:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@keyframes puls{0%{box-shadow:0 12px 28px -12px rgba(19,35,63,.7),0 0 0 0 rgba(201,169,97,.55)}70%{box-shadow:0 12px 28px -12px rgba(19,35,63,.7),0 0 0 14px rgba(201,169,97,0)}100%{box-shadow:0 12px 28px -12px rgba(19,35,63,.7),0 0 0 0 rgba(201,169,97,0)}}
+@media(prefers-reduced-motion:reduce){.zurueck-angebote{animation:none}}
+@media(max-width:600px){.zurueck-angebote{left:12px;bottom:12px;padding:10px 14px;font-size:12px}}
+.fall-links img{max-width:340px}
+.muster3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:900px){.muster3{grid-template-columns:1fr}}
+.zeitweg-bereich{padding-block:80px;background:var(--weiss)}
+.zeitweg{list-style:none;margin:34px 0 18px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;position:relative}
+.zeitweg::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:linear-gradient(90deg,var(--gold),var(--sand))}
+@media(max-width:900px){.zeitweg{grid-template-columns:1fr;gap:22px;padding-left:28px}.zeitweg::before{left:8px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,var(--gold),var(--sand))}}
+.zeitweg li{position:relative;padding-top:34px}
+.zeitweg li::before{content:"";position:absolute;top:0;left:0;width:20px;height:20px;border-radius:50%;background:var(--weiss);border:3px solid var(--gold);box-sizing:border-box}
+@media(max-width:900px){.zeitweg li{padding-top:0}.zeitweg li::before{left:-29px;top:2px}}
+.zeitweg li.ziel::before{background:var(--ink);border-color:var(--ink)}
+.zeitweg small{font:700 11.5px/1.3 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8A6D2F}
+.zeitweg h3{font:600 26px/1.15 'Cormorant Garamond',Georgia,serif;margin:6px 0}
+.zeitweg p{font-size:15.5px;line-height:1.55}
+.gespraech{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-radius:18px;padding:20px 24px;margin-top:22px;max-width:900px}
+.gespraech p{font-size:15.5px;margin-top:4px}
+.gespraech b{font:600 24px/1.2 'Cormorant Garamond',Georgia,serif}
 </style>
 <meta name="description" content="12 Wochen Mentoring in der Kleingruppe (höchstens 6): klare Kernbotschaft, 60-Sekunden-Vorstellung und eine geübte 7-Minuten-Rede. Online, KI-gestützt, menschlich.">
 <script type="application/ld+json">
@@ -545,6 +569,15 @@ section.knapp{padding-block:72px}
  </div>
 </section>
 
+<section class="vertrauen" aria-label="Bühnen, Medien und Partner">
+ <div class="huelle">
+  <p class="vertrauen-titel">Bühnen, Medien und Partner</p>
+  <div class="logos">
+   <img src="l/rtl.svg" alt="RTL" loading="lazy"><img src="l/sat1.png" alt="Sat.1" loading="lazy"><img src="l/greator.png" alt="Greator" loading="lazy"><img src="l/gsa.png" alt="German Speakers Association" loading="lazy"><img src="l/erfolg.png" alt="ERFOLG Magazin" loading="lazy"><img src="l/karrierebibel.svg" alt="Karrierebibel" loading="lazy"><img src="l/dometic.png" alt="Dometic" loading="lazy"><img src="l/powerofai.png" alt="The Power of AI" loading="lazy">
+  </div>
+ </div>
+</section>
+
 <section class="hell knapp" aria-labelledby="anliegen-titel">
  <div class="huelle">
   <div class="kicker">Dein Anliegen steht im Mittelpunkt</div>
@@ -555,6 +588,20 @@ section.knapp{padding-block:72px}
   <p class="ki-satz">KI für alles, was vergleichbar ist. <em>Du für das, was unersetzlich ist.</em></p>
   <div class="text-spalte" style="margin-top:18px">
    <p>Wir arbeiten KI-gestützt und sagen das offen: Die KI hilft bei Struktur, Varianten und Tempo. Deine Geschichte, deine Stimme und deine Haltung kann sie nicht ersetzen. Genau daran arbeiten wir.</p>
+  </div>
+ </div>
+</section>
+
+<section class="muster-bereich ton-champ" aria-labelledby="hakt-titel">
+ <div class="huelle">
+  <div class="muster-kopf">
+   <h2 id="hakt-titel">Woran es heute hakt</h2>
+   <div><p>Das Symptom siehst du sofort. Die Ursache liegt fast nie im Fachwissen. Genau dort setzen die drei Bausteine an.</p><p>Erkennst du dich wieder? <span class="vor">Textvorschlag</span></p></div>
+  </div>
+  <div class="muster muster3">
+   <article class="musterkarte auf"><h3>Drei Minuten für „Was machst du?“</h3><p><b>Symptom:</b> Jemand fragt, und du holst weit aus.</p><p><b>Ursache:</b> Keine Kernbotschaft, die in einen Satz passt.</p><p><b>Baustein 01:</b> Botschaft schärfen.</p></article>
+   <article class="musterkarte auf"><h3>Fachlich brillant, menschlich unsichtbar</h3><p><b>Symptom:</b> Kunden loben dein Wissen und kaufen woanders.</p><p><b>Ursache:</b> Du erklärst, statt zu berühren.</p><p><b>Baustein 02:</b> Geschichten entwickeln.</p></article>
+   <article class="musterkarte auf"><h3>Die Stimme verliert den Halt</h3><p><b>Symptom:</b> Unter Druck wirst du schneller, höher, leiser.</p><p><b>Ursache:</b> Du denkst an den Inhalt, nicht an den Menschen vor dir.</p><p><b>Baustein 03:</b> Stimme und Präsenz trainieren.</p></article>
   </div>
  </div>
 </section>
@@ -570,6 +617,21 @@ section.knapp{padding-block:72px}
   </div>
  </div>
 </section>
+
+<section class="zeitweg-bereich" aria-labelledby="zeitweg-titel">
+ <div class="huelle">
+  <div class="kicker">Dein Weg</div>
+  <h2 id="zeitweg-titel">Zwölf Wochen, Schritt für Schritt</h2>
+  <ol class="zeitweg">
+   <li class="auf"><small>Woche 1 bis 4</small><h3>Botschaft</h3><p>Berufung, Werte, Positionierung. Am Ende steht deine Kernbotschaft.</p></li>
+   <li class="auf"><small>Woche 5 bis 8</small><h3>Struktur und Geschichten</h3><p>Roter Faden, Storytelling, Elevator Pitch. Deine 60-Sekunden-Vorstellung entsteht.</p></li>
+   <li class="auf"><small>Woche 9 bis 12</small><h3>Stimme und Präsenz</h3><p>Tempo, Pausen, Körpersprache, Kamera und Bühne. Deine 7-Minuten-Rede sitzt.</p></li>
+   <li class="auf ziel"><small>Abschluss</small><h3>Dein Vorher-Nachher</h3><p>Der Vergleich deiner ersten und letzten Aufnahme, dazu dein Praxispaket.</p></li>
+  </ol>
+  <p class="notiz"><span class="vor">Vorschlag</span> Die Einteilung in Wochen ist abgeleitet aus deinen drei Bausteinen. Bitte bestätigen oder korrigieren.</p>
+ </div>
+</section>
+
 
 <section aria-labelledby="begleit-titel">
  <div class="huelle">
@@ -632,9 +694,10 @@ section.knapp{padding-block:72px}
   <div class="preis-box">
    <div class="kachel">
     <small class="klein-caps">Frühbucher bis 2. November 2026 <span class="vor">Vorschlag</span></small>
-    <div class="preis-gross">2.190 € <span style="font-size:.5em">zzgl. MwSt.</span></div>
-    <div class="brutto">2.606,10 € inkl. MwSt.</div>
+    <div class="preis-gross">1.990 € <span style="font-size:.5em">zzgl. MwSt.</span></div>
+    <div class="brutto">2.368,10 € inkl. MwSt.</div>
     <ul><li>12 Wochen, 12 Live-Trainings</li><li>höchstens 6 Personen</li><li>alle Leistungen oben inklusive</li></ul>
+    <a class="knopf" href="https://umsatzstimme-claudiaconen.mytentary.com/p/yN71vE/checkout" rel="noopener" style="margin-top:14px">Frühbucher-Platz sichern</a>
    </div>
    <div class="kachel">
     <small class="klein-caps">Regulär <span class="vor">Vorschlag</span></small>
@@ -644,7 +707,8 @@ section.knapp{padding-block:72px}
    </div>
   </div>
   <div class="garantie glas"><img src="p/angebote/i-wirkung.webp" alt="" width="320" height="291" loading="lazy"><p><b>Deine Sicherheit:</b> Wenn du nach den ersten zwei Trainings merkst, dass es nicht passt, bekommst du dein Geld zurück. <span class="vor">Vorschlag, bitte entscheiden</span></p></div>
-  <p class="notiz">Du willst es lieber erst erleben? Starte mit der kostenfreien <a href="challenge.html">7-Tage-Challenge</a> oder dem <a href="live-workshop.html">Live-Workshop in Köln</a>.</p>
+  <div class="gespraech glas"><div><b>Unsicher, ob es passt?</b><p>In einem kurzen Gespräch klären wir, ob das Programm zu deinem Anliegen passt. Ohne Verkaufsdruck.</p></div><a class="knopf zweit" href="kontakt.html#experten">Gespräch vereinbaren</a></div>
+  <p class="notiz">Du willst es lieber erst erleben? Starte mit der kostenfreien <a href="https://claudiaconen.com/challenge">7-Tage-Challenge</a> oder dem <a href="live-workshop.html">Live-Workshop in Köln</a>.</p>
  </div>
 </section>
 
@@ -689,11 +753,13 @@ section.knapp{padding-block:72px}
    <div class="kicker" style="margin:0">Höchstens 6 Plätze</div>
    <h2 id="schluss-titel">Wofür stehst du? Lass es ankommen.</h2>
    <p>Die Gruppe ist klein, damit du Sprechzeit und persönliche Rückmeldung bekommst.</p>
-   <a class="knopf" href="https://umsatzstimme-claudiaconen.mytentary.com/p/yN71vE">Platz sichern</a> <span class="vor">Tentary anpassen</span>
+   <a class="knopf" href="https://umsatzstimme-claudiaconen.mytentary.com/p/yN71vE/checkout" rel="noopener">Platz sichern</a> <span class="vor">Preis in Tentary noch angleichen</span>
    <a class="leise" href="kontakt.html" style="margin-left:18px">Erst ein Gespräch</a>
   </div>
  </div>
 </section>
+
+<a class="zurueck-angebote" href="angebote.html" aria-label="Zurück zu allen Angeboten"><span aria-hidden="true">←</span> Alle Angebote</a>
 
 </main>
 
