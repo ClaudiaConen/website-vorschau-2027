@@ -178,7 +178,7 @@ section.knapp{padding-block:72px}
 .wkopf .sub{font-size:19px;line-height:1.6;margin-top:22px;max-width:52ch}
 .wbild{margin:0;position:relative}
 .wbild img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:22px;box-shadow:0 40px 80px -40px rgba(19,35,63,.45)}
-@media(max-width:900px){.wkopf .huelle{grid-template-columns:1fr;gap:30px}.wbild img{aspect-ratio:4/3}}
+@media(max-width:900px){.wkopf .huelle{grid-template-columns:1fr;gap:30px}.wbild img{aspect-ratio:4/3;object-position:50% 22%}}
 .wege-bereich{background:radial-gradient(50% 60% at 15% 20%,rgba(201,169,97,.16),transparent 70%),radial-gradient(45% 55% at 90% 80%,rgba(36,64,111,.12),transparent 70%),var(--ivory)}
 .wegkarten{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:40px;align-items:stretch}
 @media(max-width:1000px){.wegkarten{grid-template-columns:1fr;max-width:620px}}
@@ -219,7 +219,8 @@ section.knapp{padding-block:72px}
 .garantie{display:flex;gap:18px;align-items:center;border-radius:18px;padding:18px 22px;margin-top:26px;max-width:900px}
 .garantie img{width:64px;height:auto;flex:none;filter:drop-shadow(0 8px 12px rgba(19,35,63,.25))}
 .garantie p{font-size:16px;line-height:1.55}
-.begleit-bild{margin:26px 0 0}.begleit-bild img{width:100%;max-width:900px;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 40%;border-radius:18px}
+.begleit-bild{margin:26px 0 0}.begleit-bild img{width:100%;max-width:900px;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 0%;border-radius:18px}
+@media(max-width:700px){.begleit-bild img{aspect-ratio:4/3}}
 .begleit li.glas{border-radius:16px}
 .momente{margin:0}.momente img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px}
 .momente-breit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:32px 0 0}
@@ -348,6 +349,21 @@ section.knapp{padding-block:72px}
 .band-pause{position:absolute;right:18px;bottom:18px;z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(253,251,247,.5);background:rgba(19,35,63,.45);color:var(--ivory);font-size:13px;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .band-pause:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
 @media(max-width:820px){.band-video{translate:0 0;opacity:.6}.band::before{background:rgba(19,35,63,.8)}}
+.portrait-hoch img{aspect-ratio:4/5;object-position:50% 18%;max-height:620px}
+.muster-bereich.ton-champ{background:#F8ECD8}
+.stimmen-hell{background:var(--weiss);color:var(--ink)}
+.stimmen-hell .stimme{background:var(--ivory);border:1px solid var(--linie);border-top:3px solid var(--gold);box-shadow:0 18px 40px -30px rgba(19,35,63,.45)}
+.stimmen-hell .stimme blockquote{color:var(--ink)}
+.stimmen-hell .stimme figcaption{color:var(--ink2)}
+.stimmen-hell .stimme figcaption b{color:var(--ink)}
+.fall-bereich{padding-block:72px}
+.fall-bereich .fall{margin-top:6px}
+.fall-hell{background:var(--weiss);border:1px solid rgba(201,169,97,.45);box-shadow:0 26px 50px -34px rgba(19,35,63,.5)}
+.fall-hell .fall-nr{color:#8A6D2F}
+.fall-hell h3,.fall-hell blockquote{color:var(--ink)}
+.fall-hell .fall-unter,.fall-hell .fall-rechts p{color:var(--ink2)}
+.fall-hell .fall-rechts h4{color:#8A6D2F}
+.fall-hell .fall-rechts .leise{color:var(--ink)}
 </style>
 <meta name="description" content="Kostenfreie 7-Tage-Challenge, Live-Workshop in Köln oder 12-Wochen-Mentoring-Programm: Finde deinen Weg zu klarer Botschaft, Stimme und Auftritt.">
 <script type="application/ld+json">
@@ -529,7 +545,7 @@ section.knapp{padding-block:72px}
   <p class="unterzeile">Du kannst perfekt klingen. Oder glaubwürdig. <span class="vor">Textvorschlag</span></p>
   <div class="haltung">
    <ul class="prinzipien">
-    <li class="auf"><img src="p/angebote/i-wirkung.webp" alt="" width="320" height="320" loading="lazy"><div><h3>Wirkung beginnt vor dem ersten Satz</h3><p>Ob dein Gegenüber dir glaubt, entscheidet sich oft, bevor dein Argument zu Ende ist. Wir arbeiten an dem, was zuerst ankommt: Stimme, Blick, Haltung.</p></div></li>
+    <li class="auf"><img src="p/angebote/i-gehirn.webp" alt="" width="320" height="282" loading="lazy"><div><h3>Wirkung beginnt vor dem ersten Satz</h3><p>Ob dein Gegenüber dir glaubt, entscheidet sich oft, bevor dein Argument zu Ende ist. Wir arbeiten an dem, was zuerst ankommt: Stimme, Blick, Haltung.</p></div></li>
     <li class="auf"><img src="p/angebote/i-praesenz.webp" alt="" width="320" height="320" loading="lazy"><div><h3>Echt schlägt perfekt</h3><p>Du musst niemand anderes werden. Wir legen frei, was in dir schon wirkt, und räumen weg, was es verdeckt.</p></div></li>
     <li class="auf"><img src="p/angebote/i-ki.webp" alt="" width="320" height="320" loading="lazy"><div><h3>Mensch für das Unersetzliche</h3><p>KI liefert dir Struktur und Varianten in Sekunden. Vertrauen liefert sie nicht. Das kommt von dir.</p></div></li>
    </ul>
@@ -578,7 +594,7 @@ section.knapp{padding-block:72px}
  </div>
 </section>
 
-<section id="muster" class="muster-bereich" aria-labelledby="muster-titel">
+<section id="muster" class="muster-bereich ton-champ" aria-labelledby="muster-titel">
  <div class="huelle">
   <div class="muster-kopf">
    <h2 id="muster-titel">Woran Wirkung scheitert, und was daraus folgt</h2>
@@ -595,7 +611,7 @@ section.knapp{padding-block:72px}
  </div>
 </section>
 
-<section class="dunkel stimmen-bereich" aria-labelledby="stimmen-titel">
+<section class="stimmen-bereich stimmen-hell" aria-labelledby="stimmen-titel">
  <div class="huelle">
   <div class="kicker">Stimmen</div>
   <h2 id="stimmen-titel">Was sich verändert, wenn Wirkung ankommt</h2>
@@ -604,31 +620,38 @@ section.knapp{padding-block:72px}
    <figure class="stimme glas auf"><blockquote>„Die Texte fühlen sich für mich so an, als hätte ich sie selber gesagt.“</blockquote><figcaption><b>Melanie Miniaci</b>Gründerin von Miderma</figcaption></figure>
    <figure class="stimme glas auf"><blockquote>„Die Atmosphäre ist sehr herzlich, sehr direkt und sehr intensiv, aber wir lachen auch viel gemeinsam.“</blockquote><figcaption><b>Dr.-Ing. Ann-Kathrin Andresen</b>Verfahrenstechnikerin, Mentorin und Beraterin</figcaption></figure>
    <figure class="stimme glas auf"><blockquote>„Du hast das so gut immer wieder aufgefangen, mich begleitet, mich wieder reingeführt.“</blockquote><figcaption><b>Freimuth Gorter</b>Heilpraktiker, Köln und Essen</figcaption></figure>
+   <figure class="stimme glas auf"><blockquote>„Ich habe heute unwahrscheinlich viel mitgenommen, wie wichtig Kommunikation ist und dass es manchmal auf kleine Worte ankommt.“</blockquote><figcaption><b>Dipl.-Kfm. Stefan Staib</b>Steuerberater, Master of International Taxation</figcaption></figure>
+   <figure class="stimme glas auf"><blockquote>„… dass die KI den Menschen nicht ersetzen soll, sondern sie soll den Menschen unterstützen.“</blockquote><figcaption><b>Niklas Mertens</b>Co-Founder oneBanking und Connect</figcaption></figure>
   </div>
   <div class="handlung" style="margin-top:26px"><a class="knopf zweit" href="ergebnisse.html">Alle 35 Stimmen ansehen</a></div>
-  <article class="fall auf" aria-labelledby="fall1">
+ </div>
+</section>
+
+<section class="fall-bereich ton-champ" aria-label="Fallbeispiel">
+ <div class="huelle">
+  <div class="kicker">Fallbeispiel</div>
+  <article class="fall fall-hell auf" aria-labelledby="fall1">
    <div class="fall-links">
     <img src="p/ergebnisse/andreas.webp" alt="Andreas Meyer im Gespräch mit Claudia Conen vor einer Tür mit Bildern" width="480" height="600" loading="lazy">
     <small class="fall-nr">Fallbeispiel 01</small>
     <h3 id="fall1">Andreas Meyer</h3>
-    <p class="fall-unter">„Der Mann der sieben Türen“<br>Markenentwicklung · Vision · Symbolik</p>
+    <p class="fall-unter">„Der Mann der sieben Türen“<br>Markenentwicklung · Vision · Symbolik<br>3 intensive Tage</p>
    </div>
    <div class="fall-rechts">
     <h4>Ausgangslage</h4>
     <p>Ein Experte, der seine Arbeit als Reise durch sieben Türen erzählt und sich selbst so beschreibt: „Ich bin ja sehr ein blauer Typ, sehr rational und durchdacht.“ Was fehlte, war die Verbindung zu den Themen, die er, in seinen Worten, „schon ganz lange gehütet“ hatte.</p>
     <h4>Zusammenarbeit</h4>
-    <p>In intensiven gemeinsamen Tagen entstand die Bildsprache seiner Marke: die Tür, der Türanhänger, der zugleich seine Visitenkarte ist, und der Türstopper als Bild für alles, was uns bremst.</p>
+    <p>In drei intensiven gemeinsamen Tagen entstand die Bildsprache seiner Marke: die Tür, der Türanhänger, der zugleich seine Visitenkarte ist, und der Türstopper als Bild für alles, was uns bremst.</p>
     <h4>Das Ergebnis</h4>
     <p>Die sieben Türen sind sein Markenzeichen geworden, bis hin zur Tür, die er beim Schreiner bauen ließ. Und er hat seine Vision „wie nochmal neu entdeckt“.</p>
     <blockquote>„Du hast mich unterstützt, diesen emotionalen Teil zu machen.“</blockquote>
     <a class="leise" href="p/ergebnisse/andreas.mp4">Video ansehen · 3:54</a>
-    <p class="fall-vor"><span class="vor">bitte ergänzen</span> Format und Dauer der Zusammenarbeit (wie viele Tage, Zeitraum).</p>
    </div>
   </article>
  </div>
 </section>
 
-<section class="claudia knapp ton-champ" aria-labelledby="claudia-titel">
+<section class="claudia knapp ton-perl" aria-labelledby="claudia-titel">
  <div class="huelle">
   <div class="text">
    <div class="kicker">Mit Claudia Conen</div>
@@ -637,8 +660,8 @@ section.knapp{padding-block:72px}
    <p>Ihr Blick gilt nicht der perfekten Rede, sondern dem Moment, in dem ein Mensch dir glaubt.</p>
    <a class="leise" href="ueber-claudia.html">Mehr über Claudia</a>
   </div>
-  <figure class="momente">
-   <img src="p/angebote/gruppe.webp" alt="Claudia Conen mit einer Gruppe von Teilnehmenden auf einer Veranstaltung" width="1200" height="800" loading="lazy">
+  <figure class="momente portrait-hoch">
+   <img src="p/ueber-claudia/hero.webp" alt="Claudia Conen sitzt lächelnd vor einer Steinwand" width="1067" height="1600" loading="lazy">
   </figure>
  </div>
 </section>
@@ -701,7 +724,7 @@ section.knapp{padding-block:72px}
     </div>
    </article>
    <article class="wegkarte glas auf">
-    <div class="wfoto"><img src="p/angebote/mentoring-portrait.webp" alt="Claudia Conen lacht im hellblauen Anzug" width="667" height="834" loading="lazy"><img class="icon3d" src="p/angebote/i-schritt-8.webp" alt="" width="256" height="256"></div>
+    <div class="wfoto"><img src="p/angebote/mentoring-portrait.webp" alt="Claudia Conen lacht im hellblauen Anzug" width="667" height="834" loading="lazy" style="object-position:50% 8%"><img class="icon3d" src="p/angebote/i-schritt-8.webp" alt="" width="256" height="256"></div>
     <div class="winnen">
      <small class="stufe">Weg 3 · 12 Wochen · online</small>
      <h3>Das Mentoring-Programm</h3>

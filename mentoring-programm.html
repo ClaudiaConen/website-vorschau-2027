@@ -178,7 +178,7 @@ section.knapp{padding-block:72px}
 .wkopf .sub{font-size:19px;line-height:1.6;margin-top:22px;max-width:52ch}
 .wbild{margin:0;position:relative}
 .wbild img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:22px;box-shadow:0 40px 80px -40px rgba(19,35,63,.45)}
-@media(max-width:900px){.wkopf .huelle{grid-template-columns:1fr;gap:30px}.wbild img{aspect-ratio:4/3}}
+@media(max-width:900px){.wkopf .huelle{grid-template-columns:1fr;gap:30px}.wbild img{aspect-ratio:4/3;object-position:50% 22%}}
 .wege-bereich{background:radial-gradient(50% 60% at 15% 20%,rgba(201,169,97,.16),transparent 70%),radial-gradient(45% 55% at 90% 80%,rgba(36,64,111,.12),transparent 70%),var(--ivory)}
 .wegkarten{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:40px;align-items:stretch}
 @media(max-width:1000px){.wegkarten{grid-template-columns:1fr;max-width:620px}}
@@ -219,7 +219,8 @@ section.knapp{padding-block:72px}
 .garantie{display:flex;gap:18px;align-items:center;border-radius:18px;padding:18px 22px;margin-top:26px;max-width:900px}
 .garantie img{width:64px;height:auto;flex:none;filter:drop-shadow(0 8px 12px rgba(19,35,63,.25))}
 .garantie p{font-size:16px;line-height:1.55}
-.begleit-bild{margin:26px 0 0}.begleit-bild img{width:100%;max-width:900px;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 40%;border-radius:18px}
+.begleit-bild{margin:26px 0 0}.begleit-bild img{width:100%;max-width:900px;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 0%;border-radius:18px}
+@media(max-width:700px){.begleit-bild img{aspect-ratio:4/3}}
 .begleit li.glas{border-radius:16px}
 .momente{margin:0}.momente img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px}
 .momente-breit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:32px 0 0}
@@ -348,6 +349,21 @@ section.knapp{padding-block:72px}
 .band-pause{position:absolute;right:18px;bottom:18px;z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(253,251,247,.5);background:rgba(19,35,63,.45);color:var(--ivory);font-size:13px;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .band-pause:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
 @media(max-width:820px){.band-video{translate:0 0;opacity:.6}.band::before{background:rgba(19,35,63,.8)}}
+.portrait-hoch img{aspect-ratio:4/5;object-position:50% 18%;max-height:620px}
+.muster-bereich.ton-champ{background:#F8ECD8}
+.stimmen-hell{background:var(--weiss);color:var(--ink)}
+.stimmen-hell .stimme{background:var(--ivory);border:1px solid var(--linie);border-top:3px solid var(--gold);box-shadow:0 18px 40px -30px rgba(19,35,63,.45)}
+.stimmen-hell .stimme blockquote{color:var(--ink)}
+.stimmen-hell .stimme figcaption{color:var(--ink2)}
+.stimmen-hell .stimme figcaption b{color:var(--ink)}
+.fall-bereich{padding-block:72px}
+.fall-bereich .fall{margin-top:6px}
+.fall-hell{background:var(--weiss);border:1px solid rgba(201,169,97,.45);box-shadow:0 26px 50px -34px rgba(19,35,63,.5)}
+.fall-hell .fall-nr{color:#8A6D2F}
+.fall-hell h3,.fall-hell blockquote{color:var(--ink)}
+.fall-hell .fall-unter,.fall-hell .fall-rechts p{color:var(--ink2)}
+.fall-hell .fall-rechts h4{color:#8A6D2F}
+.fall-hell .fall-rechts .leise{color:var(--ink)}
 </style>
 <meta name="description" content="12 Wochen Mentoring in der Kleingruppe (höchstens 6): klare Kernbotschaft, 60-Sekunden-Vorstellung und eine geübte 7-Minuten-Rede. Online, KI-gestützt, menschlich.">
 <script type="application/ld+json">
