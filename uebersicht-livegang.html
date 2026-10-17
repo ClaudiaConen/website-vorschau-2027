@@ -542,6 +542,10 @@ section.knapp{padding-block:72px}
 .ue-zeile .amp{border:1px solid var(--linie)}
 .ue-zeile small{font-size:12px;color:var(--ink2)}
 .ue-nr{display:inline-flex;align-items:center;justify-content:center;min-width:2.1em;height:1.5em;margin-right:.45em;padding:0 .4em;border-radius:99px;background:#13233F;color:#FDFBF7;font:600 13px/1 Inter,system-ui,sans-serif;letter-spacing:.04em;vertical-align:.25em}
+.ue-ausruf{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:1.5em;height:1.5em;margin-right:.45em;border-radius:99px;background:#C62828;color:#fff;font:800 15px/1 Inter,system-ui,sans-serif;vertical-align:.2em}
+.ue-fehler{margin:2px 0 4px;padding:8px 12px 8px 26px;border-left:3px solid #C62828;background:#FDECEC;border-radius:8px;color:#8E1B1B;font:600 13.5px/1.45 Inter,system-ui,sans-serif}
+.ue-fehler li+li{margin-top:4px}
+.ue-fehlerlegende{display:flex;align-items:center;gap:10px;margin:0 0 18px;font:500 14px/1.4 Inter,system-ui,sans-serif;color:var(--ink2)}
 .ue-innen h3{font:600 22px/1.15 'Cormorant Garamond',Georgia,serif}
 .ue-innen p{font-size:14.5px;line-height:1.5;color:var(--ink2)}
 .ue-links{display:grid;gap:4px;margin-top:4px;font-size:13.5px}
@@ -730,7 +734,7 @@ section.knapp{padding-block:72px}
 <div class="ue-legende"><span class="amp gruen">bereit</span><span class="amp gelb">1 bis 5 offen</span><span class="amp rot">mehr als 5 offen</span></div>
 <div class="ue-stats"><div><b>33</b><span>Seiten</span></div><div><b>0</b><span>bereit</span></div><div><b>377</b><span>offene Punkte gesamt</span></div></div>
 </div></section>
-<section class="ue-gruppe"><div class="huelle"><h2>Neu von heute: Angebote und Teilnehmer</h2><div class="ue-raster">
+<section class="ue-gruppe"><div class="huelle"><p class="ue-fehlerlegende"><span class="ue-ausruf">!</span><span>= hier ist noch ein Fehler, der Grund steht rot auf der Karte. Geprüft am 17.10.2026: 8 von 33 Seiten. Geprüft wurden alte Bolt-Adressen, E-Mail, Telefon/WhatsApp, Links und Formulare. <b style="color:#8E1B1B">Wichtigster Punkt: Die Anmeldungen zur laufenden Challenge landen live noch in der alten Bolt-Datenbank (Karte 07).</b></span></p><h2>Neu von heute: Angebote und Teilnehmer</h2><div class="ue-raster">
 <article class="ue-karte glas auf"><a class="ue-bild ue-og" href="angebote.html"><img src="p/uebersicht/og-angebote.jpg" alt="" width="1200" height="630" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp gruen">live</span><small>live seit 15.10.</small></div>
 <h3><span class="ue-nr">01</span>Angebote</h3><p>Die drei Wege im Überblick: Challenge, Live-Workshop, Mentoring. Mit Vergleich, Stimmen und Fallbeispiel.</p>
@@ -749,21 +753,21 @@ section.knapp{padding-block:72px}
 <div class="ue-links"><a href="mentoring-inhalte.html">Vorschau ansehen</a><a href="https://claudiaconen.com/mentoring-inhalte">Live ansehen: claudiaconen.com/mentoring-inhalte</a></div></div></article>
 <article class="ue-karte glas auf"><a class="ue-bild ue-og" href="p/uebersicht/og-1zu1-training.jpg"><img src="p/uebersicht/og-1zu1-training.jpg" alt="" width="1200" height="630" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp gelb">1 offen</span><small>Kalender-Link fehlt · neu 17.10.</small></div>
-<h3><span class="ue-nr">05</span><span style="font-family:Inter,system-ui,sans-serif;font-size:.8em;font-weight:500">1:1</span>-Live-Training online</h3><p>90 Minuten, 173 € zzgl. MwSt., Sonderpreis zur Challenge. Was wir herausfinden, Prompts und Workbooks, für wen es passt. Knopf zu deinem Google-Kalender. Hinweis dazu direkt unter der Challenge-Anmeldung.</p>
+<h3><span class="ue-nr">05</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span><span style="font-family:Inter,system-ui,sans-serif;font-size:.8em;font-weight:500">1:1</span>-Live-Training online</h3><ul class="ue-fehler"><li>Kalender-Link fehlt: Der Knopf „Termin wählen“ führt noch nirgendwohin.</li></ul><p>90 Minuten, 173 € zzgl. MwSt., Sonderpreis zur Challenge. Was wir herausfinden, Prompts und Workbooks, für wen es passt. Knopf zu deinem Google-Kalender. Hinweis dazu direkt unter der Challenge-Anmeldung.</p>
 <div class="ue-links"><a href="p/uebersicht/og-1zu1-training.jpg">Bild ansehen</a><span>künftig: claudiaconen.com/1zu1-training</span></div></div></article>
 <article class="ue-karte glas auf"><a class="ue-bild" href="mitglieder.html"><img src="p/uebersicht/mitglieder.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp gelb">1 offen</span><small>braucht Login + Datenbank</small></div>
-<h3><span class="ue-nr">06</span>Mitgliederbereich</h3><p>Eingang mit zwei Türen: Challenge und Mentoring, getrennte Zugänge.</p>
+<h3><span class="ue-nr">06</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span>Mitgliederbereich</h3><ul class="ue-fehler"><li>Die Anmeldefelder senden noch nichts (nur Vorschau). Vor dem Livegang anschließen.</li></ul><p>Eingang mit zwei Türen: Challenge und Mentoring, getrennte Zugänge.</p>
 <div class="ue-links"><a href="mitglieder.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/mitglieder</span></div></div></article>
 <article class="ue-karte glas auf ue-zurueck"><a class="ue-bild" href="challenge.html"><img src="p/uebersicht/challenge.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp grau">zurückgestellt</span><small>zurückgestellt</small></div>
-<h3><span class="ue-nr">07</span>7-Tage-Challenge (neues Design)</h3><p>Zurückgestellt: Die Challenge läuft schon live unter claudiaconen.com/challenge. Diese Fassung wäre nur ein neues Design für dieselbe Seite, keine zweite Seite. Erst nach der Challenge (ab November) wieder ansehen.</p>
+<h3><span class="ue-nr">07</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span>7-Tage-Challenge (neues Design)</h3><ul class="ue-fehler"><li>Live: Challenge-Anmeldungen landen noch in der alten Bolt-Datenbank (szilq), nicht in deiner eigenen (eamm).</li></ul><p>Zurückgestellt: Die Challenge läuft schon live unter claudiaconen.com/challenge. Diese Fassung wäre nur ein neues Design für dieselbe Seite, keine zweite Seite. Erst nach der Challenge (ab November) wieder ansehen.</p>
 <div class="ue-links"><a href="challenge.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/challenge</span></div></div></article>
 </div></div></section>
 <section class="ue-gruppe"><div class="huelle"><h2>Start und Vertrauen</h2><div class="ue-raster">
 <article class="ue-karte glas auf"><a class="ue-bild" href="index.html"><img src="p/uebersicht/index.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp gelb">5 offen</span><small>ersetzt heutige Seite</small></div>
-<h3><span class="ue-nr">08</span>Startseite</h3><p>„Du wirkst immer.“ Kopf mit Video, Situationen, Formate, Claudia live erleben.</p>
+<h3><span class="ue-nr">08</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span>Startseite</h3><ul class="ue-fehler"><li>Live: Das Kontaktformular auf der Startseite schreibt noch in die alte Bolt-Datenbank (szilq).</li></ul><p>„Du wirkst immer.“ Kopf mit Video, Situationen, Formate, Claudia live erleben.</p>
 <div class="ue-links"><a href="index.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/</span></div></div></article>
 <article class="ue-karte glas auf"><a class="ue-bild" href="ueber-claudia.html"><img src="p/uebersicht/ueber-claudia.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp rot">16 offen</span><small>ersetzt heutige Seite</small></div>
@@ -771,11 +775,11 @@ section.knapp{padding-block:72px}
 <div class="ue-links"><a href="ueber-claudia.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/ueber-claudia</span></div></div></article>
 <article class="ue-karte glas auf"><a class="ue-bild" href="ergebnisse.html"><img src="p/uebersicht/ergebnisse.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp rot">31 offen</span><small>neue Seite</small></div>
-<h3><span class="ue-nr">10</span>Ergebnisse / Referenzen</h3><p>35 Kundenstimmen, Fallbeispiele, Logos, mit Quelle.</p>
+<h3><span class="ue-nr">10</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span>Ergebnisse / Referenzen</h3><ul class="ue-fehler"><li>Das Formular „Bewertung abgeben“ sendet noch nichts (nur Vorschau).</li></ul><p>35 Kundenstimmen, Fallbeispiele, Logos, mit Quelle.</p>
 <div class="ue-links"><a href="ergebnisse.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/ergebnisse</span></div></div></article>
 <article class="ue-karte glas auf"><a class="ue-bild" href="kontakt.html"><img src="p/uebersicht/kontakt.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp rot">13 offen</span><small>neue Seite</small></div>
-<h3><span class="ue-nr">11</span>Kontakt</h3><p>Gespräch vereinbaren, getrennt nach Unternehmen, Experten, Keynote.</p>
+<h3><span class="ue-nr">11</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span>Kontakt</h3><ul class="ue-fehler"><li>Das Kontaktformular sendet noch nichts (nur Vorschau). Live geht es noch in die alte Bolt-Datenbank (szilq).</li></ul><p>Gespräch vereinbaren, getrennt nach Unternehmen, Experten, Keynote.</p>
 <div class="ue-links"><a href="kontakt.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/kontakt</span></div></div></article>
 <article class="ue-karte glas auf"><a class="ue-bild" href="wissen.html"><img src="p/uebersicht/wissen.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp rot">14 offen</span><small>ersetzt heutige Seite</small></div>
@@ -865,11 +869,11 @@ section.knapp{padding-block:72px}
 <section class="ue-gruppe"><div class="huelle"><h2>Pflichtseiten</h2><div class="ue-raster">
 <article class="ue-karte glas auf"><a class="ue-bild" href="impressum.html"><img src="p/uebersicht/impressum.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp gelb">1 offen</span><small>ersetzt heutige Seite</small></div>
-<h3><span class="ue-nr">32</span>Impressum</h3><p>Rechtlich vorgeschrieben.</p>
+<h3><span class="ue-nr">32</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span>Impressum</h3><ul class="ue-fehler"><li>claudiaconen-akademie.de antwortet nicht (über http und https geprüft, 17.10.).</li></ul><p>Rechtlich vorgeschrieben.</p>
 <div class="ue-links"><a href="impressum.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/impressum</span></div></div></article>
 <article class="ue-karte glas auf"><a class="ue-bild" href="datenschutz.html"><img src="p/uebersicht/datenschutz.webp" alt="" width="640" height="400" loading="lazy"></a>
 <div class="ue-innen"><div class="ue-zeile"><span class="amp gelb">1 offen</span><small>ersetzt heutige Seite</small></div>
-<h3><span class="ue-nr">33</span>Datenschutz</h3><p>Rechtlich vorgeschrieben.</p>
+<h3><span class="ue-nr">33</span><span class="ue-ausruf" title="Hier ist noch ein Fehler">!</span>Datenschutz</h3><ul class="ue-fehler"><li>Live: Der Digistore-Link ist falsch geschrieben („dataschutz“, Fehlerseite 404). In der Vorschau korrigiert, live kommt die Korrektur mit dem nächsten Hochladen.</li><li>claudiaconen-akademie.de antwortet nicht (über http und https geprüft, 17.10.).</li></ul><p>Rechtlich vorgeschrieben.</p>
 <div class="ue-links"><a href="datenschutz.html">Vorschau ansehen</a><span>künftig: claudiaconen.com/datenschutz</span></div></div></article>
 </div></div></section>
 <section class="ue-gruppe"><div class="huelle"><h2>Zurückgestellt</h2><div class="ue-notiz glas"><b>7-Tage-Challenge (neues Design)</b><p>Keine doppelte Seite: Die Challenge läuft schon live unter claudiaconen.com/challenge, dort tragen sich die Leute ein. Die Fassung in der Vorschau ist nur ein neues Design für genau diese Seite. Sie bleibt zurückgestellt, bis die laufende Challenge vorbei ist (ab November). Alle Links auf die Challenge zeigen bis dahin auf die echte Seite.</p><p><a href="so-haengt-alles-zusammen.html">So hängt alles zusammen → Grafik</a></p></div></div></section>
