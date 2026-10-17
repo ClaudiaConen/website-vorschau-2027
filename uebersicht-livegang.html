@@ -554,9 +554,9 @@ section.knapp{padding-block:72px}
 .akt{padding:44px 0 8px}
 .akt h2{font:600 clamp(30px,3.4vw,42px)/1.1 'Cormorant Garamond',Georgia,serif;margin:6px 0 8px}
 .akt .lead{max-width:760px;font-size:16px;line-height:1.55;color:var(--ink2)}
-.fluss{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:34px;margin-top:26px;position:relative}
-.fs{position:relative;background:#fff;border:1px solid var(--linie);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:7px}
-.fs:not(:last-child)::after{content:"→";position:absolute;right:-28px;top:42%;font:700 22px/1 Inter,system-ui,sans-serif;color:#C9A961}
+.fluss{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:30px;margin-top:26px;position:relative}
+.fs{min-width:0;overflow-wrap:anywhere;position:relative;background:#fff;border:1px solid var(--linie);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:7px}
+.fs:not(:last-child)::after{content:"→";position:absolute;right:-25px;top:42%;font:700 22px/1 Inter,system-ui,sans-serif;color:#C9A961}
 .fs .nr{font:800 11px/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#13233F;opacity:.7}
 .fs h3{font:700 16.5px/1.25 Inter,system-ui,sans-serif;margin:0}
 .fs p{font-size:13.5px;line-height:1.45;margin:0;color:var(--ink2)}
@@ -568,10 +568,13 @@ section.knapp{padding-block:72px}
 .st{display:inline-block;font:800 10.5px/1 Inter,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:5px 8px;border-radius:99px}
 .st.live{background:#E6F4EA;color:#1B7A3A}.st.vor{background:#FFF4D6;color:#7A5A00}.st.fehlt{background:#FDECEC;color:#8E1B1B}
 .fs.dunkel{background:#13233F;color:#FDFBF7;border-color:#C9A961}.fs.dunkel p{color:rgba(253,251,247,.85)}.fs.dunkel .nr{color:#F7E7CE;opacity:1}.fs.dunkel .lk a{color:#FDFBF7}.fs.dunkel .an{background:rgba(253,251,247,.1);color:#FDFBF7}
+.haupt{margin-top:22px;background:#13233F;color:#FDFBF7;border-radius:16px;padding:16px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+.haupt b{font:700 15px/1.3 Inter,system-ui,sans-serif}.haupt .dom{font:600 italic 24px/1 'Cormorant Garamond',Georgia,serif;color:#F7E7CE}
+.haupt .zw{display:flex;flex-wrap:wrap;gap:8px}.haupt .zw a{font:600 13px/1 Inter,system-ui,sans-serif;color:#13233F;background:#F7E7CE;border-radius:99px;padding:7px 11px;text-decoration:none}
 .zusatz{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
 .zusatz div{border:1px dashed var(--linie);border-radius:12px;padding:12px 14px;font-size:13.5px;line-height:1.45;background:#fff}
 .zusatz b{display:block;font:700 14px/1.3 Inter,system-ui,sans-serif;margin-bottom:3px}
-@media(max-width:1100px){.fluss{grid-template-columns:repeat(2,minmax(0,1fr))}.fs:not(:last-child)::after{content:none}.zusatz{grid-template-columns:1fr}}
+@media(max-width:1100px){.fluss{grid-template-columns:repeat(3,minmax(0,1fr))}.fs:not(:last-child)::after{content:none}.zusatz{grid-template-columns:1fr}}
 @media(max-width:560px){.fluss{grid-template-columns:1fr;gap:30px}.fs:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-27px;transform:translateX(-50%)}}
 
 .ue-innen h3{font:600 22px/1.15 'Cormorant Garamond',Georgia,serif}
@@ -765,8 +768,13 @@ section.knapp{padding-block:72px}
 <section class="akt" id="aktion"><div class="huelle">
 <div class="kicker">Jetzt aktiv · Start 26. Oktober</div>
 <h2>Challenge-Aktion: so hängt alles zusammen</h2>
-<p class="lead">Vom QR-Code bis zum Mentoring: jede Station mit ihrer Seite, dem Angebot dahinter und dem Stand. Die Pfeile zeigen den Weg, den die Leute gehen. <b>Vorschau</b> = neue Fassung zum Ansehen, <b>live</b> = so steht es heute auf claudiaconen.com.</p>
+<p class="lead">Vom Check-in an der Tür bis zum Mentoring: jede Station mit ihrer Seite, dem Angebot dahinter und dem Stand. Die Pfeile zeigen den Weg, den die Leute gehen. <b>Vorschau</b> = neue Fassung zum Ansehen, <b>live</b> = so steht es heute auf claudiaconen.com.</p>
+<div class="haupt"><b>Alles liegt unter einer Hauptseite:</b><span class="dom">claudiaconen.com</span><span class="zw"><a href="https://claudiaconen.com/">/ Startseite</a><a href="https://claudiaconen.com/anmeldung">/anmeldung</a><a href="https://claudiaconen.com/challenge">/challenge</a><a href="https://claudiaconen.com/1zu1-training">/1zu1-training</a><a href="https://claudiaconen.com/mentoring-programm">/mentoring-programm</a></span></div>
 <div class="fluss">
+ <div class="fs"><span class="nr">0 · An der Tür</span><img class="th" src="p/aktion/checkin.jpg" alt=""><h3>Check-in THE POWER OF AI</h3>
+  <p>Köln, 18.10.: Wer reinkommt, scannt den Code und trägt sich ein. Als Geschenk gibt es die 7-Tage-Challenge, die Infos kommen per E-Mail.</p>
+  <span class="an">Seite: claudiaconen.com/anmeldung</span>
+  <div class="lk"><span class="st live">live</span><a href="https://claudiaconen.com/anmeldung">claudiaconen.com/anmeldung</a></div></div>
  <div class="fs"><span class="nr">1 · Einstieg</span><h3>QR-Code, Flyer, Startseite</h3>
   <p>Flyer, Magnet und Bühne führen per QR-Code auf die Challenge-Seite. Auf der Startseite läuft dazu die leise Zeile „Aktuell“.</p>
   <span class="an">Ziel: claudiaconen.com/challenge (Adresse bleibt immer gleich)</span>
